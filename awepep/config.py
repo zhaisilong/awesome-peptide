@@ -1,7 +1,7 @@
 from liquid import Template
 
 sections = {
-    "Reviews": ["Complex"],
+    "Reviews": ["Interaction", "Complex structure"],
     "Representation": ["1"],
     "Proprty Prediction": ["@"],
     "Structure Modeling": ["3"],

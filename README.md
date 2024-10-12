@@ -33,7 +33,8 @@ _Papers pined:_
   <a href="#05-guides">Guides</a>
   <br>
   <strong><a href='#1-reviews'>1) Reviews</a></strong>
-  <br><a href='#11-complex'>Complex</a>
+  <br><a href='#11-complex-structure'>Complex structure</a> • 
+  <a href='#12-interaction'>Interaction</a>
   <br>
   <strong><a href='#2-representation'>2) Representation</a></strong>
   <br>
@@ -42,7 +43,8 @@ _Papers pined:_
   <strong><a href='#4-structure-modeling'>4) Structure Modeling</a></strong>
   <br>
   <strong><a href='#5-de-novo-design'>5) De novo design</a></strong>
-  <br><a href='#51-sequence-based'>Sequence-based</a>
+  <br><a href='#51-sequence-based'>Sequence-based</a> • 
+  <a href='#52-structure-based'>Structure-based</a>
   <br>
   <strong><a href='#6-others'>6) Others</a></strong>
   <br>
@@ -84,15 +86,18 @@ _Papers pined:_
 
 ## 1. Reviews
 
-### 1.1 Complex
-
-**Full-Atom Peptide Design with Geometric Latent Diffusion**  
-Xiangzhe Kong, Yinjun Jia, Wenbing Huang, Yang Liu  
-[**2024**-2-21] >> NeurIPS/[Arxive](https://arxiv.org/pdf/2402.13555) • [code](https://github.com/THUNLP-MT/PepGLAD)
+### 1.1 Complex structure
 
 **Modelling peptide–protein complexes: docking, simulations and machine learning**  
 Arup Mondal, Liwei Chang and Alberto Perez  
 [**2022**-8-26] >> [QRB Discovery](https://doi.org/10.1017/qrd.2022.14)
+
+
+### 1.2 Interaction
+
+**A comprehensive review of protein-centric predictors for  biomolecular interactions: from proteins to nucleic acids  and beyond**  
+Pengzhen Jia, Fuhao Zhang, Chaojin Wu and Min Li  
+[**2024**-3-31] >> [BIB](https://doi.org/10.1093/bib/bbae162)
 
 
 ## 2. Representation
@@ -108,6 +113,13 @@ Arup Mondal, Liwei Chang and Alberto Perez
 **PepINVENT: Generative peptide design beyond the natural amino acids**  
 Gökçe Geylan, Jon Paul Janet, Alessandro Tibo, Jiazhen He, Atanas Patronov, Mikhail Kabeshov, Florian David, Werngard Czechtizky, Ola Engkvist, Leonardo De Maria  
 [**2024**-9-21] >> [Axive](https://doi.org/10.48550/arXiv.2409.14040) • RL/Molecular AI/AstraZeneca
+
+
+### 5.2 Structure-based
+
+**Full-Atom Peptide Design with Geometric Latent Diffusion**  
+Xiangzhe Kong, Yinjun Jia, Wenbing Huang, Yang Liu  
+[**2024**-2-21] >> NeurIPS/[Arxive](https://arxiv.org/pdf/2402.13555) • [code](https://github.com/THUNLP-MT/PepGLAD) • Full-Atom/Diffusion
 
 
 ## 6. Others
