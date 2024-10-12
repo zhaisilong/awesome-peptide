@@ -12,7 +12,7 @@ sections = {
         "Diffusion-based",
         "Target-based design",
     ],
-    "Others": ["Therapeutic", "Mechanism", "Principle", "Market"],
+    "Others": ["Therapeutic", "Mechanism", "Principle"],
 }
 
 paper_lastweek = Template(

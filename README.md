@@ -17,6 +17,14 @@ Gökçe Geylan, Jon Paul Janet, Alessandro Tibo, Jiazhen He, Atanas Patronov, Mi
 
 _Papers pined:_
 
+**PepINVENT: Generative peptide design beyond the natural amino acids**  
+Gökçe Geylan, Jon Paul Janet, Alessandro Tibo, Jiazhen He, Atanas Patronov, Mikhail Kabeshov, Florian David, Werngard Czechtizky, Ola Engkvist, Leonardo De Maria  
+[**2024**-9-21] >> [Axive](https://doi.org/10.48550/arXiv.2409.14040) • RL/Molecular AI/AstraZeneca
+
+**Full-Atom Peptide Design with Geometric Latent Diffusion**  
+Xiangzhe Kong, Yinjun Jia, Wenbing Huang, Yang Liu  
+[**2024**-2-21] >> NeurIPS/[Arxive](https://arxiv.org/pdf/2402.13555) • [code](https://github.com/THUNLP-MT/PepGLAD) • Full-Atom/Diffusion
+
 ---
 
 <p align="center">
@@ -47,6 +55,7 @@ _Papers pined:_
   <a href='#52-structure-based'>Structure-based</a>
   <br>
   <strong><a href='#6-others'>6) Others</a></strong>
+  <br><a href='#61-therapeutic'>Therapeutic</a>
   <br>
 </p>
 
@@ -54,9 +63,17 @@ _Papers pined:_
 
 ## 0. Benchmarks and Datasets
 
-### 0.1 Sequence Datasets
+### 0.1 Sequence Benchmarks/Datasets
 
-### 0.2 Structure Datasets
+### 0.2 Structure Benchmarks/Datasets
+
+**Benchmarking AlphaFold2 on peptide structure prediction**  
+Eli Fritz McDonald, Taylor Jones, Lars Plate, Jens Meiler, Alican Gulsevin  
+[**2024**-1-5] >> [Structure](https://doi.org/10.1016/j.str.2022.11.012) • [SI](https://doi.org/10.1016/j.str.2022.11.012) • AF
+
+**Predicting Protein−Peptide Interactions: Benchmarking Deep Learning Techniques and a Comparison with Focused Docking**  
+Sudhanshu Shanker and Michel F. Sanner  
+[**2024**-5-11] >> [JCIM](https://doi.org/10.1021/acs.jcim.3c00602) • [GitHub](https://github.com/sannerlab/benchmarking_2023) • Fold
 
 ### 0.3 Databases
 
@@ -123,6 +140,13 @@ Xiangzhe Kong, Yinjun Jia, Wenbing Huang, Yang Liu
 
 
 ## 6. Others
+
+### 6.1 Therapeutic
+
+**Trends in peptide drug discovery**  
+Markus Muttenthaler, GlennF.King, DavidJ.Adams and Paul F. Alewood  
+[**2021**-04-01] >> [Nature Reviews Drug Discovery](https://doi.org/10.1038/s41573-020-00135-8) • high
+
 
 ## Cntribution
 

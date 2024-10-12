@@ -1,8 +1,16 @@
 ## 0. Benchmarks and Datasets
 
-### 0.1 Sequence Datasets
+### 0.1 Sequence Benchmarks/Datasets
 
-### 0.2 Structure Datasets
+### 0.2 Structure Benchmarks/Datasets
+
+**Benchmarking AlphaFold2 on peptide structure prediction**  
+Eli Fritz McDonald, Taylor Jones, Lars Plate, Jens Meiler, Alican Gulsevin  
+[**2024**-1-5] >> [Structure](https://doi.org/10.1016/j.str.2022.11.012) • [SI](https://doi.org/10.1016/j.str.2022.11.012) • AF
+
+**Predicting Protein−Peptide Interactions: Benchmarking Deep Learning Techniques and a Comparison with Focused Docking**  
+Sudhanshu Shanker and Michel F. Sanner  
+[**2024**-5-11] >> [JCIM](https://doi.org/10.1021/acs.jcim.3c00602) • [GitHub](https://github.com/sannerlab/benchmarking_2023) • Fold
 
 ### 0.3 Databases
 
