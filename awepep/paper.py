@@ -5,12 +5,18 @@ from tqdm.auto import tqdm
 from datetime import datetime, timedelta
 from awepep import config
 from awepep import template
+import re
 
 
 class PaperList:
     def __init__(self, data_path: str = None):
         self.data_path = Path(data_path)
-        self.df_paper = pd.read_csv(self.data_path).fillna(False)  # Required to display tags
+        self.df_paper = self.improver(pd.read_csv(self.data_path).fillna(False))  # Required to display tags
+
+    @staticmethod
+    def improver(df):
+        df["publish_date_"] = df["publish_date"].apply(lambda x: re.sub(r"(\d{4})", r"**\1**", x))
+        return df
 
     def load_data_part(self):
         with open("DATABASE.md", "r", encoding="utf-8") as file:
