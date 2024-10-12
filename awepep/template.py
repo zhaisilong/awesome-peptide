@@ -3,7 +3,7 @@ from liquid import Template
 paper = Template(
     """**{{paper.title}}**  
 {{paper.authors}}  
-{{paper.publish_date}} >> {{paper.publications}}{% if paper.quality or paper.dataset or paper.code or paper.blogs %}{% if paper.quality %} • {{paper.quality}}{% else %}{% endif %}{% if paper.dataset %} • {{paper.dataset}}{% else %}{% endif %}{% if paper.code %} • {{paper.code}}{% else %}{% endif %}{% if paper.blogs %} • {{paper.blogs}}{% else %}{% endif %}{% else %}{% endif %}{% if paper.abstract %}
+**{{paper.publish_date}}** >> {{paper.publications}}{% if paper.quality or paper.dataset or paper.code or paper.blogs %}{% if paper.quality %} • {{paper.quality}}{% else %}{% endif %}{% if paper.dataset %} • {{paper.dataset}}{% else %}{% endif %}{% if paper.code %} • {{paper.code}}{% else %}{% endif %}{% if paper.blogs %} • {{paper.blogs}}{% else %}{% endif %}{% else %}{% endif %}  {% if paper.abstract %}
 <details>
 <summary>Abstract</summary>
 {{paper.abstract}}
