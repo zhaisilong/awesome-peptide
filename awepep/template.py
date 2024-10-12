@@ -8,9 +8,7 @@ paper = Template(
 <summary>Abstract</summary>
 {{paper.abstract}}
 </details>
----
 {% endif %}
-
 """
 )
 
