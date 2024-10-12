@@ -81,13 +81,13 @@ _Papers pined:_
 
 ### 1.1 Complex
 
-> Full-Atom Peptide Design with Geometric Latent Diffusion
-> Xiangzhe Kong, Yinjun Jia, Wenbing Huang, Yang Liu
-> 2024-2-21>>[NeurIPS]()/[Arxive](https://arxiv.org/pdf/2402.13555) • [code](https://github.com/THUNLP-MT/PepGLAD)
+__Full-Atom Peptide Design with Geometric Latent Diffusion__
+Xiangzhe Kong, Yinjun Jia, Wenbing Huang, Yang Liu
+2024-2-21 >> [NeurIPS]()/[Arxive](https://arxiv.org/pdf/2402.13555) • [code](https://github.com/THUNLP-MT/PepGLAD)
 
-> Modelling peptide–protein complexes: docking, simulations and machine learning
-> Arup Mondal, Liwei Chang and Alberto Perez
-> 2022-8-26>>[QRB Discovery](https://doi.org/10.1017/qrd.2022.14)
+__Modelling peptide–protein complexes: docking, simulations and machine learning__
+Arup Mondal, Liwei Chang and Alberto Perez
+2022-8-26 >> [QRB Discovery](https://doi.org/10.1017/qrd.2022.14)
 
 
 
