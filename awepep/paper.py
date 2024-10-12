@@ -10,7 +10,7 @@ from awepep import template
 class PaperList:
     def __init__(self, data_path: str = None):
         self.data_path = Path(data_path)
-        self.df_paper = pd.read_csv(self.data_path)
+        self.df_paper = pd.read_csv(self.data_path).fillna(False)  # Required to display tags
 
     def load_data_part(self):
         with open("DATABASE.md", "r", encoding="utf-8") as file:
@@ -27,21 +27,25 @@ class PaperList:
             date=current_time.strftime("%Y-%m-%d")
         )
         paper_pined_str = template.paper_pined_header.render()
-        
+
         seci = 1
         custom_sec_order = config.sections.keys()
-        self.df_paper['sec_cat'] = pd.Categorical(self.df_paper['sec'], categories=custom_sec_order, ordered=True)
+        self.df_paper["sec_cat"] = pd.Categorical(
+            self.df_paper["sec"], categories=custom_sec_order, ordered=True
+        )
         for sec, group in self.df_paper.groupby(by="sec_cat"):
             assert sec in config.sections.keys(), "No such section: %s" % sec
             subseci = 1
             idx_str = str(seci)
             toc_str += template.toc_sec.render(idx=idx_str, sec=sec)
             paper_str += template.sec.render(idx=idx_str, sec=sec)
-            
+
             num = len(group["subsec"].unique())
 
             custom_subsec_order = config.sections[sec]
-            group['subsec_cat'] = pd.Categorical(group['subsec'], categories=custom_subsec_order, ordered=True)
+            group["subsec_cat"] = pd.Categorical(
+                group["subsec"], categories=custom_subsec_order, ordered=True
+            )
             for subsec, subgroup in group.groupby(by="subsec"):
                 assert subsec in config.sections[sec], "No such subsection: %s" % subsec
                 dot = False if subseci == num else True
@@ -53,8 +57,8 @@ class PaperList:
                     paper_str += template.paper.render(paper=row.to_dict())
                     if row["pined"]:
                         paper_pined_str += template.paper.render(paper=row.to_dict())
-                    target_time = datetime.strptime(row["publish_date"], "%Y-%m-%d")
 
+                    target_time = datetime.strptime(row["publish_date"], "%Y-%m-%d")
                     time_difference = current_time - target_time
                     if time_difference < timedelta(days=7):
                         paper_last_week_str += template.paper.render(

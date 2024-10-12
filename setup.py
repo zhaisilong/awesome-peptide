@@ -11,7 +11,8 @@ setup(
         "typing",
         "tqdm",
         "ipykernel",
-        "fire"
+        "fire",
+        "black"
     ],
     author='Zhai Silong',  # Replace with your name
     author_email='zhaisilong@outlook.com',  # Replace with your email

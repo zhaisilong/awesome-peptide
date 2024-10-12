@@ -11,87 +11,7 @@ __The advantages that set us apart from competing products are as follows:__
 
 _Papers last week, updated on 2024-10-12:_
 
-> Full-Atom Peptide Design with Geometric Latent Diffusion
-> Xiangzhe Kong, Yinjun Jia, Wenbing Huang, Yang Liu
-> [NeurIPS]()/[Arxive](https://arxiv.org/pdf/2402.13555) • high • [code](https://github.com/THUNLP-MT/PepGLAD) • some
-> <details>
-> <summary>Abstract</summary>
-> This study proposes a full-atom peptide design method based on a geometric latent diffusion model, which shows great potential in drug development. By addressing the challenges of full-atom geometry and binding site geometry, the proposed model significantly improves diversity and binding affinity.
-> </details>
-
-> Full-Atom Peptide Design with Geometric Latent Diffusion
-> Xiangzhe Kong, Yinjun Jia, Wenbing Huang, Yang Liu
-> [NeurIPS]()/[Arxive](https://arxiv.org/pdf/2402.13555) • high • [code](https://github.com/THUNLP-MT/PepGLAD) • some
-> <details>
-> <summary>Abstract</summary>
-> This study proposes a full-atom peptide design method based on a geometric latent diffusion model, which shows great potential in drug development. By addressing the challenges of full-atom geometry and binding site geometry, the proposed model significantly improves diversity and binding affinity.
-> </details>
-
-> Full-Atom Peptide Design with Geometric Latent Diffusion
-> Xiangzhe Kong, Yinjun Jia, Wenbing Huang, Yang Liu
-> [NeurIPS]()/[Arxive](https://arxiv.org/pdf/2402.13555) • high • [code](https://github.com/THUNLP-MT/PepGLAD) • some
-> <details>
-> <summary>Abstract</summary>
-> This study proposes a full-atom peptide design method based on a geometric latent diffusion model, which shows great potential in drug development. By addressing the challenges of full-atom geometry and binding site geometry, the proposed model significantly improves diversity and binding affinity.
-> </details>
-
-> Full-Atom Peptide Design with Geometric Latent Diffusion
-> Xiangzhe Kong, Yinjun Jia, Wenbing Huang, Yang Liu
-> [NeurIPS]()/[Arxive](https://arxiv.org/pdf/2402.13555) • high • [code](https://github.com/THUNLP-MT/PepGLAD) • some
-> <details>
-> <summary>Abstract</summary>
-> This study proposes a full-atom peptide design method based on a geometric latent diffusion model, which shows great potential in drug development. By addressing the challenges of full-atom geometry and binding site geometry, the proposed model significantly improves diversity and binding affinity.
-> </details>
-
-> Full-Atom Peptide Design with Geometric Latent Diffusion
-> Xiangzhe Kong, Yinjun Jia, Wenbing Huang, Yang Liu
-> [NeurIPS]()/[Arxive](https://arxiv.org/pdf/2402.13555) • high • [code](https://github.com/THUNLP-MT/PepGLAD) • some
-> <details>
-> <summary>Abstract</summary>
-> This study proposes a full-atom peptide design method based on a geometric latent diffusion model, which shows great potential in drug development. By addressing the challenges of full-atom geometry and binding site geometry, the proposed model significantly improves diversity and binding affinity.
-> </details>
-
-> Full-Atom Peptide Design with Geometric Latent Diffusion
-> Xiangzhe Kong, Yinjun Jia, Wenbing Huang, Yang Liu
-> [NeurIPS]()/[Arxive](https://arxiv.org/pdf/2402.13555) • high • [code](https://github.com/THUNLP-MT/PepGLAD) • some
-> <details>
-> <summary>Abstract</summary>
-> This study proposes a full-atom peptide design method based on a geometric latent diffusion model, which shows great potential in drug development. By addressing the challenges of full-atom geometry and binding site geometry, the proposed model significantly improves diversity and binding affinity.
-> </details>
-
-> Full-Atom Peptide Design with Geometric Latent Diffusion
-> Xiangzhe Kong, Yinjun Jia, Wenbing Huang, Yang Liu
-> [NeurIPS]()/[Arxive](https://arxiv.org/pdf/2402.13555) • high • [code](https://github.com/THUNLP-MT/PepGLAD) • some
-> <details>
-> <summary>Abstract</summary>
-> This study proposes a full-atom peptide design method based on a geometric latent diffusion model, which shows great potential in drug development. By addressing the challenges of full-atom geometry and binding site geometry, the proposed model significantly improves diversity and binding affinity.
-> </details>
-
-> Full-Atom Peptide Design with Geometric Latent Diffusion
-> Xiangzhe Kong, Yinjun Jia, Wenbing Huang, Yang Liu
-> [NeurIPS]()/[Arxive](https://arxiv.org/pdf/2402.13555) • high • [code](https://github.com/THUNLP-MT/PepGLAD) • some
-> <details>
-> <summary>Abstract</summary>
-> This study proposes a full-atom peptide design method based on a geometric latent diffusion model, which shows great potential in drug development. By addressing the challenges of full-atom geometry and binding site geometry, the proposed model significantly improves diversity and binding affinity.
-> </details>
-
 _Papers pined:_
-
-> Full-Atom Peptide Design with Geometric Latent Diffusion
-> Xiangzhe Kong, Yinjun Jia, Wenbing Huang, Yang Liu
-> [NeurIPS]()/[Arxive](https://arxiv.org/pdf/2402.13555) • high • [code](https://github.com/THUNLP-MT/PepGLAD) • some
-> <details>
-> <summary>Abstract</summary>
-> This study proposes a full-atom peptide design method based on a geometric latent diffusion model, which shows great potential in drug development. By addressing the challenges of full-atom geometry and binding site geometry, the proposed model significantly improves diversity and binding affinity.
-> </details>
-
-> Full-Atom Peptide Design with Geometric Latent Diffusion
-> Xiangzhe Kong, Yinjun Jia, Wenbing Huang, Yang Liu
-> [NeurIPS]()/[Arxive](https://arxiv.org/pdf/2402.13555) • high • [code](https://github.com/THUNLP-MT/PepGLAD) • some
-> <details>
-> <summary>Abstract</summary>
-> This study proposes a full-atom peptide design method based on a geometric latent diffusion model, which shows great potential in drug development. By addressing the challenges of full-atom geometry and binding site geometry, the proposed model significantly improves diversity and binding affinity.
-> </details>
 
 ---
 
@@ -112,22 +32,14 @@ _Papers pined:_
   <br><a href='#11-complex'>Complex</a>
   <br>
   <strong><a href='#2-representation'>2) Representation</a></strong>
-  <br><a href='#21-1'>1</a>
   <br>
   <strong><a href='#3-proprty-prediction'>3) Proprty Prediction</a></strong>
   <br>
   <strong><a href='#4-structure-modeling'>4) Structure Modeling</a></strong>
-  <br><a href='#41-3'>3</a>
   <br>
   <strong><a href='#5-de-novo-design'>5) De novo design</a></strong>
-  <br><a href='#51-structure-based'>Structure-based</a> • 
-  <a href='#52-traditional-methods'>Traditional methods</a>
   <br>
   <strong><a href='#6-others'>6) Others</a></strong>
-  <br><a href='#61-market'>Market</a> • 
-  <a href='#62-mechanism'>Mechanism</a> • 
-  <a href='#63-principle'>Principle</a> • 
-  <a href='#64-therapeutic'>Therapeutic</a>
   <br>
 </p>
 
@@ -171,134 +83,23 @@ _Papers pined:_
 
 > Full-Atom Peptide Design with Geometric Latent Diffusion
 > Xiangzhe Kong, Yinjun Jia, Wenbing Huang, Yang Liu
-> [NeurIPS]()/[Arxive](https://arxiv.org/pdf/2402.13555) • high • [code](https://github.com/THUNLP-MT/PepGLAD) • some
-> <details>
-> <summary>Abstract</summary>
-> This study proposes a full-atom peptide design method based on a geometric latent diffusion model, which shows great potential in drug development. By addressing the challenges of full-atom geometry and binding site geometry, the proposed model significantly improves diversity and binding affinity.
-> </details>
+> 2024-2-21>>[NeurIPS]()/[Arxive](https://arxiv.org/pdf/2402.13555) • [code](https://github.com/THUNLP-MT/PepGLAD)
 
-> Full-Atom Peptide Design with Geometric Latent Diffusion
-> Xiangzhe Kong, Yinjun Jia, Wenbing Huang, Yang Liu
-> [NeurIPS]()/[Arxive](https://arxiv.org/pdf/2402.13555) • high • [code](https://github.com/THUNLP-MT/PepGLAD) • some
-> <details>
-> <summary>Abstract</summary>
-> This study proposes a full-atom peptide design method based on a geometric latent diffusion model, which shows great potential in drug development. By addressing the challenges of full-atom geometry and binding site geometry, the proposed model significantly improves diversity and binding affinity.
-> </details>
+> Modelling peptide–protein complexes: docking, simulations and machine learning
+> Arup Mondal, Liwei Chang and Alberto Perez
+> 2022-8-26>>[QRB Discovery](https://doi.org/10.1017/qrd.2022.14)
 
-> Full-Atom Peptide Design with Geometric Latent Diffusion
-> Xiangzhe Kong, Yinjun Jia, Wenbing Huang, Yang Liu
-> [NeurIPS]()/[Arxive](https://arxiv.org/pdf/2402.13555) • high • [code](https://github.com/THUNLP-MT/PepGLAD) • some
-> <details>
-> <summary>Abstract</summary>
-> This study proposes a full-atom peptide design method based on a geometric latent diffusion model, which shows great potential in drug development. By addressing the challenges of full-atom geometry and binding site geometry, the proposed model significantly improves diversity and binding affinity.
-> </details>
-
-> Full-Atom Peptide Design with Geometric Latent Diffusion
-> Xiangzhe Kong, Yinjun Jia, Wenbing Huang, Yang Liu
-> [NeurIPS]()/[Arxive](https://arxiv.org/pdf/2402.13555) • high • [code](https://github.com/THUNLP-MT/PepGLAD) • some
-> <details>
-> <summary>Abstract</summary>
-> This study proposes a full-atom peptide design method based on a geometric latent diffusion model, which shows great potential in drug development. By addressing the challenges of full-atom geometry and binding site geometry, the proposed model significantly improves diversity and binding affinity.
-> </details>
 
 
 ## 2. Representation
-
-### 2.1 1
-
-> Full-Atom Peptide Design with Geometric Latent Diffusion
-> Xiangzhe Kong, Yinjun Jia, Wenbing Huang, Yang Liu
-> [NeurIPS]()/[Arxive](https://arxiv.org/pdf/2402.13555) • high • [code](https://github.com/THUNLP-MT/PepGLAD) • some
-> <details>
-> <summary>Abstract</summary>
-> This study proposes a full-atom peptide design method based on a geometric latent diffusion model, which shows great potential in drug development. By addressing the challenges of full-atom geometry and binding site geometry, the proposed model significantly improves diversity and binding affinity.
-> </details>
-
 
 ## 3. Proprty Prediction
 
 ## 4. Structure Modeling
 
-### 4.1 3
-
-> Full-Atom Peptide Design with Geometric Latent Diffusion
-> Xiangzhe Kong, Yinjun Jia, Wenbing Huang, Yang Liu
-> [NeurIPS]()/[Arxive](https://arxiv.org/pdf/2402.13555) • high • [code](https://github.com/THUNLP-MT/PepGLAD) • some
-> <details>
-> <summary>Abstract</summary>
-> This study proposes a full-atom peptide design method based on a geometric latent diffusion model, which shows great potential in drug development. By addressing the challenges of full-atom geometry and binding site geometry, the proposed model significantly improves diversity and binding affinity.
-> </details>
-
-
 ## 5. De novo design
 
-### 5.1 Structure-based
-
-> Full-Atom Peptide Design with Geometric Latent Diffusion
-> Xiangzhe Kong, Yinjun Jia, Wenbing Huang, Yang Liu
-> [NeurIPS]()/[Arxive](https://arxiv.org/pdf/2402.13555) • high • [code](https://github.com/THUNLP-MT/PepGLAD) • some
-> <details>
-> <summary>Abstract</summary>
-> This study proposes a full-atom peptide design method based on a geometric latent diffusion model, which shows great potential in drug development. By addressing the challenges of full-atom geometry and binding site geometry, the proposed model significantly improves diversity and binding affinity.
-> </details>
-
-
-### 5.2 Traditional methods
-
-> Full-Atom Peptide Design with Geometric Latent Diffusion
-> Xiangzhe Kong, Yinjun Jia, Wenbing Huang, Yang Liu
-> [NeurIPS]()/[Arxive](https://arxiv.org/pdf/2402.13555) • high • [code](https://github.com/THUNLP-MT/PepGLAD) • some
-> <details>
-> <summary>Abstract</summary>
-> This study proposes a full-atom peptide design method based on a geometric latent diffusion model, which shows great potential in drug development. By addressing the challenges of full-atom geometry and binding site geometry, the proposed model significantly improves diversity and binding affinity.
-> </details>
-
-
 ## 6. Others
-
-### 6.1 Market
-
-> Full-Atom Peptide Design with Geometric Latent Diffusion
-> Xiangzhe Kong, Yinjun Jia, Wenbing Huang, Yang Liu
-> [NeurIPS]()/[Arxive](https://arxiv.org/pdf/2402.13555) • high • [code](https://github.com/THUNLP-MT/PepGLAD) • some
-> <details>
-> <summary>Abstract</summary>
-> This study proposes a full-atom peptide design method based on a geometric latent diffusion model, which shows great potential in drug development. By addressing the challenges of full-atom geometry and binding site geometry, the proposed model significantly improves diversity and binding affinity.
-> </details>
-
-
-### 6.2 Mechanism
-
-> Full-Atom Peptide Design with Geometric Latent Diffusion
-> Xiangzhe Kong, Yinjun Jia, Wenbing Huang, Yang Liu
-> [NeurIPS]()/[Arxive](https://arxiv.org/pdf/2402.13555) • high • [code](https://github.com/THUNLP-MT/PepGLAD) • some
-> <details>
-> <summary>Abstract</summary>
-> This study proposes a full-atom peptide design method based on a geometric latent diffusion model, which shows great potential in drug development. By addressing the challenges of full-atom geometry and binding site geometry, the proposed model significantly improves diversity and binding affinity.
-> </details>
-
-
-### 6.3 Principle
-
-> Full-Atom Peptide Design with Geometric Latent Diffusion
-> Xiangzhe Kong, Yinjun Jia, Wenbing Huang, Yang Liu
-> [NeurIPS]()/[Arxive](https://arxiv.org/pdf/2402.13555) • high • [code](https://github.com/THUNLP-MT/PepGLAD) • some
-> <details>
-> <summary>Abstract</summary>
-> This study proposes a full-atom peptide design method based on a geometric latent diffusion model, which shows great potential in drug development. By addressing the challenges of full-atom geometry and binding site geometry, the proposed model significantly improves diversity and binding affinity.
-> </details>
-
-
-### 6.4 Therapeutic
-
-> Full-Atom Peptide Design with Geometric Latent Diffusion
-> Xiangzhe Kong, Yinjun Jia, Wenbing Huang, Yang Liu
-> [NeurIPS]()/[Arxive](https://arxiv.org/pdf/2402.13555) • high • [code](https://github.com/THUNLP-MT/PepGLAD) • some
-> <details>
-> <summary>Abstract</summary>
-> This study proposes a full-atom peptide design method based on a geometric latent diffusion model, which shows great potential in drug development. By addressing the challenges of full-atom geometry and binding site geometry, the proposed model significantly improves diversity and binding affinity.
-> </details>
-
 
 ## Cntribution
 
