@@ -13,7 +13,7 @@ mamba activate awepep
 
 pip install .
 
-python get_md.py  # to build markdown from csv
+awepep  # to build markdown from csv
 ```
 
 ## Assessment

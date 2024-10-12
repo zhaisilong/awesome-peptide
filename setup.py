@@ -2,7 +2,7 @@ from setuptools import setup, find_packages
 
 setup(
     name='Awesome Peptide',  # Replace with your project's name
-    version='0.1',  # Initial release version
+    version='0.2',  # Initial release version
     packages=find_packages(),  # Automatically find packages in your project
     install_requires=[  # External dependencies for your project
         # List of libraries to be installed, e.g.:
