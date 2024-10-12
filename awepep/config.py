@@ -1,18 +1,18 @@
 from liquid import Template
 
 sections = {
-    "Reviews": ["Interaction", "Complex structure"],
+    "Reviews": ["Interaction", "Complex Structure"],
     "Representation": ["1"],
     "Proprty Prediction": ["@"],
     "Structure Modeling": ["3"],
-    "De novo design": [
-        "Traditional methods",
+    "De Novo Design": [
+        "Traditional Methods",
         "Sequence-based",
         "Structure-based",
         "Diffusion-based",
-        "Target-based design",
+        "Target-based Design",
     ],
-    "Others": ["Therapeutic", "Mechanism", "Principle"],
+    "Others": ["Therapeutic", "Mechanism", "Principle", "PROTAC"],
 }
 
 paper_lastweek = Template(

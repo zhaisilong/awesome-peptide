@@ -41,7 +41,7 @@ Xiangzhe Kong, Yinjun Jia, Wenbing Huang, Yang Liu
   <a href="#05-guides">Guides</a>
   <br>
   <strong><a href='#1-reviews'>1) Reviews</a></strong>
-  <br><a href='#11-complex-structure'>Complex structure</a> • 
+  <br><a href='#11-complex-structure'>Complex Structure</a> • 
   <a href='#12-interaction'>Interaction</a>
   <br>
   <strong><a href='#2-representation'>2) Representation</a></strong>
@@ -50,12 +50,13 @@ Xiangzhe Kong, Yinjun Jia, Wenbing Huang, Yang Liu
   <br>
   <strong><a href='#4-structure-modeling'>4) Structure Modeling</a></strong>
   <br>
-  <strong><a href='#5-de-novo-design'>5) De novo design</a></strong>
+  <strong><a href='#5-de-novo-design'>5) De Novo Design</a></strong>
   <br><a href='#51-sequence-based'>Sequence-based</a> • 
   <a href='#52-structure-based'>Structure-based</a>
   <br>
   <strong><a href='#6-others'>6) Others</a></strong>
-  <br><a href='#61-therapeutic'>Therapeutic</a>
+  <br><a href='#61-protac'>PROTAC</a> • 
+  <a href='#62-therapeutic'>Therapeutic</a>
   <br>
 </p>
 
@@ -69,7 +70,7 @@ Xiangzhe Kong, Yinjun Jia, Wenbing Huang, Yang Liu
 
 **Benchmarking AlphaFold2 on peptide structure prediction**  
 Eli Fritz McDonald, Taylor Jones, Lars Plate, Jens Meiler, Alican Gulsevin  
-[**2024**-1-5] >> [Structure](https://doi.org/10.1016/j.str.2022.11.012) • [SI](https://doi.org/10.1016/j.str.2022.11.012) • AF
+[**2024**-1-5] >> [Structure](https://doi.org/10.1016/j.str.2022.11.012) • [SI](https://doi.org/10.1016/j.str.2022.11.012) • [Weixin](https://mp.weixin.qq.com/s/9mpyZXITVC6RBbNQmjJLcg) • AF
 
 **Predicting Protein−Peptide Interactions: Benchmarking Deep Learning Techniques and a Comparison with Focused Docking**  
 Sudhanshu Shanker and Michel F. Sanner  
@@ -103,7 +104,7 @@ Sudhanshu Shanker and Michel F. Sanner
 
 ## 1. Reviews
 
-### 1.1 Complex structure
+### 1.1 Complex Structure
 
 **Modelling peptide–protein complexes: docking, simulations and machine learning**  
 Arup Mondal, Liwei Chang and Alberto Perez  
@@ -116,6 +117,10 @@ Arup Mondal, Liwei Chang and Alberto Perez
 Pengzhen Jia, Fuhao Zhang, Chaojin Wu and Min Li  
 [**2024**-3-31] >> [BIB](https://doi.org/10.1093/bib/bbae162)
 
+**A comprehensive review of protein-centric predictors for  biomolecular interactions: from proteins to nucleic acids  and beyond**  
+Pengzhen Jia, Fuhao Zhang, Chaojin Wu and Min Li  
+[**2024**-3-31] >> [BIB](https://doi.org/10.1093/bib/bbae162)
+
 
 ## 2. Representation
 
@@ -123,7 +128,7 @@ Pengzhen Jia, Fuhao Zhang, Chaojin Wu and Min Li
 
 ## 4. Structure Modeling
 
-## 5. De novo design
+## 5. De Novo Design
 
 ### 5.1 Sequence-based
 
@@ -141,7 +146,14 @@ Xiangzhe Kong, Yinjun Jia, Wenbing Huang, Yang Liu
 
 ## 6. Others
 
-### 6.1 Therapeutic
+### 6.1 PROTAC
+
+**A Top-Down Design Approach for Generating a Peptide PROTAC Drug Targeting Androgen Receptor for Androgenetic Alopecia Therapy**  
+Bohan MaDonghua LiuZhe WangDize ZhangYanlin Jian, et. al.  
+[**2021**-6-5] >> [JMC](https://doi.org/10.1021/acs.jmedchem.4c00828) • [Weixin](https://mp.weixin.qq.com/s/xeJWFVcV5LkIlVJ1Zxf5Eg) • PROTAC
+
+
+### 6.2 Therapeutic
 
 **Trends in peptide drug discovery**  
 Markus Muttenthaler, GlennF.King, DavidJ.Adams and Paul F. Alewood  
