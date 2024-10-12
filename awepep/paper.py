@@ -66,7 +66,7 @@ class PaperList:
 
                     target_time = datetime.strptime(row["publish_date"], "%Y-%m-%d")
                     time_difference = current_time - target_time
-                    if time_difference < timedelta(days=7):
+                    if time_difference < timedelta(days=30):
                         paper_last_week_str += template.paper.render(
                             paper=row.to_dict()
                         )

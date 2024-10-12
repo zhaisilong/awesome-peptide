@@ -9,7 +9,11 @@ __The advantages that set us apart from competing products are as follows:__
 3. Citations: Direct links to full paper references.
 4. Database output: Python-aided curated `csv` file download.
 
-_Papers last week, updated on 2024-10-12:_
+_Papers last month, updated on 2024-10-12:_
+
+**PepINVENT: Generative peptide design beyond the natural amino acids**  
+Gökçe Geylan, Jon Paul Janet, Alessandro Tibo, Jiazhen He, Atanas Patronov, Mikhail Kabeshov, Florian David, Werngard Czechtizky, Ola Engkvist, Leonardo De Maria  
+[**2024**-9-21] >> [Axive](https://doi.org/10.48550/arXiv.2409.14040) • RL/Molecular AI/AstraZeneca
 
 _Papers pined:_
 
@@ -38,6 +42,7 @@ _Papers pined:_
   <strong><a href='#4-structure-modeling'>4) Structure Modeling</a></strong>
   <br>
   <strong><a href='#5-de-novo-design'>5) De novo design</a></strong>
+  <br><a href='#51-sequence-based'>Sequence-based</a>
   <br>
   <strong><a href='#6-others'>6) Others</a></strong>
   <br>
@@ -83,15 +88,12 @@ _Papers pined:_
 
 **Full-Atom Peptide Design with Geometric Latent Diffusion**  
 Xiangzhe Kong, Yinjun Jia, Wenbing Huang, Yang Liu  
-[**2024**-2-21] >> [NeurIPS]()/[Arxive](https://arxiv.org/pdf/2402.13555) • [code](https://github.com/THUNLP-MT/PepGLAD)  
-<details>
-<summary>Abstract</summary>
-asdasda
-</details>
+[**2024**-2-21] >> NeurIPS/[Arxive](https://arxiv.org/pdf/2402.13555) • [code](https://github.com/THUNLP-MT/PepGLAD)
 
 **Modelling peptide–protein complexes: docking, simulations and machine learning**  
 Arup Mondal, Liwei Chang and Alberto Perez  
-[**2022**-8-26] >> [QRB Discovery](https://doi.org/10.1017/qrd.2022.14)  
+[**2022**-8-26] >> [QRB Discovery](https://doi.org/10.1017/qrd.2022.14)
+
 
 ## 2. Representation
 
@@ -100,6 +102,13 @@ Arup Mondal, Liwei Chang and Alberto Perez
 ## 4. Structure Modeling
 
 ## 5. De novo design
+
+### 5.1 Sequence-based
+
+**PepINVENT: Generative peptide design beyond the natural amino acids**  
+Gökçe Geylan, Jon Paul Janet, Alessandro Tibo, Jiazhen He, Atanas Patronov, Mikhail Kabeshov, Florian David, Werngard Czechtizky, Ola Engkvist, Leonardo De Maria  
+[**2024**-9-21] >> [Axive](https://doi.org/10.48550/arXiv.2409.14040) • RL/Molecular AI/AstraZeneca
+
 
 ## 6. Others
 
