@@ -2,7 +2,7 @@
 
 ## Setup
 
-“We use [Liquid](https://liquid.readthedocs.io/en/latest/) as the template language and pandas to store paper metadata for generating the README documentation.”
+We use [Liquid](https://liquid.readthedocs.io/en/latest/) as the template language and pandas for handling paper metadata to generate the · documentation.
 
 ```bash
 git clone git@github.com:zhaisilong/awesome-peptide.git
@@ -13,13 +13,29 @@ mamba activate awepep
 
 pip install .
 
-awepep  # to build markdown from csv
+awepep  # This command builds the markdown from the CSV files
 ```
 
-## Assessment
+### Package Archietecchre
 
-High-Medium-Low Quality
+```yaml
+- awepep
+    - main.py: the main functionality
+    - templates.py: Liquid templates for markdown generation
+    - paper.py: builds documentation from CSV data
+    - config.py: handles section ordering configuration
+- data
+    - paper.csv: curated dataset containing paper metadata
+- cover.png: cover image derived from [Nature Springer](https://doi.org/10.1038/s41586-023-05909-9)
+- DATABASE.md: Chapter 0 for content that requires special formatting and handling
+- setup.py: installation script
+- LICENSE: GNU license
+```
 
-1. High IF
-2. High written
-3. Good Papers
+## Quality Assessment
+
+Papers are categorized into three quality levels:
+
+1. High: High impact factor (IF), well-written, and high-quality research.
+2. Medium: Moderate quality and impact.
+3. Low: Less influential but still valuable.

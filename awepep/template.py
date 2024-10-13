@@ -8,9 +8,10 @@ Comprehensive List of Research Papers on Peptides and Deep Learning
 __What sets us apart from similar resources:__
 
 1. Versatile Tags: Organize and filter papers easily.
-2. Expert Insights: Links to expert reviews and analysis.
-3. [CSV Downloads](data/paper.csv): Quick access to paper data in `CSV` format.
-4. Automation: Use [Liquid](https://liquid.readthedocs.io/en/latest/) templates to generate Markdown from `CSV`, making it easy to build your own paper repository.
+2. Easy Navigation: Internal links for quick jumps between sections and papers.
+3. Expert Insights: Links to expert reviews and analysis.
+4. [CSV Downloads](data/paper.csv): Quick access to paper data in `CSV` format.
+5. Automation: Use [Liquid](https://liquid.readthedocs.io/en/latest/) templates to generate Markdown from `CSV`, making it easy to build your own paper repository. >>> [[Details](CONTRIBUTING.md)]
 """
 )
 
