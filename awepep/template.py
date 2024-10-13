@@ -1,5 +1,19 @@
 from liquid import Template
 
+header = Template(
+    """# Deep Learning for peptides
+
+Comprehensive List of Research Papers on Peptides and Deep Learning
+
+__What sets us apart from similar resources:__
+
+1. Versatile Tags: Organize and filter papers easily.
+2. Expert Insights: Links to expert reviews and analysis.
+3. [CSV Downloads](data/paper.csv): Quick access to paper data in `CSV` format.
+4. Automation: Use [Liquid](https://liquid.readthedocs.io/en/latest/) templates to generate Markdown from `CSV`, making it easy to build your own paper repository.
+"""
+)
+
 paper = Template(
     """**{{paper.title}}**  
 {{paper.authors}}  
@@ -12,30 +26,15 @@ paper = Template(
 {% endif %}
 """)
 
-header = Template(
-    """# Deep Learning for peptides
-
-List of papers about Peptide research using Deep Learning
-
-__The advantages that set us apart from competing products are as follows:__
-
-1. Quality Tags: High-impact, concise tags for key paper highlights.
-2. Expert Analysis: Links to blogs or sites with expert reviews.
-3. Citations: Direct links to full paper references.
-4. Database output: Python-aided curated `csv` file download.
-"""
-)
-
 toc_header = Template(
     """
 <p align='center'>
   <strong><a href='#0-benchmarks-and-datasets'>0) Benchmarks and Datasets</a></strong>
   <br>
-  <a href="#01-sequence-datasets">Sequence Datasets</a> •
-  <a href="#02-structure-datasets">Structure Datasets</a> •
-  <a href="#03-databases">Public Database</a> •
-  <a href="#04-similar-list">Similar List</a> •
-  <a href="#05-guides">Guides</a>
+  <a href="#01-benchmarks">Benchmarks</a> •
+  <a href="#02-datasets">Datasets</a> •
+  <a href="#03-similar-list">Similar List</a> •
+  <a href="#04-tools">Tools</a>
   <br>"""
 )
 

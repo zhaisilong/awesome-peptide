@@ -2,9 +2,9 @@ from liquid import Template
 
 sections = {
     "Reviews": ["Interaction", "Complex Structure"],
-    "Representation": ["1"],
-    "Proprty Prediction": ["@"],
-    "Structure Modeling": ["3"],
+    "Representation": ["Grpah-based", "Sequence-based"],
+    "Proprty Prediction": ["Sequence-based"],
+    "Structure Modeling": ["Homology", "Fragment", "MD", "DL"],
     "De Novo Design": [
         "Traditional Methods",
         "Sequence-based",

@@ -1,15 +1,15 @@
 # Deep Learning for peptides
 
-List of papers about Peptide research using Deep Learning
+Comprehensive List of Research Papers on Peptides and Deep Learning
 
-__The advantages that set us apart from competing products are as follows:__
+__What sets us apart from similar resources:__
 
-1. Quality Tags: High-impact, concise tags for key paper highlights.
-2. Expert Analysis: Links to blogs or sites with expert reviews.
-3. Citations: Direct links to full paper references.
-4. Database output: Python-aided curated `csv` file download.
+1. Versatile Tags: Organize and filter papers easily.
+2. Expert Insights: Links to expert reviews and analysis.
+3. [CSV Downloads](data/paper.csv): Quick access to paper data in `CSV` format.
+4. Automation: Use [Liquid](https://liquid.readthedocs.io/en/latest/) templates to generate Markdown from `CSV`, making it easy to build your own paper repository.
 
-_Papers last month, updated on 2024-10-12:_
+_Papers last month, updated on 2024-10-13:_
 
 **PepINVENT: Generative peptide design beyond the natural amino acids**  
 Gökçe Geylan, Jon Paul Janet, Alessandro Tibo, Jiazhen He, Atanas Patronov, Mikhail Kabeshov, Florian David, Werngard Czechtizky, Ola Engkvist, Leonardo De Maria  
@@ -34,11 +34,10 @@ Xiangzhe Kong, Yinjun Jia, Wenbing Huang, Yang Liu
 <p align='center'>
   <strong><a href='#0-benchmarks-and-datasets'>0) Benchmarks and Datasets</a></strong>
   <br>
-  <a href="#01-sequence-datasets">Sequence Datasets</a> •
-  <a href="#02-structure-datasets">Structure Datasets</a> •
-  <a href="#03-databases">Public Database</a> •
-  <a href="#04-similar-list">Similar List</a> •
-  <a href="#05-guides">Guides</a>
+  <a href="#01-benchmarks">Benchmarks</a> •
+  <a href="#02-datasets">Datasets</a> •
+  <a href="#03-similar-list">Similar List</a> •
+  <a href="#04-tools">Tools</a>
   <br>
   <strong><a href='#1-reviews'>1) Reviews</a></strong>
   <br><a href='#11-complex-structure'>Complex Structure</a> • 
@@ -64,9 +63,11 @@ Xiangzhe Kong, Yinjun Jia, Wenbing Huang, Yang Liu
 
 ## 0. Benchmarks and Datasets
 
-### 0.1 Sequence Benchmarks/Datasets
+### 0.1 Benchmarks
 
-### 0.2 Structure Benchmarks/Datasets
+#### 0.1.1 Sequence Benchmarks
+
+#### 0.1.2 Structure Benchmarks
 
 **Benchmarking AlphaFold2 on peptide structure prediction**  
 Eli Fritz McDonald, Taylor Jones, Lars Plate, Jens Meiler, Alican Gulsevin  
@@ -76,28 +77,39 @@ Eli Fritz McDonald, Taylor Jones, Lars Plate, Jens Meiler, Alican Gulsevin
 Sudhanshu Shanker and Michel F. Sanner  
 [**2024**-5-11] >> [JCIM](https://doi.org/10.1021/acs.jcim.3c00602) • [GitHub](https://github.com/sannerlab/benchmarking_2023) • Fold
 
-### 0.3 Databases
+#### 0.1.3 Evaluations
 
-> A list of suggested peptide databases
+### 0.2 Datasets
 
-| Database | Description                                                                                                                                                                                                                                                         |
+### 0.2.1 Public Datasets
+
+> A list of suggested peptide datasets
+
+| Datasets | Description                                                                                                                                                                                                                                                         |
 | -------- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
 | PDB      | The Protein Data Bank (PDB) is a database of 3D structural data of large biological molecules, such as proteins and nucleic acids. These data are gathered using experimental methods such as X-ray crystallography, NMR spectroscopy, or cryo-electron microscopy. |
 
-#### 0.3.1 Sequence Database
+#### 0.2.1 Sequence Datasets
 
-#### 0.3.2 Structure Database
+#### 0.2.2 Structure Datasets
 
-### 0.4 Similar List
+### 0.3 Similar List
 
 > Some similar GitHub lists that include papers about peptide using deep learning
 
 1. a
 2. b
 
-### 0.5 Guides
+### 0.4 Guides
 
 > Guides/Tutorials for beginners on GitHub
+
+1. a
+2. b
+
+### 0.5 Tools
+
+> Tools for peptide develpements
 
 1. a
 2. b
