@@ -3,9 +3,9 @@ from liquid import Template
 header = Template(
     """# Deep Learning for peptides
 
-Comprehensive List of Research Papers on Peptides and Deep Learning
+🔬 Comprehensive List of Research Papers on Peptides and Deep Learning
 
-__What sets us apart from similar resources:__
+✅ __What sets us apart from similar resources:__
 
 1. Versatile Tags: Organize and filter papers easily.
 2. Easy Navigation: Internal links for quick jumps between sections and papers.
@@ -21,8 +21,8 @@ paper = Template(
 [{{paper.publish_date_}}] >> {{paper.publications}}{% if paper.quality or paper.dataset or paper.code or paper.blogs or paper.tags %}{% if paper.quality %} • {{paper.quality}}{% else %}{% endif %}{% if paper.dataset %} • {{paper.dataset}}{% else %}{% endif %}{% if paper.code %} • {{paper.code}}{% else %}{% endif %}{% if paper.blogs %} • {{paper.blogs}}{% else %}{% endif %}{% if paper.tags %} • {{paper.tags}}{% else %}{% endif %}{% else %}{% endif %}
 {% if paper.abstract %}  
 <details>
-<summary>Abstract</summary>
-{{paper.abstract}}
+<summary>🔎 Abstract</summary>
+<p style="text-indent: 2em;">{{paper.abstract}}</p>
 </details>  
 {% endif %}
 """)
@@ -74,13 +74,13 @@ subsec = Template(
 
 paper_last_week_header = Template(
     """
-_Papers last month, updated on {{ date }}:_
+📅 _Papers last month, updated on {{ date }}:_
 
 """
 )
 
 paper_pined_header = Template(
-    """_Papers pined:_
+    """📌 _Papers pined:_
 
 """
 )
