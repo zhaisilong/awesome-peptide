@@ -23,7 +23,7 @@ paper = Template(
 <details>
 <summary>Abstract</summary>
 {{paper.abstract}}
-</details>
+</details>  
 {% endif %}
 """)
 
@@ -89,7 +89,9 @@ fig = Template(
     """---
 
 <p align="center">
+  <a href="https://doi.org/10.1038/s41586-023-05909-9">
   <img src="cover.png" alt="deep learning for peptides">
+  </a>
 </p>
 """
 )

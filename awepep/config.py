@@ -12,5 +12,5 @@ sections = {
         "Diffusion-based",
         "Target-based Design",
     ],
-    "Others": ["Therapeutic", "Mechanism", "Principle", "PROTAC"],
+    "Others": ["Therapeutic", "Mechanism", "Principle", "PROTAC", "Protein Binders"],
 }
