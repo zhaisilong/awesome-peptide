@@ -12,9 +12,17 @@
 
 📅 _Papers last month, updated on 2024-10-14:_
 
+**Beware of extreme calculated lipophilicity when designing cyclic peptides**  
+Vasanthanathan Poongavanam, Duc Duy Vo & Jan Kihlberg  
+[**2024**-9-19] >> [Nat. Chem. Biol.](https://doi.org/10.1038/s41589-024-01715-0) • [SI](https://www.nature.com/articles/s41589-024-01715-0#MOESM1) • [Weixin](https://mp.weixin.qq.com/s/B65rJB1i_xrP8fTfbQ3Taw) • cyclic/clogP
+
 **PepINVENT: Generative peptide design beyond the natural amino acids**  
 Gökçe Geylan, Jon Paul Janet, Alessandro Tibo, Jiazhen He, Atanas Patronov, Mikhail Kabeshov, Florian David, Werngard Czechtizky, Ola Engkvist, Leonardo De Maria  
 [**2024**-9-21] >> [Axive](https://doi.org/10.48550/arXiv.2409.14040) • RL/Molecular AI/AstraZeneca
+
+**Design of linear and cyclic peptide binders of different lengths from protein sequence information**  
+Qiuzhen Li, Efstathios Nikolaos Vlachos, Patrick Bryant  
+[**2024**-10-12] >> [Arxive](https://doi.org/10.1101/2024.06.20.599739) • [zenodo](https://zenodo.org/uploads/11543503) • [EvoBind](https://github.com/patrickbryant1/EvoBind) • cyclic
 
 **BindCraft: one-shot design of functional protein binders**  
 Martin Pacesa, Lennart Nickel, ..., Sergey Ovchinnikov, Bruno E. Correia  
@@ -77,10 +85,11 @@ Kejia Wu, Hua Bai, ..., Emmanuel Derivery, Daniel Adriano Silva, David Baker
   <strong><a href='#2-representation'>2) Representation</a></strong>
   <br>
   <strong><a href='#3-proprty-prediction'>3) Proprty Prediction</a></strong>
+  <br><a href='#31-traditional'>Traditional</a>
   <br>
   <strong><a href='#4-structure-modeling'>4) Structure Modeling</a></strong>
   <br>
-  <strong><a href='#5-de-novo-design'>5) De Novo Design</a></strong>
+  <strong><a href='#5-design'>5) Design</a></strong>
   <br><a href='#51-sequence-based'>Sequence-based</a> • 
   <a href='#52-structure-based'>Structure-based</a>
   <br>
@@ -157,7 +166,7 @@ Daria de Raffele and Ioana M. Ilie
 
 ### 1.2 Interaction
 
-**A comprehensive review of protein-centric predictors for  biomolecular interactions: from proteins to nucleic acids  and beyond**  
+**A comprehensive review of protein-centric predictors for biomolecular interactions: from proteins to nucleic acids and beyond**  
 Pengzhen Jia, Fuhao Zhang, Chaojin Wu and Min Li  
 [**2024**-3-31] >> [BIB](https://doi.org/10.1093/bib/bbae162)
 
@@ -173,9 +182,16 @@ Arup Mondal, Liwei Chang and Alberto Perez
 
 ## 3. Proprty Prediction
 
+### 3.1 Traditional
+
+**Beware of extreme calculated lipophilicity when designing cyclic peptides**  
+Vasanthanathan Poongavanam, Duc Duy Vo & Jan Kihlberg  
+[**2024**-9-19] >> [Nat. Chem. Biol.](https://doi.org/10.1038/s41589-024-01715-0) • [SI](https://www.nature.com/articles/s41589-024-01715-0#MOESM1) • [Weixin](https://mp.weixin.qq.com/s/B65rJB1i_xrP8fTfbQ3Taw) • cyclic/clogP
+
+
 ## 4. Structure Modeling
 
-## 5. De Novo Design
+## 5. Design
 
 ### 5.1 Sequence-based
 
@@ -183,7 +199,7 @@ Arup Mondal, Liwei Chang and Alberto Perez
 Gökçe Geylan, Jon Paul Janet, Alessandro Tibo, Jiazhen He, Atanas Patronov, Mikhail Kabeshov, Florian David, Werngard Czechtizky, Ola Engkvist, Leonardo De Maria  
 [**2024**-9-21] >> [Axive](https://doi.org/10.48550/arXiv.2409.14040) • RL/Molecular AI/AstraZeneca
 
-**De Novo Design of Peptide Binders to Conformationally Diverse Targets with Contrastive Language Modeling**  
+**Design of Peptide Binders to Conformationally Diverse Targets with Contrastive Language Modeling**  
 Suhaas Bhat, Kalyan Palepu, ..., Pranam Chatterjee  
 [**2024**-7-22] >> [Arxive](https://doi.org/10.1101/2023.06.26.546591) • [zenodo](https://zenodo.org/doi/10.5281/zenodo.10971077) • [huggingface](https://huggingface.co/ubiquitx/pepprclip) • Pipline
   
@@ -195,6 +211,10 @@ Suhaas Bhat, Kalyan Palepu, ..., Pranam Chatterjee
 **HELM-GPT: de novo macrocyclic peptide design using generative pre-trained transformer**  
 Xiaopeng Xu,   Chencheng Xu, Wenjia He, Lesong Wei, Haoyang Li, Juexiao Zhou, Ruochi Zhang, Yu Wang, Yuanpeng Xiong, Xin Gao  
 [**2024**-6-12] >> [Bioinformatics](https://doi.org/10.1093/bioinformatics/btae364) • [Github](https://github.com/charlesxu90/helm-gpt) • GPT/HELM/Macrocyclic/RL
+
+**Design of linear and cyclic peptide binders of different lengths from protein sequence information**  
+Qiuzhen Li, Efstathios Nikolaos Vlachos, Patrick Bryant  
+[**2024**-10-12] >> [Arxive](https://doi.org/10.1101/2024.06.20.599739) • [zenodo](https://zenodo.org/uploads/11543503) • [EvoBind](https://github.com/patrickbryant1/EvoBind) • cyclic
 
 
 ### 5.2 Structure-based
