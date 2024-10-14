@@ -59,40 +59,41 @@ def update_statistics(row):
 
 ########### main ##############
 
-df = pd.read_csv("data/paper.csv").infer_objects(copy=False).replace({np.nan: False})
+try:
+    df = pd.read_csv("data/paper.csv").infer_objects(copy=False).fillna(False)
 
-df.progress_apply(check_required_fields, axis=1)
-print("Required fields check passed")
+    df.progress_apply(check_required_fields, axis=1)
+    print("Required fields check passed")
 
-df.progress_apply(check_section, axis=1)
-print("Section check passed")
+    df.progress_apply(check_section, axis=1)
+    print("Section check passed")
 
-# 提取 DOI 并检查重复
-df['dois'] = df['publications'].apply(extract_dois)
-df['dois'].progress_apply(check_duplicate)
-print("Duplicate check passed")
+    # 提取 DOI 并检查重复
+    df['dois'] = df['publications'].apply(extract_dois)
+    df['dois'].progress_apply(check_duplicate)
+    print("Duplicate check passed")
 
-df.progress_apply(update_statistics, axis=1)
+    df.progress_apply(update_statistics, axis=1)
 
-if pined_count > config.max_pined:
-    raise ValueError(f"Too many pined papers. Maximum allowed: {config.max_pined}")
+    if pined_count > config.max_pined:
+        raise ValueError(f"Too many pined papers. Maximum allowed: {config.max_pined}")
 
-# 打印统计结果
-def pretty_print_statistics():
-    print("\n===== Statistics Summary =====")
-    
-    # 打印 Quality 统计信息
-    print("\nQuality counts:")
-    pprint.pprint(dict(quality_counter), width=1)
+    # 打印统计结果
+    def pretty_print_statistics():
+        print("\n===== Statistics Summary =====")
+        
+        # 打印 Quality 统计信息
+        print("\nQuality counts:")
+        pprint.pprint(dict(quality_counter), width=1)
 
-    # 打印 Pined 统计信息
-    print(f"\nPined count (non-False): {pined_count}")
+        # 打印 Pined 统计信息
+        print(f"\nPined count (non-False): {pined_count}")
 
-    # 打印 Tags 统计信息
-    print("\nTags counts:")
-    pprint.pprint(dict(tags_counter), width=1)
-    
-pretty_print_statistics()
+        # 打印 Tags 统计信息
+        print("\nTags counts:")
+        pprint.pprint(dict(tags_counter), width=1)
+        
+        pretty_print_statistics()
 
 except ValueError as e:
     print(f"Error: {e}")
