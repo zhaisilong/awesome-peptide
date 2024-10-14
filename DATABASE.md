@@ -6,13 +6,13 @@
 
 #### 0.1.2 Structure Benchmarks
 
-**Benchmarking AlphaFold2 on peptide structure prediction**  
-Eli Fritz McDonald, Taylor Jones, Lars Plate, Jens Meiler, Alican Gulsevin  
-[**2024**-1-5] >> [Structure](https://doi.org/10.1016/j.str.2022.11.012) • [SI](https://doi.org/10.1016/j.str.2022.11.012) • [Weixin](https://mp.weixin.qq.com/s/9mpyZXITVC6RBbNQmjJLcg) • AF
-
 **Predicting Protein−Peptide Interactions: Benchmarking Deep Learning Techniques and a Comparison with Focused Docking**  
 Sudhanshu Shanker and Michel F. Sanner  
 [**2024**-5-11] >> [JCIM](https://doi.org/10.1021/acs.jcim.3c00602) • [GitHub](https://github.com/sannerlab/benchmarking_2023) • Fold
+
+**Benchmarking AlphaFold2 on peptide structure prediction**  
+Eli Fritz McDonald, Taylor Jones, Lars Plate, Jens Meiler, Alican Gulsevin  
+[**2024**-1-5] >> [Structure](https://doi.org/10.1016/j.str.2022.11.012) • [SI](https://doi.org/10.1016/j.str.2022.11.012) • [Weixin](https://mp.weixin.qq.com/s/9mpyZXITVC6RBbNQmjJLcg) • AF
 
 #### 0.1.3 Evaluations
 
@@ -34,19 +34,23 @@ Sudhanshu Shanker and Michel F. Sanner
 
 > Some similar GitHub lists that include papers about peptide using deep learning
 
-1. a
-2. b
+1. Similar List 1
+2. Similar List 2
 
 ### 0.4 Guides
 
 > Guides/Tutorials for beginners on GitHub
 
-1. a
-2. b
+1. Tutorials 1
+2. Tutorials 2
 
 ### 0.5 Tools
 
 > Tools for peptide develpements
 
-1. a
-2. b
+1. HELM
+   1. [HELM Online](http://webeditor.openhelm.org/hwe/examples/App.htm)
+   2. [HELM Doc](https://pistoiaalliance.atlassian.net/wiki/spaces/PUB/pages/35028994/HELM+Web-editor)
+   3. [HELM GitHub HELMWebEditor](https://github.com/PistoiaHELM/HELMWebEditor)
+2. PDB
+   1. [pdb-tools](http://www.bonvinlab.org/pdb-tools/)

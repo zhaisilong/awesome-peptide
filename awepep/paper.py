@@ -1,10 +1,7 @@
-from typing import Any, List
 from pathlib import Path
 import pandas as pd
-from tqdm.auto import tqdm
 from datetime import datetime, timedelta
-from awepep import config
-from awepep import template
+from awepep import config, template, utils
 import re
 
 
@@ -36,13 +33,18 @@ class PaperList:
         paper_last_week_str = template.paper_last_week_header.render(
             date=current_time.strftime("%Y-%m-%d")
         )
+        paper_last_week_list = []
         paper_pined_str = template.paper_pined_header.render()
-
+        paper_pined_list = []
+        
         seci = 1
         custom_sec_order = config.sections.keys()
         self.df_paper["sec_cat"] = pd.Categorical(
             self.df_paper["sec"], categories=custom_sec_order, ordered=True
         )
+        
+        # 先按照时间排序
+        self.df_paper.sort_values(by='publish_date', key=lambda x: x.apply(utils.custom_sort), ascending=False, inplace=True)
         for sec, group in self.df_paper.groupby(by="sec_cat"):
             assert sec in config.sections.keys(), "No such section: %s" % sec
             subseci = 1
@@ -62,25 +64,29 @@ class PaperList:
                 idx_str = str(seci) + "." + str(subseci)
                 toc_str += template.toc_subsec.render(idx=idx_str, sec=subsec, dot=dot)
                 paper_str += template.subsec.render(idx=idx_str, sec=subsec)
+                
                 for i, row in subgroup.iterrows():
-
                     paper_str += template.paper.render(paper=row.to_dict())
                     if row["pined"]:
-                        paper_pined_str += template.paper.render(paper=row.to_dict())
-
+                        paper_pined_list.append(row)
                     target_time = datetime.strptime(row["publish_date"], "%Y-%m-%d")
                     time_difference = current_time - target_time
                     if time_difference < timedelta(days=config.last_days):
-                        paper_last_week_str += template.paper.render(
-                            paper=row.to_dict()
-                        )
-
+                        paper_last_week_list.append(row)
                 subseci += 1
             seci += 1
         toc_str += template.toc_tail.render()
-
+        
         md_str += paper_last_week_str
+        for i, row in pd.DataFrame(paper_last_week_list).sort_values(by='publish_date', key=lambda x: x.apply(utils.custom_sort), ascending=False).iterrows():
+            md_str += template.paper.render(
+                            paper=row.to_dict())
+            
         md_str += paper_pined_str
+        for i, row in pd.DataFrame(paper_pined_list).sort_values(by='publish_date', key=lambda x: x.apply(utils.custom_sort), ascending=False).iterrows():
+            md_str += template.paper.render(
+                            paper=row.to_dict())
+        
         md_str += template.fig.render()
         md_str += toc_str + "\n"
         md_str += self.load_data_part()
