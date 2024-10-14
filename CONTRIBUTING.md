@@ -14,6 +14,8 @@ mamba activate awepep
 pip install .
 
 awepep  # This command builds the markdown from the CSV files
+
+python awepep/check.py  # Check validation of data/paper.csv
 ```
 
 ### Package Archietecchre

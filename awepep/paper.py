@@ -11,11 +11,15 @@ import re
 class PaperList:
     def __init__(self, data_path: str = None):
         self.data_path = Path(data_path)
-        self.df_paper = self.improver(pd.read_csv(self.data_path).fillna(False))  # Required to display tags
+        self.df_paper = self.improver(
+            pd.read_csv(self.data_path).fillna(False)
+        )  # Required to display tags
 
     @staticmethod
     def improver(df):
-        df["publish_date_"] = df["publish_date"].apply(lambda x: re.sub(r"(\d{4})", r"**\1**", x))
+        df["publish_date_"] = df["publish_date"].apply(
+            lambda x: re.sub(r"(\d{4})", r"**\1**", x)
+        )
         return df
 
     def load_data_part(self):

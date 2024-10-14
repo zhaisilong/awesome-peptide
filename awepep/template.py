@@ -22,10 +22,11 @@ paper = Template(
 {% if paper.abstract %}  
 <details>
 <summary>🔎 Abstract</summary>
-<p style="text-indent: 2em;">{{paper.abstract}}</p>
+<p>{{paper.abstract}}</p>
 </details>  
 {% endif %}
-""")
+"""
+)
 
 toc_header = Template(
     """

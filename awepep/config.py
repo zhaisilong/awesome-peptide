@@ -14,3 +14,5 @@ sections = {
     ],
     "Others": ["Therapeutic", "Mechanism", "Principle", "PROTAC", "Protein Binders"],
 }
+
+max_pined = 10
