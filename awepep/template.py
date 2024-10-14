@@ -3,7 +3,9 @@ from liquid import Template
 header = Template(
     """# Deep Learning for peptides
 
-🔬 Comprehensive List of Research Papers on Peptides and Deep Learning
+🔬 __Comprehensive List of Research Papers on Peptides and Deep Learning__
+
+[![Awesome](https://awesome.re/badge.svg)](https://awesome.re)  [![stars](https://shields.io/github/stars/zhaisilong/awesome-peptide?style=social)](https://github.com/zhaisilong/awesome-peptide)
 
 ✅ __What sets us apart from similar resources:__
 
@@ -75,7 +77,7 @@ subsec = Template(
 
 paper_last_week_header = Template(
     """
-📅 _Papers last month, updated on {{ date }}:_
+📅 _Papers last six month, updated on {{ date }}:_
 
 """
 )

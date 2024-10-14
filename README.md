@@ -1,6 +1,8 @@
 # Deep Learning for peptides
 
-🔬 Comprehensive List of Research Papers on Peptides and Deep Learning
+🔬 __Comprehensive List of Research Papers on Peptides and Deep Learning__
+
+[![Awesome](https://awesome.re/badge.svg)](https://awesome.re)  [![stars](https://shields.io/github/stars/zhaisilong/awesome-peptide?style=social)](https://github.com/zhaisilong/awesome-peptide)
 
 ✅ __What sets us apart from similar resources:__
 
@@ -10,19 +12,41 @@
 4. [CSV Downloads](data/paper.csv): Quick access to paper data in `CSV` format.
 5. Automation: Use [Liquid](https://liquid.readthedocs.io/en/latest/) templates to generate Markdown from `CSV`, making it easy to build your own paper repository. >>> [[Details](CONTRIBUTING.md)]
 
-📅 _Papers last month, updated on 2024-10-14:_
-
-**Beware of extreme calculated lipophilicity when designing cyclic peptides**  
-Vasanthanathan Poongavanam, Duc Duy Vo & Jan Kihlberg  
-[**2024**-9-19] >> [Nat. Chem. Biol.](https://doi.org/10.1038/s41589-024-01715-0) • [SI](https://www.nature.com/articles/s41589-024-01715-0#MOESM1) • [Weixin](https://mp.weixin.qq.com/s/B65rJB1i_xrP8fTfbQ3Taw) • cyclic/clogP
+📅 _Papers last six month, updated on 2024-10-14:_
 
 **PepINVENT: Generative peptide design beyond the natural amino acids**  
 Gökçe Geylan, Jon Paul Janet, Alessandro Tibo, Jiazhen He, Atanas Patronov, Mikhail Kabeshov, Florian David, Werngard Czechtizky, Ola Engkvist, Leonardo De Maria  
 [**2024**-9-21] >> [Axive](https://doi.org/10.48550/arXiv.2409.14040) • RL/Molecular AI/AstraZeneca
 
+**Design of Peptide Binders to Conformationally Diverse Targets with Contrastive Language Modeling**  
+Suhaas Bhat, Kalyan Palepu, ..., Pranam Chatterjee  
+[**2024**-7-22] >> [Arxive](https://doi.org/10.1101/2023.06.26.546591) • [zenodo](https://zenodo.org/doi/10.5281/zenodo.10971077) • [huggingface](https://huggingface.co/ubiquitx/pepprclip) • Pipline
+  
+<details>
+<summary>🔎 Abstract</summary>
+<p>针对难以成药的蛋白质设计结合剂是药物开发中的难题，尤其是无序或构象不稳定的蛋白。我们提出了一种通用算法框架，利用目标蛋白的氨基酸序列设计短链线性多肽。通过对ESM-2蛋白语言模型的潜在空间进行高斯扰动生成多肽候选序列，并通过基于CLIP的对比学习架构筛选靶向选择性。最终创建了Peptide Prioritization via CLIP（PepPrCLIP）管道，并在实验中验证了这些多肽的有效性，既可作为抑制剂，也可通过与E3泛素连接酶融合降解多种蛋白靶标。该策略无需稳定的三级结构，能够靶向无序和难以成药的蛋白质，如转录因子和融合致癌蛋白。</p>
+</details>  
+
+**HELM-GPT: de novo macrocyclic peptide design using generative pre-trained transformer**  
+Xiaopeng Xu,   Chencheng Xu, Wenjia He, Lesong Wei, Haoyang Li, Juexiao Zhou, Ruochi Zhang, Yu Wang, Yuanpeng Xiong, Xin Gao  
+[**2024**-6-12] >> [Bioinformatics](https://doi.org/10.1093/bioinformatics/btae364) • [Github](https://github.com/charlesxu90/helm-gpt) • GPT/HELM/Macrocyclic/RL
+
 **Design of linear and cyclic peptide binders of different lengths from protein sequence information**  
 Qiuzhen Li, Efstathios Nikolaos Vlachos, Patrick Bryant  
-[**2024**-10-12] >> [Arxive](https://doi.org/10.1101/2024.06.20.599739) • [zenodo](https://zenodo.org/uploads/11543503) • [EvoBind](https://github.com/patrickbryant1/EvoBind) • cyclic
+[**2024**-10-12] >> [Arxive](https://doi.org/10.1101/2024.06.20.599739) • [zenodo](https://zenodo.org/uploads/11543503) • [EvoBind](https://github.com/patrickbryant1/EvoBind) • Cyclic
+
+**Target-Specific De Novo Peptide Binder Design with DiffPepBuilder**  
+Fanhao Wang, Yuzhe Wang, Laiyi Feng, Changsheng Zhang, and Luhua Lai  
+[**2024**-9-4] >> [JCIM](https://doi.org/10.1021/acs.jcim.4c00975) • high • [GitHub](https://github.com/YuzheWangPKU/DiffPepBuilder) • Diffusion/Luhua Lai/AfDeisgn/ProteinMPNN/MD
+  
+<details>
+<summary>🔎 Abstract</summary>
+<p>Despite the exciting progress in target-specific de novo protein binder design, peptide binder design remains challenging due to the flexibility of peptide structures and the scarcity of protein-peptide complex structure data. In this study, we curated a large synthetic data set, referred to as PepPC-F, from the abundant protein−protein interface data and developed DiffPepBuilder, a de novo target-specific peptide binder generation method that utilizes an SE(3)-equivariant diffusion model trained on PepPC-F to codesign peptide sequences and structures. DiffPepBuilder also introduces disulfide bonds to stabilize the generated peptide structures. We tested DiffPepBuilder on 30 experimentally verified strong peptide binders with available protein−peptide complex structures. DiffPepBuilder was able to effectively recall the native structures and sequences of the peptide ligands and to generate novel peptide binders with improved binding free energy. We subsequently conducted de novo generation case studies on three targets. In both the regeneration test and case studies, DiffPepBuilder outperformed AfDesign and RFdiffusion coupled with ProteinMPNN, in terms of sequence and structure recall, interface quality, and structural diversity. Molecular dynamics simulations confirmed that the introduction of disulfide bonds enhanced the structural rigidity and binding performance of the generated peptides. As a general peptide binder de novo design tool, DiffPepBuilder can be used to design peptide binders for given protein targets with three-dimensional and binding site information.</p>
+</details>  
+
+**Beware of extreme calculated lipophilicity when designing cyclic peptides**  
+Vasanthanathan Poongavanam, Duc Duy Vo & Jan Kihlberg  
+[**2024**-9-19] >> [Nat. Chem. Biol.](https://doi.org/10.1038/s41589-024-01715-0) • [SI](https://www.nature.com/articles/s41589-024-01715-0#MOESM1) • [Weixin](https://mp.weixin.qq.com/s/B65rJB1i_xrP8fTfbQ3Taw) • Cyclic/clogP
 
 **BindCraft: one-shot design of functional protein binders**  
 Martin Pacesa, Lennart Nickel, ..., Sergey Ovchinnikov, Bruno E. Correia  
@@ -85,7 +109,6 @@ Kejia Wu, Hua Bai, ..., Emmanuel Derivery, Daniel Adriano Silva, David Baker
   <strong><a href='#2-representation'>2) Representation</a></strong>
   <br>
   <strong><a href='#3-proprty-prediction'>3) Proprty Prediction</a></strong>
-  <br><a href='#31-traditional'>Traditional</a>
   <br>
   <strong><a href='#4-structure-modeling'>4) Structure Modeling</a></strong>
   <br>
@@ -95,8 +118,9 @@ Kejia Wu, Hua Bai, ..., Emmanuel Derivery, Daniel Adriano Silva, David Baker
   <br>
   <strong><a href='#6-others'>6) Others</a></strong>
   <br><a href='#61-protac'>PROTAC</a> • 
-  <a href='#62-protein-binders'>Protein Binders</a> • 
-  <a href='#63-therapeutic'>Therapeutic</a>
+  <a href='#62-principle'>Principle</a> • 
+  <a href='#63-protein-binders'>Protein Binders</a> • 
+  <a href='#64-therapeutic'>Therapeutic</a>
   <br>
 </p>
 
@@ -182,13 +206,6 @@ Arup Mondal, Liwei Chang and Alberto Perez
 
 ## 3. Proprty Prediction
 
-### 3.1 Traditional
-
-**Beware of extreme calculated lipophilicity when designing cyclic peptides**  
-Vasanthanathan Poongavanam, Duc Duy Vo & Jan Kihlberg  
-[**2024**-9-19] >> [Nat. Chem. Biol.](https://doi.org/10.1038/s41589-024-01715-0) • [SI](https://www.nature.com/articles/s41589-024-01715-0#MOESM1) • [Weixin](https://mp.weixin.qq.com/s/B65rJB1i_xrP8fTfbQ3Taw) • cyclic/clogP
-
-
 ## 4. Structure Modeling
 
 ## 5. Design
@@ -214,7 +231,7 @@ Xiaopeng Xu,   Chencheng Xu, Wenjia He, Lesong Wei, Haoyang Li, Juexiao Zhou, Ru
 
 **Design of linear and cyclic peptide binders of different lengths from protein sequence information**  
 Qiuzhen Li, Efstathios Nikolaos Vlachos, Patrick Bryant  
-[**2024**-10-12] >> [Arxive](https://doi.org/10.1101/2024.06.20.599739) • [zenodo](https://zenodo.org/uploads/11543503) • [EvoBind](https://github.com/patrickbryant1/EvoBind) • cyclic
+[**2024**-10-12] >> [Arxive](https://doi.org/10.1101/2024.06.20.599739) • [zenodo](https://zenodo.org/uploads/11543503) • [EvoBind](https://github.com/patrickbryant1/EvoBind) • Cyclic
 
 
 ### 5.2 Structure-based
@@ -251,7 +268,14 @@ Bohan MaDonghua LiuZhe WangDize ZhangYanlin Jian, et. al.
 [**2021**-6-5] >> [JMC](https://doi.org/10.1021/acs.jmedchem.4c00828) • [Weixin](https://mp.weixin.qq.com/s/xeJWFVcV5LkIlVJ1Zxf5Eg) • PROTAC
 
 
-### 6.2 Protein Binders
+### 6.2 Principle
+
+**Beware of extreme calculated lipophilicity when designing cyclic peptides**  
+Vasanthanathan Poongavanam, Duc Duy Vo & Jan Kihlberg  
+[**2024**-9-19] >> [Nat. Chem. Biol.](https://doi.org/10.1038/s41589-024-01715-0) • [SI](https://www.nature.com/articles/s41589-024-01715-0#MOESM1) • [Weixin](https://mp.weixin.qq.com/s/B65rJB1i_xrP8fTfbQ3Taw) • Cyclic/clogP
+
+
+### 6.3 Protein Binders
 
 **BindCraft: one-shot design of functional protein binders**  
 Martin Pacesa, Lennart Nickel, ..., Sergey Ovchinnikov, Bruno E. Correia  
@@ -263,11 +287,15 @@ Martin Pacesa, Lennart Nickel, ..., Sergey Ovchinnikov, Bruno E. Correia
 </details>  
 
 
-### 6.3 Therapeutic
+### 6.4 Therapeutic
 
 **Trends in peptide drug discovery**  
 Markus Muttenthaler, GlennF.King, DavidJ.Adams and Paul F. Alewood  
 [**2021**-04-01] >> [Nature Reviews Drug Discovery](https://doi.org/10.1038/s41573-020-00135-8) • high
+
+**A Global Review on Short Peptides: Frontiers and Perspectives**  
+Vasso Apostolopoulos, Joanna Bojarska, ...  
+[**2021**-1-15] >> Molecules
 
 
 ## Cntribution
