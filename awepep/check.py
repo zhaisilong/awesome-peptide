@@ -93,7 +93,7 @@ try:
         print("\nTags counts:")
         pprint.pprint(dict(tags_counter), width=1)
         
-        pretty_print_statistics()
+    pretty_print_statistics()
 
 except ValueError as e:
     print(f"Error: {e}")

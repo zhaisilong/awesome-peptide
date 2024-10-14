@@ -70,8 +70,9 @@ Kejia Wu, Hua Bai, ..., Emmanuel Derivery, Daniel Adriano Silva, David Baker
   <a href="#04-tools">Tools</a>
   <br>
   <strong><a href='#1-reviews'>1) Reviews</a></strong>
-  <br><a href='#11-complex-structure'>Complex Structure</a> • 
-  <a href='#12-interaction'>Interaction</a>
+  <br><a href='#11-design'>Design</a> • 
+  <a href='#12-interaction'>Interaction</a> • 
+  <a href='#13-structure'>Structure</a>
   <br>
   <strong><a href='#2-representation'>2) Representation</a></strong>
   <br>
@@ -147,11 +148,11 @@ Sudhanshu Shanker and Michel F. Sanner
 
 ## 1. Reviews
 
-### 1.1 Complex Structure
+### 1.1 Design
 
-**Modelling peptide–protein complexes: docking, simulations and machine learning**  
-Arup Mondal, Liwei Chang and Alberto Perez  
-[**2022**-8-26] >> [QRB Discovery](https://doi.org/10.1017/qrd.2022.14)
+**Unlocking novel therapies: cyclic peptide design for amyloidogenic targets through synergies of experiments, simulations, and machine learning**  
+Daria de Raffele and Ioana M. Ilie  
+[**2023**-11-7] >> [Chem. Commun.](https://doi.org/10.1039/D3CC04630C) • Cyclic
 
 
 ### 1.2 Interaction
@@ -159,6 +160,13 @@ Arup Mondal, Liwei Chang and Alberto Perez
 **A comprehensive review of protein-centric predictors for  biomolecular interactions: from proteins to nucleic acids  and beyond**  
 Pengzhen Jia, Fuhao Zhang, Chaojin Wu and Min Li  
 [**2024**-3-31] >> [BIB](https://doi.org/10.1093/bib/bbae162)
+
+
+### 1.3 Structure
+
+**Modelling peptide–protein complexes: docking, simulations and machine learning**  
+Arup Mondal, Liwei Chang and Alberto Perez  
+[**2022**-8-26] >> [QRB Discovery](https://doi.org/10.1017/qrd.2022.14)
 
 
 ## 2. Representation

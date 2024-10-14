@@ -1,16 +1,16 @@
 from liquid import Template
 
 sections = {
-    "Reviews": ["Interaction", "Complex Structure"],
+    "Reviews": ["Interaction", "Sequence", "Structure", "Design"],
     "Representation": ["Grpah-based", "Sequence-based"],
-    "Proprty Prediction": ["Sequence-based"],
+    "Proprty Prediction": ["Traditional", "Sequence-based"],
     "Structure Modeling": ["Homology", "Fragment", "MD", "DL"],
-    "De Novo Design": [
-        "Traditional Methods",
+    "Design": [
+        "Traditional",
         "Sequence-based",
         "Structure-based",
         "Diffusion-based",
-        "Target-based Design",
+        "Target-specific",
     ],
     "Others": ["Therapeutic", "Mechanism", "Principle", "PROTAC", "Protein Binders"],
 }
