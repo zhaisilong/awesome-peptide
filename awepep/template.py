@@ -12,8 +12,9 @@ header = Template(
 1. Versatile Tags: Organize and filter papers easily.
 2. Easy Navigation: Internal links for quick jumps between sections and papers.
 3. Expert Insights: Links to expert reviews and analysis.
-4. [CSV Downloads](data/paper.csv): Quick access to paper data in `CSV` format.
-5. Automation: Use [Liquid](https://liquid.readthedocs.io/en/latest/) templates to generate Markdown from `CSV`, making it easy to build your own paper repository. >>> [[Details](CONTRIBUTING.md)]
+4. Tag System: Quickly catch the paper features
+5. [CSV Downloads](data/paper.csv): Quick access to paper data in `CSV` format.
+6. Automation: Use [Liquid](https://liquid.readthedocs.io/en/latest/) templates to generate Markdown from `CSV`, making it easy to build your own paper repository. >>> [[Details](CONTRIBUTING.md)]
 """
 )
 

@@ -29,6 +29,7 @@ setup(
     entry_points={
         'console_scripts': [
             'awepep=awepep.main:main',  # Replace with your module and function
+            'awecheck=awepep.check:main',
         ],
     },
 )

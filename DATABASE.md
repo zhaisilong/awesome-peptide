@@ -22,11 +22,10 @@ Eli Fritz McDonald, Taylor Jones, Lars Plate, Jens Meiler, Alican Gulsevin
 
 > A list of suggested peptide datasets
 
-| Datasets | Description                                                                                                                                                                                                                                                         | Link |
-| -------- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- | ---- |
-| PDB      | The Protein Data Bank (PDB) is a database of 3D structural data of large biological molecules, such as proteins and nucleic acids. These data are gathered using experimental methods such as X-ray crystallography, NMR spectroscopy, or cryo-electron microscopy. |      |
-
-|CycPeptMPDB| CycPeptMPDB, the first web-accessible database of cyclic peptide membrane permeability. |[CycPeptMPDB](http://cycpeptmpdb.com)|
+| Datasets    | Description                                                                                                                                                                                                                                                         | Link                                  |
+| ----------- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- | ------------------------------------- |
+| PDB         | The Protein Data Bank (PDB) is a database of 3D structural data of large biological molecules, such as proteins and nucleic acids. These data are gathered using experimental methods such as X-ray crystallography, NMR spectroscopy, or cryo-electron microscopy. |                                       |
+| CycPeptMPDB | CycPeptMPDB, the first web-accessible database of cyclic peptide membrane permeability.                                                                                                                                                                             | [CycPeptMPDB](http://cycpeptmpdb.com) |
 
 #### 0.2.1 Sequence Datasets
 
@@ -52,11 +51,12 @@ Jianan Li, Keisuke Yanagisawa, Masatake Sugita, Takuya Fujie, Masahito Ohue & Yu
 
 ### 0.5 Tools
 
-> Tools for peptide develpements
-
 1. HELM
    1. [HELM Online](http://webeditor.openhelm.org/hwe/examples/App.htm)
    2. [HELM Doc](https://pistoiaalliance.atlassian.net/wiki/spaces/PUB/pages/35028994/HELM+Web-editor)
    3. [HELM GitHub HELMWebEditor](https://github.com/PistoiaHELM/HELMWebEditor)
 2. PDB
    1. [pdb-tools](http://www.bonvinlab.org/pdb-tools/)
+   2. [BioPython](https://biopython.org)
+   3. [BioPandas](https://biopandas.github.io/biopandas/)
+   4. [RDKit](https://www.rdkit.org)

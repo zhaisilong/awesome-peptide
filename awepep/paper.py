@@ -8,15 +8,24 @@ import re
 class PaperList:
     def __init__(self, data_path: str = None):
         self.data_path = Path(data_path)
-        self.df_paper = self.improver(
+        self.df_paper = self.process_tags(self.improver(
             pd.read_csv(self.data_path).fillna(False)
-        )  # Required to display tags
+        ))  # Required to display tags
 
     @staticmethod
     def improver(df):
         df["publish_date_"] = df["publish_date"].apply(
             lambda x: re.sub(r"(\d{4})", r"**\1**", x)
         )
+        return df
+    @staticmethod
+    def process_tags(df):
+        def process_one_item(tags):
+            if tags:
+                return "/".join([f"[{tag}]({config.tags[tag]})" if tag in config.tags.keys() else tag for tag in tags.split("/")])
+            else:
+                return tags
+        df["tags"] = df["tags"].apply(process_one_item)
         return df
 
     def load_data_part(self):
@@ -42,6 +51,7 @@ class PaperList:
         self.df_paper["sec_cat"] = pd.Categorical(
             self.df_paper["sec"], categories=custom_sec_order, ordered=True
         )
+
         
         # 先按照时间排序
         self.df_paper.sort_values(by='publish_date', key=lambda x: x.apply(utils.custom_sort), ascending=False, inplace=True)

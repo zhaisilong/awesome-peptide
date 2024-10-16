@@ -9,8 +9,9 @@
 1. Versatile Tags: Organize and filter papers easily.
 2. Easy Navigation: Internal links for quick jumps between sections and papers.
 3. Expert Insights: Links to expert reviews and analysis.
-4. [CSV Downloads](data/paper.csv): Quick access to paper data in `CSV` format.
-5. Automation: Use [Liquid](https://liquid.readthedocs.io/en/latest/) templates to generate Markdown from `CSV`, making it easy to build your own paper repository. >>> [[Details](CONTRIBUTING.md)]
+4. Tag System: Quickly catch the paper features
+5. [CSV Downloads](data/paper.csv): Quick access to paper data in `CSV` format.
+6. Automation: Use [Liquid](https://liquid.readthedocs.io/en/latest/) templates to generate Markdown from `CSV`, making it easy to build your own paper repository. >>> [[Details](CONTRIBUTING.md)]
 
 📅 _Papers last six month, updated on 2024-10-16:_
 
@@ -20,7 +21,7 @@ Qiuzhen Li, Efstathios Nikolaos Vlachos, Patrick Bryant
 
 **BindCraft: one-shot design of functional protein binders**  
 Martin Pacesa, Lennart Nickel, ..., Sergey Ovchinnikov, Bruno E. Correia  
-[**2024**-10-1] >> [Arxive](https://doi.org/10.1101/2024.09.30.615802) • high • [GitHub](https://github.com/martinpacesa/BindCraft)
+[**2024**-10-1] >> [Arxive](https://doi.org/10.1101/2024.09.30.615802) • high • [GitHub](https://github.com/martinpacesa/BindCraft) • [Weixin](https://mp.weixin.qq.com/s/U4akBYhlFbOhHfJl2R2blg)
   
 <details>
 <summary>🔎 Abstract</summary>
@@ -37,7 +38,7 @@ Vasanthanathan Poongavanam, Duc Duy Vo & Jan Kihlberg
 
 **Target-Specific De Novo Peptide Binder Design with DiffPepBuilder**  
 Fanhao Wang, Yuzhe Wang, Laiyi Feng, Changsheng Zhang, and Luhua Lai  
-[**2024**-9-4] >> [JCIM](https://doi.org/10.1021/acs.jcim.4c00975) • high • [GitHub](https://github.com/YuzheWangPKU/DiffPepBuilder) • Diffusion/Luhua Lai/AfDeisgn/ProteinMPNN/MD
+[**2024**-9-4] >> [JCIM](https://doi.org/10.1021/acs.jcim.4c00975) • high • [GitHub](https://github.com/YuzheWangPKU/DiffPepBuilder) • Diffusion/[Luhua Lai](https://scholar.google.com/citations?hl=en&user=8NJFCTYAAAAJ)/AfDeisgn/ProteinMPNN/MD
   
 <details>
 <summary>🔎 Abstract</summary>
@@ -53,11 +54,24 @@ Suhaas Bhat, Kalyan Palepu, ..., Pranam Chatterjee
 <p>针对难以成药的蛋白质设计结合剂是药物开发中的难题，尤其是无序或构象不稳定的蛋白。我们提出了一种通用算法框架，利用目标蛋白的氨基酸序列设计短链线性多肽。通过对ESM-2蛋白语言模型的潜在空间进行高斯扰动生成多肽候选序列，并通过基于CLIP的对比学习架构筛选靶向选择性。最终创建了Peptide Prioritization via CLIP（PepPrCLIP）管道，并在实验中验证了这些多肽的有效性，既可作为抑制剂，也可通过与E3泛素连接酶融合降解多种蛋白靶标。该策略无需稳定的三级结构，能够靶向无序和难以成药的蛋白质，如转录因子和融合致癌蛋白。</p>
 </details>  
 
+**Deep-learning-based prediction framework for protein-peptide interactions with structure generation pipeline**  
+Jingxuan Ge, Dejun Jiang, ..., Chang-Yu Hsieh, Tingjun Hou  
+[**2024**-6-19] >> [Cell Rep. Phys. Sci.](https://doi.org/10.1016/j.xcrp.2024.101980) • [zenodo](https://doi.org/10.5281/zenodo.8324920) • [ITN](https://github.com/gejingxuan/ITN) • AF/[Tingjun Hou](https://scholar.google.com/citations?hl=en&user=vHW2kqUAAAAJ)
+
 **HELM-GPT: de novo macrocyclic peptide design using generative pre-trained transformer**  
 Xiaopeng Xu,   Chencheng Xu, Wenjia He, Lesong Wei, Haoyang Li, Juexiao Zhou, Ruochi Zhang, Yu Wang, Yuanpeng Xiong, Xin Gao  
 [**2024**-6-12] >> [Bioinformatics](https://doi.org/10.1093/bioinformatics/btae364) • [Github](https://github.com/charlesxu90/helm-gpt) • GPT/HELM/Cyclic/RL
 
 📌 _Papers pined:_
+
+**BindCraft: one-shot design of functional protein binders**  
+Martin Pacesa, Lennart Nickel, ..., Sergey Ovchinnikov, Bruno E. Correia  
+[**2024**-10-1] >> [Arxive](https://doi.org/10.1101/2024.09.30.615802) • high • [GitHub](https://github.com/martinpacesa/BindCraft) • [Weixin](https://mp.weixin.qq.com/s/U4akBYhlFbOhHfJl2R2blg)
+  
+<details>
+<summary>🔎 Abstract</summary>
+<p>BindCraft is an open-source, automated pipeline for <em>de novo</em> protein binder design, achieving experimental success rates of 10-100%. Using deep learning models like AlphaFold2, BindCraft generates high-affinity binders without the need for high-throughput screening or prior knowledge of binding sites. It has been successfully applied to challenging targets, including cell-surface receptors, allergens, and CRISPR-Cas9. In one example, the binders reduced IgE binding to birch allergens in patient samples, showcasing its potential in therapeutics, diagnostics, and biotechnology.</p>
+</details>  
 
 **PepINVENT: Generative peptide design beyond the natural amino acids**  
 Gökçe Geylan, Jon Paul Janet, Alessandro Tibo, Jiazhen He, Atanas Patronov, Mikhail Kabeshov, Florian David, Werngard Czechtizky, Ola Engkvist, Leonardo De Maria  
@@ -65,7 +79,7 @@ Gökçe Geylan, Jon Paul Janet, Alessandro Tibo, Jiazhen He, Atanas Patronov, Mi
 
 **Target-Specific De Novo Peptide Binder Design with DiffPepBuilder**  
 Fanhao Wang, Yuzhe Wang, Laiyi Feng, Changsheng Zhang, and Luhua Lai  
-[**2024**-9-4] >> [JCIM](https://doi.org/10.1021/acs.jcim.4c00975) • high • [GitHub](https://github.com/YuzheWangPKU/DiffPepBuilder) • Diffusion/Luhua Lai/AfDeisgn/ProteinMPNN/MD
+[**2024**-9-4] >> [JCIM](https://doi.org/10.1021/acs.jcim.4c00975) • high • [GitHub](https://github.com/YuzheWangPKU/DiffPepBuilder) • Diffusion/[Luhua Lai](https://scholar.google.com/citations?hl=en&user=8NJFCTYAAAAJ)/AfDeisgn/ProteinMPNN/MD
   
 <details>
 <summary>🔎 Abstract</summary>
@@ -87,7 +101,7 @@ Kejia Wu, Hua Bai, ..., Emmanuel Derivery, Daniel Adriano Silva, David Baker
 
 **Target structure based computational design of cyclic peptides**  
 WANG Fanhao, LAI Luhua, ZHANG Changsheng  
-[**2023**-1-1] >> [SynbioJ](https://doi.org/10.12211/2096-8280.2023-006) • high • [pdf](./resource/10.12211/2096-8280.2023-006.pdf) • Cyclic/MD/Luhua Lai
+[**2023**-1-1] >> [SynbioJ](https://doi.org/10.12211/2096-8280.2023-006) • high • [pdf](./resource/10.12211/2096-8280.2023-006.pdf) • Cyclic/MD/[Luhua Lai](https://scholar.google.com/citations?hl=en&user=8NJFCTYAAAAJ)
 
 **Design of Protein Segments and Peptides for Binding to Protein Targets**  
 Suchetana Gupta, Noora Azadvari, and Parisa Hosseinzadeh  
@@ -95,7 +109,7 @@ Suchetana Gupta, Noora Azadvari, and Parisa Hosseinzadeh
 
 **Anchor extension: a structure-guided approach to  design cyclic peptides targeting enzyme active sites**  
 Parisa Hosseinzadeh, ..., David Baker  
-[**2021**-7-7] >> NC • [Peptide_HDACBinders](https://github.com/ParisaH-Lab/publications.git) • [](https://cloud.tencent.com/developer/article/1880256) • Cyclic/David Baker/MD/Crystal
+[**2021**-7-7] >> [NC](https://doi.org/10.1038/s41467-021-23609-8) • [Peptide_HDACBinders](https://github.com/ParisaH-Lab/publications.git) • [Tencent](https://cloud.tencent.com/developer/article/1880256) • Cyclic/David Baker/MD/Crystal
 
 ---
 
@@ -125,17 +139,20 @@ Parisa Hosseinzadeh, ..., David Baker
   <br>
   <strong><a href='#4-structure-modeling'>4) Structure Modeling</a></strong>
   <br>
-  <strong><a href='#5-design'>5) Design</a></strong>
-  <br><a href='#51-sequence-based'>Sequence-based</a> • 
-  <a href='#52-structure-based'>Structure-based</a> • 
-  <a href='#53-traditional'>Traditional</a>
+  <strong><a href='#5-interaction-modeling'>5) Interaction Modeling</a></strong>
+  <br><a href='#51-grpah-based'>Grpah-based</a>
   <br>
-  <strong><a href='#6-others'>6) Others</a></strong>
-  <br><a href='#61-protac'>PROTAC</a> • 
-  <a href='#62-principle'>Principle</a> • 
-  <a href='#63-protein-binders'>Protein Binders</a> • 
-  <a href='#64-rapid'>RaPID</a> • 
-  <a href='#65-therapeutic'>Therapeutic</a>
+  <strong><a href='#6-design'>6) Design</a></strong>
+  <br><a href='#61-sequence-based'>Sequence-based</a> • 
+  <a href='#62-structure-based'>Structure-based</a> • 
+  <a href='#63-traditional'>Traditional</a>
+  <br>
+  <strong><a href='#7-others'>7) Others</a></strong>
+  <br><a href='#71-protac'>PROTAC</a> • 
+  <a href='#72-principle'>Principle</a> • 
+  <a href='#73-protein-binders'>Protein Binders</a> • 
+  <a href='#74-rapid'>RaPID</a> • 
+  <a href='#75-therapeutic'>Therapeutic</a>
   <br>
 </p>
 
@@ -165,11 +182,10 @@ Eli Fritz McDonald, Taylor Jones, Lars Plate, Jens Meiler, Alican Gulsevin
 
 > A list of suggested peptide datasets
 
-| Datasets | Description                                                                                                                                                                                                                                                         | Link |
-| -------- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- | ---- |
-| PDB      | The Protein Data Bank (PDB) is a database of 3D structural data of large biological molecules, such as proteins and nucleic acids. These data are gathered using experimental methods such as X-ray crystallography, NMR spectroscopy, or cryo-electron microscopy. |      |
-
-|CycPeptMPDB| CycPeptMPDB, the first web-accessible database of cyclic peptide membrane permeability. |[CycPeptMPDB](http://cycpeptmpdb.com)|
+| Datasets    | Description                                                                                                                                                                                                                                                         | Link                                  |
+| ----------- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- | ------------------------------------- |
+| PDB         | The Protein Data Bank (PDB) is a database of 3D structural data of large biological molecules, such as proteins and nucleic acids. These data are gathered using experimental methods such as X-ray crystallography, NMR spectroscopy, or cryo-electron microscopy. |                                       |
+| CycPeptMPDB | CycPeptMPDB, the first web-accessible database of cyclic peptide membrane permeability.                                                                                                                                                                             | [CycPeptMPDB](http://cycpeptmpdb.com) |
 
 #### 0.2.1 Sequence Datasets
 
@@ -195,14 +211,15 @@ Jianan Li, Keisuke Yanagisawa, Masatake Sugita, Takuya Fujie, Masahito Ohue & Yu
 
 ### 0.5 Tools
 
-> Tools for peptide develpements
-
 1. HELM
    1. [HELM Online](http://webeditor.openhelm.org/hwe/examples/App.htm)
    2. [HELM Doc](https://pistoiaalliance.atlassian.net/wiki/spaces/PUB/pages/35028994/HELM+Web-editor)
    3. [HELM GitHub HELMWebEditor](https://github.com/PistoiaHELM/HELMWebEditor)
 2. PDB
    1. [pdb-tools](http://www.bonvinlab.org/pdb-tools/)
+   2. [BioPython](https://biopython.org)
+   3. [BioPandas](https://biopandas.github.io/biopandas/)
+   4. [RDKit](https://www.rdkit.org)
 
 ## 1. Reviews
 
@@ -214,7 +231,7 @@ Daria de Raffele and Ioana M. Ilie
 
 **Target structure based computational design of cyclic peptides**  
 WANG Fanhao, LAI Luhua, ZHANG Changsheng  
-[**2023**-1-1] >> [SynbioJ](https://doi.org/10.12211/2096-8280.2023-006) • high • [pdf](./resource/10.12211/2096-8280.2023-006.pdf) • Cyclic/MD/Luhua Lai
+[**2023**-1-1] >> [SynbioJ](https://doi.org/10.12211/2096-8280.2023-006) • high • [pdf](./resource/10.12211/2096-8280.2023-006.pdf) • Cyclic/MD/[Luhua Lai](https://scholar.google.com/citations?hl=en&user=8NJFCTYAAAAJ)
 
 **Design of Protein Segments and Peptides for Binding to Protein Targets**  
 Suchetana Gupta, Noora Azadvari, and Parisa Hosseinzadeh  
@@ -248,9 +265,18 @@ Arup Mondal, Liwei Chang and Alberto Perez
 
 ## 4. Structure Modeling
 
-## 5. Design
+## 5. Interaction Modeling
 
-### 5.1 Sequence-based
+### 5.1 Grpah-based
+
+**Deep-learning-based prediction framework for protein-peptide interactions with structure generation pipeline**  
+Jingxuan Ge, Dejun Jiang, ..., Chang-Yu Hsieh, Tingjun Hou  
+[**2024**-6-19] >> [Cell Rep. Phys. Sci.](https://doi.org/10.1016/j.xcrp.2024.101980) • [zenodo](https://doi.org/10.5281/zenodo.8324920) • [ITN](https://github.com/gejingxuan/ITN) • AF/[Tingjun Hou](https://scholar.google.com/citations?hl=en&user=vHW2kqUAAAAJ)
+
+
+## 6. Design
+
+### 6.1 Sequence-based
 
 **Design of linear and cyclic peptide binders of different lengths from protein sequence information**  
 Qiuzhen Li, Efstathios Nikolaos Vlachos, Patrick Bryant  
@@ -274,11 +300,11 @@ Xiaopeng Xu,   Chencheng Xu, Wenjia He, Lesong Wei, Haoyang Li, Juexiao Zhou, Ru
 [**2024**-6-12] >> [Bioinformatics](https://doi.org/10.1093/bioinformatics/btae364) • [Github](https://github.com/charlesxu90/helm-gpt) • GPT/HELM/Cyclic/RL
 
 
-### 5.2 Structure-based
+### 6.2 Structure-based
 
 **Target-Specific De Novo Peptide Binder Design with DiffPepBuilder**  
 Fanhao Wang, Yuzhe Wang, Laiyi Feng, Changsheng Zhang, and Luhua Lai  
-[**2024**-9-4] >> [JCIM](https://doi.org/10.1021/acs.jcim.4c00975) • high • [GitHub](https://github.com/YuzheWangPKU/DiffPepBuilder) • Diffusion/Luhua Lai/AfDeisgn/ProteinMPNN/MD
+[**2024**-9-4] >> [JCIM](https://doi.org/10.1021/acs.jcim.4c00975) • high • [GitHub](https://github.com/YuzheWangPKU/DiffPepBuilder) • Diffusion/[Luhua Lai](https://scholar.google.com/citations?hl=en&user=8NJFCTYAAAAJ)/AfDeisgn/ProteinMPNN/MD
   
 <details>
 <summary>🔎 Abstract</summary>
@@ -299,34 +325,34 @@ Kejia Wu, Hua Bai, ..., Emmanuel Derivery, Daniel Adriano Silva, David Baker
 </details>  
 
 
-### 5.3 Traditional
+### 6.3 Traditional
 
 **Anchor extension: a structure-guided approach to  design cyclic peptides targeting enzyme active sites**  
 Parisa Hosseinzadeh, ..., David Baker  
-[**2021**-7-7] >> NC • [Peptide_HDACBinders](https://github.com/ParisaH-Lab/publications.git) • [](https://cloud.tencent.com/developer/article/1880256) • Cyclic/David Baker/MD/Crystal
+[**2021**-7-7] >> [NC](https://doi.org/10.1038/s41467-021-23609-8) • [Peptide_HDACBinders](https://github.com/ParisaH-Lab/publications.git) • [Tencent](https://cloud.tencent.com/developer/article/1880256) • Cyclic/David Baker/MD/Crystal
 
 
-## 6. Others
+## 7. Others
 
-### 6.1 PROTAC
+### 7.1 PROTAC
 
 **A Top-Down Design Approach for Generating a Peptide PROTAC Drug Targeting Androgen Receptor for Androgenetic Alopecia Therapy**  
 Bohan MaDonghua LiuZhe WangDize ZhangYanlin Jian, et. al.  
 [**2021**-6-5] >> [JMC](https://doi.org/10.1021/acs.jmedchem.4c00828) • [Weixin](https://mp.weixin.qq.com/s/xeJWFVcV5LkIlVJ1Zxf5Eg) • PROTAC
 
 
-### 6.2 Principle
+### 7.2 Principle
 
 **Beware of extreme calculated lipophilicity when designing cyclic peptides**  
 Vasanthanathan Poongavanam, Duc Duy Vo & Jan Kihlberg  
 [**2024**-9-19] >> [Nat. Chem. Biol.](https://doi.org/10.1038/s41589-024-01715-0) • [SI](https://www.nature.com/articles/s41589-024-01715-0#MOESM1) • [Weixin](https://mp.weixin.qq.com/s/B65rJB1i_xrP8fTfbQ3Taw) • Cyclic/clogP
 
 
-### 6.3 Protein Binders
+### 7.3 Protein Binders
 
 **BindCraft: one-shot design of functional protein binders**  
 Martin Pacesa, Lennart Nickel, ..., Sergey Ovchinnikov, Bruno E. Correia  
-[**2024**-10-1] >> [Arxive](https://doi.org/10.1101/2024.09.30.615802) • high • [GitHub](https://github.com/martinpacesa/BindCraft)
+[**2024**-10-1] >> [Arxive](https://doi.org/10.1101/2024.09.30.615802) • high • [GitHub](https://github.com/martinpacesa/BindCraft) • [Weixin](https://mp.weixin.qq.com/s/U4akBYhlFbOhHfJl2R2blg)
   
 <details>
 <summary>🔎 Abstract</summary>
@@ -334,14 +360,14 @@ Martin Pacesa, Lennart Nickel, ..., Sergey Ovchinnikov, Bruno E. Correia
 </details>  
 
 
-### 6.4 RaPID
+### 7.4 RaPID
 
 **The RaPID Platform for the Discovery of Pseudo-Natural Macrocyclic Peptides**  
 Yuki Goto & Hiroaki Suga  
-[**2021**-9-10] >> [Acc. Chem. Res.](https://doi.org/10.1021/acs.accounts.1c00391) • RaPID/Cyclic/Hiroaki Suga/mRNA
+[**2021**-9-10] >> [Acc. Chem. Res.](https://doi.org/10.1021/acs.accounts.1c00391) • RaPID/Cyclic/[Hiroaki Suga](https://www.chem.s.u-tokyo.ac.jp/users/bioorg/English/member/Suga.html)/mRNA
 
 
-### 6.5 Therapeutic
+### 7.5 Therapeutic
 
 **Converting peptides into drugs  targeting intracellular  protein–protein interactions**  
 Grégoire J.B. Philippe, David J. Craik and Sónia T. Henriques  
@@ -353,7 +379,7 @@ Markus Muttenthaler, GlennF.King, DavidJ.Adams and Paul F. Alewood
 
 **A Global Review on Short Peptides: Frontiers and Perspectives**  
 Vasso Apostolopoulos, Joanna Bojarska, ...  
-[**2021**-1-15] >> Molecules
+[**2021**-1-15] >> [Molecules](https://doi.org/10.3390/molecules26020430)
 
 
 ## Cntribution
