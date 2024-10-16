@@ -12,7 +12,7 @@
 4. [CSV Downloads](data/paper.csv): Quick access to paper data in `CSV` format.
 5. Automation: Use [Liquid](https://liquid.readthedocs.io/en/latest/) templates to generate Markdown from `CSV`, making it easy to build your own paper repository. >>> [[Details](CONTRIBUTING.md)]
 
-📅 _Papers last six month, updated on 2024-10-14:_
+📅 _Papers last six month, updated on 2024-10-16:_
 
 **Design of linear and cyclic peptide binders of different lengths from protein sequence information**  
 Qiuzhen Li, Efstathios Nikolaos Vlachos, Patrick Bryant  
@@ -85,6 +85,18 @@ Kejia Wu, Hua Bai, ..., Emmanuel Derivery, Daniel Adriano Silva, David Baker
 <p>General approaches for designing sequence-specific peptide-binding proteins would have wide utility in proteomics and synthetic biology. However, designing peptide-binding proteins is challenging, as most peptides do not have defined structures in isolation, and hydrogen bonds must be made to the buried polar groups in the peptide backbone1–3. Here, inspired by natural and re-engineered proteinpeptide systems4–11, we set out to design proteins made out of repeating units that bind peptides with repeating sequences, with a one-to-one correspondence between the repeat units of the protein and those of the peptide. We use geometric hashing to identify protein backbones and peptide-docking arrangements that are compatible with bidentate hydrogen bonds between the side chains of the protein and the peptide backbone12. The remainder of the protein sequence is then optimized for folding and peptide binding. We design repeat proteins to bind to six different tripeptide-repeat sequences in polyproline II conformations. The proteins are hyperstable and bind to four to six tandem repeats of their tripeptide targets with nanomolar to picomolar affinities in vitro and in living cells. Crystal structures reveal repeating interactions between protein and peptide interactions as designed, including ladders of hydrogen bonds from protein side chains to peptide backbones. By redesigning the binding interfaces of individual repeat units, specificity can be achieved for non-repeating peptide sequences and for disordered regions of native proteins.</p>
 </details>  
 
+**Target structure based computational design of cyclic peptides**  
+WANG Fanhao, LAI Luhua, ZHANG Changsheng  
+[**2023**-1-1] >> [SynbioJ](https://doi.org/10.12211/2096-8280.2023-006) • high • [pdf](./resource/10.12211/2096-8280.2023-006.pdf) • Cyclic/MD/Luhua Lai
+
+**Design of Protein Segments and Peptides for Binding to Protein Targets**  
+Suchetana Gupta, Noora Azadvari, and Parisa Hosseinzadeh  
+[**2022**-1-1] >> [BioDesign Research](https://doi.org/10.34133/2022/9783197) • high
+
+**Anchor extension: a structure-guided approach to  design cyclic peptides targeting enzyme active sites**  
+Parisa Hosseinzadeh, ..., David Baker  
+[**2021**-7-7] >> NC • [Peptide_HDACBinders](https://github.com/ParisaH-Lab/publications.git) • [](https://cloud.tencent.com/developer/article/1880256) • Cyclic/David Baker/MD/Crystal
+
 ---
 
 <p align="center">
@@ -104,7 +116,8 @@ Kejia Wu, Hua Bai, ..., Emmanuel Derivery, Daniel Adriano Silva, David Baker
   <strong><a href='#1-reviews'>1) Reviews</a></strong>
   <br><a href='#11-design'>Design</a> • 
   <a href='#12-interaction'>Interaction</a> • 
-  <a href='#13-structure'>Structure</a>
+  <a href='#13-property'>Property</a> • 
+  <a href='#14-structure'>Structure</a>
   <br>
   <strong><a href='#2-representation'>2) Representation</a></strong>
   <br>
@@ -114,7 +127,8 @@ Kejia Wu, Hua Bai, ..., Emmanuel Derivery, Daniel Adriano Silva, David Baker
   <br>
   <strong><a href='#5-design'>5) Design</a></strong>
   <br><a href='#51-sequence-based'>Sequence-based</a> • 
-  <a href='#52-structure-based'>Structure-based</a>
+  <a href='#52-structure-based'>Structure-based</a> • 
+  <a href='#53-traditional'>Traditional</a>
   <br>
   <strong><a href='#6-others'>6) Others</a></strong>
   <br><a href='#61-protac'>PROTAC</a> • 
@@ -191,6 +205,14 @@ Eli Fritz McDonald, Taylor Jones, Lars Plate, Jens Meiler, Alican Gulsevin
 Daria de Raffele and Ioana M. Ilie  
 [**2023**-11-7] >> [Chem. Commun.](https://doi.org/10.1039/D3CC04630C) • Cyclic
 
+**Target structure based computational design of cyclic peptides**  
+WANG Fanhao, LAI Luhua, ZHANG Changsheng  
+[**2023**-1-1] >> [SynbioJ](https://doi.org/10.12211/2096-8280.2023-006) • high • [pdf](./resource/10.12211/2096-8280.2023-006.pdf) • Cyclic/MD/Luhua Lai
+
+**Design of Protein Segments and Peptides for Binding to Protein Targets**  
+Suchetana Gupta, Noora Azadvari, and Parisa Hosseinzadeh  
+[**2022**-1-1] >> [BioDesign Research](https://doi.org/10.34133/2022/9783197) • high
+
 
 ### 1.2 Interaction
 
@@ -199,7 +221,14 @@ Pengzhen Jia, Fuhao Zhang, Chaojin Wu and Min Li
 [**2024**-3-31] >> [BIB](https://doi.org/10.1093/bib/bbae162)
 
 
-### 1.3 Structure
+### 1.3 Property
+
+**Machine learning for antimicrobial peptide identification and design**  
+Fangping Wan, Felix Wong, James J. Collins & Cesar de la Fuente-Nunez  
+[**2024**-2-26] >> [Nat Rev Bioeng](https://doi.org/10.1038/s44222-024-00152-x) • AMPs
+
+
+### 1.4 Structure
 
 **Modelling peptide–protein complexes: docking, simulations and machine learning**  
 Arup Mondal, Liwei Chang and Alberto Perez  
@@ -263,6 +292,13 @@ Kejia Wu, Hua Bai, ..., Emmanuel Derivery, Daniel Adriano Silva, David Baker
 </details>  
 
 
+### 5.3 Traditional
+
+**Anchor extension: a structure-guided approach to  design cyclic peptides targeting enzyme active sites**  
+Parisa Hosseinzadeh, ..., David Baker  
+[**2021**-7-7] >> NC • [Peptide_HDACBinders](https://github.com/ParisaH-Lab/publications.git) • [](https://cloud.tencent.com/developer/article/1880256) • Cyclic/David Baker/MD/Crystal
+
+
 ## 6. Others
 
 ### 6.1 PROTAC
@@ -292,6 +328,10 @@ Martin Pacesa, Lennart Nickel, ..., Sergey Ovchinnikov, Bruno E. Correia
 
 
 ### 6.4 Therapeutic
+
+**Converting peptides into drugs  targeting intracellular  protein–protein interactions**  
+Grégoire J.B. Philippe, David J. Craik and Sónia T. Henriques  
+[**2021**-6-1] >> [Drug Discov Today](https://doi.org/10.1016/j.drudis.2021.01.022)
 
 **Trends in peptide drug discovery**  
 Markus Muttenthaler, GlennF.King, DavidJ.Adams and Paul F. Alewood  
