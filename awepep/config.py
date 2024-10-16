@@ -12,7 +12,7 @@ sections = {
         "Diffusion-based",
         "Target-specific",
     ],
-    "Others": ["Therapeutic", "Principle", "PROTAC", "Protein Binders"],
+    "Others": ["Therapeutic", "Principle", "PROTAC", "Protein Binders", "RaPID"],
 }
 
 max_pined = 10

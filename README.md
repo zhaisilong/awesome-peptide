@@ -55,7 +55,7 @@ Suhaas Bhat, Kalyan Palepu, ..., Pranam Chatterjee
 
 **HELM-GPT: de novo macrocyclic peptide design using generative pre-trained transformer**  
 Xiaopeng Xu,   Chencheng Xu, Wenjia He, Lesong Wei, Haoyang Li, Juexiao Zhou, Ruochi Zhang, Yu Wang, Yuanpeng Xiong, Xin Gao  
-[**2024**-6-12] >> [Bioinformatics](https://doi.org/10.1093/bioinformatics/btae364) • [Github](https://github.com/charlesxu90/helm-gpt) • GPT/HELM/Macrocyclic/RL
+[**2024**-6-12] >> [Bioinformatics](https://doi.org/10.1093/bioinformatics/btae364) • [Github](https://github.com/charlesxu90/helm-gpt) • GPT/HELM/Cyclic/RL
 
 📌 _Papers pined:_
 
@@ -134,7 +134,8 @@ Parisa Hosseinzadeh, ..., David Baker
   <br><a href='#61-protac'>PROTAC</a> • 
   <a href='#62-principle'>Principle</a> • 
   <a href='#63-protein-binders'>Protein Binders</a> • 
-  <a href='#64-therapeutic'>Therapeutic</a>
+  <a href='#64-rapid'>RaPID</a> • 
+  <a href='#65-therapeutic'>Therapeutic</a>
   <br>
 </p>
 
@@ -164,11 +165,17 @@ Eli Fritz McDonald, Taylor Jones, Lars Plate, Jens Meiler, Alican Gulsevin
 
 > A list of suggested peptide datasets
 
-| Datasets | Description                                                                                                                                                                                                                                                         |
-| -------- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
-| PDB      | The Protein Data Bank (PDB) is a database of 3D structural data of large biological molecules, such as proteins and nucleic acids. These data are gathered using experimental methods such as X-ray crystallography, NMR spectroscopy, or cryo-electron microscopy. |
+| Datasets | Description                                                                                                                                                                                                                                                         | Link |
+| -------- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- | ---- |
+| PDB      | The Protein Data Bank (PDB) is a database of 3D structural data of large biological molecules, such as proteins and nucleic acids. These data are gathered using experimental methods such as X-ray crystallography, NMR spectroscopy, or cryo-electron microscopy. |      |
+
+|CycPeptMPDB| CycPeptMPDB, the first web-accessible database of cyclic peptide membrane permeability. |[CycPeptMPDB](http://cycpeptmpdb.com)|
 
 #### 0.2.1 Sequence Datasets
+
+**CycPeptMPDB: A Comprehensive Database of Membrane Permeability of Cyclic Peptides**  
+Jianan Li, Keisuke Yanagisawa, Masatake Sugita, Takuya Fujie, Masahito Ohue & Yutaka Akiyama  
+[**2023**-3-17] >> [JCIM](https://doi.org/10.1021/acs.jcim.2c01573) • [CycPeptMPDB](http://cycpeptmpdb.com)
 
 #### 0.2.2 Structure Datasets
 
@@ -264,7 +271,7 @@ Suhaas Bhat, Kalyan Palepu, ..., Pranam Chatterjee
 
 **HELM-GPT: de novo macrocyclic peptide design using generative pre-trained transformer**  
 Xiaopeng Xu,   Chencheng Xu, Wenjia He, Lesong Wei, Haoyang Li, Juexiao Zhou, Ruochi Zhang, Yu Wang, Yuanpeng Xiong, Xin Gao  
-[**2024**-6-12] >> [Bioinformatics](https://doi.org/10.1093/bioinformatics/btae364) • [Github](https://github.com/charlesxu90/helm-gpt) • GPT/HELM/Macrocyclic/RL
+[**2024**-6-12] >> [Bioinformatics](https://doi.org/10.1093/bioinformatics/btae364) • [Github](https://github.com/charlesxu90/helm-gpt) • GPT/HELM/Cyclic/RL
 
 
 ### 5.2 Structure-based
@@ -327,7 +334,14 @@ Martin Pacesa, Lennart Nickel, ..., Sergey Ovchinnikov, Bruno E. Correia
 </details>  
 
 
-### 6.4 Therapeutic
+### 6.4 RaPID
+
+**The RaPID Platform for the Discovery of Pseudo-Natural Macrocyclic Peptides**  
+Yuki Goto & Hiroaki Suga  
+[**2021**-9-10] >> [Acc. Chem. Res.](https://doi.org/10.1021/acs.accounts.1c00391) • RaPID/Cyclic/Hiroaki Suga/mRNA
+
+
+### 6.5 Therapeutic
 
 **Converting peptides into drugs  targeting intracellular  protein–protein interactions**  
 Grégoire J.B. Philippe, David J. Craik and Sónia T. Henriques  

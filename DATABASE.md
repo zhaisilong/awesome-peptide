@@ -22,11 +22,17 @@ Eli Fritz McDonald, Taylor Jones, Lars Plate, Jens Meiler, Alican Gulsevin
 
 > A list of suggested peptide datasets
 
-| Datasets | Description                                                                                                                                                                                                                                                         |
-| -------- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
-| PDB      | The Protein Data Bank (PDB) is a database of 3D structural data of large biological molecules, such as proteins and nucleic acids. These data are gathered using experimental methods such as X-ray crystallography, NMR spectroscopy, or cryo-electron microscopy. |
+| Datasets | Description                                                                                                                                                                                                                                                         | Link |
+| -------- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- | ---- |
+| PDB      | The Protein Data Bank (PDB) is a database of 3D structural data of large biological molecules, such as proteins and nucleic acids. These data are gathered using experimental methods such as X-ray crystallography, NMR spectroscopy, or cryo-electron microscopy. |      |
+
+|CycPeptMPDB| CycPeptMPDB, the first web-accessible database of cyclic peptide membrane permeability. |[CycPeptMPDB](http://cycpeptmpdb.com)|
 
 #### 0.2.1 Sequence Datasets
+
+**CycPeptMPDB: A Comprehensive Database of Membrane Permeability of Cyclic Peptides**  
+Jianan Li, Keisuke Yanagisawa, Masatake Sugita, Takuya Fujie, Masahito Ohue & Yutaka Akiyama  
+[**2023**-3-17] >> [JCIM](https://doi.org/10.1021/acs.jcim.2c01573) • [CycPeptMPDB](http://cycpeptmpdb.com)
 
 #### 0.2.2 Structure Datasets
 
