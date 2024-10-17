@@ -13,7 +13,7 @@
 5. [CSV Downloads](data/paper.csv): Quick access to paper data in `CSV` format.
 6. Automation: Use [Liquid](https://liquid.readthedocs.io/en/latest/) templates to generate Markdown from `CSV`, making it easy to build your own paper repository. >>> [[Details](CONTRIBUTING.md)]
 
-📅 _Papers last six month, updated on 2024-10-16:_
+📅 _Papers last six month, updated on 2024-10-17:_
 
 **Design of linear and cyclic peptide binders of different lengths from protein sequence information**  
 Qiuzhen Li, Efstathios Nikolaos Vlachos, Patrick Bryant  
@@ -38,7 +38,7 @@ Vasanthanathan Poongavanam, Duc Duy Vo & Jan Kihlberg
 
 **Target-Specific De Novo Peptide Binder Design with DiffPepBuilder**  
 Fanhao Wang, Yuzhe Wang, Laiyi Feng, Changsheng Zhang, and Luhua Lai  
-[**2024**-9-4] >> [JCIM](https://doi.org/10.1021/acs.jcim.4c00975) • high • [GitHub](https://github.com/YuzheWangPKU/DiffPepBuilder) • Diffusion/[Luhua Lai](https://scholar.google.com/citations?hl=en&user=8NJFCTYAAAAJ)/AfDeisgn/ProteinMPNN/MD
+[**2024**-9-4] >> [JCIM](https://doi.org/10.1021/acs.jcim.4c00975) • high • [GitHub](https://github.com/YuzheWangPKU/DiffPepBuilder) • Diffusion/[Luhua Lai](https://scholar.google.com/citations?hl=en&user=8NJFCTYAAAAJ)/[ColabDesign](https://github.com/sokrypton/ColabDesign)/[ProteinMPNN](https://www.science.org/doi/10.1126/science.add2187)/MD
   
 <details>
 <summary>🔎 Abstract</summary>
@@ -56,7 +56,7 @@ Suhaas Bhat, Kalyan Palepu, ..., Pranam Chatterjee
 
 **Deep-learning-based prediction framework for protein-peptide interactions with structure generation pipeline**  
 Jingxuan Ge, Dejun Jiang, ..., Chang-Yu Hsieh, Tingjun Hou  
-[**2024**-6-19] >> [Cell Rep. Phys. Sci.](https://doi.org/10.1016/j.xcrp.2024.101980) • [zenodo](https://doi.org/10.5281/zenodo.8324920) • [ITN](https://github.com/gejingxuan/ITN) • AF/[Tingjun Hou](https://scholar.google.com/citations?hl=en&user=vHW2kqUAAAAJ)
+[**2024**-6-19] >> [Cell Rep. Phys. Sci.](https://doi.org/10.1016/j.xcrp.2024.101980) • [zenodo](https://doi.org/10.5281/zenodo.8324920) • [ITN](https://github.com/gejingxuan/ITN) • [AF](https://deepmind.google/technologies/alphafold/)/[Tingjun Hou](https://scholar.google.com/citations?hl=en&user=vHW2kqUAAAAJ)
 
 **HELM-GPT: de novo macrocyclic peptide design using generative pre-trained transformer**  
 Xiaopeng Xu,   Chencheng Xu, Wenjia He, Lesong Wei, Haoyang Li, Juexiao Zhou, Ruochi Zhang, Yu Wang, Yuanpeng Xiong, Xin Gao  
@@ -79,7 +79,7 @@ Gökçe Geylan, Jon Paul Janet, Alessandro Tibo, Jiazhen He, Atanas Patronov, Mi
 
 **Target-Specific De Novo Peptide Binder Design with DiffPepBuilder**  
 Fanhao Wang, Yuzhe Wang, Laiyi Feng, Changsheng Zhang, and Luhua Lai  
-[**2024**-9-4] >> [JCIM](https://doi.org/10.1021/acs.jcim.4c00975) • high • [GitHub](https://github.com/YuzheWangPKU/DiffPepBuilder) • Diffusion/[Luhua Lai](https://scholar.google.com/citations?hl=en&user=8NJFCTYAAAAJ)/AfDeisgn/ProteinMPNN/MD
+[**2024**-9-4] >> [JCIM](https://doi.org/10.1021/acs.jcim.4c00975) • high • [GitHub](https://github.com/YuzheWangPKU/DiffPepBuilder) • Diffusion/[Luhua Lai](https://scholar.google.com/citations?hl=en&user=8NJFCTYAAAAJ)/[ColabDesign](https://github.com/sokrypton/ColabDesign)/[ProteinMPNN](https://www.science.org/doi/10.1126/science.add2187)/MD
   
 <details>
 <summary>🔎 Abstract</summary>
@@ -90,9 +90,13 @@ Fanhao Wang, Yuzhe Wang, Laiyi Feng, Changsheng Zhang, and Luhua Lai
 Xiangzhe Kong, Yinjun Jia, Wenbing Huang, Yang Liu  
 [**2024**-2-21] >> NeurIPS/[Arxive](https://doi.org/10.48550/arXiv.2402.13555) • [code](https://github.com/THUNLP-MT/PepGLAD) • Full-Atom/Diffusion
 
+**Improving de novo protein binder design with deep learning**  
+Nathaniel R. Bennett, Brian Coventry, ..., David Baker  
+[**2023**-5-6] >> [NC](https://doi.org/10.1038/s41467-023-38328-5) • high • [GitHub](https://github.com/nrbennet/dl_binder_design) • [RosettaCommons](https://www.rosettacommons.org)/[ProteinMPNN](https://www.science.org/doi/10.1126/science.add2187)
+
 **Denovo design of modular peptide-binding proteins by superhelical matching**  
 Kejia Wu, Hua Bai, ..., Emmanuel Derivery, Daniel Adriano Silva, David Baker  
-[**2023**-3-5] >> [Nature](https://doi.org/10.1038/s41586-023-05909-9) • high • [data](https://files.ipd.uw.edu/pub/2023_modular_peptide_binding_proteins/all_data_modular_peptide_binding_proteins.tar.gz) • [GitHub](https://github.com/tjs23/prot_pep_scan) • David Baker
+[**2023**-3-5] >> [Nature](https://doi.org/10.1038/s41586-023-05909-9) • high • [data](https://files.ipd.uw.edu/pub/2023_modular_peptide_binding_proteins/all_data_modular_peptide_binding_proteins.tar.gz) • [GitHub](https://github.com/tjs23/prot_pep_scan) • [David Baker](https://scholar.google.com/citations?hl=en&user=UKqIqRsAAAAJ)
   
 <details>
 <summary>🔎 Abstract</summary>
@@ -109,7 +113,7 @@ Suchetana Gupta, Noora Azadvari, and Parisa Hosseinzadeh
 
 **Anchor extension: a structure-guided approach to  design cyclic peptides targeting enzyme active sites**  
 Parisa Hosseinzadeh, ..., David Baker  
-[**2021**-7-7] >> [NC](https://doi.org/10.1038/s41467-021-23609-8) • [Peptide_HDACBinders](https://github.com/ParisaH-Lab/publications.git) • [Tencent](https://cloud.tencent.com/developer/article/1880256) • Cyclic/David Baker/MD/Crystal
+[**2021**-7-7] >> [NC](https://doi.org/10.1038/s41467-021-23609-8) • [Peptide_HDACBinders](https://github.com/ParisaH-Lab/publications.git) • [Tencent](https://cloud.tencent.com/developer/article/1880256) • Cyclic/[David Baker](https://scholar.google.com/citations?hl=en&user=UKqIqRsAAAAJ)/MD/Crystal
 
 ---
 
@@ -145,7 +149,8 @@ Parisa Hosseinzadeh, ..., David Baker
   <strong><a href='#6-design'>6) Design</a></strong>
   <br><a href='#61-sequence-based'>Sequence-based</a> • 
   <a href='#62-structure-based'>Structure-based</a> • 
-  <a href='#63-traditional'>Traditional</a>
+  <a href='#63-target-specific'>Target-specific</a> • 
+  <a href='#64-traditional'>Traditional</a>
   <br>
   <strong><a href='#7-others'>7) Others</a></strong>
   <br><a href='#71-protac'>PROTAC</a> • 
@@ -271,7 +276,11 @@ Arup Mondal, Liwei Chang and Alberto Perez
 
 **Deep-learning-based prediction framework for protein-peptide interactions with structure generation pipeline**  
 Jingxuan Ge, Dejun Jiang, ..., Chang-Yu Hsieh, Tingjun Hou  
-[**2024**-6-19] >> [Cell Rep. Phys. Sci.](https://doi.org/10.1016/j.xcrp.2024.101980) • [zenodo](https://doi.org/10.5281/zenodo.8324920) • [ITN](https://github.com/gejingxuan/ITN) • AF/[Tingjun Hou](https://scholar.google.com/citations?hl=en&user=vHW2kqUAAAAJ)
+[**2024**-6-19] >> [Cell Rep. Phys. Sci.](https://doi.org/10.1016/j.xcrp.2024.101980) • [zenodo](https://doi.org/10.5281/zenodo.8324920) • [ITN](https://github.com/gejingxuan/ITN) • [AF](https://deepmind.google/technologies/alphafold/)/[Tingjun Hou](https://scholar.google.com/citations?hl=en&user=vHW2kqUAAAAJ)
+
+**Propedia v2.3: A novel  representation approach for the  peptide-protein interaction  database using graph-based  structural signatures**  
+Pedro Martins, Diego Mariano, Frederico Chaves Carvalho, Luana Luiza Bastos, Lucas Moraes, Vivian Paixão and Raquel Cardoso de Melo-Minardi  
+[**2023**-2-16] >> [Front. Bioinform.](https://doi.org/10.3389/fbinf.2023.1103103) • [SI](https://www.frontiersin.org/journals/bioinformatics/articles/10.3389/fbinf.2023.1103103/full#SM1) • [propedia](https://github.com/LBS-UFMG/propedia)
 
 
 ## 6. Design
@@ -304,7 +313,7 @@ Xiaopeng Xu,   Chencheng Xu, Wenjia He, Lesong Wei, Haoyang Li, Juexiao Zhou, Ru
 
 **Target-Specific De Novo Peptide Binder Design with DiffPepBuilder**  
 Fanhao Wang, Yuzhe Wang, Laiyi Feng, Changsheng Zhang, and Luhua Lai  
-[**2024**-9-4] >> [JCIM](https://doi.org/10.1021/acs.jcim.4c00975) • high • [GitHub](https://github.com/YuzheWangPKU/DiffPepBuilder) • Diffusion/[Luhua Lai](https://scholar.google.com/citations?hl=en&user=8NJFCTYAAAAJ)/AfDeisgn/ProteinMPNN/MD
+[**2024**-9-4] >> [JCIM](https://doi.org/10.1021/acs.jcim.4c00975) • high • [GitHub](https://github.com/YuzheWangPKU/DiffPepBuilder) • Diffusion/[Luhua Lai](https://scholar.google.com/citations?hl=en&user=8NJFCTYAAAAJ)/[ColabDesign](https://github.com/sokrypton/ColabDesign)/[ProteinMPNN](https://www.science.org/doi/10.1126/science.add2187)/MD
   
 <details>
 <summary>🔎 Abstract</summary>
@@ -317,7 +326,7 @@ Xiangzhe Kong, Yinjun Jia, Wenbing Huang, Yang Liu
 
 **Denovo design of modular peptide-binding proteins by superhelical matching**  
 Kejia Wu, Hua Bai, ..., Emmanuel Derivery, Daniel Adriano Silva, David Baker  
-[**2023**-3-5] >> [Nature](https://doi.org/10.1038/s41586-023-05909-9) • high • [data](https://files.ipd.uw.edu/pub/2023_modular_peptide_binding_proteins/all_data_modular_peptide_binding_proteins.tar.gz) • [GitHub](https://github.com/tjs23/prot_pep_scan) • David Baker
+[**2023**-3-5] >> [Nature](https://doi.org/10.1038/s41586-023-05909-9) • high • [data](https://files.ipd.uw.edu/pub/2023_modular_peptide_binding_proteins/all_data_modular_peptide_binding_proteins.tar.gz) • [GitHub](https://github.com/tjs23/prot_pep_scan) • [David Baker](https://scholar.google.com/citations?hl=en&user=UKqIqRsAAAAJ)
   
 <details>
 <summary>🔎 Abstract</summary>
@@ -325,11 +334,18 @@ Kejia Wu, Hua Bai, ..., Emmanuel Derivery, Daniel Adriano Silva, David Baker
 </details>  
 
 
-### 6.3 Traditional
+### 6.3 Target-specific
+
+**Improving de novo protein binder design with deep learning**  
+Nathaniel R. Bennett, Brian Coventry, ..., David Baker  
+[**2023**-5-6] >> [NC](https://doi.org/10.1038/s41467-023-38328-5) • high • [GitHub](https://github.com/nrbennet/dl_binder_design) • [RosettaCommons](https://www.rosettacommons.org)/[ProteinMPNN](https://www.science.org/doi/10.1126/science.add2187)
+
+
+### 6.4 Traditional
 
 **Anchor extension: a structure-guided approach to  design cyclic peptides targeting enzyme active sites**  
 Parisa Hosseinzadeh, ..., David Baker  
-[**2021**-7-7] >> [NC](https://doi.org/10.1038/s41467-021-23609-8) • [Peptide_HDACBinders](https://github.com/ParisaH-Lab/publications.git) • [Tencent](https://cloud.tencent.com/developer/article/1880256) • Cyclic/David Baker/MD/Crystal
+[**2021**-7-7] >> [NC](https://doi.org/10.1038/s41467-021-23609-8) • [Peptide_HDACBinders](https://github.com/ParisaH-Lab/publications.git) • [Tencent](https://cloud.tencent.com/developer/article/1880256) • Cyclic/[David Baker](https://scholar.google.com/citations?hl=en&user=UKqIqRsAAAAJ)/MD/Crystal
 
 
 ## 7. Others
@@ -390,3 +406,24 @@ Vasso Apostolopoulos, Joanna Bojarska, ...
 
 - [List of papers about Protein Design using Deep Learning](https://github.com/Peldom/papers_for_protein_design_using_DL)
 - [Machine learning for proteins](https://github.com/yangkky/Machine-learning-for-proteins)
+
+## Star History
+
+<picture>
+  <source
+    media="(prefers-color-scheme: dark)"
+    srcset="
+      https://api.star-history.com/svg?repos=zhaisilong/awesome-peptide&type=Date&theme=dark
+    "
+  />
+  <source
+    media="(prefers-color-scheme: light)"
+    srcset="
+      https://api.star-history.com/svg?repos=zhaisilong/awesome-peptide&type=Date
+    "
+  />
+  <img
+    alt="Star History Chart"
+    src="https://api.star-history.com/svg?repos=zhaisilong/awesome-peptide&type=Date"
+  />
+</picture>

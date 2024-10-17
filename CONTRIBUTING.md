@@ -40,3 +40,4 @@ Papers are categorized into three quality levels:
 1. High: High impact factor (IF), well-written, and high-quality research.
 2. Medium: Moderate quality and impact.
 3. Low: Less influential but still valuable.
+

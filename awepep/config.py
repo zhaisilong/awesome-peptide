@@ -22,5 +22,10 @@ last_days = 180
 tags = {
     "Tingjun Hou": "https://scholar.google.com/citations?hl=en&user=vHW2kqUAAAAJ",
     "Luhua Lai": "https://scholar.google.com/citations?hl=en&user=8NJFCTYAAAAJ",
-    "Hiroaki Suga": "https://www.chem.s.u-tokyo.ac.jp/users/bioorg/English/member/Suga.html"
+    "Hiroaki Suga": "https://www.chem.s.u-tokyo.ac.jp/users/bioorg/English/member/Suga.html",
+    "David Baker": "https://scholar.google.com/citations?hl=en&user=UKqIqRsAAAAJ",
+    "ProteinMPNN": "https://www.science.org/doi/10.1126/science.add2187",
+    "AF": "https://deepmind.google/technologies/alphafold/",
+    "ColabDesign": "https://github.com/sokrypton/ColabDesign",
+    "RosettaCommons": "https://www.rosettacommons.org"
 }

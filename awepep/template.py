@@ -110,5 +110,27 @@ contributing_and_see_also = Template(
 
 - [List of papers about Protein Design using Deep Learning](https://github.com/Peldom/papers_for_protein_design_using_DL)
 - [Machine learning for proteins](https://github.com/yangkky/Machine-learning-for-proteins)
+
+## Star History
+
+<picture>
+  <source
+    media="(prefers-color-scheme: dark)"
+    srcset="
+      https://api.star-history.com/svg?repos=zhaisilong/awesome-peptide&type=Date&theme=dark
+    "
+  />
+  <source
+    media="(prefers-color-scheme: light)"
+    srcset="
+      https://api.star-history.com/svg?repos=zhaisilong/awesome-peptide&type=Date
+    "
+  />
+  <img
+    alt="Star History Chart"
+    src="https://api.star-history.com/svg?repos=zhaisilong/awesome-peptide&type=Date"
+  />
+</picture>
 """
 )
+
