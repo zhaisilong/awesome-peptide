@@ -15,10 +15,6 @@
 
 📅 _Papers last six month, updated on 2024-10-18:_
 
-**Direct conformational sampling from peptide energy landscapes through hypernetwork-conditioned diffusion**  
-Osama Abdin & Philip M. Kim  
-[**2024**-10-18] >> [NMI](https://doi.org/10.1038/s42256-024-00860-4) • high • [data](http://pepflow.ccbr.proteinsolver.org) • [PepFlow](https://gitlab.com/oabdin/pepflow) • Cyclic/MD/Difussion
-
 **Predicting 3D Structures of Lasso Peptides**  
 Xingyu Ouyang, Xinchun Ran, Han Xu, Yi-Lei Zhao, A. James Link, Zhongyue Yang  
 [**2024**-10-14] >> [ChemRxiv](https://doi.org/10.26434/chemrxiv-2024-q3rn0-v2) • [LassoPred](https://github.com/ChemBioHTP/LassoPred)/[Web](https://lassopred.accre.vanderbilt.edu/) • Lasso/[AF](https://deepmind.google/technologies/alphafold/)/ESM/MD
@@ -67,6 +63,10 @@ Suhaas Bhat, Kalyan Palepu, ..., Pranam Chatterjee
 <p>针对难以成药的蛋白质设计结合剂是药物开发中的难题，尤其是无序或构象不稳定的蛋白。我们提出了一种通用算法框架，利用目标蛋白的氨基酸序列设计短链线性多肽。通过对ESM-2蛋白语言模型的潜在空间进行高斯扰动生成多肽候选序列，并通过基于CLIP的对比学习架构筛选靶向选择性。最终创建了Peptide Prioritization via CLIP（PepPrCLIP）管道，并在实验中验证了这些多肽的有效性，既可作为抑制剂，也可通过与E3泛素连接酶融合降解多种蛋白靶标。该策略无需稳定的三级结构，能够靶向无序和难以成药的蛋白质，如转录因子和融合致癌蛋白。</p>
 </details>  
 
+**Direct conformational sampling from peptide energy landscapes through hypernetwork-conditioned diffusion**  
+Osama Abdin & Philip M. Kim  
+[**2024**-6-27] >> [NMI](https://doi.org/10.1038/s42256-024-00860-4) • high • [data](http://pepflow.ccbr.proteinsolver.org) • [PepFlow](https://gitlab.com/oabdin/pepflow) • Cyclic/MD/Difussion
+
 **Deep-learning-based prediction framework for protein-peptide interactions with structure generation pipeline**  
 Jingxuan Ge, Dejun Jiang, ..., Chang-Yu Hsieh, Tingjun Hou  
 [**2024**-6-19] >> [Cell Rep. Phys. Sci.](https://doi.org/10.1016/j.xcrp.2024.101980) • [zenodo](https://doi.org/10.5281/zenodo.8324920) • [ITN](https://github.com/gejingxuan/ITN) • [AF](https://deepmind.google/technologies/alphafold/)/[Tingjun Hou](https://scholar.google.com/citations?hl=en&user=vHW2kqUAAAAJ)
@@ -76,10 +76,6 @@ Xiaopeng Xu,   Chencheng Xu, Wenjia He, Lesong Wei, Haoyang Li, Juexiao Zhou, Ru
 [**2024**-6-12] >> [Bioinformatics](https://doi.org/10.1093/bioinformatics/btae364) • [Github](https://github.com/charlesxu90/helm-gpt) • GPT/HELM/Cyclic/RL
 
 📌 _Papers pined:_
-
-**Direct conformational sampling from peptide energy landscapes through hypernetwork-conditioned diffusion**  
-Osama Abdin & Philip M. Kim  
-[**2024**-10-18] >> [NMI](https://doi.org/10.1038/s42256-024-00860-4) • high • [data](http://pepflow.ccbr.proteinsolver.org) • [PepFlow](https://gitlab.com/oabdin/pepflow) • Cyclic/MD/Difussion
 
 **BindCraft: one-shot design of functional protein binders**  
 Martin Pacesa, Lennart Nickel, ..., Sergey Ovchinnikov, Bruno E. Correia  
@@ -102,6 +98,10 @@ Fanhao Wang, Yuzhe Wang, Laiyi Feng, Changsheng Zhang, and Luhua Lai
 <summary>🔎 Abstract</summary>
 <p>Despite the exciting progress in target-specific de novo protein binder design, peptide binder design remains challenging due to the flexibility of peptide structures and the scarcity of protein-peptide complex structure data. In this study, we curated a large synthetic data set, referred to as PepPC-F, from the abundant protein−protein interface data and developed DiffPepBuilder, a de novo target-specific peptide binder generation method that utilizes an SE(3)-equivariant diffusion model trained on PepPC-F to codesign peptide sequences and structures. DiffPepBuilder also introduces disulfide bonds to stabilize the generated peptide structures. We tested DiffPepBuilder on 30 experimentally verified strong peptide binders with available protein−peptide complex structures. DiffPepBuilder was able to effectively recall the native structures and sequences of the peptide ligands and to generate novel peptide binders with improved binding free energy. We subsequently conducted de novo generation case studies on three targets. In both the regeneration test and case studies, DiffPepBuilder outperformed AfDesign and RFdiffusion coupled with ProteinMPNN, in terms of sequence and structure recall, interface quality, and structural diversity. Molecular dynamics simulations confirmed that the introduction of disulfide bonds enhanced the structural rigidity and binding performance of the generated peptides. As a general peptide binder de novo design tool, DiffPepBuilder can be used to design peptide binders for given protein targets with three-dimensional and binding site information.</p>
 </details>  
+
+**Direct conformational sampling from peptide energy landscapes through hypernetwork-conditioned diffusion**  
+Osama Abdin & Philip M. Kim  
+[**2024**-6-27] >> [NMI](https://doi.org/10.1038/s42256-024-00860-4) • high • [data](http://pepflow.ccbr.proteinsolver.org) • [PepFlow](https://gitlab.com/oabdin/pepflow) • Cyclic/MD/Difussion
 
 **Full-Atom Peptide Design with Geometric Latent Diffusion**  
 Xiangzhe Kong, Yinjun Jia, Wenbing Huang, Yang Liu  
@@ -163,7 +163,8 @@ Jovan Damjanovic, Jiayuan Miao, He Huang, Yu-Shan Lin
   <strong><a href='#3-proprty-prediction'>3) Proprty Prediction</a></strong>
   <br>
   <strong><a href='#4-structure-modeling'>4) Structure Modeling</a></strong>
-  <br><a href='#41-monomer'>Monomer</a>
+  <br><a href='#41-complex'>Complex</a> • 
+  <a href='#42-monomer'>Monomer</a>
   <br>
   <strong><a href='#5-interaction-modeling'>5) Interaction Modeling</a></strong>
   <br><a href='#51-grpah-based'>Grpah-based</a>
@@ -197,9 +198,17 @@ Jovan Damjanovic, Jiayuan Miao, He Huang, Yu-Shan Lin
 Sudhanshu Shanker and Michel F. Sanner  
 [**2024**-5-11] >> [JCIM](https://doi.org/10.1021/acs.jcim.3c00602) • [GitHub](https://github.com/sannerlab/benchmarking_2023) • Fold
 
+**Comprehensive Evaluation of 10 Docking Programs on a Diverse Set of Protein−Cyclic Peptide Complexes**
+Huifeng Zhao, Dejun Jiang, Chao Shen, Jintu Zhang, Xujun Zhang, Xiaorui Wang, Dou Nie, Tingjun Hou, and Yu Kang  
+[**2024**-2-29] >> [JCIM](https://doi.org/10.1021/acs.jcim.3c01921) • [CPSet](https://github.com/huifengzhao/CPSet) • [Tingjun Hou](https://scholar.google.com/citations?hl=en&user=vHW2kqUAAAAJ)
+
 **Benchmarking AlphaFold2 on peptide structure prediction**  
 Eli Fritz McDonald, Taylor Jones, Lars Plate, Jens Meiler, Alican Gulsevin  
-[**2024**-1-5] >> [Structure](https://doi.org/10.1016/j.str.2022.11.012) • [SI](https://doi.org/10.1016/j.str.2022.11.012) • [Weixin](https://mp.weixin.qq.com/s/9mpyZXITVC6RBbNQmjJLcg) • AF
+[**2024**-1-5] >> [Structure](https://doi.org/10.1016/j.str.2022.11.012) • [SI](https://doi.org/10.1016/j.str.2022.11.012) • [Weixin](https://mp.weixin.qq.com/s/9mpyZXITVC6RBbNQmjJLcg) • [AF](https://deepmind.google/technologies/alphafold/)
+
+**Comprehensive Evaluation of Fourteen Docking Programs on Protein−Peptide Complexes**  
+Gaoqi Weng, Junbo Gao, Zhe Wang, Ercheng Wang, Xueping Hu, Xiaojun Yao, Dongsheng Cao & Tingjun Hou  
+[**2020**-3-23] >> [JCTC](https://doi.org/10.1021/acs.jctc.9b01208) • [pepset](http://cadd.zju.edu.cn/pepset/) • high • [Tingjun Hou](https://scholar.google.com/citations?hl=en&user=vHW2kqUAAAAJ)
 
 #### 0.1.3 Evaluations
 
@@ -218,7 +227,7 @@ Eli Fritz McDonald, Taylor Jones, Lars Plate, Jens Meiler, Alican Gulsevin
 
 **CycPeptMPDB: A Comprehensive Database of Membrane Permeability of Cyclic Peptides**  
 Jianan Li, Keisuke Yanagisawa, Masatake Sugita, Takuya Fujie, Masahito Ohue & Yutaka Akiyama  
-[**2023**-3-17] >> [JCIM](https://doi.org/10.1021/acs.jcim.2c01573) • [CycPeptMPDB](http://cycpeptmpdb.com)
+[**2023**-3-17] >> [JCIM](https://doi.org/10.1021/acs.jcim.2c01573) • [CycPeptMPDB](http://cycpeptmpdb.com) • [Akiyama Yutaka](https://scholar.google.com/citations?hl=en&user=eHAafMgAAAAJ)
 
 #### 0.2.2 Structure Datasets
 
@@ -294,11 +303,14 @@ Arup Mondal, Liwei Chang and Alberto Perez
 
 ## 4. Structure Modeling
 
-### 4.1 Monomer
+### 4.1 Complex
 
-**Direct conformational sampling from peptide energy landscapes through hypernetwork-conditioned diffusion**  
-Osama Abdin & Philip M. Kim  
-[**2024**-10-18] >> [NMI](https://doi.org/10.1038/s42256-024-00860-4) • high • [data](http://pepflow.ccbr.proteinsolver.org) • [PepFlow](https://gitlab.com/oabdin/pepflow) • Cyclic/MD/Difussion
+**HighFold: accurately predicting structures of cyclic  peptides and complexes with head-to-tail and disulfide  bridge constraints**  
+Chenhao Zhang, Chengyun Zhang, Tianfeng Shang, Ning Zhu, Xinyi Wu, Hongliang Duan  
+[**2024**-3-18] >> [BIB](https://doi.org/10.1093/bib/bbae215) • [HighFold](https://github.com/hongliangduan/HighFold) • [Hongliang Duan](https://www.mpu.edu.mo/esca/en/duanhongliang.php)/Cyclic/[AF](https://deepmind.google/technologies/alphafold/)
+
+
+### 4.2 Monomer
 
 **Predicting 3D Structures of Lasso Peptides**  
 Xingyu Ouyang, Xinchun Ran, Han Xu, Yi-Lei Zhao, A. James Link, Zhongyue Yang  
@@ -308,6 +320,14 @@ Xingyu Ouyang, Xinchun Ran, Han Xu, Yi-Lei Zhao, A. James Link, Zhongyue Yang
 <summary>🔎 Abstract</summary>
 <p>这篇文章围绕 LassoPred 工具展开，解决了现有工具无法准确预测 套索肽（Lasso peptides, LaPs） 结构的挑战。套索肽以其 绳结状拓扑结构 和 异肽键 特性，使传统的结构预测工具（如 AlphaFold 和 ESMfold）难以处理。</p>
 </details>  
+
+**Direct conformational sampling from peptide energy landscapes through hypernetwork-conditioned diffusion**  
+Osama Abdin & Philip M. Kim  
+[**2024**-6-27] >> [NMI](https://doi.org/10.1038/s42256-024-00860-4) • high • [data](http://pepflow.ccbr.proteinsolver.org) • [PepFlow](https://gitlab.com/oabdin/pepflow) • Cyclic/MD/Difussion
+
+**Structure prediction of linear and cyclic peptides using  CABS-flex**  
+Aleksandra Badaczewska-Dawid, Karol Wróblewski, Mateusz Kurcinski & Sebastian Kmiecik  
+[**2023**-11-28] >> [BIB](https://doi.org/10.1093/bib/bbae003) • MD/Cyclic
 
 **Elucidating Solution Structures of Cyclic Peptides Using Molecular Dynamics Simulations**  
 Jovan Damjanovic, Jiayuan Miao, He Huang, Yu-Shan Lin  
