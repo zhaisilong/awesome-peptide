@@ -27,10 +27,11 @@ awecheck  # Check validation of data/paper.csv
     - config.py: handles section ordering configuration
 - data
     - paper.csv: curated dataset containing paper metadata
+- resource: curated paper files by doi
 - cover.png: cover image derived from [Nature Springer](https://doi.org/10.1038/s41586-023-05909-9)
 - DATABASE.md: Chapter 0 for content that requires special formatting and handling
 - setup.py: installation script
-- LICENSE: GNU license
+- LICENSE.md: GNU license
 ```
 
 ## Quality Assessment
@@ -40,4 +41,3 @@ Papers are categorized into three quality levels:
 1. High: High impact factor (IF), well-written, and high-quality research.
 2. Medium: Moderate quality and impact.
 3. Low: Less influential but still valuable.
-

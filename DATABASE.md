@@ -60,3 +60,5 @@ Jianan Li, Keisuke Yanagisawa, Masatake Sugita, Takuya Fujie, Masahito Ohue & Yu
    2. [BioPython](https://biopython.org)
    3. [BioPandas](https://biopandas.github.io/biopandas/)
    4. [RDKit](https://www.rdkit.org)
+3. Interaction
+   1. [Protein-Ligand Interaction Profiler, PLIP](https://plip-tool.biotec.tu-dresden.de/plip-web/plip/index)

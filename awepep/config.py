@@ -4,7 +4,7 @@ sections = {
     "Reviews": ["Interaction", "Property", "Sequence", "Structure", "Design"],
     "Representation": ["Grpah-based", "Sequence-based"],
     "Proprty Prediction": ["Traditional", "Sequence-based"],
-    "Structure Modeling": ["Homology", "Fragment", "MD", "DL"],
+    "Structure Modeling": ["Monomer", "Complex"],
     "Interaction Modeling": ["Grpah-based", "Sequence-based"],
     "Design": [
         "Traditional",
@@ -16,7 +16,7 @@ sections = {
     "Others": ["Therapeutic", "Principle", "PROTAC", "Protein Binders", "RaPID"],
 }
 
-max_pined = 10
+max_pined = 12
 last_days = 180
 
 tags = {

@@ -13,7 +13,20 @@
 5. [CSV Downloads](data/paper.csv): Quick access to paper data in `CSV` format.
 6. Automation: Use [Liquid](https://liquid.readthedocs.io/en/latest/) templates to generate Markdown from `CSV`, making it easy to build your own paper repository. >>> [[Details](CONTRIBUTING.md)]
 
-📅 _Papers last six month, updated on 2024-10-17:_
+📅 _Papers last six month, updated on 2024-10-18:_
+
+**Direct conformational sampling from peptide energy landscapes through hypernetwork-conditioned diffusion**  
+Osama Abdin & Philip M. Kim  
+[**2024**-10-18] >> [NMI](https://doi.org/10.1038/s42256-024-00860-4) • high • [data](http://pepflow.ccbr.proteinsolver.org) • [PepFlow](https://gitlab.com/oabdin/pepflow) • Cyclic/MD/Difussion
+
+**Predicting 3D Structures of Lasso Peptides**  
+Xingyu Ouyang, Xinchun Ran, Han Xu, Yi-Lei Zhao, A. James Link, Zhongyue Yang  
+[**2024**-10-14] >> [ChemRxiv](https://doi.org/10.26434/chemrxiv-2024-q3rn0-v2) • [LassoPred](https://github.com/ChemBioHTP/LassoPred)/[Web](https://lassopred.accre.vanderbilt.edu/) • Lasso/[AF](https://deepmind.google/technologies/alphafold/)/ESM/MD
+  
+<details>
+<summary>🔎 Abstract</summary>
+<p>这篇文章围绕 LassoPred 工具展开，解决了现有工具无法准确预测 套索肽（Lasso peptides, LaPs） 结构的挑战。套索肽以其 绳结状拓扑结构 和 异肽键 特性，使传统的结构预测工具（如 AlphaFold 和 ESMfold）难以处理。</p>
+</details>  
 
 **Design of linear and cyclic peptide binders of different lengths from protein sequence information**  
 Qiuzhen Li, Efstathios Nikolaos Vlachos, Patrick Bryant  
@@ -63,6 +76,10 @@ Xiaopeng Xu,   Chencheng Xu, Wenjia He, Lesong Wei, Haoyang Li, Juexiao Zhou, Ru
 [**2024**-6-12] >> [Bioinformatics](https://doi.org/10.1093/bioinformatics/btae364) • [Github](https://github.com/charlesxu90/helm-gpt) • GPT/HELM/Cyclic/RL
 
 📌 _Papers pined:_
+
+**Direct conformational sampling from peptide energy landscapes through hypernetwork-conditioned diffusion**  
+Osama Abdin & Philip M. Kim  
+[**2024**-10-18] >> [NMI](https://doi.org/10.1038/s42256-024-00860-4) • high • [data](http://pepflow.ccbr.proteinsolver.org) • [PepFlow](https://gitlab.com/oabdin/pepflow) • Cyclic/MD/Difussion
 
 **BindCraft: one-shot design of functional protein binders**  
 Martin Pacesa, Lennart Nickel, ..., Sergey Ovchinnikov, Bruno E. Correia  
@@ -115,6 +132,10 @@ Suchetana Gupta, Noora Azadvari, and Parisa Hosseinzadeh
 Parisa Hosseinzadeh, ..., David Baker  
 [**2021**-7-7] >> [NC](https://doi.org/10.1038/s41467-021-23609-8) • [Peptide_HDACBinders](https://github.com/ParisaH-Lab/publications.git) • [Tencent](https://cloud.tencent.com/developer/article/1880256) • Cyclic/[David Baker](https://scholar.google.com/citations?hl=en&user=UKqIqRsAAAAJ)/MD/Crystal
 
+**Elucidating Solution Structures of Cyclic Peptides Using Molecular Dynamics Simulations**  
+Jovan Damjanovic, Jiayuan Miao, He Huang, Yu-Shan Lin  
+[**2021**-1-11] >> [Chemical Reviews](https://doi.org/10.1021/acs.chemrev.0c01087) • high • Cyclic/MD
+
 ---
 
 <p align="center">
@@ -142,6 +163,7 @@ Parisa Hosseinzadeh, ..., David Baker
   <strong><a href='#3-proprty-prediction'>3) Proprty Prediction</a></strong>
   <br>
   <strong><a href='#4-structure-modeling'>4) Structure Modeling</a></strong>
+  <br><a href='#41-monomer'>Monomer</a>
   <br>
   <strong><a href='#5-interaction-modeling'>5) Interaction Modeling</a></strong>
   <br><a href='#51-grpah-based'>Grpah-based</a>
@@ -225,6 +247,8 @@ Jianan Li, Keisuke Yanagisawa, Masatake Sugita, Takuya Fujie, Masahito Ohue & Yu
    2. [BioPython](https://biopython.org)
    3. [BioPandas](https://biopandas.github.io/biopandas/)
    4. [RDKit](https://www.rdkit.org)
+3. Interaction
+   1. [Protein-Ligand Interaction Profiler, PLIP](https://plip-tool.biotec.tu-dresden.de/plip-web/plip/index)
 
 ## 1. Reviews
 
@@ -269,6 +293,26 @@ Arup Mondal, Liwei Chang and Alberto Perez
 ## 3. Proprty Prediction
 
 ## 4. Structure Modeling
+
+### 4.1 Monomer
+
+**Direct conformational sampling from peptide energy landscapes through hypernetwork-conditioned diffusion**  
+Osama Abdin & Philip M. Kim  
+[**2024**-10-18] >> [NMI](https://doi.org/10.1038/s42256-024-00860-4) • high • [data](http://pepflow.ccbr.proteinsolver.org) • [PepFlow](https://gitlab.com/oabdin/pepflow) • Cyclic/MD/Difussion
+
+**Predicting 3D Structures of Lasso Peptides**  
+Xingyu Ouyang, Xinchun Ran, Han Xu, Yi-Lei Zhao, A. James Link, Zhongyue Yang  
+[**2024**-10-14] >> [ChemRxiv](https://doi.org/10.26434/chemrxiv-2024-q3rn0-v2) • [LassoPred](https://github.com/ChemBioHTP/LassoPred)/[Web](https://lassopred.accre.vanderbilt.edu/) • Lasso/[AF](https://deepmind.google/technologies/alphafold/)/ESM/MD
+  
+<details>
+<summary>🔎 Abstract</summary>
+<p>这篇文章围绕 LassoPred 工具展开，解决了现有工具无法准确预测 套索肽（Lasso peptides, LaPs） 结构的挑战。套索肽以其 绳结状拓扑结构 和 异肽键 特性，使传统的结构预测工具（如 AlphaFold 和 ESMfold）难以处理。</p>
+</details>  
+
+**Elucidating Solution Structures of Cyclic Peptides Using Molecular Dynamics Simulations**  
+Jovan Damjanovic, Jiayuan Miao, He Huang, Yu-Shan Lin  
+[**2021**-1-11] >> [Chemical Reviews](https://doi.org/10.1021/acs.chemrev.0c01087) • high • Cyclic/MD
+
 
 ## 5. Interaction Modeling
 
@@ -406,8 +450,6 @@ Vasso Apostolopoulos, Joanna Bojarska, ...
 
 - [List of papers about Protein Design using Deep Learning](https://github.com/Peldom/papers_for_protein_design_using_DL)
 - [Machine learning for proteins](https://github.com/yangkky/Machine-learning-for-proteins)
-
-## Star History
 
 <picture>
   <source
