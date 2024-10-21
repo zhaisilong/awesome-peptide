@@ -13,7 +13,7 @@
 5. [CSV Downloads](data/paper.csv): Quick access to paper data in `CSV` format.
 6. Automation: Use [Liquid](https://liquid.readthedocs.io/en/latest/) templates to generate Markdown from `CSV`, making it easy to build your own paper repository. >>> [[Details](CONTRIBUTING.md)]
 
-📅 _Papers last six month, updated on 2024-10-18:_
+📅 _Papers last six month, updated on 2024-10-21:_
 
 **Predicting 3D Structures of Lasso Peptides**  
 Xingyu Ouyang, Xinchun Ran, Han Xu, Yi-Lei Zhao, A. James Link, Zhongyue Yang  
@@ -26,7 +26,7 @@ Xingyu Ouyang, Xinchun Ran, Han Xu, Yi-Lei Zhao, A. James Link, Zhongyue Yang
 
 **Design of linear and cyclic peptide binders of different lengths from protein sequence information**  
 Qiuzhen Li, Efstathios Nikolaos Vlachos, Patrick Bryant  
-[**2024**-10-12] >> [Arxive](https://doi.org/10.1101/2024.06.20.599739) • [zenodo](https://zenodo.org/uploads/11543503) • [EvoBind](https://github.com/patrickbryant1/EvoBind) • Cyclic
+[**2024**-10-12] >> [Arxive](https://doi.org/10.1101/2024.06.20.599739) • [zenodo](https://zenodo.org/uploads/11543503) • [EvoBind](https://github.com/patrickbryant1/EvoBind) • Cyclic/[Patrick Bryant](https://scholar.google.com/citations?user=KPlaFQQAAAAJ)
 
 **BindCraft: one-shot design of functional protein binders**  
 Martin Pacesa, Lennart Nickel, ..., Sergey Ovchinnikov, Bruno E. Correia  
@@ -39,7 +39,7 @@ Martin Pacesa, Lennart Nickel, ..., Sergey Ovchinnikov, Bruno E. Correia
 
 **PepINVENT: Generative peptide design beyond the natural amino acids**  
 Gökçe Geylan, Jon Paul Janet, Alessandro Tibo, Jiazhen He, Atanas Patronov, Mikhail Kabeshov, Florian David, Werngard Czechtizky, Ola Engkvist, Leonardo De Maria  
-[**2024**-9-21] >> [Axive](https://doi.org/10.48550/arXiv.2409.14040) • RL/Molecular AI/AstraZeneca
+[**2024**-9-21] >> [Axive](https://doi.org/10.48550/arXiv.2409.14040) • RL/[Molecular AI](https://github.com/molecularai)/AstraZeneca
 
 **Beware of extreme calculated lipophilicity when designing cyclic peptides**  
 Vasanthanathan Poongavanam, Duc Duy Vo & Jan Kihlberg  
@@ -53,6 +53,10 @@ Fanhao Wang, Yuzhe Wang, Laiyi Feng, Changsheng Zhang, and Luhua Lai
 <summary>🔎 Abstract</summary>
 <p>Despite the exciting progress in target-specific de novo protein binder design, peptide binder design remains challenging due to the flexibility of peptide structures and the scarcity of protein-peptide complex structure data. In this study, we curated a large synthetic data set, referred to as PepPC-F, from the abundant protein−protein interface data and developed DiffPepBuilder, a de novo target-specific peptide binder generation method that utilizes an SE(3)-equivariant diffusion model trained on PepPC-F to codesign peptide sequences and structures. DiffPepBuilder also introduces disulfide bonds to stabilize the generated peptide structures. We tested DiffPepBuilder on 30 experimentally verified strong peptide binders with available protein−peptide complex structures. DiffPepBuilder was able to effectively recall the native structures and sequences of the peptide ligands and to generate novel peptide binders with improved binding free energy. We subsequently conducted de novo generation case studies on three targets. In both the regeneration test and case studies, DiffPepBuilder outperformed AfDesign and RFdiffusion coupled with ProteinMPNN, in terms of sequence and structure recall, interface quality, and structural diversity. Molecular dynamics simulations confirmed that the introduction of disulfide bonds enhanced the structural rigidity and binding performance of the generated peptides. As a general peptide binder de novo design tool, DiffPepBuilder can be used to design peptide binders for given protein targets with three-dimensional and binding site information.</p>
 </details>  
+
+**Reinforcement learning-driven exploration of peptide space: accelerating generation of drug-like peptides**  
+Qian Wang, Xiaotong Hu, Zhiqiang Wei, Hao Lu , Hao Liu  
+[**2024**-8-27] >> [BIB](https://doi.org/10.1093/bib/bbae444) • [MondTDSRL](https://github.com/p1acemker/MomdTDSRL.git) • RL
 
 **Design of Peptide Binders to Conformationally Diverse Targets with Contrastive Language Modeling**  
 Suhaas Bhat, Kalyan Palepu, ..., Pranam Chatterjee  
@@ -88,7 +92,7 @@ Martin Pacesa, Lennart Nickel, ..., Sergey Ovchinnikov, Bruno E. Correia
 
 **PepINVENT: Generative peptide design beyond the natural amino acids**  
 Gökçe Geylan, Jon Paul Janet, Alessandro Tibo, Jiazhen He, Atanas Patronov, Mikhail Kabeshov, Florian David, Werngard Czechtizky, Ola Engkvist, Leonardo De Maria  
-[**2024**-9-21] >> [Axive](https://doi.org/10.48550/arXiv.2409.14040) • RL/Molecular AI/AstraZeneca
+[**2024**-9-21] >> [Axive](https://doi.org/10.48550/arXiv.2409.14040) • RL/[Molecular AI](https://github.com/molecularai)/AstraZeneca
 
 **Target-Specific De Novo Peptide Binder Design with DiffPepBuilder**  
 Fanhao Wang, Yuzhe Wang, Laiyi Feng, Changsheng Zhang, and Luhua Lai  
@@ -170,9 +174,9 @@ Jovan Damjanovic, Jiayuan Miao, He Huang, Yu-Shan Lin
   <br><a href='#51-grpah-based'>Grpah-based</a>
   <br>
   <strong><a href='#6-design'>6) Design</a></strong>
-  <br><a href='#61-sequence-based'>Sequence-based</a> • 
-  <a href='#62-structure-based'>Structure-based</a> • 
-  <a href='#63-target-specific'>Target-specific</a> • 
+  <br><a href='#61-graph-based'>Graph-based</a> • 
+  <a href='#62-sequence-based'>Sequence-based</a> • 
+  <a href='#63-structure-based'>Structure-based</a> • 
   <a href='#64-traditional'>Traditional</a>
   <br>
   <strong><a href='#7-others'>7) Others</a></strong>
@@ -209,6 +213,10 @@ Eli Fritz McDonald, Taylor Jones, Lars Plate, Jens Meiler, Alican Gulsevin
 **Comprehensive Evaluation of Fourteen Docking Programs on Protein−Peptide Complexes**  
 Gaoqi Weng, Junbo Gao, Zhe Wang, Ercheng Wang, Xueping Hu, Xiaojun Yao, Dongsheng Cao & Tingjun Hou  
 [**2020**-3-23] >> [JCTC](https://doi.org/10.1021/acs.jctc.9b01208) • [pepset](http://cadd.zju.edu.cn/pepset/) • high • [Tingjun Hou](https://scholar.google.com/citations?hl=en&user=vHW2kqUAAAAJ)
+
+**Highly Flexible Ligand Docking: Benchmarking of the DockThor Program on the LEADS-PEP Protein−Peptide Data Set**  
+Karina B. Santos, Isabella A. Guedes, Ana L. M. Karl, and Laurent E. Dardenne  
+[**2020**-1-10] >> [JCIM](https://doi.org/10.1021/acs.jcim.9b00905) • [DockerThor](https://www.dockthor.lncc.br) • MD
 
 #### 0.1.3 Evaluations
 
@@ -309,6 +317,10 @@ Arup Mondal, Liwei Chang and Alberto Perez
 Chenhao Zhang, Chengyun Zhang, Tianfeng Shang, Ning Zhu, Xinyi Wu, Hongliang Duan  
 [**2024**-3-18] >> [BIB](https://doi.org/10.1093/bib/bbae215) • [HighFold](https://github.com/hongliangduan/HighFold) • [Hongliang Duan](https://www.mpu.edu.mo/esca/en/duanhongliang.php)/Cyclic/[AF](https://deepmind.google/technologies/alphafold/)
 
+**Ranking Peptide Binders by Affinity with AlphaFold**  
+Liwei Chang and Alberto Perez  
+[**2022**-11-21] >> [Angew](https://doi.org/10.1002/anie.202213362) • [AF](https://deepmind.google/technologies/alphafold/)
+
 
 ### 4.2 Monomer
 
@@ -349,15 +361,26 @@ Pedro Martins, Diego Mariano, Frederico Chaves Carvalho, Luana Luiza Bastos, Luc
 
 ## 6. Design
 
-### 6.1 Sequence-based
+### 6.1 Graph-based
+
+**Reinforcement learning-driven exploration of peptide space: accelerating generation of drug-like peptides**  
+Qian Wang, Xiaotong Hu, Zhiqiang Wei, Hao Lu , Hao Liu  
+[**2024**-8-27] >> [BIB](https://doi.org/10.1093/bib/bbae444) • [MondTDSRL](https://github.com/p1acemker/MomdTDSRL.git) • RL
+
+**Improving de novo protein binder design with deep learning**  
+Nathaniel R. Bennett, Brian Coventry, ..., David Baker  
+[**2023**-5-6] >> [NC](https://doi.org/10.1038/s41467-023-38328-5) • high • [GitHub](https://github.com/nrbennet/dl_binder_design) • [RosettaCommons](https://www.rosettacommons.org)/[ProteinMPNN](https://www.science.org/doi/10.1126/science.add2187)
+
+
+### 6.2 Sequence-based
 
 **Design of linear and cyclic peptide binders of different lengths from protein sequence information**  
 Qiuzhen Li, Efstathios Nikolaos Vlachos, Patrick Bryant  
-[**2024**-10-12] >> [Arxive](https://doi.org/10.1101/2024.06.20.599739) • [zenodo](https://zenodo.org/uploads/11543503) • [EvoBind](https://github.com/patrickbryant1/EvoBind) • Cyclic
+[**2024**-10-12] >> [Arxive](https://doi.org/10.1101/2024.06.20.599739) • [zenodo](https://zenodo.org/uploads/11543503) • [EvoBind](https://github.com/patrickbryant1/EvoBind) • Cyclic/[Patrick Bryant](https://scholar.google.com/citations?user=KPlaFQQAAAAJ)
 
 **PepINVENT: Generative peptide design beyond the natural amino acids**  
 Gökçe Geylan, Jon Paul Janet, Alessandro Tibo, Jiazhen He, Atanas Patronov, Mikhail Kabeshov, Florian David, Werngard Czechtizky, Ola Engkvist, Leonardo De Maria  
-[**2024**-9-21] >> [Axive](https://doi.org/10.48550/arXiv.2409.14040) • RL/Molecular AI/AstraZeneca
+[**2024**-9-21] >> [Axive](https://doi.org/10.48550/arXiv.2409.14040) • RL/[Molecular AI](https://github.com/molecularai)/AstraZeneca
 
 **Design of Peptide Binders to Conformationally Diverse Targets with Contrastive Language Modeling**  
 Suhaas Bhat, Kalyan Palepu, ..., Pranam Chatterjee  
@@ -373,7 +396,7 @@ Xiaopeng Xu,   Chencheng Xu, Wenjia He, Lesong Wei, Haoyang Li, Juexiao Zhou, Ru
 [**2024**-6-12] >> [Bioinformatics](https://doi.org/10.1093/bioinformatics/btae364) • [Github](https://github.com/charlesxu90/helm-gpt) • GPT/HELM/Cyclic/RL
 
 
-### 6.2 Structure-based
+### 6.3 Structure-based
 
 **Target-Specific De Novo Peptide Binder Design with DiffPepBuilder**  
 Fanhao Wang, Yuzhe Wang, Laiyi Feng, Changsheng Zhang, and Luhua Lai  
@@ -398,13 +421,6 @@ Kejia Wu, Hua Bai, ..., Emmanuel Derivery, Daniel Adriano Silva, David Baker
 </details>  
 
 
-### 6.3 Target-specific
-
-**Improving de novo protein binder design with deep learning**  
-Nathaniel R. Bennett, Brian Coventry, ..., David Baker  
-[**2023**-5-6] >> [NC](https://doi.org/10.1038/s41467-023-38328-5) • high • [GitHub](https://github.com/nrbennet/dl_binder_design) • [RosettaCommons](https://www.rosettacommons.org)/[ProteinMPNN](https://www.science.org/doi/10.1126/science.add2187)
-
-
 ### 6.4 Traditional
 
 **Anchor extension: a structure-guided approach to  design cyclic peptides targeting enzyme active sites**  
@@ -417,7 +433,7 @@ Parisa Hosseinzadeh, ..., David Baker
 ### 7.1 PROTAC
 
 **A Top-Down Design Approach for Generating a Peptide PROTAC Drug Targeting Androgen Receptor for Androgenetic Alopecia Therapy**  
-Bohan MaDonghua LiuZhe WangDize ZhangYanlin Jian, et. al.  
+Bohan Ma, Donghua Liu, Zhe Wang, Dize Zhang, Yanlin Jian, et. al.  
 [**2021**-6-5] >> [JMC](https://doi.org/10.1021/acs.jmedchem.4c00828) • [Weixin](https://mp.weixin.qq.com/s/xeJWFVcV5LkIlVJ1Zxf5Eg) • PROTAC
 
 
@@ -454,7 +470,7 @@ Grégoire J.B. Philippe, David J. Craik and Sónia T. Henriques
 [**2021**-6-1] >> [Drug Discov Today](https://doi.org/10.1016/j.drudis.2021.01.022)
 
 **Trends in peptide drug discovery**  
-Markus Muttenthaler, GlennF.King, DavidJ.Adams and Paul F. Alewood  
+Markus Muttenthaler, Glenn F. King, David J. Adams and Paul F. Alewood  
 [**2021**-4-1] >> [Nature Reviews Drug Discovery](https://doi.org/10.1038/s41573-020-00135-8) • high
 
 **A Global Review on Short Peptides: Frontiers and Perspectives**  

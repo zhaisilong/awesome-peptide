@@ -11,7 +11,7 @@ sections = {
         "Sequence-based",
         "Structure-based",
         "Diffusion-based",
-        "Target-specific",
+        "Graph-based",
     ],
     "Others": ["Therapeutic", "Principle", "PROTAC", "Protein Binders", "RaPID"],
 }
@@ -26,7 +26,8 @@ authors = {
     "Akiyama Yutaka": "https://scholar.google.com/citations?hl=en&user=eHAafMgAAAAJ",
     "Yuedong Yang": "https://scholar.google.com/citations?user=AfjwTKoAAAAJ",
     "David Baker": "https://scholar.google.com/citations?hl=en&user=UKqIqRsAAAAJ",
-    "Hongliang Duan": "https://www.mpu.edu.mo/esca/en/duanhongliang.php"
+    "Hongliang Duan": "https://www.mpu.edu.mo/esca/en/duanhongliang.php",
+    "Patrick Bryant": "https://scholar.google.com/citations?user=KPlaFQQAAAAJ",
 }
 
 tools = {
@@ -34,6 +35,7 @@ tools = {
     "AF": "https://deepmind.google/technologies/alphafold/",
     "ColabDesign": "https://github.com/sokrypton/ColabDesign",
     "RosettaCommons": "https://www.rosettacommons.org",
+    "Molecular AI": "https://github.com/molecularai",
 }
 
 tags = authors | tools
