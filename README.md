@@ -4,6 +4,8 @@
 
 [![Awesome](https://awesome.re/badge.svg)](https://awesome.re)  [![stars](https://shields.io/github/stars/zhaisilong/awesome-peptide?style=social)](https://github.com/zhaisilong/awesome-peptide)
 
+🔗 Link directly to <a href="#contents">Contents</a>, <a href="#citations">Citations</a>, <a href="#starhistory">Star History</a>
+
 ✅ __What sets us apart from similar resources:__
 
 1. Versatile Tags: Organize and filter papers easily.
@@ -56,7 +58,7 @@ Fanhao Wang, Yuzhe Wang, Laiyi Feng, Changsheng Zhang, and Luhua Lai
 
 **Reinforcement learning-driven exploration of peptide space: accelerating generation of drug-like peptides**  
 Qian Wang, Xiaotong Hu, Zhiqiang Wei, Hao Lu , Hao Liu  
-[**2024**-8-27] >> [BIB](https://doi.org/10.1093/bib/bbae444) • [MondTDSRL](https://github.com/p1acemker/MomdTDSRL.git) • RL
+[**2024**-8-27] >> [BIB](https://doi.org/10.1093/bib/bbae444) • [MondTDSRL](https://github.com/p1acemker/MomdTDSRL.git) • RL/MD
 
 **Design of Peptide Binders to Conformationally Diverse Targets with Contrastive Language Modeling**  
 Suhaas Bhat, Kalyan Palepu, ..., Pranam Chatterjee  
@@ -148,7 +150,7 @@ Jovan Damjanovic, Jiayuan Miao, He Huang, Yu-Shan Lin
   </a>
 </p>
 
-<p align='center'>
+<p id="contents", align='center'>
   <strong><a href='#0-benchmarks-and-datasets'>0) Benchmarks and Datasets</a></strong>
   <br>
   <a href="#01-benchmarks">Benchmarks</a> •
@@ -365,7 +367,7 @@ Pedro Martins, Diego Mariano, Frederico Chaves Carvalho, Luana Luiza Bastos, Luc
 
 **Reinforcement learning-driven exploration of peptide space: accelerating generation of drug-like peptides**  
 Qian Wang, Xiaotong Hu, Zhiqiang Wei, Hao Lu , Hao Liu  
-[**2024**-8-27] >> [BIB](https://doi.org/10.1093/bib/bbae444) • [MondTDSRL](https://github.com/p1acemker/MomdTDSRL.git) • RL
+[**2024**-8-27] >> [BIB](https://doi.org/10.1093/bib/bbae444) • [MondTDSRL](https://github.com/p1acemker/MomdTDSRL.git) • RL/MD
 
 **Improving de novo protein binder design with deep learning**  
 Nathaniel R. Bennett, Brian Coventry, ..., David Baker  
@@ -487,7 +489,13 @@ Vasso Apostolopoulos, Joanna Bojarska, ...
 - [List of papers about Protein Design using Deep Learning](https://github.com/Peldom/papers_for_protein_design_using_DL)
 - [Machine learning for proteins](https://github.com/yangkky/Machine-learning-for-proteins)
 
-<picture>
+## Citations
+
+<textarea>
+@&#123 &#125
+</textarea>
+
+<picture id="#starhistory">
   <source
     media="(prefers-color-scheme: dark)"
     srcset="

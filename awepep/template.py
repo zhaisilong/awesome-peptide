@@ -7,6 +7,8 @@ header = Template(
 
 [![Awesome](https://awesome.re/badge.svg)](https://awesome.re)  [![stars](https://shields.io/github/stars/zhaisilong/awesome-peptide?style=social)](https://github.com/zhaisilong/awesome-peptide)
 
+🔗 Link directly to <a href="#contents">Contents</a>, <a href="#citations">Citations</a>, <a href="#starhistory">Star History</a>
+
 ✅ __What sets us apart from similar resources:__
 
 1. Versatile Tags: Organize and filter papers easily.
@@ -33,7 +35,7 @@ paper = Template(
 
 toc_header = Template(
     """
-<p align='center'>
+<p id="contents", align='center'>
   <strong><a href='#0-benchmarks-and-datasets'>0) Benchmarks and Datasets</a></strong>
   <br>
   <a href="#01-benchmarks">Benchmarks</a> •
@@ -101,7 +103,7 @@ fig = Template(
 )
 
 contributing_and_see_also = Template(
-    """
+    f"""
 ## Cntribution
 
 [Contributions](https://github.com/zhaisilong/awesome-peptide/blob/main/CONTRIBUTING.md) and [suggestions](https://github.com/zhaisilong/awesome-peptide/issues) are warmly welcome! Community Values, Guiding Principles, and Commitments for the Responsible Development of AI for Peptide Design
@@ -111,7 +113,13 @@ contributing_and_see_also = Template(
 - [List of papers about Protein Design using Deep Learning](https://github.com/Peldom/papers_for_protein_design_using_DL)
 - [Machine learning for proteins](https://github.com/yangkky/Machine-learning-for-proteins)
 
-<picture>
+## Citations
+
+<textarea>
+@&#123 &#125
+</textarea>
+
+<picture id="#starhistory">
   <source
     media="(prefers-color-scheme: dark)"
     srcset="
