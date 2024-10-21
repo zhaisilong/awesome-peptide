@@ -7,7 +7,7 @@ header = Template(
 
 [![Awesome](https://awesome.re/badge.svg)](https://awesome.re)  [![stars](https://shields.io/github/stars/zhaisilong/awesome-peptide?style=social)](https://github.com/zhaisilong/awesome-peptide)
 
-🔗 Link directly to <a href="#contents">Contents</a>, <a href="#citations">Citations</a>, <a href="#starhistory">Star History</a>
+🔗 Link directly to <a href="#contents">Contents</a>, <a href="#citations">Citations</a>
 
 ✅ __What sets us apart from similar resources:__
 
@@ -35,7 +35,7 @@ paper = Template(
 
 toc_header = Template(
     """
-<p id="contents", align='center'>
+<p id="contents" align='center'>
   <strong><a href='#0-benchmarks-and-datasets'>0) Benchmarks and Datasets</a></strong>
   <br>
   <a href="#01-benchmarks">Benchmarks</a> •
@@ -115,11 +115,14 @@ contributing_and_see_also = Template(
 
 ## Citations
 
-<textarea>
+<div>
+<p>
 @&#123 &#125
-</textarea>
+</p>
+</div>
+<hr>
 
-<picture id="#starhistory">
+<picture>
   <source
     media="(prefers-color-scheme: dark)"
     srcset="
@@ -134,7 +137,7 @@ contributing_and_see_also = Template(
   />
   <img
     alt="Star History Chart"
-    src="https://api.star-history.com/svg?repos=zhaisilong/awesome-peptide&type=Date"
+    src="https://api.star-history.com/svg?repos=zhaisilong/awesome-peptide&type=Date" 
   />
 </picture>
 """
