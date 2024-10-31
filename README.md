@@ -15,7 +15,11 @@
 5. [CSV Downloads](data/paper.csv): Quick access to paper data in `CSV` format.
 6. Automation: Use [Liquid](https://liquid.readthedocs.io/en/latest/) templates to generate Markdown from `CSV`, making it easy to build your own paper repository. >>> [[Details](CONTRIBUTING.md)]
 
-📅 _Papers last six month, updated on 2024-10-21:_
+📅 _Papers last six month, updated on 2024-10-31:_
+
+**Improving Inverse Folding for Peptide Design with Diversity-Regularized Direct Preference Optimization**  
+Ryan Park, Darren J. Hsu, C. Brian Roland, Chen Tessler, Maria Korshunova, Shie Mannor, Olivia Viessmann, Bruno Trentini  
+[**2024**-10-25] >> [arXiv](https://doi.org/10.48550/arXiv.2410.19471) • [ProteinMPNN](https://www.science.org/doi/10.1126/science.add2187)/Nvidia
 
 **Predicting 3D Structures of Lasso Peptides**  
 Xingyu Ouyang, Xinchun Ran, Han Xu, Yi-Lei Zhao, A. James Link, Zhongyue Yang  
@@ -29,6 +33,10 @@ Xingyu Ouyang, Xinchun Ran, Han Xu, Yi-Lei Zhao, A. James Link, Zhongyue Yang
 **Design of linear and cyclic peptide binders of different lengths from protein sequence information**  
 Qiuzhen Li, Efstathios Nikolaos Vlachos, Patrick Bryant  
 [**2024**-10-12] >> [Arxive](https://doi.org/10.1101/2024.06.20.599739) • [zenodo](https://zenodo.org/uploads/11543503) • [EvoBind](https://github.com/patrickbryant1/EvoBind) • Cyclic/[Patrick Bryant](https://scholar.google.com/citations?user=KPlaFQQAAAAJ)
+
+**Discovery of a Series of Macrocycles as Potent Inhibitors of Leishmania Infantum**  
+Federico Riu, Larissa Alena Ruppitsch, Duc Duy Vo, Richard S. Hong, Mohit Tyagi, An Matheeussen, Sarah Hendrickx, Vasanthanathan Poongavanam, Guy Caljon, Ahmad Y. Sheikh, Peter Sjö, and Jan Kihlberg  
+[**2024**-10-8] >> [J. Med. Chem.](https://doi.org/10.1021/acs.jmedchem.4c01370) • high • [Weixin](https://mp.weixin.qq.com/s/jisVUSzJu4t9BD3JFVb_-A) • Cyclic
 
 **BindCraft: one-shot design of functional protein binders**  
 Martin Pacesa, Lennart Nickel, ..., Sergey Ovchinnikov, Bruno E. Correia  
@@ -71,7 +79,7 @@ Suhaas Bhat, Kalyan Palepu, ..., Pranam Chatterjee
 
 **Direct conformational sampling from peptide energy landscapes through hypernetwork-conditioned diffusion**  
 Osama Abdin & Philip M. Kim  
-[**2024**-6-27] >> [NMI](https://doi.org/10.1038/s42256-024-00860-4) • high • [data](http://pepflow.ccbr.proteinsolver.org) • [PepFlow](https://gitlab.com/oabdin/pepflow) • Cyclic/MD/Difussion
+[**2024**-6-27] >> [NMI](https://doi.org/10.1038/s42256-024-00860-4) • high • [data](http://pepflow.ccbr.proteinsolver.org) • [PepFlow](https://gitlab.com/oabdin/pepflow) • Cyclic/MD/Diffusion
 
 **Deep-learning-based prediction framework for protein-peptide interactions with structure generation pipeline**  
 Jingxuan Ge, Dejun Jiang, ..., Chang-Yu Hsieh, Tingjun Hou  
@@ -107,7 +115,7 @@ Fanhao Wang, Yuzhe Wang, Laiyi Feng, Changsheng Zhang, and Luhua Lai
 
 **Direct conformational sampling from peptide energy landscapes through hypernetwork-conditioned diffusion**  
 Osama Abdin & Philip M. Kim  
-[**2024**-6-27] >> [NMI](https://doi.org/10.1038/s42256-024-00860-4) • high • [data](http://pepflow.ccbr.proteinsolver.org) • [PepFlow](https://gitlab.com/oabdin/pepflow) • Cyclic/MD/Difussion
+[**2024**-6-27] >> [NMI](https://doi.org/10.1038/s42256-024-00860-4) • high • [data](http://pepflow.ccbr.proteinsolver.org) • [PepFlow](https://gitlab.com/oabdin/pepflow) • Cyclic/MD/Diffusion
 
 **Full-Atom Peptide Design with Geometric Latent Diffusion**  
 Xiangzhe Kong, Yinjun Jia, Wenbing Huang, Yang Liu  
@@ -141,6 +149,10 @@ Parisa Hosseinzadeh, ..., David Baker
 **Elucidating Solution Structures of Cyclic Peptides Using Molecular Dynamics Simulations**  
 Jovan Damjanovic, Jiayuan Miao, He Huang, Yu-Shan Lin  
 [**2021**-1-11] >> [Chemical Reviews](https://doi.org/10.1021/acs.chemrev.0c01087) • high • Cyclic/MD
+
+**Strategies for Fine-Tuning the Conformations of Cyclic Peptides**  
+Rasha Jwad, Daniel Weissberger, and Luke Hunter  
+[**2020**-8-5] >> [Chem. Rev.](https://doi.org/10.1021/acs.chemrev.0c00013) • high • Cyclic
 
 ---
 
@@ -306,6 +318,10 @@ Fangping Wan, Felix Wong, James J. Collins & Cesar de la Fuente-Nunez
 Arup Mondal, Liwei Chang and Alberto Perez  
 [**2022**-8-26] >> [QRB Discovery](https://doi.org/10.1017/qrd.2022.14)
 
+**Strategies for Fine-Tuning the Conformations of Cyclic Peptides**  
+Rasha Jwad, Daniel Weissberger, and Luke Hunter  
+[**2020**-8-5] >> [Chem. Rev.](https://doi.org/10.1021/acs.chemrev.0c00013) • high • Cyclic
+
 
 ## 2. Representation
 
@@ -323,6 +339,10 @@ Chenhao Zhang, Chengyun Zhang, Tianfeng Shang, Ning Zhu, Xinyi Wu, Hongliang Dua
 Liwei Chang and Alberto Perez  
 [**2022**-11-21] >> [Angew](https://doi.org/10.1002/anie.202213362) • [AF](https://deepmind.google/technologies/alphafold/)
 
+**Harnessing protein folding neural networks for  peptide–protein docking**  
+Tomer Tsaban, Julia K. Varga, Orly Avraham, Ziv Ben-Aharon, Alisa Khramushin &  Ora Schueler-Furman  
+[**2021**-11-10] >> [NC](https://doi.org/10.1038/s41467-021-27838-9) • [GitHub](https://github.com/Furman-Lab/Peptide_docking_with_AF2_and_RosettAfold) • [AF](https://deepmind.google/technologies/alphafold/)
+
 
 ### 4.2 Monomer
 
@@ -337,7 +357,7 @@ Xingyu Ouyang, Xinchun Ran, Han Xu, Yi-Lei Zhao, A. James Link, Zhongyue Yang
 
 **Direct conformational sampling from peptide energy landscapes through hypernetwork-conditioned diffusion**  
 Osama Abdin & Philip M. Kim  
-[**2024**-6-27] >> [NMI](https://doi.org/10.1038/s42256-024-00860-4) • high • [data](http://pepflow.ccbr.proteinsolver.org) • [PepFlow](https://gitlab.com/oabdin/pepflow) • Cyclic/MD/Difussion
+[**2024**-6-27] >> [NMI](https://doi.org/10.1038/s42256-024-00860-4) • high • [data](http://pepflow.ccbr.proteinsolver.org) • [PepFlow](https://gitlab.com/oabdin/pepflow) • Cyclic/MD/Diffusion
 
 **Structure prediction of linear and cyclic peptides using  CABS-flex**  
 Aleksandra Badaczewska-Dawid, Karol Wróblewski, Mateusz Kurcinski & Sebastian Kmiecik  
@@ -375,6 +395,10 @@ Nathaniel R. Bennett, Brian Coventry, ..., David Baker
 
 
 ### 6.2 Sequence-based
+
+**Improving Inverse Folding for Peptide Design with Diversity-Regularized Direct Preference Optimization**  
+Ryan Park, Darren J. Hsu, C. Brian Roland, Chen Tessler, Maria Korshunova, Shie Mannor, Olivia Viessmann, Bruno Trentini  
+[**2024**-10-25] >> [arXiv](https://doi.org/10.48550/arXiv.2410.19471) • [ProteinMPNN](https://www.science.org/doi/10.1126/science.add2187)/Nvidia
 
 **Design of linear and cyclic peptide binders of different lengths from protein sequence information**  
 Qiuzhen Li, Efstathios Nikolaos Vlachos, Patrick Bryant  
@@ -441,6 +465,10 @@ Bohan Ma, Donghua Liu, Zhe Wang, Dize Zhang, Yanlin Jian, et. al.
 
 ### 7.2 Principle
 
+**Discovery of a Series of Macrocycles as Potent Inhibitors of Leishmania Infantum**  
+Federico Riu, Larissa Alena Ruppitsch, Duc Duy Vo, Richard S. Hong, Mohit Tyagi, An Matheeussen, Sarah Hendrickx, Vasanthanathan Poongavanam, Guy Caljon, Ahmad Y. Sheikh, Peter Sjö, and Jan Kihlberg  
+[**2024**-10-8] >> [J. Med. Chem.](https://doi.org/10.1021/acs.jmedchem.4c01370) • high • [Weixin](https://mp.weixin.qq.com/s/jisVUSzJu4t9BD3JFVb_-A) • Cyclic
+
 **Beware of extreme calculated lipophilicity when designing cyclic peptides**  
 Vasanthanathan Poongavanam, Duc Duy Vo & Jan Kihlberg  
 [**2024**-9-19] >> [Nat. Chem. Biol.](https://doi.org/10.1038/s41589-024-01715-0) • [SI](https://www.nature.com/articles/s41589-024-01715-0#MOESM1) • [Weixin](https://mp.weixin.qq.com/s/B65rJB1i_xrP8fTfbQ3Taw) • Cyclic/clogP
@@ -491,12 +519,16 @@ Vasso Apostolopoulos, Joanna Bojarska, ...
 
 ## Citations
 
-<div>
-<p>
-@&#123 &#125
-</p>
-</div>
-<hr>
+⏳ In writing...
+
+```bibtex
+@article{silongzhai2024art,
+  title     = {Artificial Intelligence in Target-based Drug Design of Peptide},
+  author    = {Silong Zhai},
+  year      = {2024},
+  journal   = {}
+}
+```
 
 <picture>
   <source

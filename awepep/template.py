@@ -102,6 +102,17 @@ fig = Template(
 """
 )
 
+bibtext = """⏳ In writing...
+
+```bibtex
+@article{silongzhai2024art,
+  title     = {Artificial Intelligence in Target-based Drug Design of Peptide},
+  author    = {Silong Zhai},
+  year      = {2024},
+  journal   = {}
+}
+```"""
+
 contributing_and_see_also = Template(
     f"""
 ## Cntribution
@@ -115,12 +126,7 @@ contributing_and_see_also = Template(
 
 ## Citations
 
-<div>
-<p>
-@&#123 &#125
-</p>
-</div>
-<hr>
+{bibtext}
 
 <picture>
   <source
