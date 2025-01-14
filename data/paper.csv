@@ -34,3 +34,19 @@ Harnessing protein folding neural networks for  peptide–protein docking,Struct
 Strategies for Fine-Tuning the Conformations of Cyclic Peptides,Reviews,Structure,"Rasha Jwad, Daniel Weissberger, and Luke Hunter",[Chem. Rev.](https://doi.org/10.1021/acs.chemrev.0c00013),,,high,2020-8-5,,,true,Cyclic
 Discovery of a Series of Macrocycles as Potent Inhibitors of Leishmania Infantum,Others,Principle,"Federico Riu, Larissa Alena Ruppitsch, Duc Duy Vo, Richard S. Hong, Mohit Tyagi, An Matheeussen, Sarah Hendrickx, Vasanthanathan Poongavanam, Guy Caljon, Ahmad Y. Sheikh, Peter Sjö, and Jan Kihlberg",[J. Med. Chem.](https://doi.org/10.1021/acs.jmedchem.4c01370),,,high,2024-10-8,,[Weixin](https://mp.weixin.qq.com/s/jisVUSzJu4t9BD3JFVb_-A),,Cyclic
 Improving Inverse Folding for Peptide Design with Diversity-Regularized Direct Preference Optimization,Design,Sequence-based,"Ryan Park, Darren J. Hsu, C. Brian Roland, Chen Tessler, Maria Korshunova, Shie Mannor, Olivia Viessmann, Bruno Trentini",[arXiv](https://doi.org/10.48550/arXiv.2410.19471),,,,2024-10-25,,,,ProteinMPNN/Nvidia
+Hotspot-Driven Peptide Design via Multi-Fragment Autoregressive Extension,Design,Structure-based,"Jiahan Li, Tong Chen, Shitong Luo, Chaoran Cheng, Jiaqi Guan, Ruihan Guo, Sheng Wang, Ge Liu, Jian Peng, Jianzhu Ma",ICML/[arXiv](https://doi.org/10.48550/arXiv.2411.18463),,,,2024-11-26,,,true,Jianzhu Ma/Flow
+A Computational Pipeline for Accurate Prioritization of Protein-Protein Binding Candidates in High-Throughput Protein Libraries,Others,Screen,"Arup Mondal, Bhumika Singh, Roland H. Felkner, Anna De Falco, GVT Swapna, Gaetano T. Montelione, Monica J. Roth, and Alberto Perez",[Angew](https://doi.org/10.1002/anie.202405767),,,high,2024-6-10,,,,AF
+"Accurate de Novo Design of High-Affinity Protein Binding Macrocycles Using Deep Learning",Design,Structure-based,"Stephen Rettie, ..., Gaurav Bhardwaj",[bioRxiv](https://doi.org/10.1101/2024.11.18.622547),,,high,2024-11-18,,,true,RFdiffusion/David Baker/Gaurav Bhardwaj/Cyclic
+"CycPeptMP: Enhancing Membrane Permeability Prediction of Cyclic Peptides with Multi-Level Molecular Features and Data Augmentation",Proprty Prediction,Structure-based,"Jianan Li, Keisuke Yanagisawa, and Yutaka Akiyama",[BIB](https://doi.org/10.1093/bib/bbae417),[GitHub](https://github.com/akiyamalab/cycpeptmp),[CycPeptMPDB](http://cycpeptmpdb.com/),high,2024-9-1,,,true,Cyclic/Akiyama Yutaka
+"Full-Atom Peptide Design Based on Multi-Modal Flow Matching",Design,Structure-based,"Jiahan Li, Chaoran Cheng, Zuofan Wu, Ruihan Guo, Shitong Luo, Zhizhou Ren, Jian Peng, and Jianzhu Ma",[arXiv](https://doi.org/10.48550/arXiv.2406.00735),[GitHub](https://github.com/Ced3-han/PepFlowww),,high,2024-6-2,,,true,Jianzhu Ma/Flow
+"PepDoRA: A Unified Peptide Language Model via Weight-Decomposed Low-Rank Adaptation",Design,Sequence-based,"Leyao Wang, Rishab Pulugurta, Pranay Vure, Yinuo Zhang, Aastha Pal, and Pranam Chatterjee",[arXiv](https://doi.org/10.48550/arXiv.2410.20667),[GitHub](https://github.com/Ced3-han/PepFlowww),,,2024-10-28,,,,Pranam Chatterjee/MLM
+"PepMLM: Target Sequence-Conditioned Generation of Peptide Binders via Masked Language Modeling",Design,Sequence-based,"Tianlai Chen, Sarah Pertsemlidis, and Pranam Chatterjee",[ICLR](https://doi.org/10.48550/arXiv.2310.03842),,,high,2023-10-5,,,true,Pranam Chatterjee/MLM
+"Peptide-Aware Chemical Language Model Successfully Predicts Membrane Diffusion of Cyclic Peptides",Proprty Prediction,Sequence-based,"Aaron L. Feller, Claus O. Wilke",[bioRxiv](https://doi.org/10.1101/2024.08.09.607221),,,,2024-11-21,,,,Cyclic
+
+
+
+
+
+
+
+

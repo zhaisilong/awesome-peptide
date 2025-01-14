@@ -11,7 +11,7 @@ cd awesome-peptide
 mamba create -n awepep python=3.9
 mamba activate awepep
 
-pip install .
+pip install -e .
 
 awepep  # This command builds the markdown from the CSV files
 awecheck  # Check validation of data/paper.csv

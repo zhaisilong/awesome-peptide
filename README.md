@@ -15,7 +15,23 @@
 5. [CSV Downloads](data/paper.csv): Quick access to paper data in `CSV` format.
 6. Automation: Use [Liquid](https://liquid.readthedocs.io/en/latest/) templates to generate Markdown from `CSV`, making it easy to build your own paper repository. >>> [[Details](CONTRIBUTING.md)]
 
-📅 _Papers last six month, updated on 2024-10-31:_
+📅 _Papers last six month, updated on 2025-01-14:_
+
+**Hotspot-Driven Peptide Design via Multi-Fragment Autoregressive Extension**  
+Jiahan Li, Tong Chen, Shitong Luo, Chaoran Cheng, Jiaqi Guan, Ruihan Guo, Sheng Wang, Ge Liu, Jian Peng, Jianzhu Ma  
+[**2024**-11-26] >> ICML/[arXiv](https://doi.org/10.48550/arXiv.2411.18463) • [Jianzhu Ma](https://scholar.google.com/citations?user=AATzYuAAAAAJ)/Flow
+
+**Peptide-Aware Chemical Language Model Successfully Predicts Membrane Diffusion of Cyclic Peptides**  
+Aaron L. Feller, Claus O. Wilke  
+[**2024**-11-21] >> [bioRxiv](https://doi.org/10.1101/2024.08.09.607221) • Cyclic
+
+**Accurate de Novo Design of High-Affinity Protein Binding Macrocycles Using Deep Learning**  
+Stephen Rettie, ..., Gaurav Bhardwaj  
+[**2024**-11-18] >> [bioRxiv](https://doi.org/10.1101/2024.11.18.622547) • high • [RFdiffusion](https://github.com/RosettaCommons/RFdiffusion)/[David Baker](https://scholar.google.com/citations?hl=en&user=UKqIqRsAAAAJ)/[Gaurav Bhardwaj](https://scholar.google.com/citations?user=AJSn9j0AAAAJ)/Cyclic
+
+**PepDoRA: A Unified Peptide Language Model via Weight-Decomposed Low-Rank Adaptation**  
+Leyao Wang, Rishab Pulugurta, Pranay Vure, Yinuo Zhang, Aastha Pal, and Pranam Chatterjee  
+[**2024**-10-28] >> [arXiv](https://doi.org/10.48550/arXiv.2410.20667) • [GitHub](https://github.com/Ced3-han/PepFlowww) • [Pranam Chatterjee](https://scholar.google.co.uk/citations?user=XExgv9YAAAAJ)/MLM
 
 **Improving Inverse Folding for Peptide Design with Diversity-Regularized Direct Preference Optimization**  
 Ryan Park, Darren J. Hsu, C. Brian Roland, Chen Tessler, Maria Korshunova, Shie Mannor, Olivia Viessmann, Bruno Trentini  
@@ -64,6 +80,10 @@ Fanhao Wang, Yuzhe Wang, Laiyi Feng, Changsheng Zhang, and Luhua Lai
 <p>Despite the exciting progress in target-specific de novo protein binder design, peptide binder design remains challenging due to the flexibility of peptide structures and the scarcity of protein-peptide complex structure data. In this study, we curated a large synthetic data set, referred to as PepPC-F, from the abundant protein−protein interface data and developed DiffPepBuilder, a de novo target-specific peptide binder generation method that utilizes an SE(3)-equivariant diffusion model trained on PepPC-F to codesign peptide sequences and structures. DiffPepBuilder also introduces disulfide bonds to stabilize the generated peptide structures. We tested DiffPepBuilder on 30 experimentally verified strong peptide binders with available protein−peptide complex structures. DiffPepBuilder was able to effectively recall the native structures and sequences of the peptide ligands and to generate novel peptide binders with improved binding free energy. We subsequently conducted de novo generation case studies on three targets. In both the regeneration test and case studies, DiffPepBuilder outperformed AfDesign and RFdiffusion coupled with ProteinMPNN, in terms of sequence and structure recall, interface quality, and structural diversity. Molecular dynamics simulations confirmed that the introduction of disulfide bonds enhanced the structural rigidity and binding performance of the generated peptides. As a general peptide binder de novo design tool, DiffPepBuilder can be used to design peptide binders for given protein targets with three-dimensional and binding site information.</p>
 </details>  
 
+**CycPeptMP: Enhancing Membrane Permeability Prediction of Cyclic Peptides with Multi-Level Molecular Features and Data Augmentation**  
+Jianan Li, Keisuke Yanagisawa, and Yutaka Akiyama  
+[**2024**-9-1] >> [BIB](https://doi.org/10.1093/bib/bbae417) • high • [CycPeptMPDB](http://cycpeptmpdb.com/) • [GitHub](https://github.com/akiyamalab/cycpeptmp) • Cyclic/[Akiyama Yutaka](https://scholar.google.com/citations?hl=en&user=eHAafMgAAAAJ)
+
 **Reinforcement learning-driven exploration of peptide space: accelerating generation of drug-like peptides**  
 Qian Wang, Xiaotong Hu, Zhiqiang Wei, Hao Lu , Hao Liu  
 [**2024**-8-27] >> [BIB](https://doi.org/10.1093/bib/bbae444) • [MondTDSRL](https://github.com/p1acemker/MomdTDSRL.git) • RL/MD
@@ -77,19 +97,15 @@ Suhaas Bhat, Kalyan Palepu, ..., Pranam Chatterjee
 <p>针对难以成药的蛋白质设计结合剂是药物开发中的难题，尤其是无序或构象不稳定的蛋白。我们提出了一种通用算法框架，利用目标蛋白的氨基酸序列设计短链线性多肽。通过对ESM-2蛋白语言模型的潜在空间进行高斯扰动生成多肽候选序列，并通过基于CLIP的对比学习架构筛选靶向选择性。最终创建了Peptide Prioritization via CLIP（PepPrCLIP）管道，并在实验中验证了这些多肽的有效性，既可作为抑制剂，也可通过与E3泛素连接酶融合降解多种蛋白靶标。该策略无需稳定的三级结构，能够靶向无序和难以成药的蛋白质，如转录因子和融合致癌蛋白。</p>
 </details>  
 
-**Direct conformational sampling from peptide energy landscapes through hypernetwork-conditioned diffusion**  
-Osama Abdin & Philip M. Kim  
-[**2024**-6-27] >> [NMI](https://doi.org/10.1038/s42256-024-00860-4) • high • [data](http://pepflow.ccbr.proteinsolver.org) • [PepFlow](https://gitlab.com/oabdin/pepflow) • Cyclic/MD/Diffusion
-
-**Deep-learning-based prediction framework for protein-peptide interactions with structure generation pipeline**  
-Jingxuan Ge, Dejun Jiang, ..., Chang-Yu Hsieh, Tingjun Hou  
-[**2024**-6-19] >> [Cell Rep. Phys. Sci.](https://doi.org/10.1016/j.xcrp.2024.101980) • [zenodo](https://doi.org/10.5281/zenodo.8324920) • [ITN](https://github.com/gejingxuan/ITN) • [AF](https://deepmind.google/technologies/alphafold/)/[Tingjun Hou](https://scholar.google.com/citations?hl=en&user=vHW2kqUAAAAJ)
-
-**HELM-GPT: de novo macrocyclic peptide design using generative pre-trained transformer**  
-Xiaopeng Xu,   Chencheng Xu, Wenjia He, Lesong Wei, Haoyang Li, Juexiao Zhou, Ruochi Zhang, Yu Wang, Yuanpeng Xiong, Xin Gao  
-[**2024**-6-12] >> [Bioinformatics](https://doi.org/10.1093/bioinformatics/btae364) • [Github](https://github.com/charlesxu90/helm-gpt) • GPT/HELM/Cyclic/RL
-
 📌 _Papers pined:_
+
+**Hotspot-Driven Peptide Design via Multi-Fragment Autoregressive Extension**  
+Jiahan Li, Tong Chen, Shitong Luo, Chaoran Cheng, Jiaqi Guan, Ruihan Guo, Sheng Wang, Ge Liu, Jian Peng, Jianzhu Ma  
+[**2024**-11-26] >> ICML/[arXiv](https://doi.org/10.48550/arXiv.2411.18463) • [Jianzhu Ma](https://scholar.google.com/citations?user=AATzYuAAAAAJ)/Flow
+
+**Accurate de Novo Design of High-Affinity Protein Binding Macrocycles Using Deep Learning**  
+Stephen Rettie, ..., Gaurav Bhardwaj  
+[**2024**-11-18] >> [bioRxiv](https://doi.org/10.1101/2024.11.18.622547) • high • [RFdiffusion](https://github.com/RosettaCommons/RFdiffusion)/[David Baker](https://scholar.google.com/citations?hl=en&user=UKqIqRsAAAAJ)/[Gaurav Bhardwaj](https://scholar.google.com/citations?user=AJSn9j0AAAAJ)/Cyclic
 
 **BindCraft: one-shot design of functional protein binders**  
 Martin Pacesa, Lennart Nickel, ..., Sergey Ovchinnikov, Bruno E. Correia  
@@ -113,13 +129,25 @@ Fanhao Wang, Yuzhe Wang, Laiyi Feng, Changsheng Zhang, and Luhua Lai
 <p>Despite the exciting progress in target-specific de novo protein binder design, peptide binder design remains challenging due to the flexibility of peptide structures and the scarcity of protein-peptide complex structure data. In this study, we curated a large synthetic data set, referred to as PepPC-F, from the abundant protein−protein interface data and developed DiffPepBuilder, a de novo target-specific peptide binder generation method that utilizes an SE(3)-equivariant diffusion model trained on PepPC-F to codesign peptide sequences and structures. DiffPepBuilder also introduces disulfide bonds to stabilize the generated peptide structures. We tested DiffPepBuilder on 30 experimentally verified strong peptide binders with available protein−peptide complex structures. DiffPepBuilder was able to effectively recall the native structures and sequences of the peptide ligands and to generate novel peptide binders with improved binding free energy. We subsequently conducted de novo generation case studies on three targets. In both the regeneration test and case studies, DiffPepBuilder outperformed AfDesign and RFdiffusion coupled with ProteinMPNN, in terms of sequence and structure recall, interface quality, and structural diversity. Molecular dynamics simulations confirmed that the introduction of disulfide bonds enhanced the structural rigidity and binding performance of the generated peptides. As a general peptide binder de novo design tool, DiffPepBuilder can be used to design peptide binders for given protein targets with three-dimensional and binding site information.</p>
 </details>  
 
+**CycPeptMP: Enhancing Membrane Permeability Prediction of Cyclic Peptides with Multi-Level Molecular Features and Data Augmentation**  
+Jianan Li, Keisuke Yanagisawa, and Yutaka Akiyama  
+[**2024**-9-1] >> [BIB](https://doi.org/10.1093/bib/bbae417) • high • [CycPeptMPDB](http://cycpeptmpdb.com/) • [GitHub](https://github.com/akiyamalab/cycpeptmp) • Cyclic/[Akiyama Yutaka](https://scholar.google.com/citations?hl=en&user=eHAafMgAAAAJ)
+
 **Direct conformational sampling from peptide energy landscapes through hypernetwork-conditioned diffusion**  
 Osama Abdin & Philip M. Kim  
 [**2024**-6-27] >> [NMI](https://doi.org/10.1038/s42256-024-00860-4) • high • [data](http://pepflow.ccbr.proteinsolver.org) • [PepFlow](https://gitlab.com/oabdin/pepflow) • Cyclic/MD/Diffusion
 
+**Full-Atom Peptide Design Based on Multi-Modal Flow Matching**  
+Jiahan Li, Chaoran Cheng, Zuofan Wu, Ruihan Guo, Shitong Luo, Zhizhou Ren, Jian Peng, and Jianzhu Ma  
+[**2024**-6-2] >> [arXiv](https://doi.org/10.48550/arXiv.2406.00735) • high • [GitHub](https://github.com/Ced3-han/PepFlowww) • [Jianzhu Ma](https://scholar.google.com/citations?user=AATzYuAAAAAJ)/Flow
+
 **Full-Atom Peptide Design with Geometric Latent Diffusion**  
 Xiangzhe Kong, Yinjun Jia, Wenbing Huang, Yang Liu  
 [**2024**-2-21] >> NeurIPS/[Arxive](https://doi.org/10.48550/arXiv.2402.13555) • [code](https://github.com/THUNLP-MT/PepGLAD) • Full-Atom/Diffusion
+
+**PepMLM: Target Sequence-Conditioned Generation of Peptide Binders via Masked Language Modeling**  
+Tianlai Chen, Sarah Pertsemlidis, and Pranam Chatterjee  
+[**2023**-10-5] >> [ICLR](https://doi.org/10.48550/arXiv.2310.03842) • high • [Pranam Chatterjee](https://scholar.google.co.uk/citations?user=XExgv9YAAAAJ)/MLM
 
 **Improving de novo protein binder design with deep learning**  
 Nathaniel R. Bennett, Brian Coventry, ..., David Baker  
@@ -179,6 +207,8 @@ Rasha Jwad, Daniel Weissberger, and Luke Hunter
   <strong><a href='#2-representation'>2) Representation</a></strong>
   <br>
   <strong><a href='#3-proprty-prediction'>3) Proprty Prediction</a></strong>
+  <br><a href='#31-sequence-based'>Sequence-based</a> • 
+  <a href='#32-structure-based'>Structure-based</a>
   <br>
   <strong><a href='#4-structure-modeling'>4) Structure Modeling</a></strong>
   <br><a href='#41-complex'>Complex</a> • 
@@ -198,7 +228,8 @@ Rasha Jwad, Daniel Weissberger, and Luke Hunter
   <a href='#72-principle'>Principle</a> • 
   <a href='#73-protein-binders'>Protein Binders</a> • 
   <a href='#74-rapid'>RaPID</a> • 
-  <a href='#75-therapeutic'>Therapeutic</a>
+  <a href='#75-screen'>Screen</a> • 
+  <a href='#76-therapeutic'>Therapeutic</a>
   <br>
 </p>
 
@@ -242,7 +273,6 @@ Karina B. Santos, Isabella A. Guedes, Ana L. M. Karl, and Laurent E. Dardenne
 
 | Datasets    | Description                                                                                                                                                                                                                                                         | Link                                  |
 | ----------- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- | ------------------------------------- |
-| PDB         | The Protein Data Bank (PDB) is a database of 3D structural data of large biological molecules, such as proteins and nucleic acids. These data are gathered using experimental methods such as X-ray crystallography, NMR spectroscopy, or cryo-electron microscopy. |                                       |
 | CycPeptMPDB | CycPeptMPDB, the first web-accessible database of cyclic peptide membrane permeability.                                                                                                                                                                             | [CycPeptMPDB](http://cycpeptmpdb.com) |
 
 #### 0.2.1 Sequence Datasets
@@ -327,6 +357,20 @@ Rasha Jwad, Daniel Weissberger, and Luke Hunter
 
 ## 3. Proprty Prediction
 
+### 3.1 Sequence-based
+
+**Peptide-Aware Chemical Language Model Successfully Predicts Membrane Diffusion of Cyclic Peptides**  
+Aaron L. Feller, Claus O. Wilke  
+[**2024**-11-21] >> [bioRxiv](https://doi.org/10.1101/2024.08.09.607221) • Cyclic
+
+
+### 3.2 Structure-based
+
+**CycPeptMP: Enhancing Membrane Permeability Prediction of Cyclic Peptides with Multi-Level Molecular Features and Data Augmentation**  
+Jianan Li, Keisuke Yanagisawa, and Yutaka Akiyama  
+[**2024**-9-1] >> [BIB](https://doi.org/10.1093/bib/bbae417) • high • [CycPeptMPDB](http://cycpeptmpdb.com/) • [GitHub](https://github.com/akiyamalab/cycpeptmp) • Cyclic/[Akiyama Yutaka](https://scholar.google.com/citations?hl=en&user=eHAafMgAAAAJ)
+
+
 ## 4. Structure Modeling
 
 ### 4.1 Complex
@@ -396,6 +440,10 @@ Nathaniel R. Bennett, Brian Coventry, ..., David Baker
 
 ### 6.2 Sequence-based
 
+**PepDoRA: A Unified Peptide Language Model via Weight-Decomposed Low-Rank Adaptation**  
+Leyao Wang, Rishab Pulugurta, Pranay Vure, Yinuo Zhang, Aastha Pal, and Pranam Chatterjee  
+[**2024**-10-28] >> [arXiv](https://doi.org/10.48550/arXiv.2410.20667) • [GitHub](https://github.com/Ced3-han/PepFlowww) • [Pranam Chatterjee](https://scholar.google.co.uk/citations?user=XExgv9YAAAAJ)/MLM
+
 **Improving Inverse Folding for Peptide Design with Diversity-Regularized Direct Preference Optimization**  
 Ryan Park, Darren J. Hsu, C. Brian Roland, Chen Tessler, Maria Korshunova, Shie Mannor, Olivia Viessmann, Bruno Trentini  
 [**2024**-10-25] >> [arXiv](https://doi.org/10.48550/arXiv.2410.19471) • [ProteinMPNN](https://www.science.org/doi/10.1126/science.add2187)/Nvidia
@@ -421,8 +469,20 @@ Suhaas Bhat, Kalyan Palepu, ..., Pranam Chatterjee
 Xiaopeng Xu,   Chencheng Xu, Wenjia He, Lesong Wei, Haoyang Li, Juexiao Zhou, Ruochi Zhang, Yu Wang, Yuanpeng Xiong, Xin Gao  
 [**2024**-6-12] >> [Bioinformatics](https://doi.org/10.1093/bioinformatics/btae364) • [Github](https://github.com/charlesxu90/helm-gpt) • GPT/HELM/Cyclic/RL
 
+**PepMLM: Target Sequence-Conditioned Generation of Peptide Binders via Masked Language Modeling**  
+Tianlai Chen, Sarah Pertsemlidis, and Pranam Chatterjee  
+[**2023**-10-5] >> [ICLR](https://doi.org/10.48550/arXiv.2310.03842) • high • [Pranam Chatterjee](https://scholar.google.co.uk/citations?user=XExgv9YAAAAJ)/MLM
+
 
 ### 6.3 Structure-based
+
+**Hotspot-Driven Peptide Design via Multi-Fragment Autoregressive Extension**  
+Jiahan Li, Tong Chen, Shitong Luo, Chaoran Cheng, Jiaqi Guan, Ruihan Guo, Sheng Wang, Ge Liu, Jian Peng, Jianzhu Ma  
+[**2024**-11-26] >> ICML/[arXiv](https://doi.org/10.48550/arXiv.2411.18463) • [Jianzhu Ma](https://scholar.google.com/citations?user=AATzYuAAAAAJ)/Flow
+
+**Accurate de Novo Design of High-Affinity Protein Binding Macrocycles Using Deep Learning**  
+Stephen Rettie, ..., Gaurav Bhardwaj  
+[**2024**-11-18] >> [bioRxiv](https://doi.org/10.1101/2024.11.18.622547) • high • [RFdiffusion](https://github.com/RosettaCommons/RFdiffusion)/[David Baker](https://scholar.google.com/citations?hl=en&user=UKqIqRsAAAAJ)/[Gaurav Bhardwaj](https://scholar.google.com/citations?user=AJSn9j0AAAAJ)/Cyclic
 
 **Target-Specific De Novo Peptide Binder Design with DiffPepBuilder**  
 Fanhao Wang, Yuzhe Wang, Laiyi Feng, Changsheng Zhang, and Luhua Lai  
@@ -432,6 +492,10 @@ Fanhao Wang, Yuzhe Wang, Laiyi Feng, Changsheng Zhang, and Luhua Lai
 <summary>🔎 Abstract</summary>
 <p>Despite the exciting progress in target-specific de novo protein binder design, peptide binder design remains challenging due to the flexibility of peptide structures and the scarcity of protein-peptide complex structure data. In this study, we curated a large synthetic data set, referred to as PepPC-F, from the abundant protein−protein interface data and developed DiffPepBuilder, a de novo target-specific peptide binder generation method that utilizes an SE(3)-equivariant diffusion model trained on PepPC-F to codesign peptide sequences and structures. DiffPepBuilder also introduces disulfide bonds to stabilize the generated peptide structures. We tested DiffPepBuilder on 30 experimentally verified strong peptide binders with available protein−peptide complex structures. DiffPepBuilder was able to effectively recall the native structures and sequences of the peptide ligands and to generate novel peptide binders with improved binding free energy. We subsequently conducted de novo generation case studies on three targets. In both the regeneration test and case studies, DiffPepBuilder outperformed AfDesign and RFdiffusion coupled with ProteinMPNN, in terms of sequence and structure recall, interface quality, and structural diversity. Molecular dynamics simulations confirmed that the introduction of disulfide bonds enhanced the structural rigidity and binding performance of the generated peptides. As a general peptide binder de novo design tool, DiffPepBuilder can be used to design peptide binders for given protein targets with three-dimensional and binding site information.</p>
 </details>  
+
+**Full-Atom Peptide Design Based on Multi-Modal Flow Matching**  
+Jiahan Li, Chaoran Cheng, Zuofan Wu, Ruihan Guo, Shitong Luo, Zhizhou Ren, Jian Peng, and Jianzhu Ma  
+[**2024**-6-2] >> [arXiv](https://doi.org/10.48550/arXiv.2406.00735) • high • [GitHub](https://github.com/Ced3-han/PepFlowww) • [Jianzhu Ma](https://scholar.google.com/citations?user=AATzYuAAAAAJ)/Flow
 
 **Full-Atom Peptide Design with Geometric Latent Diffusion**  
 Xiangzhe Kong, Yinjun Jia, Wenbing Huang, Yang Liu  
@@ -493,7 +557,14 @@ Yuki Goto & Hiroaki Suga
 [**2021**-9-10] >> [Acc. Chem. Res.](https://doi.org/10.1021/acs.accounts.1c00391) • RaPID/Cyclic/[Hiroaki Suga](https://www.chem.s.u-tokyo.ac.jp/users/bioorg/English/member/Suga.html)/mRNA
 
 
-### 7.5 Therapeutic
+### 7.5 Screen
+
+**A Computational Pipeline for Accurate Prioritization of Protein-Protein Binding Candidates in High-Throughput Protein Libraries**  
+Arup Mondal, Bhumika Singh, Roland H. Felkner, Anna De Falco, GVT Swapna, Gaetano T. Montelione, Monica J. Roth, and Alberto Perez  
+[**2024**-6-10] >> [Angew](https://doi.org/10.1002/anie.202405767) • high • [AF](https://deepmind.google/technologies/alphafold/)
+
+
+### 7.6 Therapeutic
 
 **Converting peptides into drugs  targeting intracellular  protein–protein interactions**  
 Grégoire J.B. Philippe, David J. Craik and Sónia T. Henriques  

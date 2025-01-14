@@ -81,6 +81,7 @@ def main(csv: str="data/paper.csv"):
         pined_count = sum(df.progress_apply(lambda row: update_statistics(row, quality_counter, tags_counter), axis=1))
 
         if pined_count > config.max_pined:
+            print(df[df["pined"] == True])
             raise ValueError(f"Too many pined papers. Maximum allowed: {config.max_pined}")
 
         pretty_print_statistics(quality_counter, pined_count, tags_counter)
