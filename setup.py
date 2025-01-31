@@ -28,8 +28,8 @@ setup(
     python_requires='>=3.7',  # Specify the Python version your package supports
     entry_points={
         'console_scripts': [
-            'awepep=awepep.main:main',  # Replace with your module and function
-            'awecheck=awepep.check:main',
+            'awe-pep=awepep.main:main',  # Replace with your module and function
+            'awe-check=awepep.check:main',
         ],
     },
 )

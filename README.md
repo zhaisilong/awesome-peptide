@@ -15,7 +15,7 @@
 5. [CSV Downloads](data/paper.csv): Quick access to paper data in `CSV` format.
 6. Automation: Use [Liquid](https://liquid.readthedocs.io/en/latest/) templates to generate Markdown from `CSV`, making it easy to build your own paper repository. >>> [[Details](CONTRIBUTING.md)]
 
-📅 _Papers last six month, updated on 2025-01-14:_
+📅 _Papers last six month, updated on 2025-01-31:_
 
 **Hotspot-Driven Peptide Design via Multi-Fragment Autoregressive Extension**  
 Jiahan Li, Tong Chen, Shitong Luo, Chaoran Cheng, Jiaqi Guan, Ruihan Guo, Sheng Wang, Ge Liu, Jian Peng, Jianzhu Ma  
@@ -87,15 +87,6 @@ Jianan Li, Keisuke Yanagisawa, and Yutaka Akiyama
 **Reinforcement learning-driven exploration of peptide space: accelerating generation of drug-like peptides**  
 Qian Wang, Xiaotong Hu, Zhiqiang Wei, Hao Lu , Hao Liu  
 [**2024**-8-27] >> [BIB](https://doi.org/10.1093/bib/bbae444) • [MondTDSRL](https://github.com/p1acemker/MomdTDSRL.git) • RL/MD
-
-**Design of Peptide Binders to Conformationally Diverse Targets with Contrastive Language Modeling**  
-Suhaas Bhat, Kalyan Palepu, ..., Pranam Chatterjee  
-[**2024**-7-22] >> [Arxive](https://doi.org/10.1101/2023.06.26.546591) • [zenodo](https://zenodo.org/doi/10.5281/zenodo.10971077) • [huggingface](https://huggingface.co/ubiquitx/pepprclip) • Pipline
-  
-<details>
-<summary>🔎 Abstract</summary>
-<p>针对难以成药的蛋白质设计结合剂是药物开发中的难题，尤其是无序或构象不稳定的蛋白。我们提出了一种通用算法框架，利用目标蛋白的氨基酸序列设计短链线性多肽。通过对ESM-2蛋白语言模型的潜在空间进行高斯扰动生成多肽候选序列，并通过基于CLIP的对比学习架构筛选靶向选择性。最终创建了Peptide Prioritization via CLIP（PepPrCLIP）管道，并在实验中验证了这些多肽的有效性，既可作为抑制剂，也可通过与E3泛素连接酶融合降解多种蛋白靶标。该策略无需稳定的三级结构，能够靶向无序和难以成药的蛋白质，如转录因子和融合致癌蛋白。</p>
-</details>  
 
 📌 _Papers pined:_
 
@@ -590,15 +581,22 @@ Vasso Apostolopoulos, Joanna Bojarska, ...
 
 ## Citations
 
-⏳ In writing...
+
 
 ```bibtex
-@article{silongzhai2024art,
-  title     = {Artificial Intelligence in Target-based Drug Design of Peptide},
-  author    = {Silong Zhai},
-  year      = {2024},
-  journal   = {}
+@article{zhaiArtificialIntelligencePeptidebased2025,
+  title = {Artificial Intelligence in Peptide-Based Drug Design},
+  author = {Zhai, Silong and Liu, Tiantao and Lin, Shaolong and Li, Dan and Liu, Huanxiang and Yao, Xiaojun and Hou, Tingjun},
+  date = {2025-02-01},
+  journaltitle = {Drug Discovery Today},
+  shortjournal = {Drug Discovery Today},
+  volume = {30},
+  number = {2},
+  pages = {104300},
+  issn = {1359-6446},
+  doi = {10.1016/j.drudis.2025.104300}
 }
+
 ```
 
 <picture>

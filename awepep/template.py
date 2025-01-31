@@ -102,15 +102,22 @@ fig = Template(
 """
 )
 
-bibtext = """⏳ In writing...
+bibtext = """
 
 ```bibtex
-@article{silongzhai2024art,
-  title     = {Artificial Intelligence in Target-based Drug Design of Peptide},
-  author    = {Silong Zhai},
-  year      = {2024},
-  journal   = {}
+@article{zhaiArtificialIntelligencePeptidebased2025,
+  title = {Artificial Intelligence in Peptide-Based Drug Design},
+  author = {Zhai, Silong and Liu, Tiantao and Lin, Shaolong and Li, Dan and Liu, Huanxiang and Yao, Xiaojun and Hou, Tingjun},
+  date = {2025-02-01},
+  journaltitle = {Drug Discovery Today},
+  shortjournal = {Drug Discovery Today},
+  volume = {30},
+  number = {2},
+  pages = {104300},
+  issn = {1359-6446},
+  doi = {10.1016/j.drudis.2025.104300}
 }
+
 ```"""
 
 contributing_and_see_also = Template(
