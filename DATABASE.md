@@ -6,6 +6,10 @@
 
 #### 0.1.2 Structure Benchmarks
 
+"Advancements in Nanobody Epitope Prediction: A Comparative Study of AlphaFold2Multimer vs AlphaFold3",Reviews,Epitope Prediction,"Eshak, Floriane, and Anne Goupil-Lamy
+[**2025**-2-24] >> [JCIM](https://doi.org/10.1021/acs.jcim.4c01877) 
+
+
 **Predicting Protein−Peptide Interactions: Benchmarking Deep Learning Techniques and a Comparison with Focused Docking**  
 Sudhanshu Shanker and Michel F. Sanner  
 [**2024**-5-11] >> [JCIM](https://doi.org/10.1021/acs.jcim.3c00602) • [GitHub](https://github.com/sannerlab/benchmarking_2023) • Fold

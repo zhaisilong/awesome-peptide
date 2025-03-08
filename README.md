@@ -17,6 +17,18 @@
 
 📅 _Papers last six month, updated on 2025-03-08:_
 
+**Prohormone cleavage prediction uncovers a non-incretin anti-obesity peptide**  
+Laetitia Coassolo, Niels B. Danneskiold-Samsøe, Quennie Nguyen, Amanda Wiggenhorn, Meng Zhao, David Cheng-Hao Wang, David Toomer, et al.  
+[**2025**-3-5] >> [Nature](https://doi.org/10.1038/s41586-025-08683-y)
+
+**Artificial intelligence in peptide-based drug design**  
+Zhai Silong, Tiantao Liu, Shaolong Lin, Dan Li, Huanxiang Liu, Xiaojun Yao and Tingjun Hou  
+[**2025**-2-1] >> [Drug Discovery Today](https://doi.org/10.1016/j.drudis.2025.104300) • [GitHub](https://github.com/zhaisilong/awesome-peptide) • [Tingjun Hou](https://scholar.google.com/citations?hl=en&user=vHW2kqUAAAAJ)
+
+**pLM4CPPs: Protein Language Model-Based Predictor for Cell Penetrating Peptides**  
+Nandan Kumar, Zhenjiao Du and Yonghui Li  
+[**2025**-1-29] >> [JCIM](https://doi.org/10.1021/acs.jcim.4c01338)
+
 **Hotspot-Driven Peptide Design via Multi-Fragment Autoregressive Extension**  
 Jiahan Li, Tong Chen, Shitong Luo, Chaoran Cheng, Jiaqi Guan, Ruihan Guo, Sheng Wang, Ge Liu, Jian Peng, Jianzhu Ma  
 [**2024**-11-26] >> ICML/[arXiv](https://doi.org/10.48550/arXiv.2411.18463) • [Jianzhu Ma](https://scholar.google.com/citations?user=AATzYuAAAAAJ)/Flow
@@ -52,15 +64,15 @@ Qiuzhen Li, Efstathios Nikolaos Vlachos, Patrick Bryant
 
 **Discovery of antimicrobial peptides with notable antibacterial potency by an LLM-based foundation model**  
 Jike Wang, Jianwen Feng, Yu Kang, Peichen Pan, Jingxuan Ge, Yan Wang, Mingyang Wang  
-[**2024**-10-10] >> [Science Advances](https://doi.org/10.1126/sciadv.ads8932) • high • [Tingjun Hou](https://scholar.google.com/citations?hl=en&user=vHW2kqUAAAAJ)/Diffusion/[Chang-Yu Hsieh](https://scholar.google.com/citations?user=K-AjhSgAAAAJ&hl=en)
+[**2024**-10-10] >> [Science Advances](https://doi.org/10.1126/sciadv.ads8932) • high • [GitHub](https://github.com/jkwang93/AMP-designer) • [公众号](https://mp.weixin.qq.com/s/BWuRo2A3ehLlhi2Eq2-Qhw) • [Tingjun Hou](https://scholar.google.com/citations?hl=en&user=vHW2kqUAAAAJ)/Diffusion/[Chang-Yu Hsieh](https://scholar.google.com/citations?user=K-AjhSgAAAAJ&hl=en)
 
 **Discovery of a Series of Macrocycles as Potent Inhibitors of Leishmania Infantum**  
 Federico Riu, Larissa Alena Ruppitsch, Duc Duy Vo, Richard S. Hong, Mohit Tyagi, An Matheeussen, Sarah Hendrickx, Vasanthanathan Poongavanam, Guy Caljon, Ahmad Y. Sheikh, Peter Sjö, and Jan Kihlberg  
-[**2024**-10-8] >> [J. Med. Chem.](https://doi.org/10.1021/acs.jmedchem.4c01370) • high • [Weixin](https://mp.weixin.qq.com/s/jisVUSzJu4t9BD3JFVb_-A) • Cyclic
+[**2024**-10-8] >> [J. Med. Chem.](https://doi.org/10.1021/acs.jmedchem.4c01370) • high • [公众号](https://mp.weixin.qq.com/s/jisVUSzJu4t9BD3JFVb_-A) • Cyclic
 
 **BindCraft: one-shot design of functional protein binders**  
 Martin Pacesa, Lennart Nickel, ..., Sergey Ovchinnikov, Bruno E. Correia  
-[**2024**-10-1] >> [Arxive](https://doi.org/10.1101/2024.09.30.615802) • high • [GitHub](https://github.com/martinpacesa/BindCraft) • [Weixin](https://mp.weixin.qq.com/s/U4akBYhlFbOhHfJl2R2blg)
+[**2024**-10-1] >> [Arxive](https://doi.org/10.1101/2024.09.30.615802) • high • [GitHub](https://github.com/martinpacesa/BindCraft) • [公众号](https://mp.weixin.qq.com/s/U4akBYhlFbOhHfJl2R2blg)
   
 <details>
 <summary>🔎 Abstract</summary>
@@ -73,7 +85,7 @@ Gökçe Geylan, Jon Paul Janet, Alessandro Tibo, Jiazhen He, Atanas Patronov, Mi
 
 **Beware of extreme calculated lipophilicity when designing cyclic peptides**  
 Vasanthanathan Poongavanam, Duc Duy Vo & Jan Kihlberg  
-[**2024**-9-19] >> [Nat. Chem. Biol.](https://doi.org/10.1038/s41589-024-01715-0) • [SI](https://www.nature.com/articles/s41589-024-01715-0#MOESM1) • [Weixin](https://mp.weixin.qq.com/s/B65rJB1i_xrP8fTfbQ3Taw) • Cyclic/clogP
+[**2024**-9-19] >> [Nat. Chem. Biol.](https://doi.org/10.1038/s41589-024-01715-0) • [SI](https://www.nature.com/articles/s41589-024-01715-0#MOESM1) • [公众号](https://mp.weixin.qq.com/s/B65rJB1i_xrP8fTfbQ3Taw) • Cyclic/clogP
 
 📌 _Papers pined:_
 
@@ -87,11 +99,11 @@ Stephen Rettie, ..., Gaurav Bhardwaj
 
 **Discovery of antimicrobial peptides with notable antibacterial potency by an LLM-based foundation model**  
 Jike Wang, Jianwen Feng, Yu Kang, Peichen Pan, Jingxuan Ge, Yan Wang, Mingyang Wang  
-[**2024**-10-10] >> [Science Advances](https://doi.org/10.1126/sciadv.ads8932) • high • [Tingjun Hou](https://scholar.google.com/citations?hl=en&user=vHW2kqUAAAAJ)/Diffusion/[Chang-Yu Hsieh](https://scholar.google.com/citations?user=K-AjhSgAAAAJ&hl=en)
+[**2024**-10-10] >> [Science Advances](https://doi.org/10.1126/sciadv.ads8932) • high • [GitHub](https://github.com/jkwang93/AMP-designer) • [公众号](https://mp.weixin.qq.com/s/BWuRo2A3ehLlhi2Eq2-Qhw) • [Tingjun Hou](https://scholar.google.com/citations?hl=en&user=vHW2kqUAAAAJ)/Diffusion/[Chang-Yu Hsieh](https://scholar.google.com/citations?user=K-AjhSgAAAAJ&hl=en)
 
 **BindCraft: one-shot design of functional protein binders**  
 Martin Pacesa, Lennart Nickel, ..., Sergey Ovchinnikov, Bruno E. Correia  
-[**2024**-10-1] >> [Arxive](https://doi.org/10.1101/2024.09.30.615802) • high • [GitHub](https://github.com/martinpacesa/BindCraft) • [Weixin](https://mp.weixin.qq.com/s/U4akBYhlFbOhHfJl2R2blg)
+[**2024**-10-1] >> [Arxive](https://doi.org/10.1101/2024.09.30.615802) • high • [GitHub](https://github.com/martinpacesa/BindCraft) • [公众号](https://mp.weixin.qq.com/s/U4akBYhlFbOhHfJl2R2blg)
   
 <details>
 <summary>🔎 Abstract</summary>
@@ -225,6 +237,10 @@ Rasha Jwad, Daniel Weissberger, and Luke Hunter
 
 #### 0.1.2 Structure Benchmarks
 
+"Advancements in Nanobody Epitope Prediction: A Comparative Study of AlphaFold2Multimer vs AlphaFold3",Reviews,Epitope Prediction,"Eshak, Floriane, and Anne Goupil-Lamy
+[**2025**-2-24] >> [JCIM](https://doi.org/10.1021/acs.jcim.4c01877) 
+
+
 **Predicting Protein−Peptide Interactions: Benchmarking Deep Learning Techniques and a Comparison with Focused Docking**  
 Sudhanshu Shanker and Michel F. Sanner  
 [**2024**-5-11] >> [JCIM](https://doi.org/10.1021/acs.jcim.3c00602) • [GitHub](https://github.com/sannerlab/benchmarking_2023) • Fold
@@ -297,6 +313,10 @@ Jianan Li, Keisuke Yanagisawa, Masatake Sugita, Takuya Fujie, Masahito Ohue & Yu
 
 ### 1.1 Design
 
+**Artificial intelligence in peptide-based drug design**  
+Zhai Silong, Tiantao Liu, Shaolong Lin, Dan Li, Huanxiang Liu, Xiaojun Yao and Tingjun Hou  
+[**2025**-2-1] >> [Drug Discovery Today](https://doi.org/10.1016/j.drudis.2025.104300) • [GitHub](https://github.com/zhaisilong/awesome-peptide) • [Tingjun Hou](https://scholar.google.com/citations?hl=en&user=vHW2kqUAAAAJ)
+
 **Unlocking novel therapies: cyclic peptide design for amyloidogenic targets through synergies of experiments, simulations, and machine learning**  
 Daria de Raffele and Ioana M. Ilie  
 [**2023**-11-7] >> [Chem. Commun.](https://doi.org/10.1039/D3CC04630C) • Cyclic
@@ -340,6 +360,10 @@ Rasha Jwad, Daniel Weissberger, and Luke Hunter
 ## 3. Proprty Prediction
 
 ### 3.1 Sequence-based
+
+**pLM4CPPs: Protein Language Model-Based Predictor for Cell Penetrating Peptides**  
+Nandan Kumar, Zhenjiao Du and Yonghui Li  
+[**2025**-1-29] >> [JCIM](https://doi.org/10.1021/acs.jcim.4c01338)
 
 **Peptide-Aware Chemical Language Model Successfully Predicts Membrane Diffusion of Cyclic Peptides**  
 Aaron L. Feller, Claus O. Wilke  
@@ -436,7 +460,7 @@ Qiuzhen Li, Efstathios Nikolaos Vlachos, Patrick Bryant
 
 **Discovery of antimicrobial peptides with notable antibacterial potency by an LLM-based foundation model**  
 Jike Wang, Jianwen Feng, Yu Kang, Peichen Pan, Jingxuan Ge, Yan Wang, Mingyang Wang  
-[**2024**-10-10] >> [Science Advances](https://doi.org/10.1126/sciadv.ads8932) • high • [Tingjun Hou](https://scholar.google.com/citations?hl=en&user=vHW2kqUAAAAJ)/Diffusion/[Chang-Yu Hsieh](https://scholar.google.com/citations?user=K-AjhSgAAAAJ&hl=en)
+[**2024**-10-10] >> [Science Advances](https://doi.org/10.1126/sciadv.ads8932) • high • [GitHub](https://github.com/jkwang93/AMP-designer) • [公众号](https://mp.weixin.qq.com/s/BWuRo2A3ehLlhi2Eq2-Qhw) • [Tingjun Hou](https://scholar.google.com/citations?hl=en&user=vHW2kqUAAAAJ)/Diffusion/[Chang-Yu Hsieh](https://scholar.google.com/citations?user=K-AjhSgAAAAJ&hl=en)
 
 **PepINVENT: Generative peptide design beyond the natural amino acids**  
 Gökçe Geylan, Jon Paul Janet, Alessandro Tibo, Jiazhen He, Atanas Patronov, Mikhail Kabeshov, Florian David, Werngard Czechtizky, Ola Engkvist, Leonardo De Maria  
@@ -510,25 +534,25 @@ Parisa Hosseinzadeh, ..., David Baker
 
 **A Top-Down Design Approach for Generating a Peptide PROTAC Drug Targeting Androgen Receptor for Androgenetic Alopecia Therapy**  
 Bohan Ma, Donghua Liu, Zhe Wang, Dize Zhang, Yanlin Jian, et. al.  
-[**2021**-6-5] >> [JMC](https://doi.org/10.1021/acs.jmedchem.4c00828) • [Weixin](https://mp.weixin.qq.com/s/xeJWFVcV5LkIlVJ1Zxf5Eg) • PROTAC
+[**2021**-6-5] >> [JMC](https://doi.org/10.1021/acs.jmedchem.4c00828) • [公众号](https://mp.weixin.qq.com/s/xeJWFVcV5LkIlVJ1Zxf5Eg) • PROTAC
 
 
 ### 7.2 Principle
 
 **Discovery of a Series of Macrocycles as Potent Inhibitors of Leishmania Infantum**  
 Federico Riu, Larissa Alena Ruppitsch, Duc Duy Vo, Richard S. Hong, Mohit Tyagi, An Matheeussen, Sarah Hendrickx, Vasanthanathan Poongavanam, Guy Caljon, Ahmad Y. Sheikh, Peter Sjö, and Jan Kihlberg  
-[**2024**-10-8] >> [J. Med. Chem.](https://doi.org/10.1021/acs.jmedchem.4c01370) • high • [Weixin](https://mp.weixin.qq.com/s/jisVUSzJu4t9BD3JFVb_-A) • Cyclic
+[**2024**-10-8] >> [J. Med. Chem.](https://doi.org/10.1021/acs.jmedchem.4c01370) • high • [公众号](https://mp.weixin.qq.com/s/jisVUSzJu4t9BD3JFVb_-A) • Cyclic
 
 **Beware of extreme calculated lipophilicity when designing cyclic peptides**  
 Vasanthanathan Poongavanam, Duc Duy Vo & Jan Kihlberg  
-[**2024**-9-19] >> [Nat. Chem. Biol.](https://doi.org/10.1038/s41589-024-01715-0) • [SI](https://www.nature.com/articles/s41589-024-01715-0#MOESM1) • [Weixin](https://mp.weixin.qq.com/s/B65rJB1i_xrP8fTfbQ3Taw) • Cyclic/clogP
+[**2024**-9-19] >> [Nat. Chem. Biol.](https://doi.org/10.1038/s41589-024-01715-0) • [SI](https://www.nature.com/articles/s41589-024-01715-0#MOESM1) • [公众号](https://mp.weixin.qq.com/s/B65rJB1i_xrP8fTfbQ3Taw) • Cyclic/clogP
 
 
 ### 7.3 Protein Binders
 
 **BindCraft: one-shot design of functional protein binders**  
 Martin Pacesa, Lennart Nickel, ..., Sergey Ovchinnikov, Bruno E. Correia  
-[**2024**-10-1] >> [Arxive](https://doi.org/10.1101/2024.09.30.615802) • high • [GitHub](https://github.com/martinpacesa/BindCraft) • [Weixin](https://mp.weixin.qq.com/s/U4akBYhlFbOhHfJl2R2blg)
+[**2024**-10-1] >> [Arxive](https://doi.org/10.1101/2024.09.30.615802) • high • [GitHub](https://github.com/martinpacesa/BindCraft) • [公众号](https://mp.weixin.qq.com/s/U4akBYhlFbOhHfJl2R2blg)
   
 <details>
 <summary>🔎 Abstract</summary>
@@ -544,6 +568,10 @@ Yuki Goto & Hiroaki Suga
 
 
 ### 7.5 Screen
+
+**Prohormone cleavage prediction uncovers a non-incretin anti-obesity peptide**  
+Laetitia Coassolo, Niels B. Danneskiold-Samsøe, Quennie Nguyen, Amanda Wiggenhorn, Meng Zhao, David Cheng-Hao Wang, David Toomer, et al.  
+[**2025**-3-5] >> [Nature](https://doi.org/10.1038/s41586-025-08683-y)
 
 **A Computational Pipeline for Accurate Prioritization of Protein-Protein Binding Candidates in High-Throughput Protein Libraries**  
 Arup Mondal, Bhumika Singh, Roland H. Felkner, Anna De Falco, GVT Swapna, Gaetano T. Montelione, Monica J. Roth, and Alberto Perez  
