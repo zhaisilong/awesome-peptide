@@ -15,7 +15,7 @@
 5. [CSV Downloads](data/paper.csv): Quick access to paper data in `CSV` format.
 6. Automation: Use [Liquid](https://liquid.readthedocs.io/en/latest/) templates to generate Markdown from `CSV`, making it easy to build your own paper repository. >>> [[Details](CONTRIBUTING.md)]
 
-📅 _Papers last six month, updated on 2025-01-31:_
+📅 _Papers last six month, updated on 2025-03-08:_
 
 **Hotspot-Driven Peptide Design via Multi-Fragment Autoregressive Extension**  
 Jiahan Li, Tong Chen, Shitong Luo, Chaoran Cheng, Jiaqi Guan, Ruihan Guo, Sheng Wang, Ge Liu, Jian Peng, Jianzhu Ma  
@@ -50,6 +50,10 @@ Xingyu Ouyang, Xinchun Ran, Han Xu, Yi-Lei Zhao, A. James Link, Zhongyue Yang
 Qiuzhen Li, Efstathios Nikolaos Vlachos, Patrick Bryant  
 [**2024**-10-12] >> [Arxive](https://doi.org/10.1101/2024.06.20.599739) • [zenodo](https://zenodo.org/uploads/11543503) • [EvoBind](https://github.com/patrickbryant1/EvoBind) • Cyclic/[Patrick Bryant](https://scholar.google.com/citations?user=KPlaFQQAAAAJ)
 
+**Discovery of antimicrobial peptides with notable antibacterial potency by an LLM-based foundation model**  
+Jike Wang, Jianwen Feng, Yu Kang, Peichen Pan, Jingxuan Ge, Yan Wang, Mingyang Wang  
+[**2024**-10-10] >> [Science Advances](https://doi.org/10.1126/sciadv.ads8932) • high • [Tingjun Hou](https://scholar.google.com/citations?hl=en&user=vHW2kqUAAAAJ)/Diffusion/[Chang-Yu Hsieh](https://scholar.google.com/citations?user=K-AjhSgAAAAJ&hl=en)
+
 **Discovery of a Series of Macrocycles as Potent Inhibitors of Leishmania Infantum**  
 Federico Riu, Larissa Alena Ruppitsch, Duc Duy Vo, Richard S. Hong, Mohit Tyagi, An Matheeussen, Sarah Hendrickx, Vasanthanathan Poongavanam, Guy Caljon, Ahmad Y. Sheikh, Peter Sjö, and Jan Kihlberg  
 [**2024**-10-8] >> [J. Med. Chem.](https://doi.org/10.1021/acs.jmedchem.4c01370) • high • [Weixin](https://mp.weixin.qq.com/s/jisVUSzJu4t9BD3JFVb_-A) • Cyclic
@@ -71,23 +75,6 @@ Gökçe Geylan, Jon Paul Janet, Alessandro Tibo, Jiazhen He, Atanas Patronov, Mi
 Vasanthanathan Poongavanam, Duc Duy Vo & Jan Kihlberg  
 [**2024**-9-19] >> [Nat. Chem. Biol.](https://doi.org/10.1038/s41589-024-01715-0) • [SI](https://www.nature.com/articles/s41589-024-01715-0#MOESM1) • [Weixin](https://mp.weixin.qq.com/s/B65rJB1i_xrP8fTfbQ3Taw) • Cyclic/clogP
 
-**Target-Specific De Novo Peptide Binder Design with DiffPepBuilder**  
-Fanhao Wang, Yuzhe Wang, Laiyi Feng, Changsheng Zhang, and Luhua Lai  
-[**2024**-9-4] >> [JCIM](https://doi.org/10.1021/acs.jcim.4c00975) • high • [GitHub](https://github.com/YuzheWangPKU/DiffPepBuilder) • Diffusion/[Luhua Lai](https://scholar.google.com/citations?hl=en&user=8NJFCTYAAAAJ)/[ColabDesign](https://github.com/sokrypton/ColabDesign)/[ProteinMPNN](https://www.science.org/doi/10.1126/science.add2187)/MD
-  
-<details>
-<summary>🔎 Abstract</summary>
-<p>Despite the exciting progress in target-specific de novo protein binder design, peptide binder design remains challenging due to the flexibility of peptide structures and the scarcity of protein-peptide complex structure data. In this study, we curated a large synthetic data set, referred to as PepPC-F, from the abundant protein−protein interface data and developed DiffPepBuilder, a de novo target-specific peptide binder generation method that utilizes an SE(3)-equivariant diffusion model trained on PepPC-F to codesign peptide sequences and structures. DiffPepBuilder also introduces disulfide bonds to stabilize the generated peptide structures. We tested DiffPepBuilder on 30 experimentally verified strong peptide binders with available protein−peptide complex structures. DiffPepBuilder was able to effectively recall the native structures and sequences of the peptide ligands and to generate novel peptide binders with improved binding free energy. We subsequently conducted de novo generation case studies on three targets. In both the regeneration test and case studies, DiffPepBuilder outperformed AfDesign and RFdiffusion coupled with ProteinMPNN, in terms of sequence and structure recall, interface quality, and structural diversity. Molecular dynamics simulations confirmed that the introduction of disulfide bonds enhanced the structural rigidity and binding performance of the generated peptides. As a general peptide binder de novo design tool, DiffPepBuilder can be used to design peptide binders for given protein targets with three-dimensional and binding site information.</p>
-</details>  
-
-**CycPeptMP: Enhancing Membrane Permeability Prediction of Cyclic Peptides with Multi-Level Molecular Features and Data Augmentation**  
-Jianan Li, Keisuke Yanagisawa, and Yutaka Akiyama  
-[**2024**-9-1] >> [BIB](https://doi.org/10.1093/bib/bbae417) • high • [CycPeptMPDB](http://cycpeptmpdb.com/) • [GitHub](https://github.com/akiyamalab/cycpeptmp) • Cyclic/[Akiyama Yutaka](https://scholar.google.com/citations?hl=en&user=eHAafMgAAAAJ)
-
-**Reinforcement learning-driven exploration of peptide space: accelerating generation of drug-like peptides**  
-Qian Wang, Xiaotong Hu, Zhiqiang Wei, Hao Lu , Hao Liu  
-[**2024**-8-27] >> [BIB](https://doi.org/10.1093/bib/bbae444) • [MondTDSRL](https://github.com/p1acemker/MomdTDSRL.git) • RL/MD
-
 📌 _Papers pined:_
 
 **Hotspot-Driven Peptide Design via Multi-Fragment Autoregressive Extension**  
@@ -97,6 +84,10 @@ Jiahan Li, Tong Chen, Shitong Luo, Chaoran Cheng, Jiaqi Guan, Ruihan Guo, Sheng 
 **Accurate de Novo Design of High-Affinity Protein Binding Macrocycles Using Deep Learning**  
 Stephen Rettie, ..., Gaurav Bhardwaj  
 [**2024**-11-18] >> [bioRxiv](https://doi.org/10.1101/2024.11.18.622547) • high • [RFdiffusion](https://github.com/RosettaCommons/RFdiffusion)/[David Baker](https://scholar.google.com/citations?hl=en&user=UKqIqRsAAAAJ)/[Gaurav Bhardwaj](https://scholar.google.com/citations?user=AJSn9j0AAAAJ)/Cyclic
+
+**Discovery of antimicrobial peptides with notable antibacterial potency by an LLM-based foundation model**  
+Jike Wang, Jianwen Feng, Yu Kang, Peichen Pan, Jingxuan Ge, Yan Wang, Mingyang Wang  
+[**2024**-10-10] >> [Science Advances](https://doi.org/10.1126/sciadv.ads8932) • high • [Tingjun Hou](https://scholar.google.com/citations?hl=en&user=vHW2kqUAAAAJ)/Diffusion/[Chang-Yu Hsieh](https://scholar.google.com/citations?user=K-AjhSgAAAAJ&hl=en)
 
 **BindCraft: one-shot design of functional protein binders**  
 Martin Pacesa, Lennart Nickel, ..., Sergey Ovchinnikov, Bruno E. Correia  
@@ -443,6 +434,10 @@ Ryan Park, Darren J. Hsu, C. Brian Roland, Chen Tessler, Maria Korshunova, Shie 
 Qiuzhen Li, Efstathios Nikolaos Vlachos, Patrick Bryant  
 [**2024**-10-12] >> [Arxive](https://doi.org/10.1101/2024.06.20.599739) • [zenodo](https://zenodo.org/uploads/11543503) • [EvoBind](https://github.com/patrickbryant1/EvoBind) • Cyclic/[Patrick Bryant](https://scholar.google.com/citations?user=KPlaFQQAAAAJ)
 
+**Discovery of antimicrobial peptides with notable antibacterial potency by an LLM-based foundation model**  
+Jike Wang, Jianwen Feng, Yu Kang, Peichen Pan, Jingxuan Ge, Yan Wang, Mingyang Wang  
+[**2024**-10-10] >> [Science Advances](https://doi.org/10.1126/sciadv.ads8932) • high • [Tingjun Hou](https://scholar.google.com/citations?hl=en&user=vHW2kqUAAAAJ)/Diffusion/[Chang-Yu Hsieh](https://scholar.google.com/citations?user=K-AjhSgAAAAJ&hl=en)
+
 **PepINVENT: Generative peptide design beyond the natural amino acids**  
 Gökçe Geylan, Jon Paul Janet, Alessandro Tibo, Jiazhen He, Atanas Patronov, Mikhail Kabeshov, Florian David, Werngard Czechtizky, Ola Engkvist, Leonardo De Maria  
 [**2024**-9-21] >> [Axive](https://doi.org/10.48550/arXiv.2409.14040) • RL/[Molecular AI](https://github.com/molecularai)/AstraZeneca
@@ -589,7 +584,6 @@ Vasso Apostolopoulos, Joanna Bojarska, ...
   author = {Zhai, Silong and Liu, Tiantao and Lin, Shaolong and Li, Dan and Liu, Huanxiang and Yao, Xiaojun and Hou, Tingjun},
   date = {2025-02-01},
   journaltitle = {Drug Discovery Today},
-  shortjournal = {Drug Discovery Today},
   volume = {30},
   number = {2},
   pages = {104300},

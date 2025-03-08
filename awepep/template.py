@@ -110,7 +110,6 @@ bibtext = """
   author = {Zhai, Silong and Liu, Tiantao and Lin, Shaolong and Li, Dan and Liu, Huanxiang and Yao, Xiaojun and Hou, Tingjun},
   date = {2025-02-01},
   journaltitle = {Drug Discovery Today},
-  shortjournal = {Drug Discovery Today},
   volume = {30},
   number = {2},
   pages = {104300},

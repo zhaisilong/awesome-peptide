@@ -30,7 +30,8 @@ authors = {
     "Patrick Bryant": "https://scholar.google.com/citations?user=KPlaFQQAAAAJ",
     "Jianzhu Ma": "https://scholar.google.com/citations?user=AATzYuAAAAAJ",
     "Gaurav Bhardwaj": "https://scholar.google.com/citations?user=AJSn9j0AAAAJ",
-    "Pranam Chatterjee": "https://scholar.google.co.uk/citations?user=XExgv9YAAAAJ"
+    "Pranam Chatterjee": "https://scholar.google.co.uk/citations?user=XExgv9YAAAAJ",
+    "Chang-Yu Hsieh": "https://scholar.google.com/citations?user=K-AjhSgAAAAJ&hl=en",
 }
 
 tools = {
