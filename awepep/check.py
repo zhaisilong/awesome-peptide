@@ -60,7 +60,7 @@ def pretty_print_statistics(quality_counter, pined_count, tags_counter):
 def main(csv: str="data/paper.csv"):
     try:
         csv_path = Path(csv)
-        df = pd.read_csv(csv_path).infer_objects(copy=False).fillna(False)
+        df = pd.read_csv(csv_path).infer_objects().fillna(False)
 
         required_fields = ["title", "sec", "subsec", "authors", "publications", "publish_date"]
         df.progress_apply(lambda row: check_required_fields(row, required_fields), axis=1)

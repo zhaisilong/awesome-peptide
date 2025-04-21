@@ -15,7 +15,15 @@
 5. [CSV Downloads](data/paper.csv): Quick access to paper data in `CSV` format.
 6. Automation: Use [Liquid](https://liquid.readthedocs.io/en/latest/) templates to generate Markdown from `CSV`, making it easy to build your own paper repository. >>> [[Details](CONTRIBUTING.md)]
 
-📅 _Papers last six month, updated on 2025-03-08:_
+📅 _Papers last six month, updated on 2025-04-21:_
+
+**De Novo Design of Cyclic Peptide Binders Based on Fragment Docking and Assembling**  
+Zhang, Changsheng, Fanhao Wang, Tiantian Zhang, Yang Yang, Liying Wang, Xiaoling Zhang and Luhua Lai  
+[**2025**-4-14] >> [JCIM](https://doi.org/10.1021/acs.jcim.5c00088) • [Luhua Lai](https://scholar.google.com/citations?hl=en&user=8NJFCTYAAAAJ)/Docking
+
+**UniMoMo: Unified generative modeling of 3D molecules for de novo binder design**  
+Kong, Xiangzhe, Zishen Zhang, Ziting Zhang, Rui Jiao, Jianzhu Ma, Kai Liu, Wenbing Huang and Yang Liu  
+[**2025**-3-25] >> [arXiv](https://doi.org/10.48550/arXiv.2503.19300) • Yang Liu/Diffusion/Full-Atom
 
 **Prohormone cleavage prediction uncovers a non-incretin anti-obesity peptide**  
 Laetitia Coassolo, Niels B. Danneskiold-Samsøe, Quennie Nguyen, Amanda Wiggenhorn, Meng Zhao, David Cheng-Hao Wang, David Toomer, et al.  
@@ -49,44 +57,6 @@ Leyao Wang, Rishab Pulugurta, Pranay Vure, Yinuo Zhang, Aastha Pal, and Pranam C
 Ryan Park, Darren J. Hsu, C. Brian Roland, Chen Tessler, Maria Korshunova, Shie Mannor, Olivia Viessmann, Bruno Trentini  
 [**2024**-10-25] >> [arXiv](https://doi.org/10.48550/arXiv.2410.19471) • [ProteinMPNN](https://www.science.org/doi/10.1126/science.add2187)/Nvidia
 
-**Predicting 3D Structures of Lasso Peptides**  
-Xingyu Ouyang, Xinchun Ran, Han Xu, Yi-Lei Zhao, A. James Link, Zhongyue Yang  
-[**2024**-10-14] >> [ChemRxiv](https://doi.org/10.26434/chemrxiv-2024-q3rn0-v2) • [LassoPred](https://github.com/ChemBioHTP/LassoPred)/[Web](https://lassopred.accre.vanderbilt.edu/) • Lasso/[AF](https://deepmind.google/technologies/alphafold/)/ESM/MD
-  
-<details>
-<summary>🔎 Abstract</summary>
-<p>这篇文章围绕 LassoPred 工具展开，解决了现有工具无法准确预测 套索肽（Lasso peptides, LaPs） 结构的挑战。套索肽以其 绳结状拓扑结构 和 异肽键 特性，使传统的结构预测工具（如 AlphaFold 和 ESMfold）难以处理。</p>
-</details>  
-
-**Design of linear and cyclic peptide binders of different lengths from protein sequence information**  
-Qiuzhen Li, Efstathios Nikolaos Vlachos, Patrick Bryant  
-[**2024**-10-12] >> [Arxive](https://doi.org/10.1101/2024.06.20.599739) • [zenodo](https://zenodo.org/uploads/11543503) • [EvoBind](https://github.com/patrickbryant1/EvoBind) • Cyclic/[Patrick Bryant](https://scholar.google.com/citations?user=KPlaFQQAAAAJ)
-
-**Discovery of antimicrobial peptides with notable antibacterial potency by an LLM-based foundation model**  
-Jike Wang, Jianwen Feng, Yu Kang, Peichen Pan, Jingxuan Ge, Yan Wang, Mingyang Wang  
-[**2024**-10-10] >> [Science Advances](https://doi.org/10.1126/sciadv.ads8932) • high • [GitHub](https://github.com/jkwang93/AMP-designer) • [公众号](https://mp.weixin.qq.com/s/BWuRo2A3ehLlhi2Eq2-Qhw) • [Tingjun Hou](https://scholar.google.com/citations?hl=en&user=vHW2kqUAAAAJ)/Diffusion/[Chang-Yu Hsieh](https://scholar.google.com/citations?user=K-AjhSgAAAAJ&hl=en)
-
-**Discovery of a Series of Macrocycles as Potent Inhibitors of Leishmania Infantum**  
-Federico Riu, Larissa Alena Ruppitsch, Duc Duy Vo, Richard S. Hong, Mohit Tyagi, An Matheeussen, Sarah Hendrickx, Vasanthanathan Poongavanam, Guy Caljon, Ahmad Y. Sheikh, Peter Sjö, and Jan Kihlberg  
-[**2024**-10-8] >> [J. Med. Chem.](https://doi.org/10.1021/acs.jmedchem.4c01370) • high • [公众号](https://mp.weixin.qq.com/s/jisVUSzJu4t9BD3JFVb_-A) • Cyclic
-
-**BindCraft: one-shot design of functional protein binders**  
-Martin Pacesa, Lennart Nickel, ..., Sergey Ovchinnikov, Bruno E. Correia  
-[**2024**-10-1] >> [Arxive](https://doi.org/10.1101/2024.09.30.615802) • high • [GitHub](https://github.com/martinpacesa/BindCraft) • [公众号](https://mp.weixin.qq.com/s/U4akBYhlFbOhHfJl2R2blg)
-  
-<details>
-<summary>🔎 Abstract</summary>
-<p>BindCraft is an open-source, automated pipeline for <em>de novo</em> protein binder design, achieving experimental success rates of 10-100%. Using deep learning models like AlphaFold2, BindCraft generates high-affinity binders without the need for high-throughput screening or prior knowledge of binding sites. It has been successfully applied to challenging targets, including cell-surface receptors, allergens, and CRISPR-Cas9. In one example, the binders reduced IgE binding to birch allergens in patient samples, showcasing its potential in therapeutics, diagnostics, and biotechnology.</p>
-</details>  
-
-**PepINVENT: Generative peptide design beyond the natural amino acids**  
-Gökçe Geylan, Jon Paul Janet, Alessandro Tibo, Jiazhen He, Atanas Patronov, Mikhail Kabeshov, Florian David, Werngard Czechtizky, Ola Engkvist, Leonardo De Maria  
-[**2024**-9-21] >> [Axive](https://doi.org/10.48550/arXiv.2409.14040) • RL/[Molecular AI](https://github.com/molecularai)/AstraZeneca
-
-**Beware of extreme calculated lipophilicity when designing cyclic peptides**  
-Vasanthanathan Poongavanam, Duc Duy Vo & Jan Kihlberg  
-[**2024**-9-19] >> [Nat. Chem. Biol.](https://doi.org/10.1038/s41589-024-01715-0) • [SI](https://www.nature.com/articles/s41589-024-01715-0#MOESM1) • [公众号](https://mp.weixin.qq.com/s/B65rJB1i_xrP8fTfbQ3Taw) • Cyclic/clogP
-
 📌 _Papers pined:_
 
 **Hotspot-Driven Peptide Design via Multi-Fragment Autoregressive Extension**  
@@ -99,7 +69,7 @@ Stephen Rettie, ..., Gaurav Bhardwaj
 
 **Discovery of antimicrobial peptides with notable antibacterial potency by an LLM-based foundation model**  
 Jike Wang, Jianwen Feng, Yu Kang, Peichen Pan, Jingxuan Ge, Yan Wang, Mingyang Wang  
-[**2024**-10-10] >> [Science Advances](https://doi.org/10.1126/sciadv.ads8932) • high • [GitHub](https://github.com/jkwang93/AMP-designer) • [公众号](https://mp.weixin.qq.com/s/BWuRo2A3ehLlhi2Eq2-Qhw) • [Tingjun Hou](https://scholar.google.com/citations?hl=en&user=vHW2kqUAAAAJ)/Diffusion/[Chang-Yu Hsieh](https://scholar.google.com/citations?user=K-AjhSgAAAAJ&hl=en)
+[**2024**-10-10] >> [Science Advances](https://doi.org/10.1126/sciadv.ads8932) • high • [GitHub](https://github.com/jkwang93/AMP-designer) • [公众号](https://mp.weixin.qq.com/s/BWuRo2A3ehLlhi2Eq2-Qhw) • [Tingjun Hou](https://scholar.google.com/citations?hl=en&user=vHW2kqUAAAAJ)/Diffusion/[Chang-Yu Hsieh](https://scholar.google.com/citations?user=K-AjhSgAAAAJ)
 
 **BindCraft: one-shot design of functional protein binders**  
 Martin Pacesa, Lennart Nickel, ..., Sergey Ovchinnikov, Bruno E. Correia  
@@ -237,9 +207,9 @@ Rasha Jwad, Daniel Weissberger, and Luke Hunter
 
 #### 0.1.2 Structure Benchmarks
 
-"Advancements in Nanobody Epitope Prediction: A Comparative Study of AlphaFold2Multimer vs AlphaFold3",Reviews,Epitope Prediction,"Eshak, Floriane, and Anne Goupil-Lamy
-[**2025**-2-24] >> [JCIM](https://doi.org/10.1021/acs.jcim.4c01877) 
-
+**Advancements in Nanobody Epitope Prediction: A Comparative Study of AlphaFold2Multimer vs AlphaFold3**  
+Eshak, Floriane, and Anne Goupil-Lamy
+[**2025**-2-24] >> [JCIM](https://doi.org/10.1021/acs.jcim.4c01877)
 
 **Predicting Protein−Peptide Interactions: Benchmarking Deep Learning Techniques and a Comparison with Focused Docking**  
 Sudhanshu Shanker and Michel F. Sanner  
@@ -460,7 +430,7 @@ Qiuzhen Li, Efstathios Nikolaos Vlachos, Patrick Bryant
 
 **Discovery of antimicrobial peptides with notable antibacterial potency by an LLM-based foundation model**  
 Jike Wang, Jianwen Feng, Yu Kang, Peichen Pan, Jingxuan Ge, Yan Wang, Mingyang Wang  
-[**2024**-10-10] >> [Science Advances](https://doi.org/10.1126/sciadv.ads8932) • high • [GitHub](https://github.com/jkwang93/AMP-designer) • [公众号](https://mp.weixin.qq.com/s/BWuRo2A3ehLlhi2Eq2-Qhw) • [Tingjun Hou](https://scholar.google.com/citations?hl=en&user=vHW2kqUAAAAJ)/Diffusion/[Chang-Yu Hsieh](https://scholar.google.com/citations?user=K-AjhSgAAAAJ&hl=en)
+[**2024**-10-10] >> [Science Advances](https://doi.org/10.1126/sciadv.ads8932) • high • [GitHub](https://github.com/jkwang93/AMP-designer) • [公众号](https://mp.weixin.qq.com/s/BWuRo2A3ehLlhi2Eq2-Qhw) • [Tingjun Hou](https://scholar.google.com/citations?hl=en&user=vHW2kqUAAAAJ)/Diffusion/[Chang-Yu Hsieh](https://scholar.google.com/citations?user=K-AjhSgAAAAJ)
 
 **PepINVENT: Generative peptide design beyond the natural amino acids**  
 Gökçe Geylan, Jon Paul Janet, Alessandro Tibo, Jiazhen He, Atanas Patronov, Mikhail Kabeshov, Florian David, Werngard Czechtizky, Ola Engkvist, Leonardo De Maria  
@@ -486,6 +456,10 @@ Tianlai Chen, Sarah Pertsemlidis, and Pranam Chatterjee
 
 ### 6.3 Structure-based
 
+**UniMoMo: Unified generative modeling of 3D molecules for de novo binder design**  
+Kong, Xiangzhe, Zishen Zhang, Ziting Zhang, Rui Jiao, Jianzhu Ma, Kai Liu, Wenbing Huang and Yang Liu  
+[**2025**-3-25] >> [arXiv](https://doi.org/10.48550/arXiv.2503.19300) • Yang Liu/Diffusion/Full-Atom
+
 **Hotspot-Driven Peptide Design via Multi-Fragment Autoregressive Extension**  
 Jiahan Li, Tong Chen, Shitong Luo, Chaoran Cheng, Jiaqi Guan, Ruihan Guo, Sheng Wang, Ge Liu, Jian Peng, Jianzhu Ma  
 [**2024**-11-26] >> ICML/[arXiv](https://doi.org/10.48550/arXiv.2411.18463) • [Jianzhu Ma](https://scholar.google.com/citations?user=AATzYuAAAAAJ)/Flow
@@ -507,6 +481,10 @@ Fanhao Wang, Yuzhe Wang, Laiyi Feng, Changsheng Zhang, and Luhua Lai
 Jiahan Li, Chaoran Cheng, Zuofan Wu, Ruihan Guo, Shitong Luo, Zhizhou Ren, Jian Peng, and Jianzhu Ma  
 [**2024**-6-2] >> [arXiv](https://doi.org/10.48550/arXiv.2406.00735) • high • [GitHub](https://github.com/Ced3-han/PepFlowww) • [Jianzhu Ma](https://scholar.google.com/citations?user=AATzYuAAAAAJ)/Flow
 
+**PPFlow: Target-Aware Peptide Design with Torsional Flow Matching**  
+Lin, Haitao, Odin Zhang, Huifeng Zhao, Dejun Jiang, Lirong Wu, Zicheng Liu, Yufei Huang and Stan Z. Li  
+[**2024**-3-8] >> [ICML](https://doi.org/10.48550/arXiv.2403.07583) • Stan Z. Li/Flow
+
 **Full-Atom Peptide Design with Geometric Latent Diffusion**  
 Xiangzhe Kong, Yinjun Jia, Wenbing Huang, Yang Liu  
 [**2024**-2-21] >> NeurIPS/[Arxive](https://doi.org/10.48550/arXiv.2402.13555) • [code](https://github.com/THUNLP-MT/PepGLAD) • Full-Atom/Diffusion
@@ -522,6 +500,10 @@ Kejia Wu, Hua Bai, ..., Emmanuel Derivery, Daniel Adriano Silva, David Baker
 
 
 ### 6.4 Traditional
+
+**De Novo Design of Cyclic Peptide Binders Based on Fragment Docking and Assembling**  
+Zhang, Changsheng, Fanhao Wang, Tiantian Zhang, Yang Yang, Liying Wang, Xiaoling Zhang and Luhua Lai  
+[**2025**-4-14] >> [JCIM](https://doi.org/10.1021/acs.jcim.5c00088) • [Luhua Lai](https://scholar.google.com/citations?hl=en&user=8NJFCTYAAAAJ)/Docking
 
 **Anchor extension: a structure-guided approach to  design cyclic peptides targeting enzyme active sites**  
 Parisa Hosseinzadeh, ..., David Baker  

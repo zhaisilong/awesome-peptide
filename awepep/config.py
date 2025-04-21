@@ -31,7 +31,8 @@ authors = {
     "Jianzhu Ma": "https://scholar.google.com/citations?user=AATzYuAAAAAJ",
     "Gaurav Bhardwaj": "https://scholar.google.com/citations?user=AJSn9j0AAAAJ",
     "Pranam Chatterjee": "https://scholar.google.co.uk/citations?user=XExgv9YAAAAJ",
-    "Chang-Yu Hsieh": "https://scholar.google.com/citations?user=K-AjhSgAAAAJ&hl=en",
+    "Chang-Yu Hsieh": "https://scholar.google.com/citations?user=K-AjhSgAAAAJ",
+    "Changsheng Zhang": "https://scholar.google.com/citations?user=Y9Zb8akAAAAJ",
 }
 
 tools = {
