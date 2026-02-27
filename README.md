@@ -3,6 +3,9 @@
 ⚠️ Note: My PhD research keeps me very busy, so this repository may not be updated frequently. For the latest domain-specific updates, please follow our WeChat Official Account (公众号) [MolAstra](https://mp.weixin.qq.com/s/PI_3E2NzZWBGy95hpFmhHQ) and Our [Paper Reading Project](https://paper.molastra.org).
 This repo will be refreshed on an annual basis.
 
+🤖 To help keep this awesome list up to date, a maintainer agent (`awe-agent`) that assists with adding papers from PDF/DOI/URL and preparing a draft PR (see `Agent.md`) is provided.
+
+
 🔬 **Comprehensive List of Research Papers on Peptides and Deep Learning**
 
 [![Awesome](https://awesome.re/badge.svg)](https://awesome.re) [![stars](https://shields.io/github/stars/zhaisilong/awesome-peptide?style=social)](https://github.com/zhaisilong/awesome-peptide)

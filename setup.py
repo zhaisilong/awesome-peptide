@@ -14,6 +14,18 @@ setup(
         "fire",
         "black"
     ],
+    extras_require={
+        "agent": [
+            "pydantic>=2",
+            "requests>=2",
+            "typer>=0.9",
+            "pdfplumber",
+            "pypdf",
+        ],
+        "dev": [
+            "pytest",
+        ],
+    },
     author='Zhai Silong',  # Replace with your name
     author_email='zhaisilong@outlook.com',  # Replace with your email
     description='List of Papers about Peptide Research using Deep Learning',  # Short description
@@ -30,6 +42,7 @@ setup(
         'console_scripts': [
             'awe-pep=awepep.main:main',  # Replace with your module and function
             'awe-check=awepep.check:main',
+            'awe-agent=awepep.agent.cli:app',
         ],
     },
 )

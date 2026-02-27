@@ -1,0 +1,11 @@
+[llm]
+# base_url = "https://api.openai.com/v1"
+# model = "gpt-4o-mini"
+# api_key is recommended via env: AWEPEP_LLM_API_KEY
+
+[output]
+dir = "out"
+
+[quality]
+auto_high_venues = ["Nature", "Science", "Cell", "Nature Communications", "NeurIPS", "ICML", "ICLR"]
+
