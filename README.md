@@ -248,6 +248,7 @@ Karina B. Santos, Isabella A. Guedes, Ana L. M. Karl, and Laurent E. Dardenne
 | Datasets    | Description                                                                             | Link                                  |
 | ----------- | --------------------------------------------------------------------------------------- | ------------------------------------- |
 | CycPeptMPDB | CycPeptMPDB, the first web-accessible database of cyclic peptide membrane permeability. | [CycPeptMPDB](http://cycpeptmpdb.com) |
+| State of Peptides 2026 | Open reference dataset of 156 peptide and peptide-adjacent compounds with regulatory status, category, route, half-life, molecular weight, CAS, and PubChem/DrugBank/Wikidata cross-references (CSV/JSON, CC BY 4.0). | [State of Peptides 2026](https://peptahub.com/state-of-peptides-2026) |
 
 #### 0.2.1 Sequence Datasets
 
