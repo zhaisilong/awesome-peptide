@@ -55,7 +55,7 @@ toc_sec = Template("""
   <br>""")
 
 toc_subsec = Template(
-    """<a href='#{{ idx | replace: ".",  "" }}-{{ sec | replace: " ", "-" | downcase }}'>{{sec}}</a>{% if dot %} • {% endif %}
+    """<a href='#{{ idx | replace: ".",  "" }}-{{ sec | replace: " ", "-" | downcase }}'>{{sec}}</a>{% if dot %} •{% endif %}
   {% unless dot %}<br>{% endunless %}"""
 )
 

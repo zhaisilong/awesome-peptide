@@ -1,23 +1,38 @@
 sections = {
-    "Reviews": ["Interaction", "Property", "Sequence", "Structure", "Design"],
-    "Representation": ["Grpah-based", "Sequence-based"],
-    "Proprty Prediction": ["Traditional", "Sequence-based", "Structure-based"],
-    "Structure Modeling": ["Monomer", "Complex"],
-    "Interaction Modeling": ["Grpah-based", "Sequence-based", "Site Prediction"],
-    "Design": [
-        "Traditional",
-        "Sequence-based",
-        "Structure-based",
-        "Diffusion-based",
-        "Graph-based",
+    "Reviews": [
+        "Design & Generation",
+        "Structure & Interaction",
+        "Property & Activity",
+        "Therapeutics & Applications",
     ],
-    "Others": [
-        "Screen",
-        "Therapeutic",
-        "Principle",
-        "PROTAC",
+    "Representation & Data": [
+        "Sequence & Language",
+        "Structure & Graph",
+        "Datasets & Benchmarks",
+    ],
+    "Property & Activity Prediction": [
+        "Bioactivity & Function",
+        "Permeability & Developability",
+        "Interaction & Binding",
+    ],
+    "Structure & Interaction Modeling": [
+        "Peptide Conformation",
+        "Peptide-Protein Complexes",
+        "Docking & Simulation",
+    ],
+    "Peptide Design & Generation": [
+        "Sequence-Based Design",
+        "Structure-Based Design",
+        "Diffusion & Flow",
+        "Reinforcement Learning",
+        "Classical & Fragment-Based",
+    ],
+    "Applications & Tools": [
+        "Software & Webservers",
+        "Screening & Discovery",
+        "Therapeutics & Translation",
         "Protein Binders",
-        "RaPID",
+        "Chemical Biology & Modalities",
     ],
 }
 

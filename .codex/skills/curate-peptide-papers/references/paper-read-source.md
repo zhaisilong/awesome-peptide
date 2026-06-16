@@ -26,7 +26,7 @@ Do not edit files inside `vendor/paper-read`; update the submodule pointer only.
 Run:
 
 ```bash
-python .codex/skills/curate-peptide-papers/scripts/scan_paper_read_candidates.py --limit 50 --enrich-crossref
+python .codex/skills/curate-peptide-papers/scripts/scan_paper_read_candidates.py --limit 200 --enrich-crossref
 ```
 
 The scanner reads Markdown notes and ranks candidates by peptide-related keyword hits. It extracts:
@@ -42,7 +42,7 @@ The scanner reads Markdown notes and ranks candidates by peptide-related keyword
 - short keyword snippets
 - whether the DOI already exists in `data/paper.csv` or `data/paper-read.csv`
 
-Crossref metadata comes from `https://api.crossref.org/works/{doi}` and should be used for title, authors, venue, published date, DOI link, and abstract. It should not decide awesome-peptide `sec/subsec`.
+Metadata comes from `https://api.crossref.org/works/{doi}` or the arXiv API fallback for `10.48550/arXiv.*` DOI rows. Use it for title, authors, venue, published date, DOI link, and abstract. It should not decide awesome-peptide `sec/subsec`.
 
 ## Paper-Read CSV
 
@@ -56,7 +56,7 @@ Use `source` for the paper-read permalink or note path. The README generator ren
 
 ## Curation Policy
 
-Use scanner output as a triage queue. Codex should automatically add high-confidence papers after verifying metadata from the note, Crossref, and primary sources. Skip:
+Use scanner output as a triage queue. Codex should automatically add high-confidence papers after verifying metadata from the note, Crossref or arXiv, and primary sources. Skip:
 
 - broad drug-discovery notes with only incidental peptide mentions
 - notes without DOI or stable source URL unless the user explicitly accepts them

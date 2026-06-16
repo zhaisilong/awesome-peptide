@@ -1,5 +1,19 @@
 # Changelog
 
+## [1.3.0] - 2026-06-16
+
+### Added
+
+- Added a full paper-read scan pass with curated peptide and peptide-computation entries.
+- Added arXiv metadata fallback for paper-read rows whose DOI is not indexed by Crossref.
+
+### Changed
+
+- Reworked the section and subsection taxonomy around paper-reading tasks and user workflows.
+- Reclassified existing curated rows and paper-read rows into the new taxonomy.
+- Updated selected preprint entries to their final journal DOI metadata.
+- Set package version to `1.3.0`.
+
 ## [1.2.0] - 2026-06-16
 
 ### Added

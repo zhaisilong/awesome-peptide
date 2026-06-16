@@ -1,4 +1,4 @@
 interface:
   display_name: "Peptide Paper Curator"
   short_description: "Curate peptide papers from CSV and paper-read"
-  default_prompt: "Use $curate-peptide-papers to scan paper-read, enrich candidates with Crossref, classify them, and validate awesome-peptide."
+  default_prompt: "Use $curate-peptide-papers to scan paper-read, enrich candidates with Crossref or arXiv, classify them, and validate awesome-peptide."

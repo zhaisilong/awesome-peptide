@@ -17,7 +17,7 @@ python -m pip install -e ".[dev]"
 ## Project Layout
 
 - `data/paper.csv`: source of truth for manually curated paper metadata.
-- `data/paper-read.csv`: minimal source table for paper-read entries enriched from Crossref during README generation.
+- `data/paper-read.csv`: minimal source table for paper-read entries enriched from Crossref or arXiv during README generation.
 - `awepep/template.py`: Liquid templates for generated Markdown.
 - `awepep/paper.py`: README generation from CSV data.
 - `awepep/check.py`: CSV validation and summary statistics.
@@ -43,7 +43,7 @@ For papers sourced from `vendor/paper-read`, prefer `data/paper-read.csv` instea
 doi,title,source,sec,subsec,code,dataset,quality,pined,tags
 ```
 
-The README generator fetches authors, publication venue, publish date, DOI link, and abstract from Crossref at generation time. The `sec` and `subsec` values are still agent-curated from the existing awesome-peptide taxonomy.
+The README generator fetches authors, publication venue, publish date, DOI link, and abstract from Crossref or arXiv at generation time. The `sec` and `subsec` values are still agent-curated from the existing awesome-peptide taxonomy.
 
 ## Validation
 
@@ -70,7 +70,7 @@ awe-pep
 git diff -- README.md
 ```
 
-`awe-pep` uses the Crossref API when `data/paper-read.csv` is present, so README regeneration needs network access.
+`awe-pep` uses Crossref and arXiv when `data/paper-read.csv` is present, so README regeneration needs network access.
 
 ## Quality And Pinned Papers
 

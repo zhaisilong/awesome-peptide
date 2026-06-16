@@ -6,7 +6,7 @@ Use this reference before editing `data/paper.csv`.
 
 - Browse for recent papers and any metadata that could have changed.
 - When using `vendor/paper-read`, treat the note as a discovery source, not final bibliographic truth.
-- For `data/paper-read.csv`, Crossref supplies generated bibliographic fields during README generation.
+- For `data/paper-read.csv`, Crossref or arXiv supplies generated bibliographic fields during README generation.
 - Prefer primary or structured sources: DOI landing page, journal page, arXiv/bioRxiv, PubMed, Crossref, official GitHub, official dataset repository, and author/project pages.
 - Verify title, author list, publication date, DOI, venue, code URL, dataset URL, and abstract against the best available source.
 - Do not infer code or dataset links from third-party summaries when an official source is unavailable.
@@ -70,7 +70,7 @@ NeurIPS/[Arxive](https://doi.org/10.48550/arXiv.2402.13555)
 [gongzhonghao](https://mp.weixin.qq.com/...)
 ```
 
-For `data/paper-read.csv`, store the raw DOI in `doi`; do not store `publications`, `authors`, `publish_date`, `abstract`, or `blogs`. README generation fetches those fields from Crossref and converts `source` into a `[paper-read](...)` blog link.
+For `data/paper-read.csv`, store the raw DOI in `doi`; do not store `publications`, `authors`, `publish_date`, `abstract`, or `blogs`. README generation fetches those fields from Crossref or arXiv and converts `source` into a `[paper-read](...)` blog link.
 
 ## Date Format
 
@@ -83,16 +83,13 @@ For `data/paper-read.csv`, store the raw DOI in `doi`; do not store `publication
 Use exact values from `awepep/config.py`:
 
 ```text
-Reviews: Interaction, Property, Sequence, Structure, Design
-Representation: Grpah-based, Sequence-based
-Proprty Prediction: Traditional, Sequence-based, Structure-based
-Structure Modeling: Monomer, Complex
-Interaction Modeling: Grpah-based, Sequence-based, Site Prediction
-Design: Traditional, Sequence-based, Structure-based, Diffusion-based, Graph-based
-Others: Screen, Therapeutic, Principle, PROTAC, Protein Binders, RaPID
+Reviews: Design & Generation, Structure & Interaction, Property & Activity, Therapeutics & Applications
+Representation & Data: Sequence & Language, Structure & Graph, Datasets & Benchmarks
+Property & Activity Prediction: Bioactivity & Function, Permeability & Developability, Interaction & Binding
+Structure & Interaction Modeling: Peptide Conformation, Peptide-Protein Complexes, Docking & Simulation
+Peptide Design & Generation: Sequence-Based Design, Structure-Based Design, Diffusion & Flow, Reinforcement Learning, Classical & Fragment-Based
+Applications & Tools: Software & Webservers, Screening & Discovery, Therapeutics & Translation, Protein Binders, Chemical Biology & Modalities
 ```
-
-Do not silently correct `Grpah-based` or `Proprty Prediction`; those spellings are part of the current generated anchors and validation config.
 
 ## Quality, Pinned, Abstract, Tags
 

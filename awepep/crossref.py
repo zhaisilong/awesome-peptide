@@ -1,17 +1,19 @@
-"""Small Crossref Work API helpers for paper metadata enrichment."""
+"""Small Crossref and arXiv helpers for paper metadata enrichment."""
 
 from __future__ import annotations
 
 import html
 import json
 import re
+import xml.etree.ElementTree as ET
 from urllib.error import HTTPError, URLError
-from urllib.parse import quote
+from urllib.parse import quote, urlencode
 from urllib.request import Request, urlopen
 
 CROSSREF_WORKS_API = "https://api.crossref.org/works/"
+ARXIV_API = "https://export.arxiv.org/api/query"
 DOI_RE = re.compile(r"^10\.\d{3,9}/\S+$", re.IGNORECASE)
-USER_AGENT = "awesome-peptide/1.2.0 (mailto:zhaisilong@outlook.com)"
+USER_AGENT = "awesome-peptide/1.3.0 (mailto:zhaisilong@outlook.com)"
 
 
 def normalize_doi(value: str) -> str:
@@ -111,7 +113,8 @@ def clean_abstract(value: str) -> str:
         return ""
     text = re.sub(r"<[^>]+>", " ", value)
     text = html.unescape(text)
-    return re.sub(r"\s+", " ", text).strip()
+    text = re.sub(r"\s+", " ", text).strip()
+    return re.sub(r"^abstract[:\s]+", "", text, flags=re.IGNORECASE).strip()
 
 
 def metadata_from_work(message: dict, doi: str) -> dict:
@@ -131,4 +134,59 @@ def metadata_from_work(message: dict, doi: str) -> dict:
 
 def metadata_for_doi(doi: str, timeout: int = 20) -> dict:
     normalized = normalize_doi(doi)
+    if normalized.startswith("10.48550/arxiv."):
+        try:
+            return metadata_from_work(
+                fetch_work(normalized, timeout=timeout), normalized
+            )
+        except RuntimeError:
+            return metadata_from_arxiv(normalized, timeout=timeout)
     return metadata_from_work(fetch_work(normalized, timeout=timeout), normalized)
+
+
+def metadata_from_arxiv(doi: str, timeout: int = 20) -> dict:
+    normalized = normalize_doi(doi)
+    arxiv_id = normalized.removeprefix("10.48550/arxiv.")
+    params = urlencode({"id_list": arxiv_id})
+    request = Request(
+        f"{ARXIV_API}?{params}",
+        headers={"User-Agent": USER_AGENT},
+    )
+    try:
+        with urlopen(request, timeout=timeout) as response:
+            payload = response.read()
+    except URLError as exc:
+        raise RuntimeError(
+            f"Could not reach arXiv for DOI {normalized}: {exc}"
+        ) from exc
+
+    root = ET.fromstring(payload)
+    ns = {"atom": "http://www.w3.org/2005/Atom"}
+    entry = root.find("atom:entry", ns)
+    if entry is None:
+        raise RuntimeError(f"arXiv returned no entry for DOI {normalized}")
+
+    title = entry.findtext("atom:title", default="", namespaces=ns)
+    summary = entry.findtext("atom:summary", default="", namespaces=ns)
+    published = entry.findtext("atom:published", default="", namespaces=ns)
+    authors = [
+        element.findtext("atom:name", default="", namespaces=ns).strip()
+        for element in entry.findall("atom:author", ns)
+    ]
+    authors = [author for author in authors if author]
+    if not title or not published or not authors:
+        raise RuntimeError(f"arXiv metadata incomplete for DOI {normalized}")
+
+    date = published.split("T", 1)[0]
+    year, month, day = (int(part) for part in date.split("-"))
+    return {
+        "title": re.sub(r"\s+", " ", title).strip(),
+        "authors": (
+            authors[0]
+            if len(authors) == 1
+            else ", ".join(authors[:-1]) + f" and {authors[-1]}"
+        ),
+        "publications": f"[arXiv](https://doi.org/{normalized})",
+        "publish_date": f"{year}-{month}-{day}",
+        "abstract": clean_abstract(summary),
+    }

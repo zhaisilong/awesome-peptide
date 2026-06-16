@@ -5,9 +5,9 @@ Use this reference to orient content work in `awesome-peptide`.
 ## Main Files
 
 - `data/paper.csv`: canonical table of manually curated papers.
-- `data/paper-read.csv`: minimal table for paper-read sourced entries enriched from Crossref during README generation.
-- `awepep/crossref.py`: Crossref Work API helper for live paper-read metadata enrichment.
-- `awepep/config.py`: section/subsection ordering, linked author/tool tags, `max_pined`, and `last_days`.
+- `data/paper-read.csv`: minimal table for paper-read sourced entries enriched from Crossref or arXiv during README generation.
+- `awepep/crossref.py`: Crossref Work API and arXiv API helpers for live paper-read metadata enrichment.
+- `awepep/config.py`: cleaned task-oriented section/subsection ordering, linked author/tool tags, `max_pined`, and `last_days`.
 - `awepep/template.py`: Liquid templates for header, paper rows, table of contents, pinned papers, recent papers, and footer.
 - `awepep/paper.py`: loads CSV, formats tags, sorts papers, merges `DATABASE.md`, and writes `README.md`.
 - `awepep/check.py`: validates required fields, sections, DOI extraction, duplicate DOI values, pinned count, and prints statistics.
@@ -23,7 +23,7 @@ Use this reference to orient content work in `awesome-peptide`.
 
 1. Reads `data/paper.csv`.
 2. Reads `data/paper-read.csv` if present.
-3. Fetches Crossref metadata for paper-read DOIs and converts rows into the main render shape.
+3. Fetches Crossref or arXiv metadata for paper-read DOIs and converts rows into the main render shape.
 4. Deduplicates paper-read rows against `data/paper.csv` by DOI.
 5. Adds bold year formatting to `publish_date_`.
 6. Converts configured tags to Markdown links.
@@ -35,12 +35,13 @@ Use this reference to orient content work in `awesome-peptide`.
 
 ## Current Project Facts
 
-- The CSV currently has 50 paper rows.
-- The CSV currently has no duplicate DOI values under the checker regex.
+- `data/paper.csv` currently has 51 paper rows.
+- `data/paper-read.csv` currently has 28 paper-read source rows.
+- Both CSV files currently have no duplicate DOI values under the checker regex.
 - `quality` is currently either blank or `high`.
 - `pined` is currently blank or `true`; Pandas displays these as false/true booleans after loading.
 - `README.md` contains a top update-frequency note that is present in `awepep/template.py`.
-- README generation uses the Crossref API when `data/paper-read.csv` contains rows.
+- README generation uses the Crossref API and arXiv fallback when `data/paper-read.csv` contains rows.
 - Console commands are defined in `pyproject.toml` as `awe-pep` and `awe-check`.
 - `vendor/paper-read` is a source-only submodule; update it, scan it, but do not edit files inside it.
 
@@ -71,5 +72,5 @@ Paper-read source commands:
 ```bash
 git submodule update --init --recursive
 git submodule update --remote vendor/paper-read
-python .codex/skills/curate-peptide-papers/scripts/scan_paper_read_candidates.py --limit 50 --enrich-crossref
+python .codex/skills/curate-peptide-papers/scripts/scan_paper_read_candidates.py --limit 200 --enrich-crossref
 ```

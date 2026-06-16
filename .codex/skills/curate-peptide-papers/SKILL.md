@@ -1,6 +1,6 @@
 ---
 name: curate-peptide-papers
-description: Curate the awesome-peptide paper list. Use when Codex needs to pull latest notes from the vendor/paper-read submodule, scan paper-read for peptide-related papers, enrich paper metadata through Crossref, find, verify, add, classify, deduplicate, or update peptide deep-learning papers in data/paper.csv or data/paper-read.csv; manage DOI, code, dataset, blog, quality, pinned, abstract, or tag metadata; regenerate README.md from the CSV sources; or validate paper-list consistency for this repository.
+description: Curate the awesome-peptide paper list. Use when Codex needs to pull latest notes from the vendor/paper-read submodule, scan paper-read for peptide-related papers, enrich paper metadata through Crossref or arXiv, find, verify, add, classify, deduplicate, or update peptide deep-learning papers in data/paper.csv or data/paper-read.csv; manage DOI, code, dataset, blog, quality, pinned, abstract, or tag metadata; regenerate README.md from the CSV sources; or validate paper-list consistency for this repository.
 ---
 
 # Curate Peptide Papers
@@ -40,7 +40,7 @@ Use this workflow when the user asks to pull latest papers from `paper-read` or 
 ```bash
 git submodule update --init --recursive
 git submodule update --remote vendor/paper-read
-python .codex/skills/curate-peptide-papers/scripts/scan_paper_read_candidates.py --limit 50 --enrich-crossref
+python .codex/skills/curate-peptide-papers/scripts/scan_paper_read_candidates.py --limit 200 --enrich-crossref
 ```
 
 Then automatically curate high-confidence candidates into `data/paper-read.csv`:
@@ -48,9 +48,9 @@ Then automatically curate high-confidence candidates into `data/paper-read.csv`:
 1. Review the scanner Markdown and JSON reports.
 2. Skip candidates already present by DOI.
 3. Verify DOI, code/data links, and peptide/deep-learning relevance from the note plus primary sources.
-4. Choose `sec` and `subsec` from the current README taxonomy; Crossref metadata must not be used as a substitute for classification.
+4. Choose `sec` and `subsec` from the current README taxonomy; bibliographic metadata must not be used as a substitute for classification.
 5. Add clear candidates to `data/paper-read.csv` with `doi,title,source,sec,subsec,code,dataset,quality,pined,tags`.
-6. Let README generation fetch authors, venue, publish date, DOI link, and abstract from Crossref.
+6. Let README generation fetch authors, venue, publish date, DOI link, and abstract from Crossref or the arXiv fallback.
 7. Run `awe-check` and the no-write generation smoke test.
 8. Summarize added and skipped candidates.
 
@@ -62,7 +62,7 @@ For adding or updating papers:
 
 1. Verify bibliographic metadata from primary sources. Prefer DOI landing pages, arXiv/bioRxiv, journal pages, PubMed, Crossref, and official code or dataset repositories. Browse for recent papers or any metadata that could have changed.
 2. Check for an existing entry by DOI and title before adding a row.
-3. Classify with the exact current section/subsection values from `awepep/config.py`; keep existing spellings such as `Grpah-based` and `Proprty Prediction` unless the user explicitly asks for taxonomy cleanup.
+3. Classify with the exact current section/subsection values from `awepep/config.py`.
 4. Keep `publications` in Markdown DOI-link form so `awepep.check` can extract the DOI.
 5. Default optional fields to blank. Use `quality=high` only for clearly important work. Use `pined=true` only for selected important papers and keep the count below `max_pined = 30`.
 6. Prefer short, slash-separated tags. Existing tags that match `awepep/config.py` authors or tools render as links automatically.
@@ -77,8 +77,8 @@ Use the helper to produce a correctly ordered row without mutating `data/paper.c
 ```bash
 python .codex/skills/curate-peptide-papers/scripts/draft_paper_row.py \
   --title "Example peptide design paper" \
-  --sec Design \
-  --subsec Structure-based \
+  --sec "Peptide Design & Generation" \
+  --subsec "Structure-Based Design" \
   --authors "A. Author, B. Author" \
   --venue JCIM \
   --doi 10.1021/example \
@@ -94,10 +94,10 @@ Review the printed row before appending it to `data/paper.csv`.
 
 - Do not hand-edit generated paper sections in `README.md`; edit `data/paper.csv` and regenerate.
 - Do not add papers without a DOI unless the user explicitly accepts that `awepep.check` will need to change.
-- Do not put Crossref-enriched authors, venue, date, publication link, or abstract into `data/paper-read.csv`; those are generated live.
-- Do not normalize existing section spelling, tag spelling, or command names as part of a paper-add task.
+- Do not put generated authors, venue, date, publication link, or abstract into `data/paper-read.csv`; those are generated live.
+- Do not invent new section or subsection labels during paper-add tasks.
 - If dependencies are missing, install the package in editable mode before validating.
-- If `README.md` generation fails for a paper-read DOI, verify the DOI with Crossref before changing classification or source rows.
+- If `README.md` generation fails for a paper-read DOI, verify the DOI with Crossref, arXiv, or the DOI landing page before changing classification or source rows.
 
 ## References
 
