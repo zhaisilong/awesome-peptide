@@ -1,8 +1,8 @@
-# Contribution guidelines
+# Contributing
+
+Thanks for helping improve `awesome-peptide`. This repository is primarily a curated paper list generated from structured CSV metadata.
 
 ## Setup
-
-We use [Liquid](https://liquid.readthedocs.io/en/latest/) as the template language and pandas for handling paper metadata to generate the · documentation.
 
 ```bash
 git clone git@github.com:zhaisilong/awesome-peptide.git
@@ -11,33 +11,80 @@ cd awesome-peptide
 mamba create -n awepep python=3.9
 mamba activate awepep
 
-pip install -e .
-
-awepep  # This command builds the markdown from the CSV files
-awecheck  # Check validation of data/paper.csv
+python -m pip install -e ".[dev]"
 ```
 
-### Package Archietecchre
+## Project Layout
 
-```yaml
-- awepep
-    - main.py: the main functionality
-    - templates.py: Liquid templates for markdown generation
-    - paper.py: builds documentation from CSV data
-    - config.py: handles section ordering configuration
-- data
-    - paper.csv: curated dataset containing paper metadata
-- resource: curated paper files by doi
-- cover.png: cover image derived from [Nature Springer](https://doi.org/10.1038/s41586-023-05909-9)
-- DATABASE.md: Chapter 0 for content that requires special formatting and handling
-- setup.py: installation script
-- LICENSE.md: GNU license
+- `data/paper.csv`: source of truth for manually curated paper metadata.
+- `data/paper-read.csv`: minimal source table for paper-read entries enriched from Crossref or arXiv during README generation.
+- `awepep/template.py`: Liquid templates for generated Markdown.
+- `awepep/paper.py`: README generation from CSV data.
+- `awepep/check.py`: CSV validation and summary statistics.
+- `awepep/config.py`: section order, subsection order, controlled tags, linked tags, and pinned/recent settings.
+- `DATABASE.md`: manually maintained Chapter 0 content inserted into `README.md`.
+- `resource/`: local paper resources referenced by CSV rows.
+- `.codex/skills/`: repo-local Codex skills for paper curation and tooling maintenance.
+- `pyproject.toml`: package metadata, dependencies, and console scripts.
+
+## Paper Updates
+
+Edit `data/paper.csv` for manually curated paper metadata changes. Keep the column order unchanged:
+
+```text
+title,sec,subsec,authors,publications,code,dataset,quality,publish_date,abstract,blogs,pined,tags
 ```
 
-## Quality Assessment
+Use section and subsection names from `awepep/config.py`. Keep `publications` as a Markdown DOI link so the checker can extract duplicate DOI values.
 
-Papers are categorized into three quality levels:
+For papers sourced from `vendor/paper-read`, prefer `data/paper-read.csv` instead of duplicating Crossref metadata. Keep its column order unchanged:
 
-1. High: High impact factor (IF), well-written, and high-quality research.
-2. Medium: Moderate quality and impact.
-3. Low: Less influential but still valuable.
+```text
+doi,title,source,sec,subsec,code,dataset,quality,pined,tags
+```
+
+The README generator fetches authors, publication venue, publish date, DOI link, and abstract from Crossref or arXiv at generation time. The `sec` and `subsec` values are still agent-curated from the existing awesome-peptide taxonomy.
+
+## Validation
+
+Run the checker before regenerating the README:
+
+```bash
+awe-check
+```
+
+`awe-check` validates CSV structure and prints tag warnings for unknown or alias tags. Warnings should be treated as curation debt even though they do not fail the command.
+
+Run the local tag audit when changing tags:
+
+```bash
+python .codex/skills/curate-peptide-papers/scripts/audit_tags.py
+```
+
+Run a no-write generation smoke test:
+
+```bash
+python - <<'PY'
+from awepep.paper import PaperList
+md = PaperList("data/paper.csv").get_md(write=False)
+print(len(md), md.splitlines()[0])
+PY
+```
+
+Regenerate `README.md` after CSV or template changes:
+
+```bash
+awe-pep
+git diff -- README.md
+```
+
+`awe-pep` uses Crossref and arXiv when `data/paper-read.csv` is present, so README regeneration needs network access.
+
+## Quality And Pinned Papers
+
+- Leave `quality` blank by default; use `high` for landmark or especially relevant work.
+- Leave `pined` blank by default; use `true` only for selected important papers.
+- Keep abstracts concise when included.
+- Use slash-separated canonical tags from `awepep.config.tag_groups`, for example `Diffusion/Cyclic/MD`.
+- Add new tags to `tag_groups` before using them; add common misspellings or legacy spellings to `tag_aliases`.
+- Tags are grouped as `method`, `domain`, `resource`, and `person`; configured links live in `tag_links`.
