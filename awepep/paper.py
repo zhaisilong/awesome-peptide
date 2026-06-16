@@ -4,7 +4,7 @@ import re
 
 import pandas as pd
 
-from awepep import config, crossref, template, utils
+from awepep import config, crossref, tags as tag_utils, template, utils
 
 PAPER_COLUMNS = [
     "title",
@@ -148,22 +148,7 @@ class PaperList:
 
     @staticmethod
     def process_tags(df):
-        def process_one_item(tags):
-            if tags:
-                return "/".join(
-                    [
-                        (
-                            f"[{tag}]({config.tags[tag]})"
-                            if tag in config.tags.keys()
-                            else tag
-                        )
-                        for tag in tags.split("/")
-                    ]
-                )
-            else:
-                return tags
-
-        df["tags"] = df["tags"].apply(process_one_item)
+        df["tags"] = df["tags"].apply(tag_utils.format_for_readme)
         return df
 
     def load_data_part(self):

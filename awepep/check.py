@@ -7,7 +7,7 @@ import pandas as pd
 from fire import Fire
 from tqdm.auto import tqdm
 
-from awepep import config, crossref
+from awepep import config, crossref, tags as tag_utils
 
 tqdm.pandas()
 
@@ -63,12 +63,29 @@ def check_required_fields(row, required_fields):
         raise ValueError(f"Missing required fields: {missing_fields} in row: {row}")
 
 
+def print_tag_warnings(df: pd.DataFrame, csv_path: Path):
+    warning_count = 0
+    for index, row in df.iterrows():
+        row_warnings = tag_utils.warnings(row.get("tags", ""))
+        if not row_warnings:
+            continue
+        line = index + 2
+        title = str(row.get("title", "")).strip()
+        for warning in row_warnings:
+            warning_count += 1
+            print(f"WARNING {csv_path}:{line} {title!r}: {warning.message()}")
+
+    if warning_count:
+        print(f"{csv_path} tag check completed with {warning_count} warning(s)")
+    else:
+        print(f"{csv_path} tag check passed")
+
+
 # 更新统计信息
 def update_statistics(row, quality_counter, tags_counter):
     quality_counter[row["quality"]] += 1
     if row["tags"]:
-        tags = row.get("tags", "").split("/")
-        tags_counter.update(filter(None, tags))
+        tags_counter.update(tag_utils.canonicalize_many(row.get("tags", "")))
     return row["pined"] != False
 
 
@@ -104,6 +121,8 @@ def validate_main_csv(csv_path: Path, doi_pool: set) -> pd.DataFrame:
     df.progress_apply(check_section, axis=1)
     print(f"{csv_path} section check passed")
 
+    print_tag_warnings(df, csv_path)
+
     # 提取 DOI 并检查重复
     df["dois"] = df["publications"].apply(extract_dois)
     df["dois"].progress_apply(lambda dois: check_duplicate(dois, doi_pool))
@@ -136,6 +155,8 @@ def validate_paper_read_csv(csv_path: Path, doi_pool: set) -> pd.DataFrame:
 
     df.progress_apply(check_section, axis=1)
     print(f"{csv_path} section check passed")
+
+    print_tag_warnings(df, csv_path)
 
     df["dois"] = df["doi"].apply(lambda doi: [crossref.normalize_doi(doi)])
     df["dois"].progress_apply(lambda dois: check_duplicate(dois, doi_pool))

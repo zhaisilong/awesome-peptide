@@ -39,6 +39,71 @@ sections = {
 max_pined = 30
 last_days = 180
 
+tag_groups = {
+    "method": [
+        "AF",
+        "AI",
+        "Diffusion",
+        "Docking",
+        "Flow",
+        "Graph",
+        "GPT",
+        "MD",
+        "MLM",
+        "Pipeline",
+        "PLM",
+        "RL",
+    ],
+    "domain": [
+        "AMPs",
+        "cLogP",
+        "Crystal",
+        "Cyclic",
+        "Full-Atom",
+        "HELM",
+        "Lasso",
+        "mRNA",
+        "PROTAC",
+        "RaPID",
+    ],
+    "resource": [
+        "AstraZeneca",
+        "ColabDesign",
+        "ESM",
+        "Molecular AI",
+        "Nvidia",
+        "ProteinMPNN",
+        "RFdiffusion",
+        "RosettaCommons",
+    ],
+    "person": [
+        "Akiyama Yutaka",
+        "Chang-Yu Hsieh",
+        "Changsheng Zhang",
+        "David Baker",
+        "Gaurav Bhardwaj",
+        "Hiroaki Suga",
+        "Hongliang Duan",
+        "Jianzhu Ma",
+        "Luhua Lai",
+        "Patrick Bryant",
+        "Pranam Chatterjee",
+        "Stan Z. Li",
+        "Tingjun Hou",
+        "Yang Liu",
+        "Yuedong Yang",
+    ],
+}
+
+tag_aliases = {
+    "AF2": "AF",
+    "AlphaFold": "AF",
+    "AlphaFold2": "AF",
+    "AMP": "AMPs",
+    "clogP": "cLogP",
+    "Pipline": "Pipeline",
+}
+
 authors = {
     "Tingjun Hou": "https://scholar.google.com/citations?hl=en&user=vHW2kqUAAAAJ",
     "Luhua Lai": "https://scholar.google.com/citations?hl=en&user=8NJFCTYAAAAJ",
@@ -64,4 +129,6 @@ tools = {
     "RFdiffusion": "https://github.com/RosettaCommons/RFdiffusion",
 }
 
-tags = authors | tools
+valid_tags = {tag for grouped_tags in tag_groups.values() for tag in grouped_tags}
+tag_links = authors | tools
+tags = tag_links

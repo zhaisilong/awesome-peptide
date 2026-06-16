@@ -1,5 +1,21 @@
 # Changelog
 
+## [1.3.1] - 2026-06-16
+
+### Added
+
+- Added a controlled tag vocabulary with method, domain, resource, and person groups.
+- Added tag normalization helpers and a local tag audit script for Codex curation.
+- Added README wording for Codex-agent-assisted automation.
+
+### Changed
+
+- Normalized existing tags and conservatively added clear tags to selected rows.
+- Updated README generation to canonicalize, deduplicate, and link configured tags.
+- Updated `awe-check` to warn on unknown or alias tags without failing validation.
+- Switched the GitHub stars badge to `badgen.net` because Shields currently returns a GitHub token-pool error for this repo.
+- Set package version to `1.3.1`.
+
 ## [1.3.0] - 2026-06-16
 
 ### Added

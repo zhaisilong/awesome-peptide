@@ -5,7 +5,9 @@ This repo will be refreshed on an annual basis.
 
 🔬 **Comprehensive List of Research Papers on Peptides and Deep Learning**
 
-[![Awesome](https://awesome.re/badge.svg)](https://awesome.re) [![stars](https://shields.io/github/stars/zhaisilong/awesome-peptide?style=social)](https://github.com/zhaisilong/awesome-peptide)
+[![Awesome](https://awesome.re/badge.svg)](https://awesome.re) [![stars](https://badgen.net/github/stars/zhaisilong/awesome-peptide)](https://github.com/zhaisilong/awesome-peptide/stargazers)
+
+🤖 With help from Codex agents, this repository is now partially automated: paper metadata lives in CSV files, paper-read entries are enriched from Crossref/arXiv, and README generation plus validation are reproducible.
 
 🔗 Link directly to <a href="#contents">Contents</a>, <a href="#citations">Citations</a>
 
@@ -39,7 +41,7 @@ Fei He, Xianyu Wang and Dong Xu<br>
 
 **AI-Designed Peptides as Tools for Biochemistry**<br>
 Lauren Hong, Sophia Vincoff and Pranam Chatterjee<br>
-[**2026**-4-10] >> [Biochemistry](https://doi.org/10.1021/acs.biochem.6c00138) • [paper-read](https://paper.molastra.org/journal/2026/202604/AI-Designed Peptides/)
+[**2026**-4-10] >> [Biochemistry](https://doi.org/10.1021/acs.biochem.6c00138) • [paper-read](https://paper.molastra.org/journal/2026/202604/AI-Designed Peptides/) • AI
 
 **The evolution of computation-driven paradigms in targeted peptide drug design: From predictive modeling to generative AI and clinical translation**<br>
 Wenjing Hu, Yuan Sun, Ting Li, Mark Williamson, Xiaoying Hu and Maolin Wang<br>
@@ -97,7 +99,7 @@ Stephen Rettie, ..., Gaurav Bhardwaj<br>
 
 **Discovery of antimicrobial peptides with notable antibacterial potency by an LLM-based foundation model**<br>
 Jike Wang, Jianwen Feng, Yu Kang, Peichen Pan, Jingxuan Ge, Yan Wang, Mingyang Wang<br>
-[**2024**-10-10] >> [Science Advances](https://doi.org/10.1126/sciadv.ads8932) • high • [GitHub](https://github.com/jkwang93/AMP-designer) • [公众号](https://mp.weixin.qq.com/s/BWuRo2A3ehLlhi2Eq2-Qhw) • [Tingjun Hou](https://scholar.google.com/citations?hl=en&user=vHW2kqUAAAAJ)/Diffusion/[Chang-Yu Hsieh](https://scholar.google.com/citations?user=K-AjhSgAAAAJ)
+[**2024**-10-10] >> [Science Advances](https://doi.org/10.1126/sciadv.ads8932) • high • [GitHub](https://github.com/jkwang93/AMP-designer) • [公众号](https://mp.weixin.qq.com/s/BWuRo2A3ehLlhi2Eq2-Qhw) • AMPs/[Tingjun Hou](https://scholar.google.com/citations?hl=en&user=vHW2kqUAAAAJ)/Diffusion/[Chang-Yu Hsieh](https://scholar.google.com/citations?user=K-AjhSgAAAAJ)
 
 **Target-Specific De Novo Peptide Binder Design with DiffPepBuilder**<br>
 Fanhao Wang, Yuzhe Wang, Laiyi Feng, Changsheng Zhang, and Luhua Lai<br>
@@ -300,7 +302,7 @@ Jianan Li, Keisuke Yanagisawa, Masatake Sugita, Takuya Fujie, Masahito Ohue & Yu
 
 **AI-Designed Peptides as Tools for Biochemistry**<br>
 Lauren Hong, Sophia Vincoff and Pranam Chatterjee<br>
-[**2026**-4-10] >> [Biochemistry](https://doi.org/10.1021/acs.biochem.6c00138) • [paper-read](https://paper.molastra.org/journal/2026/202604/AI-Designed Peptides/)
+[**2026**-4-10] >> [Biochemistry](https://doi.org/10.1021/acs.biochem.6c00138) • [paper-read](https://paper.molastra.org/journal/2026/202604/AI-Designed Peptides/) • AI
 
 **The evolution of computation-driven paradigms in targeted peptide drug design: From predictive modeling to generative AI and clinical translation**<br>
 Wenjing Hu, Yuan Sun, Ting Li, Mark Williamson, Xiaoying Hu and Maolin Wang<br>
@@ -321,7 +323,7 @@ Zhai Silong, Tiantao Liu, Shaolong Lin, Dan Li, Huanxiang Liu, Xiaojun Yao and T
 
 **Unlocking novel therapies: cyclic peptide design for amyloidogenic targets through synergies of experiments, simulations, and machine learning**<br>
 Daria de Raffele and Ioana M. Ilie<br>
-[**2023**-11-7] >> [Chem. Commun.](https://doi.org/10.1039/D3CC04630C) • Cyclic
+[**2023**-11-7] >> [Chem. Commun.](https://doi.org/10.1039/D3CC04630C) • Cyclic/MD
 
 **Target structure based computational design of cyclic peptides**<br>
 WANG Fanhao, LAI Luhua, ZHANG Changsheng<br>
@@ -360,7 +362,7 @@ Pengzhen Jia, Fuhao Zhang, Chaojin Wu and Min Li<br>
 
 **Modelling peptide–protein complexes: docking, simulations and machine learning**<br>
 Arup Mondal, Liwei Chang and Alberto Perez<br>
-[**2022**-8-26] >> [QRB Discovery](https://doi.org/10.1017/qrd.2022.14)
+[**2022**-8-26] >> [QRB Discovery](https://doi.org/10.1017/qrd.2022.14) • Docking/MD
 
 **Peptide-based inhibitors of protein-protein interactions: biophysical, structural and cellular consequences of introducing a constraint**<br>
 Hongshuang Wang, Robert S. Dawber, Peiyu Zhang, Martin Walko, Andrew J. Wilson and Xiaohui Wang<br>
@@ -393,7 +395,7 @@ Jiahui Ma, Xuedan Wang, Yonghua Hu, Jianping Ma, Yaping Ma, Hao Chen and Zhijian
 
 **Propedia v2.3: A novel  representation approach for the  peptide-protein interaction  database using graph-based  structural signatures**<br>
 Pedro Martins, Diego Mariano, Frederico Chaves Carvalho, Luana Luiza Bastos, Lucas Moraes, Vivian Paixão and Raquel Cardoso de Melo-Minardi<br>
-[**2023**-2-16] >> [Front. Bioinform.](https://doi.org/10.3389/fbinf.2023.1103103) • [SI](https://www.frontiersin.org/journals/bioinformatics/articles/10.3389/fbinf.2023.1103103/full#SM1) • [propedia](https://github.com/LBS-UFMG/propedia)
+[**2023**-2-16] >> [Front. Bioinform.](https://doi.org/10.3389/fbinf.2023.1103103) • [SI](https://www.frontiersin.org/journals/bioinformatics/articles/10.3389/fbinf.2023.1103103/full#SM1) • [propedia](https://github.com/LBS-UFMG/propedia) • Graph
 
 
 ## 3. Property & Activity Prediction
@@ -411,7 +413,7 @@ Marcelo D. T. Torres, Fangping Wan and Cesar de la Fuente-Nunez<br>
 
 **pLM4CPPs: Protein Language Model-Based Predictor for Cell Penetrating Peptides**<br>
 Nandan Kumar, Zhenjiao Du and Yonghui Li<br>
-[**2025**-1-29] >> [JCIM](https://doi.org/10.1021/acs.jcim.4c01338)
+[**2025**-1-29] >> [JCIM](https://doi.org/10.1021/acs.jcim.4c01338) • PLM
 
 
 ### 3.2 Interaction & Binding
@@ -422,7 +424,7 @@ Fei He, Xianyu Wang and Dong Xu<br>
 
 **An interaction-derived graph learning framework for scoring protein-peptide complexes**<br>
 Huanyu Tao, Xiaoyu Wang and Sheng-You Huang<br>
-[**2025**-10-23] >> [Nat Mach Intell](https://doi.org/10.1038/s42256-025-01136-1) • high • [paper-read](https://paper.molastra.org/journal/2025/202510/GraphPep/)
+[**2025**-10-23] >> [Nat Mach Intell](https://doi.org/10.1038/s42256-025-01136-1) • high • [paper-read](https://paper.molastra.org/journal/2025/202510/GraphPep/) • Graph
 
 
 ### 3.3 Permeability & Developability
@@ -437,7 +439,7 @@ Federico Riu, Larissa Alena Ruppitsch, Duc Duy Vo, Richard S. Hong, Mohit Tyagi,
 
 **Beware of extreme calculated lipophilicity when designing cyclic peptides**<br>
 Vasanthanathan Poongavanam, Duc Duy Vo & Jan Kihlberg<br>
-[**2024**-9-19] >> [Nat. Chem. Biol.](https://doi.org/10.1038/s41589-024-01715-0) • [SI](https://www.nature.com/articles/s41589-024-01715-0#MOESM1) • [公众号](https://mp.weixin.qq.com/s/B65rJB1i_xrP8fTfbQ3Taw) • Cyclic/clogP
+[**2024**-9-19] >> [Nat. Chem. Biol.](https://doi.org/10.1038/s41589-024-01715-0) • [SI](https://www.nature.com/articles/s41589-024-01715-0#MOESM1) • [公众号](https://mp.weixin.qq.com/s/B65rJB1i_xrP8fTfbQ3Taw) • Cyclic/cLogP
 
 **CycPeptMP: Enhancing Membrane Permeability Prediction of Cyclic Peptides with Multi-Level Molecular Features and Data Augmentation**<br>
 Jianan Li, Keisuke Yanagisawa, and Yutaka Akiyama<br>
@@ -489,7 +491,7 @@ Liwei Chang and Alberto Perez<br>
 
 **Harnessing protein folding neural networks for  peptide–protein docking**<br>
 Tomer Tsaban, Julia K. Varga, Orly Avraham, Ziv Ben-Aharon, Alisa Khramushin &  Ora Schueler-Furman<br>
-[**2021**-11-10] >> [NC](https://doi.org/10.1038/s41467-021-27838-9) • [GitHub](https://github.com/Furman-Lab/Peptide_docking_with_AF2_and_RosettAfold) • [AF](https://deepmind.google/technologies/alphafold/)
+[**2021**-11-10] >> [NC](https://doi.org/10.1038/s41467-021-27838-9) • [GitHub](https://github.com/Furman-Lab/Peptide_docking_with_AF2_and_RosettAfold) • [AF](https://deepmind.google/technologies/alphafold/)/Docking
 
 
 ## 5. Peptide Design & Generation
@@ -498,7 +500,7 @@ Tomer Tsaban, Julia K. Varga, Orly Avraham, Ziv Ben-Aharon, Alisa Khramushin &  
 
 **De Novo Design of Cyclic Peptide Binders Based on Fragment Docking and Assembling**<br>
 Zhang, Changsheng, Fanhao Wang, Tiantian Zhang, Yang Yang, Liying Wang, Xiaoling Zhang and Luhua Lai<br>
-[**2025**-4-14] >> [JCIM](https://doi.org/10.1021/acs.jcim.5c00088) • [Luhua Lai](https://scholar.google.com/citations?hl=en&user=8NJFCTYAAAAJ)/Docking
+[**2025**-4-14] >> [JCIM](https://doi.org/10.1021/acs.jcim.5c00088) • Cyclic/[Luhua Lai](https://scholar.google.com/citations?hl=en&user=8NJFCTYAAAAJ)/Docking
 
 **Anchor extension: a structure-guided approach to  design cyclic peptides targeting enzyme active sites**<br>
 Parisa Hosseinzadeh, ..., David Baker<br>
@@ -534,7 +536,7 @@ Stephen Rettie, ..., Gaurav Bhardwaj<br>
 
 **Discovery of antimicrobial peptides with notable antibacterial potency by an LLM-based foundation model**<br>
 Jike Wang, Jianwen Feng, Yu Kang, Peichen Pan, Jingxuan Ge, Yan Wang, Mingyang Wang<br>
-[**2024**-10-10] >> [Science Advances](https://doi.org/10.1126/sciadv.ads8932) • high • [GitHub](https://github.com/jkwang93/AMP-designer) • [公众号](https://mp.weixin.qq.com/s/BWuRo2A3ehLlhi2Eq2-Qhw) • [Tingjun Hou](https://scholar.google.com/citations?hl=en&user=vHW2kqUAAAAJ)/Diffusion/[Chang-Yu Hsieh](https://scholar.google.com/citations?user=K-AjhSgAAAAJ)
+[**2024**-10-10] >> [Science Advances](https://doi.org/10.1126/sciadv.ads8932) • high • [GitHub](https://github.com/jkwang93/AMP-designer) • [公众号](https://mp.weixin.qq.com/s/BWuRo2A3ehLlhi2Eq2-Qhw) • AMPs/[Tingjun Hou](https://scholar.google.com/citations?hl=en&user=vHW2kqUAAAAJ)/Diffusion/[Chang-Yu Hsieh](https://scholar.google.com/citations?user=K-AjhSgAAAAJ)
 
 **Target-Specific De Novo Peptide Binder Design with DiffPepBuilder**<br>
 Fanhao Wang, Yuzhe Wang, Laiyi Feng, Changsheng Zhang, and Luhua Lai<br>
@@ -626,7 +628,7 @@ Qiuzhen Li, Efstathios Nikolaos Vlachos, Patrick Bryant<br>
 
 **Design of Peptide Binders to Conformationally Diverse Targets with Contrastive Language Modeling**<br>
 Suhaas Bhat, Kalyan Palepu, ..., Pranam Chatterjee<br>
-[**2024**-7-22] >> [Arxive](https://doi.org/10.1101/2023.06.26.546591) • [zenodo](https://zenodo.org/doi/10.5281/zenodo.10971077) • [huggingface](https://huggingface.co/ubiquitx/pepprclip) • Pipline
+[**2024**-7-22] >> [Arxive](https://doi.org/10.1101/2023.06.26.546591) • [zenodo](https://zenodo.org/doi/10.5281/zenodo.10971077) • [huggingface](https://huggingface.co/ubiquitx/pepprclip) • Pipeline
 
 <details>
 <summary>🔎 Abstract</summary>

@@ -33,6 +33,11 @@ python -m awepep.check
 python -m awepep.main
 ```
 
+Run the tag audit after changing `tags`:
+```bash
+python .codex/skills/curate-peptide-papers/scripts/audit_tags.py
+```
+
 ## Paper-Read Workflow
 
 Use this workflow when the user asks to pull latest papers from `paper-read` or scan for peptide papers:
@@ -65,7 +70,7 @@ For adding or updating papers:
 3. Classify with the exact current section/subsection values from `awepep/config.py`.
 4. Keep `publications` in Markdown DOI-link form so `awepep.check` can extract the DOI.
 5. Default optional fields to blank. Use `quality=high` only for clearly important work. Use `pined=true` only for selected important papers and keep the count below `max_pined = 30`.
-6. Prefer short, slash-separated tags. Existing tags that match `awepep/config.py` authors or tools render as links automatically.
+6. Prefer short, slash-separated canonical tags from `awepep.config.tag_groups`; add new tags to the vocabulary before using them.
 7. Regenerate `README.md` only after CSV edits, then inspect the diff.
 
 For `data/paper-read.csv`, keep only the minimal source row. Required decision fields are DOI and the agent-selected `sec/subsec`; optional `title`, `source`, `code`, `dataset`, `quality`, `pined`, and `tags` help display or audit the row. Use conservative official source links only.
@@ -96,6 +101,7 @@ Review the printed row before appending it to `data/paper.csv`.
 - Do not add papers without a DOI unless the user explicitly accepts that `awepep.check` will need to change.
 - Do not put generated authors, venue, date, publication link, or abstract into `data/paper-read.csv`; those are generated live.
 - Do not invent new section or subsection labels during paper-add tasks.
+- Do not invent one-off tags. Unknown tags are warnings in `awe-check`, but they should be resolved before release.
 - If dependencies are missing, install the package in editable mode before validating.
 - If `README.md` generation fails for a paper-read DOI, verify the DOI with Crossref, arXiv, or the DOI landing page before changing classification or source rows.
 

@@ -96,7 +96,11 @@ Applications & Tools: Software & Webservers, Screening & Discovery, Therapeutics
 - `quality`: currently blank or `high`. Mark `high` only for landmark, high-impact, or especially relevant papers.
 - `pined`: leave blank by default. Use `true` only for selected important papers; `awepep/config.py` sets `max_pined = 30`.
 - `abstract`: optional. If included, keep it concise and safe for inline HTML inside the README details block.
-- `tags`: slash-separated, for example `Diffusion/Cyclic/MD`. Tags matching `awepep/config.py` authors or tools render as links.
+- `tags`: slash-separated canonical tags, for example `Diffusion/Cyclic/MD`.
+- Choose tags from `awepep.config.tag_groups`, grouped as `method`, `domain`, `resource`, and `person`.
+- Add a new tag to `tag_groups` before using it; add common misspellings or legacy values to `tag_aliases`.
+- Tags matching `awepep.config.tag_links` render as links in generated README output.
+- `awe-check` warns on unknown or alias tags without failing; resolve these warnings before release.
 - Prefer existing tag vocabulary unless a new method or domain tag is clearly useful.
 
 ## Validation Checklist
@@ -106,6 +110,7 @@ After edits:
 ```bash
 pip install -e .
 awe-check
+python .codex/skills/curate-peptide-papers/scripts/audit_tags.py
 awe-pep
 git diff -- data/paper.csv README.md
 ```

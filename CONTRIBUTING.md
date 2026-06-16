@@ -21,7 +21,7 @@ python -m pip install -e ".[dev]"
 - `awepep/template.py`: Liquid templates for generated Markdown.
 - `awepep/paper.py`: README generation from CSV data.
 - `awepep/check.py`: CSV validation and summary statistics.
-- `awepep/config.py`: section order, subsection order, linked tags, and pinned/recent settings.
+- `awepep/config.py`: section order, subsection order, controlled tags, linked tags, and pinned/recent settings.
 - `DATABASE.md`: manually maintained Chapter 0 content inserted into `README.md`.
 - `resource/`: local paper resources referenced by CSV rows.
 - `.codex/skills/`: repo-local Codex skills for paper curation and tooling maintenance.
@@ -53,6 +53,14 @@ Run the checker before regenerating the README:
 awe-check
 ```
 
+`awe-check` validates CSV structure and prints tag warnings for unknown or alias tags. Warnings should be treated as curation debt even though they do not fail the command.
+
+Run the local tag audit when changing tags:
+
+```bash
+python .codex/skills/curate-peptide-papers/scripts/audit_tags.py
+```
+
 Run a no-write generation smoke test:
 
 ```bash
@@ -77,4 +85,6 @@ git diff -- README.md
 - Leave `quality` blank by default; use `high` for landmark or especially relevant work.
 - Leave `pined` blank by default; use `true` only for selected important papers.
 - Keep abstracts concise when included.
-- Use slash-separated tags, for example `Diffusion/Cyclic/MD`.
+- Use slash-separated canonical tags from `awepep.config.tag_groups`, for example `Diffusion/Cyclic/MD`.
+- Add new tags to `tag_groups` before using them; add common misspellings or legacy spellings to `tag_aliases`.
+- Tags are grouped as `method`, `domain`, `resource`, and `person`; configured links live in `tag_links`.

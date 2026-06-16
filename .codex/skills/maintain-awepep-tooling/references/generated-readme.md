@@ -20,7 +20,7 @@ Avoid direct edits to generated paper sections in `README.md`. Instead:
 
 ## Regeneration Risk
 
-`README.md` currently starts with a note about update frequency and MolAstra links. That note is not present in `awepep/template.py`, so a direct regeneration can remove it. Before accepting a README regeneration diff, check whether the note should be moved into the template.
+`README.md` starts with update-frequency, MolAstra, and Codex-agent automation notes. These notes live in `awepep/template.py`; before accepting a README regeneration diff, check that they remain present.
 
 ## Diff Review Checklist
 

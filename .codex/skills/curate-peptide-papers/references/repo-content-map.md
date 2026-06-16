@@ -7,10 +7,11 @@ Use this reference to orient content work in `awesome-peptide`.
 - `data/paper.csv`: canonical table of manually curated papers.
 - `data/paper-read.csv`: minimal table for paper-read sourced entries enriched from Crossref or arXiv during README generation.
 - `awepep/crossref.py`: Crossref Work API and arXiv API helpers for live paper-read metadata enrichment.
-- `awepep/config.py`: cleaned task-oriented section/subsection ordering, linked author/tool tags, `max_pined`, and `last_days`.
+- `awepep/config.py`: section/subsection ordering, controlled tag groups, tag aliases, tag links, `max_pined`, and `last_days`.
+- `awepep/tags.py`: shared tag splitting, canonicalization, warning, and README-link formatting helpers.
 - `awepep/template.py`: Liquid templates for header, paper rows, table of contents, pinned papers, recent papers, and footer.
 - `awepep/paper.py`: loads CSV, formats tags, sorts papers, merges `DATABASE.md`, and writes `README.md`.
-- `awepep/check.py`: validates required fields, sections, DOI extraction, duplicate DOI values, pinned count, and prints statistics.
+- `awepep/check.py`: validates required fields, sections, DOI extraction, duplicate DOI values, pinned count, tag warnings, and prints statistics.
 - `DATABASE.md`: manually maintained Chapter 0 content inserted into generated README.
 - `README.md`: generated public list; do not edit generated paper sections directly.
 - `CONTRIBUTING.md`: setup and contribution instructions.
@@ -26,7 +27,7 @@ Use this reference to orient content work in `awesome-peptide`.
 3. Fetches Crossref or arXiv metadata for paper-read DOIs and converts rows into the main render shape.
 4. Deduplicates paper-read rows against `data/paper.csv` by DOI.
 5. Adds bold year formatting to `publish_date_`.
-6. Converts configured tags to Markdown links.
+6. Canonicalizes, deduplicates, and converts configured tags to Markdown links.
 7. Sorts papers by `publish_date` descending.
 8. Builds recent papers using `last_days = 180`.
 9. Builds pinned papers from rows where `pined` is truthy.
@@ -42,6 +43,7 @@ Use this reference to orient content work in `awesome-peptide`.
 - `pined` is currently blank or `true`; Pandas displays these as false/true booleans after loading.
 - `README.md` contains a top update-frequency note that is present in `awepep/template.py`.
 - README generation uses the Crossref API and arXiv fallback when `data/paper-read.csv` contains rows.
+- Tag validation uses controlled vocabulary warnings instead of hard failures for unknown tags.
 - Console commands are defined in `pyproject.toml` as `awe-pep` and `awe-check`.
 - `vendor/paper-read` is a source-only submodule; update it, scan it, but do not edit files inside it.
 
@@ -73,4 +75,5 @@ Paper-read source commands:
 git submodule update --init --recursive
 git submodule update --remote vendor/paper-read
 python .codex/skills/curate-peptide-papers/scripts/scan_paper_read_candidates.py --limit 200 --enrich-crossref
+python .codex/skills/curate-peptide-papers/scripts/audit_tags.py
 ```

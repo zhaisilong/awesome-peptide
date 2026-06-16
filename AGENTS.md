@@ -9,6 +9,7 @@ Use the repo-local skills in `.codex/skills` for recurring work:
 
 - Edit `data/paper.csv` for manually curated paper entries.
 - Edit `data/paper-read.csv` for paper-read sourced entries. Keep it minimal and let Crossref or the arXiv fallback fill bibliographic metadata during README generation.
+- Use canonical tags from `awepep.config.tag_groups`. Add new tags to the vocabulary before using them, and treat tag audit warnings as curation debt.
 - Edit `DATABASE.md` for Chapter 0 content.
 - Treat `README.md` as generated output from CSV, `DATABASE.md`, and `awepep/template.py`.
 - Do not hand-edit generated paper sections in `README.md` unless the user explicitly asks for a one-off patch.
@@ -32,6 +33,7 @@ Use the scanner report to curate high-confidence peptide/deep-learning papers in
 python -m pip install -e ".[dev]"
 git submodule update --init --recursive
 awe-check
+python .codex/skills/curate-peptide-papers/scripts/audit_tags.py
 python - <<'PY'
 from awepep.paper import PaperList
 md = PaperList("data/paper.csv").get_md(write=False)
