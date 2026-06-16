@@ -1,0 +1,4 @@
+[submodule "vendor/paper-read"]
+	path = vendor/paper-read
+	url = https://github.com/zhaisilong/paper-read.git
+	branch = main

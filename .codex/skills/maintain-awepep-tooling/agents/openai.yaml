@@ -1,0 +1,4 @@
+interface:
+  display_name: "Awepep Tooling Maintainer"
+  short_description: "Maintain awepep generation and checks"
+  default_prompt: "Use $maintain-awepep-tooling to fix or validate the awesome-peptide Python tooling."

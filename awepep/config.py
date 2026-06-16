@@ -1,5 +1,3 @@
-from liquid import Template
-
 sections = {
     "Reviews": ["Interaction", "Property", "Sequence", "Structure", "Design"],
     "Representation": ["Grpah-based", "Sequence-based"],
@@ -13,7 +11,14 @@ sections = {
         "Diffusion-based",
         "Graph-based",
     ],
-    "Others": ["Screen", "Therapeutic", "Principle", "PROTAC", "Protein Binders", "RaPID"],
+    "Others": [
+        "Screen",
+        "Therapeutic",
+        "Principle",
+        "PROTAC",
+        "Protein Binders",
+        "RaPID",
+    ],
 }
 
 max_pined = 30

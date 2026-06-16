@@ -1,0 +1,2 @@
+doi,title,source,sec,subsec,code,dataset,quality,pined,tags
+10.1002/advs.202506332,Painting Peptides With Antimicrobial Potency Through Deep Reinforcement Learning,https://paper.molastra.org/journal/2025/202509/AMPainter/,Design,Sequence-based,[GitHub](https://github.com/ComputBiophys/AMPainter),,high,,AMPs/RL
