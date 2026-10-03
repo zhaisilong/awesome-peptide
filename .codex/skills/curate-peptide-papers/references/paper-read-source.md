@@ -1,66 +1,23 @@
 # Paper-Read Source
 
-Use this reference when pulling latest paper notes from `vendor/paper-read`.
+The source submodule is `https://github.com/zhaisilong/paper-read.git` at `vendor/paper-read`; Markdown notes live in `src/site/notes`. Many notes contain JSON frontmatter, a permalink, Chinese/English prose and multiple DOI links.
 
-## Source Layout
-
-- Submodule URL: `https://github.com/zhaisilong/paper-read.git`
-- Local path: `vendor/paper-read`
-- Notes path: `vendor/paper-read/src/site/notes/**/*.md`
-- Main note groups: `journal`, `reviews`, `conference`, `webserver`, `news`, `tutorial`, `survey`
-- Most useful groups for awesome-peptide curation: `journal`, `reviews`, `conference`, `webserver`
-
-The notes are Markdown files. Many start with JSON frontmatter between `---` delimiters, followed by an H1 title and Chinese/English summary text. DOI and resource links usually appear in free text rather than a structured table.
-
-## Update Flow
+## Update And Scan
 
 ```bash
 git submodule update --init --recursive
 git submodule update --remote vendor/paper-read
-```
-
-Do not edit files inside `vendor/paper-read`; update the submodule pointer only.
-
-## Candidate Scan
-
-Run:
-
-```bash
 python .codex/skills/curate-peptide-papers/scripts/scan_paper_read_candidates.py --limit 200 --enrich-crossref
 ```
 
-The scanner reads Markdown notes and ranks candidates by peptide-related keyword hits. It extracts:
+The compatibility scanner delegates to `awepep.discovery`. It prioritizes recent note paths, excludes README files, respects AMP word boundaries, distinguishes primary identifiers from known reference DOIs, and applies the display limit before API enrichment. Reports include ranked notes, identifier/link hints, snippets and enrichment errors. These hints are not verified resource associations.
 
-- note path
-- H1 title
-- inferred note month from paths like `journal/2026/202604/...`
-- DOI values
-- GitHub/code-like links
-- dataset-like links
-- permalink/frontmatter when available
-- optional Crossref metadata for the primary DOI
-- short keyword snippets
-- whether the DOI already exists in `data/paper.csv` or `data/paper-read.csv`
+Use `awe-discover --since DATE --until DATE --sources paper-read` when a publication-window report is required. Note month controls triage order only, never publication eligibility. Initialize the submodule if notes are missing; never edit vendor content.
 
-Metadata comes from `https://api.crossref.org/works/{doi}` or the arXiv API fallback for `10.48550/arXiv.*` DOI rows. Use it for title, authors, venue, published date, DOI link, and abstract. It should not decide awesome-peptide `sec/subsec`.
+## Accept Into The Minimal Table
 
-## Paper-Read CSV
+Use the raw normalized DOI and exact config taxonomy in `data/paper-read.csv`. Use `source` for the note permalink or repo path, which renders as a paper-read blog link. Keep code/dataset links only when the note or primary source explicitly associates them with this paper. Bibliographic authors/venue/date/abstract live in the snapshot, not this CSV.
 
-Curate accepted paper-read candidates into `data/paper-read.csv` with this fixed minimal schema:
+Skip incidental peptide mentions, uncertain primary identifiers, duplicates and ambiguous relevance. If a note lists several papers, verify which one its title describes instead of accepting the first DOI blindly. Outside-window older papers are migrations/updates only when separately requested, not new-window additions.
 
-```text
-doi,title,source,sec,subsec,code,dataset,quality,pined,tags
-```
-
-Use `source` for the paper-read permalink or note path. The README generator renders it as a `paper-read` blog link. Use `code` and `dataset` only for official links explicitly present in the note, DOI landing page, paper text, or official project pages.
-
-## Curation Policy
-
-Use scanner output as a triage queue. Codex should automatically add high-confidence papers after verifying metadata from the note, Crossref or arXiv, and primary sources. Skip:
-
-- broad drug-discovery notes with only incidental peptide mentions
-- notes without DOI or stable source URL unless the user explicitly accepts them
-- candidates that duplicate an existing DOI
-- candidates whose awesome-peptide section/subsection is unclear
-
-Prefer recent 2025/2026 notes first.
+Run explicit metadata refresh after adding rows, commit the resulting snapshot alongside the CSV, and verify offline generation. A failed refresh with a cached record warns visibly; a missing offline record fails.

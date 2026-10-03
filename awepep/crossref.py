@@ -2,24 +2,71 @@
 
 from __future__ import annotations
 
-import html
 import json
 import re
+import time
 import xml.etree.ElementTree as ET
+from html.parser import HTMLParser
 from urllib.error import HTTPError, URLError
-from urllib.parse import quote, urlencode
+from urllib.parse import quote, urlencode, urlsplit
 from urllib.request import Request, urlopen
 
 CROSSREF_WORKS_API = "https://api.crossref.org/works/"
 ARXIV_API = "https://export.arxiv.org/api/query"
 DOI_RE = re.compile(r"^10\.\d{3,9}/\S+$", re.IGNORECASE)
-USER_AGENT = "awesome-peptide/1.3.1 (mailto:zhaisilong@outlook.com)"
+USER_AGENT = "awesome-peptide/1.4.0 (mailto:zhaisilong@outlook.com)"
+_LAST_REQUEST = {}
+
+
+def request_bytes(
+    url: str, timeout: int = 20, accept: str = "application/json"
+) -> bytes:
+    """Respect public API pacing and retry transient failures at most twice."""
+    host = urlsplit(url).netloc
+    interval = 3.1 if "arxiv.org" in host else 0.4
+    for attempt in range(3):
+        delay = interval - (time.monotonic() - _LAST_REQUEST.get(host, 0))
+        if delay > 0:
+            time.sleep(delay)
+        _LAST_REQUEST[host] = time.monotonic()
+        request = Request(url, headers={"Accept": accept, "User-Agent": USER_AGENT})
+        try:
+            with urlopen(request, timeout=timeout) as response:
+                return response.read()
+        except HTTPError as exc:
+            if exc.code not in (429, 500, 502, 503, 504) or attempt == 2:
+                raise RuntimeError(f"HTTP {exc.code} retrieving {url}") from exc
+            retry_after = exc.headers.get("Retry-After", "") if exc.headers else ""
+            delay = min(float(retry_after), 30) if retry_after.isdigit() else 2**attempt
+        except (URLError, TimeoutError) as exc:
+            if attempt == 2:
+                raise RuntimeError(f"Could not retrieve {url}: {exc}") from exc
+            delay = 2**attempt
+        time.sleep(delay)
+    raise RuntimeError(f"Could not retrieve {url}")
+
+
+class _TextParser(HTMLParser):
+    def __init__(self):
+        super().__init__(convert_charrefs=True)
+        self.parts = []
+
+    def handle_data(self, data):
+        self.parts.append(data)
+
+
+def clean_text(value: str) -> str:
+    parser = _TextParser()
+    parser.feed(str(value or ""))
+    return re.sub(r"\s+", " ", " ".join(parser.parts)).strip()
 
 
 def normalize_doi(value: str) -> str:
     doi = str(value).strip()
     doi = re.sub(r"^https?://(?:dx\.)?doi\.org/", "", doi, flags=re.IGNORECASE)
     doi = doi.rstrip(".,;:)]}")
+    if doi.lower().startswith("10.48550/arxiv."):
+        doi = re.sub(r"v\d+$", "", doi, flags=re.IGNORECASE)
     if not DOI_RE.match(doi):
         raise ValueError(f"Invalid DOI: {value}")
     return doi.lower()
@@ -27,24 +74,9 @@ def normalize_doi(value: str) -> str:
 
 def fetch_work(doi: str, timeout: int = 20) -> dict:
     normalized = normalize_doi(doi)
-    request = Request(
-        CROSSREF_WORKS_API + quote(normalized, safe=""),
-        headers={
-            "Accept": "application/json",
-            "User-Agent": USER_AGENT,
-        },
+    payload = json.loads(
+        request_bytes(CROSSREF_WORKS_API + quote(normalized, safe=""), timeout)
     )
-    try:
-        with urlopen(request, timeout=timeout) as response:
-            payload = json.loads(response.read().decode("utf-8"))
-    except HTTPError as exc:
-        raise RuntimeError(
-            f"Crossref returned HTTP {exc.code} for DOI {normalized}"
-        ) from exc
-    except URLError as exc:
-        raise RuntimeError(
-            f"Could not reach Crossref for DOI {normalized}: {exc}"
-        ) from exc
 
     if payload.get("status") != "ok" or "message" not in payload:
         raise RuntimeError(f"Unexpected Crossref response for DOI {normalized}")
@@ -65,7 +97,6 @@ def _date_parts(message: dict) -> list:
         "published-print",
         "published",
         "issued",
-        "created",
     ):
         parts = message.get(key, {}).get("date-parts", [])
         if parts and parts[0]:
@@ -77,10 +108,11 @@ def format_crossref_date(message: dict) -> str:
     parts = _date_parts(message)
     if not parts:
         raise RuntimeError("Crossref work has no usable publication date")
-    year = int(parts[0])
-    month = int(parts[1]) if len(parts) > 1 else 1
-    day = int(parts[2]) if len(parts) > 2 else 1
-    return f"{year}-{month}-{day}"
+    from awepep.utils import date_bounds
+
+    value = "-".join(str(int(part)) for part in parts[:3])
+    date_bounds(value)
+    return value
 
 
 def format_authors(message: dict) -> str:
@@ -111,18 +143,19 @@ def venue_label(message: dict) -> str:
 def clean_abstract(value: str) -> str:
     if not value:
         return ""
-    text = re.sub(r"<[^>]+>", " ", value)
-    text = html.unescape(text)
-    text = re.sub(r"\s+", " ", text).strip()
+    text = clean_text(value)
     return re.sub(r"^abstract[:\s]+", "", text, flags=re.IGNORECASE).strip()
 
 
 def metadata_from_work(message: dict, doi: str) -> dict:
     normalized = normalize_doi(doi)
-    title = _first_string(message.get("title"))
+    returned_doi = message.get("DOI", normalized)
+    if normalize_doi(returned_doi) != normalized:
+        raise RuntimeError(f"Crossref returned a different DOI for {normalized}")
+    title = clean_text(_first_string(message.get("title")))
     if not title:
         raise RuntimeError(f"Crossref work has no title for DOI {normalized}")
-    label = venue_label(message)
+    label = clean_text(venue_label(message))
     return {
         "title": title,
         "authors": format_authors(message),
@@ -148,17 +181,7 @@ def metadata_from_arxiv(doi: str, timeout: int = 20) -> dict:
     normalized = normalize_doi(doi)
     arxiv_id = normalized.removeprefix("10.48550/arxiv.")
     params = urlencode({"id_list": arxiv_id})
-    request = Request(
-        f"{ARXIV_API}?{params}",
-        headers={"User-Agent": USER_AGENT},
-    )
-    try:
-        with urlopen(request, timeout=timeout) as response:
-            payload = response.read()
-    except URLError as exc:
-        raise RuntimeError(
-            f"Could not reach arXiv for DOI {normalized}: {exc}"
-        ) from exc
+    payload = request_bytes(f"{ARXIV_API}?{params}", timeout, "application/atom+xml")
 
     root = ET.fromstring(payload)
     ns = {"atom": "http://www.w3.org/2005/Atom"}

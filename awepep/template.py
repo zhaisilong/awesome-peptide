@@ -1,15 +1,15 @@
 from liquid import Template
 
-header = Template("""# Deep Learning for peptides
+header = Template("""# Awesome Peptide
 
 ⚠️ Note: My PhD research keeps me very busy, so this repository may not be updated frequently. For the latest domain-specific updates, please follow our WeChat Official Account (公众号) [MolAstra](https://mp.weixin.qq.com/s/PI_3E2NzZWBGy95hpFmhHQ) and Our [Paper Reading Project](https://paper.molastra.org).
-This repo will be refreshed on an annual basis.
+Updates are curated on demand with help from Codex agents.
 
-🔬 **Comprehensive List of Research Papers on Peptides and Deep Learning**
+🔬 **Curated peptide research across design, computation, synthesis, biology, delivery, biomaterials, and therapeutic applications.**
 
 [![Awesome](https://awesome.re/badge.svg)](https://awesome.re) [![stars](https://badgen.net/github/stars/zhaisilong/awesome-peptide)](https://github.com/zhaisilong/awesome-peptide/stargazers)
 
-🤖 With help from Codex agents, this repository is now partially automated: paper metadata lives in CSV files, paper-read entries are enriched from Crossref/arXiv, and README generation plus validation are reproducible.
+🤖 With help from Codex agents, paper discovery, metadata verification, classification, and validation are partially automated. Papers are curated from paper-read, Crossref, PubMed, arXiv, and primary sources; committed metadata snapshots make README generation reproducible offline.
 
 🔗 Link directly to <a href="#contents">Contents</a>, <a href="#citations">Citations</a>
 
@@ -37,7 +37,7 @@ paper = Template(
     "{% if paper.abstract %}\n"
     "<details>\n"
     "<summary>🔎 Abstract</summary>\n"
-    "<p>{{paper.abstract}}</p>\n"
+    "<p>{{paper.abstract | escape}}</p>\n"
     "</details>\n"
     "{% endif %}\n"
 )
@@ -48,18 +48,17 @@ toc_header = Template("""
   <br>
   <a href="#01-benchmarks">Benchmarks</a> •
   <a href="#02-datasets">Datasets</a> •
-  <a href="#03-similar-list">Similar List</a> •
-  <a href="#04-tools">Tools</a>
+  <a href="#03-related-resources">Related Resources</a> •
+  <a href="#04-guides">Guides</a> •
+  <a href="#05-tools">Tools</a>
   <br>""")
 
 toc_sec = Template("""
-  <strong><a href='#{{ idx | replace: ".",  "" }}-{{ sec | replace: " ", "-" | downcase }}'>{{idx}}) {{sec}}</a></strong>
+  <strong><a href='#{{ anchor }}'>{{idx}}) {{sec}}</a></strong>
   <br>""")
 
-toc_subsec = Template(
-    """<a href='#{{ idx | replace: ".",  "" }}-{{ sec | replace: " ", "-" | downcase }}'>{{sec}}</a>{% if dot %} •{% endif %}
-  {% unless dot %}<br>{% endunless %}"""
-)
+toc_subsec = Template("""<a href='#{{ anchor }}'>{{sec}}</a>{% if dot %} •{% endif %}
+  {% unless dot %}<br>{% endunless %}""")
 
 
 toc_tail = Template("""
@@ -78,7 +77,7 @@ subsec = Template("""
 """)
 
 paper_last_week_header = Template("""
-📅 _Papers last six month, updated on {{ date }}:_
+📅 _Papers from the last six months, updated on {{ date }}:_
 
 """)
 

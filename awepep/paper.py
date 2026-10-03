@@ -1,10 +1,11 @@
-from datetime import datetime, timedelta
+from datetime import date
 from pathlib import Path
 import re
 
 import pandas as pd
 
 from awepep import config, crossref, tags as tag_utils, template, utils
+from awepep.metadata import MetadataStore
 
 PAPER_COLUMNS = [
     "title",
@@ -42,10 +43,22 @@ class PaperList:
         self,
         data_path: str = "data/paper.csv",
         paper_read_path: str = "data/paper-read.csv",
+        *,
+        metadata_path=None,
+        offline=False,
+        refresh_metadata=False,
     ):
         self.data_path = Path(data_path)
-        df_paper = pd.read_csv(self.data_path)
+        self.metadata = MetadataStore(
+            metadata_path
+            or Path(paper_read_path).with_name("paper-read-metadata.json"),
+            offline,
+            refresh_metadata,
+        )
+        df_paper = pd.read_csv(self.data_path, dtype=str)
         df_paper = self.load_paper_read(df_paper, Path(paper_read_path))
+        if refresh_metadata:
+            self.metadata.save()
         df_paper = df_paper.astype("object").where(pd.notna(df_paper), False)
         self.df_paper = self.process_tags(
             self.improver(df_paper)
@@ -91,7 +104,7 @@ class PaperList:
         if not paper_read_path.exists():
             return df_paper
 
-        df_paper_read = pd.read_csv(paper_read_path)
+        df_paper_read = pd.read_csv(paper_read_path, dtype=str)
         missing_columns = set(PAPER_READ_COLUMNS) - set(df_paper_read.columns)
         if missing_columns:
             missing = ", ".join(sorted(missing_columns))
@@ -105,7 +118,7 @@ class PaperList:
                 continue
 
             try:
-                metadata = crossref.metadata_for_doi(doi)
+                metadata = self.metadata.get(doi)
             except Exception as exc:
                 title = self.row_value(source_row, "title") or doi
                 raise RuntimeError(
@@ -126,7 +139,7 @@ class PaperList:
                     "abstract": metadata["abstract"] or False,
                     "blogs": self.source_to_blog(self.row_value(source_row, "source"))
                     or False,
-                    "pined": self.optional_row_value(source_row, "pined"),
+                    "pined": utils.truthy(self.row_value(source_row, "pined")),
                     "tags": self.optional_row_value(source_row, "tags"),
                 }
             )
@@ -168,8 +181,16 @@ class PaperList:
             template.paper.render(paper=row.to_dict()) for _, row in rows_df.iterrows()
         )
 
-    def get_md(self, write=True):
-        current_time = datetime.now()
+    def get_md(self, write=True, as_of=None):
+        current_time = date.fromisoformat(str(as_of)) if as_of else date.today()
+        for _, row in self.df_paper.iterrows():
+            if (
+                row["sec"] not in config.sections
+                or row["subsec"] not in config.sections[row["sec"]]
+            ):
+                raise ValueError(
+                    f"Invalid classification: {row['sec']} / {row['subsec']}"
+                )
 
         md_str = template.header.render()
         toc_str = ""
@@ -199,29 +220,37 @@ class PaperList:
             assert sec in config.sections.keys(), "No such section: %s" % sec
             subseci = 1
             idx_str = str(seci)
-            toc_str += template.toc_sec.render(idx=idx_str, sec=sec)
+            toc_str += template.toc_sec.render(
+                idx=idx_str, sec=sec, anchor=utils.heading_slug(f"{idx_str}. {sec}")
+            )
             paper_str += template.sec.render(idx=idx_str, sec=sec)
 
             num = len(group["subsec"].unique())
 
             custom_subsec_order = config.sections[sec]
-            group["subsec_cat"] = pd.Categorical(
-                group["subsec"], categories=custom_subsec_order, ordered=True
-            )
-            for subsec, subgroup in group.groupby(by="subsec"):
+            present_subsections = [
+                sub for sub in custom_subsec_order if sub in set(group["subsec"])
+            ]
+            for subsec in present_subsections:
+                subgroup = group[group["subsec"] == subsec]
                 assert subsec in config.sections[sec], "No such subsection: %s" % subsec
                 dot = False if subseci == num else True
                 idx_str = str(seci) + "." + str(subseci)
-                toc_str += template.toc_subsec.render(idx=idx_str, sec=subsec, dot=dot)
+                toc_str += template.toc_subsec.render(
+                    idx=idx_str,
+                    sec=subsec,
+                    dot=dot,
+                    anchor=utils.heading_slug(f"{idx_str} {subsec}"),
+                )
                 paper_str += template.subsec.render(idx=idx_str, sec=subsec)
 
                 for i, row in subgroup.iterrows():
                     paper_str += template.paper.render(paper=row.to_dict())
-                    if row["pined"]:
+                    if utils.truthy(row["pined"]):
                         paper_pined_list.append(row)
-                    target_time = datetime.strptime(row["publish_date"], "%Y-%m-%d")
-                    time_difference = current_time - target_time
-                    if time_difference < timedelta(days=config.last_days):
+                    if utils.is_recent(
+                        row["publish_date"], current_time, config.last_days
+                    ):
                         paper_last_week_list.append(row)
                 subseci += 1
             seci += 1
@@ -240,6 +269,6 @@ class PaperList:
         md_str += template.contributing_and_see_also.render()
 
         if write:
-            with open("README.md", "w") as readme_file:
+            with open("README.md", "w", encoding="utf-8") as readme_file:
                 readme_file.write(md_str)
         return md_str

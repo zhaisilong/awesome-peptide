@@ -2,82 +2,37 @@
 
 ### 0.1 Benchmarks
 
-#### 0.1.1 Sequence Benchmarks
+Benchmark papers are curated in [Data, Representation & Analysis](#2-data-representation--analysis) alongside dataset papers.
 
-#### 0.1.2 Structure Benchmarks
-
-**Advancements in Nanobody Epitope Prediction: A Comparative Study of AlphaFold2Multimer vs AlphaFold3**  
-Eshak, Floriane, and Anne Goupil-Lamy
-[**2025**-2-24] >> [JCIM](https://doi.org/10.1021/acs.jcim.4c01877)
-
-**Predicting Protein−Peptide Interactions: Benchmarking Deep Learning Techniques and a Comparison with Focused Docking**  
-Sudhanshu Shanker and Michel F. Sanner  
-[**2024**-5-11] >> [JCIM](https://doi.org/10.1021/acs.jcim.3c00602) • [GitHub](https://github.com/sannerlab/benchmarking_2023) • Fold
-
-**Comprehensive Evaluation of 10 Docking Programs on a Diverse Set of Protein−Cyclic Peptide Complexes**
-Huifeng Zhao, Dejun Jiang, Chao Shen, Jintu Zhang, Xujun Zhang, Xiaorui Wang, Dou Nie, Tingjun Hou, and Yu Kang  
-[**2024**-2-29] >> [JCIM](https://doi.org/10.1021/acs.jcim.3c01921) • [CPSet](https://github.com/huifengzhao/CPSet) • [Tingjun Hou](https://scholar.google.com/citations?hl=en&user=vHW2kqUAAAAJ)
-
-**Benchmarking AlphaFold2 on peptide structure prediction**  
-Eli Fritz McDonald, Taylor Jones, Lars Plate, Jens Meiler, Alican Gulsevin  
-[**2024**-1-5] >> [Structure](https://doi.org/10.1016/j.str.2022.11.012) • [SI](https://doi.org/10.1016/j.str.2022.11.012) • [Weixin](https://mp.weixin.qq.com/s/9mpyZXITVC6RBbNQmjJLcg) • [AF](https://deepmind.google/technologies/alphafold/)
-
-**Comprehensive Evaluation of Fourteen Docking Programs on Protein−Peptide Complexes**  
-Gaoqi Weng, Junbo Gao, Zhe Wang, Ercheng Wang, Xueping Hu, Xiaojun Yao, Dongsheng Cao & Tingjun Hou  
-[**2020**-3-23] >> [JCTC](https://doi.org/10.1021/acs.jctc.9b01208) • [pepset](http://cadd.zju.edu.cn/pepset/) • high • [Tingjun Hou](https://scholar.google.com/citations?hl=en&user=vHW2kqUAAAAJ)
-
-**Highly Flexible Ligand Docking: Benchmarking of the DockThor Program on the LEADS-PEP Protein−Peptide Data Set**  
-Karina B. Santos, Isabella A. Guedes, Ana L. M. Karl, and Laurent E. Dardenne  
-[**2020**-1-10] >> [JCIM](https://doi.org/10.1021/acs.jcim.9b00905) • [DockerThor](https://www.dockthor.lncc.br) • MD
-
-#### 0.1.3 Evaluations
+| Resource | Scope | Link |
+| --- | --- | --- |
+| Protein-peptide docking benchmark | Deep-learning and focused-docking evaluation | [benchmarking_2023](https://github.com/sannerlab/benchmarking_2023) |
+| CPSet | Protein-cyclic peptide complex benchmark | [CPSet](https://github.com/huifengzhao/CPSet) |
+| LEADS-PEP / DockThor | Flexible protein-peptide docking | [DockThor](https://www.dockthor.lncc.br) |
 
 ### 0.2 Datasets
 
-### 0.2.1 Public Datasets
-
-> A list of suggested peptide datasets
-
-| Datasets    | Description                                                                                                                                                                                                                                                         | Link                                  |
-| ----------- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- | ------------------------------------- |
-| CycPeptMPDB | CycPeptMPDB, the first web-accessible database of cyclic peptide membrane permeability.                                                                                                                                                                             | [CycPeptMPDB](http://cycpeptmpdb.com) |
+| Dataset | Description | Link |
+| --- | --- | --- |
+| CycPeptMPDB | Experimentally measured cyclic peptide membrane permeability. | [CycPeptMPDB](http://cycpeptmpdb.com) |
 | State of Peptides 2026 | Open reference dataset of 156 peptide and peptide-adjacent compounds with regulatory status, category, route, half-life, molecular weight, CAS, and PubChem/DrugBank/Wikidata cross-references (CSV/JSON, CC BY 4.0). | [State of Peptides 2026](https://peptahub.com/state-of-peptides-2026) |
 
-#### 0.2.1 Sequence Datasets
+### 0.3 Related Resources
 
-**CycPeptMPDB: A Comprehensive Database of Membrane Permeability of Cyclic Peptides**  
-Jianan Li, Keisuke Yanagisawa, Masatake Sugita, Takuya Fujie, Masahito Ohue & Yutaka Akiyama  
-[**2023**-3-17] >> [JCIM](https://doi.org/10.1021/acs.jcim.2c01573) • [CycPeptMPDB](http://cycpeptmpdb.com) • [Akiyama Yutaka](https://scholar.google.com/citations?hl=en&user=eHAafMgAAAAJ)
-
-#### 0.2.2 Structure Datasets
-
-### 0.3 Similar List
-
-> Some similar GitHub lists that include papers about peptide using deep learning
-
-1. Similar List 1
-2. Similar List 2
+- [RCSB PDB](https://www.rcsb.org): experimentally determined structures, including peptide complexes.
+- [HELM Web Editor](https://github.com/PistoiaHELM/HELMWebEditor): representations of chemically modified peptides and other complex polymers.
 
 ### 0.4 Guides
 
-> Guides/Tutorials for beginners on GitHub
-
-1. Tutorials 1
-2. Tutorials 2
+- [Biopython Bio.PDB tutorial](https://biopython.org/docs/latest/Tutorial/chapter_pdb.html): PDB/mmCIF parsing and structural analysis.
+- [RDKit in Python](https://www.rdkit.org/docs/GettingStartedInPython.html): chemical representations and molecular analysis.
 
 ### 0.5 Tools
 
-1. HELM
-   1. [HELM Online](http://webeditor.openhelm.org/hwe/examples/App.htm)
-   2. [HELM Doc](https://pistoiaalliance.atlassian.net/wiki/spaces/PUB/pages/35028994/HELM+Web-editor)
-   3. [HELM GitHub HELMWebEditor](https://github.com/PistoiaHELM/HELMWebEditor)
-2. PDB
-   1. [pdb-tools](http://www.bonvinlab.org/pdb-tools/)
-   2. [BioPython](https://biopython.org)
-   3. [BioPandas](https://biopandas.github.io/biopandas/)
-   4. [RDKit](https://www.rdkit.org)
-3. Interaction
-   1. [Protein-Ligand Interaction Profiler, PLIP](https://plip-tool.biotec.tu-dresden.de/plip-web/plip/index)
-4. Property Calculators
-   1. [Peptide Molecular Weight Calculator](https://peptidecalculatorpro.org/peptide-molecular-weight-calculator/): average MW, monoisotopic mass, formula and m/z from a sequence, with acetyl, amide and disulfide options
-   2. [Peptide Net Charge Calculator](https://peptidecalculatorpro.org/peptide-net-charge-calculator/): net charge at any pH, isoelectric point (pI) and GRAVY from a sequence (EMBOSS pKa values), with N- and C-terminal modification options
+| Task | Resource |
+| --- | --- |
+| Peptide notation | [HELM Online](http://webeditor.openhelm.org/hwe/examples/App.htm), [HELM documentation](https://pistoiaalliance.atlassian.net/wiki/spaces/PUB/pages/35028994/HELM+Web-editor) |
+| Structure processing | [pdb-tools](http://www.bonvinlab.org/pdb-tools/), [Biopython](https://biopython.org), [BioPandas](https://biopandas.github.io/biopandas/), [RDKit](https://www.rdkit.org) |
+| Interaction analysis | [Protein-Ligand Interaction Profiler (PLIP)](https://plip-tool.biotec.tu-dresden.de/plip-web/plip/index) |
+| Molecular weight | [Peptide Molecular Weight Calculator](https://peptidecalculatorpro.org/peptide-molecular-weight-calculator/): average mass, monoisotopic mass, formula and m/z for standard amino acid sequences, with acetylation, amidation and disulfide options. |
+| Charge estimates | [Peptide Net Charge Calculator](https://peptidecalculatorpro.org/peptide-net-charge-calculator/): Henderson-Hasselbalch net charge over pH 0-14, estimated pI and GRAVY using EMBOSS pKa values, with terminal modification options. |

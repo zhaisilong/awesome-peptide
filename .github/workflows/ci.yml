@@ -31,11 +31,17 @@ jobs:
       - name: Validate paper metadata
         run: awe-check
 
+      - name: Audit canonical tags
+        run: python .codex/skills/curate-peptide-papers/scripts/audit_tags.py --strict
+
+      - name: Test discovery and offline generation
+        run: python -m unittest discover -s tests -v
+
       - name: Smoke test README generation
         run: |
           python - <<'PY'
           from awepep.paper import PaperList
-          md = PaperList("data/paper.csv").get_md(write=False)
+          md = PaperList("data/paper.csv", offline=True).get_md(write=False)
           print(len(md), md.splitlines()[0])
           PY
 

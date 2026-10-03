@@ -1,129 +1,42 @@
 # Paper Curation Rules
 
-Use this reference before editing `data/paper.csv`.
+## Evidence And Scope
 
-## Source Verification
+Include experimental and computational peptide research; skip incidental mentions in generic protein/drug-discovery papers. Use notes as discovery leads, then verify against DOI/publisher pages, Crossref, PubMed, arXiv or official project sources. The shared `awepep.discovery` module searches multiple providers, paces requests, retries transient failures twice and reports failures/truncation.
 
-- Browse for recent papers and any metadata that could have changed.
-- When using `vendor/paper-read`, treat the note as a discovery source, not final bibliographic truth.
-- For `data/paper-read.csv`, Crossref or arXiv supplies generated bibliographic fields during README generation.
-- Prefer primary or structured sources: DOI landing page, journal page, arXiv/bioRxiv, PubMed, Crossref, official GitHub, official dataset repository, and author/project pages.
-- Verify title, author list, publication date, DOI, venue, code URL, dataset URL, and abstract against the best available source.
-- Do not infer code or dataset links from third-party summaries when an official source is unavailable.
+A precise publication window requires a verified day. Preserve partial dates in the source table when that is all the evidence supports; registration, acceptance and note dates are not publication dates. Preprints use the initial submission date and an explicit arXiv venue. Do not imply peer review.
 
-## CSV Columns
+## CSV Rules
 
-The CSV column order is fixed:
+Schemas and field order live in `awepep.paper.PAPER_COLUMNS` and `PAPER_READ_COLUMNS`, also documented in CONTRIBUTING. Main entries require title, section, subsection, authors, Markdown DOI publication link and date. Optional unknown fields stay blank. Paper-read entries require DOI and the agent-selected section/subsection; source/title/resource links are optional.
 
-```text
-title,sec,subsec,authors,publications,code,dataset,quality,publish_date,abstract,blogs,pined,tags
-```
+Use `[Journal](https://doi.org/10.xxxx/example)` and short Markdown labels for code/dataset/blog links. A resource must be explicitly provided by an author or primary source, not inferred from a similarly named repository. The row draft helper prints a schema-correct main CSV row without writing:
+`python .codex/skills/curate-peptide-papers/scripts/draft_paper_row.py --help`.
 
-`data/paper-read.csv` uses a separate minimal schema:
+## Classification
 
-```text
-doi,title,source,sec,subsec,code,dataset,quality,pined,tags
-```
+Read the live taxonomy in `awepep/config.py`; do not copy a stale label catalog into a new row.
 
-Required fields enforced by `awepep.check`:
+- Reviews: literature synthesis, including chemistry, mechanisms and delivery.
+- Data, Representation & Analysis: datasets, benchmarks, representations and experimental characterization.
+- Property & Activity: prediction or systematic measurement of bioactivity, permeability/developability or binding.
+- Structure & Interaction: conformations, complexes, docking and simulation.
+- Peptide Design & Generation: sequence/structure generation and optimization.
+- Synthesis & Chemical Modification: assembly chemistry, ligation/cyclization, noncanonical/conjugated peptides and biosynthetic engineering.
+- Biology & Mechanisms: signaling, membrane/immune mechanisms and natural peptide biology.
+- Delivery & Biomaterials: formulations, assemblies/hydrogels, materials and sensors.
+- Applications & Tools: software, screening and validated translational use cases.
 
-- `title`
-- `sec`
-- `subsec`
-- `authors`
-- `publications`
-- `publish_date`
+Assign by the main contribution. A hydrogel designed with an agent remains a biomaterials paper; an AI-engineered synthetase can belong to biosynthesis. A prediction web tool belongs in software when the usable platform is its main contribution. Related protein-binder benchmarks already retained by the project should not justify indiscriminate addition of generic protein research.
 
-Optional fields should be blank when unknown:
+## Tags And Editorial Flags
 
-- `code`
-- `dataset`
-- `quality`
-- `abstract`
-- `blogs`
-- `pined`
-- `tags`
+Use a small number of canonical, slash-separated tags from `config.tag_groups`. Prefer method/domain tags; add resource/person tags only when useful and verified. Add meaningful vocabulary first, not one-off aliases. The tag audit's suggestions are review prompts, not automatic annotations.
 
-## Publication And Link Format
+`quality` is blank or `high`; new high designations need strong methodological, experimental or community evidence. `pined` is blank, `true` or `false`; count actual true values against `config.max_pined`. Journal prestige alone is not sufficient.
 
-- Use Markdown links.
-- `publications` must include a DOI URL ending with `)` because the current checker extracts DOI values with a regex over Markdown links.
-- Preferred simple format:
+Use concise factual abstract summaries. Distinguish predicted efficacy from experimentally measured outcomes and animal models from clinical evidence.
 
-```text
-[JCIM](https://doi.org/10.1021/example)
-```
+## Acceptance Checklist
 
-- Conference plus preprint examples already in the repo use forms like:
-
-```text
-ICML/[arXiv](https://doi.org/10.48550/arXiv.2411.18463)
-NeurIPS/[Arxive](https://doi.org/10.48550/arXiv.2402.13555)
-```
-
-- Keep existing spelling in old rows unless explicitly cleaning historical metadata.
-- For code, dataset, and blog fields, use concise labels:
-
-```text
-[GitHub](https://github.com/org/repo)
-[data](https://example.org/dataset)
-[gongzhonghao](https://mp.weixin.qq.com/...)
-```
-
-For `data/paper-read.csv`, store the raw DOI in `doi`; do not store `publications`, `authors`, `publish_date`, `abstract`, or `blogs`. README generation fetches those fields from Crossref or arXiv and converts `source` into a `[paper-read](...)` blog link.
-
-## Date Format
-
-- Existing rows use non-padded dates such as `2025-4-14` and `2024-10-1`.
-- The generator sorts by splitting `publish_date` on `-` and converting year, month, day to integers.
-- Use `YYYY-M-D` or `YYYY-MM-DD`; do not use month names or partial dates.
-
-## Sections And Subsections
-
-Use exact values from `awepep/config.py`:
-
-```text
-Reviews: Design & Generation, Structure & Interaction, Property & Activity, Therapeutics & Applications
-Representation & Data: Sequence & Language, Structure & Graph, Datasets & Benchmarks
-Property & Activity Prediction: Bioactivity & Function, Permeability & Developability, Interaction & Binding
-Structure & Interaction Modeling: Peptide Conformation, Peptide-Protein Complexes, Docking & Simulation
-Peptide Design & Generation: Sequence-Based Design, Structure-Based Design, Diffusion & Flow, Reinforcement Learning, Classical & Fragment-Based
-Applications & Tools: Software & Webservers, Screening & Discovery, Therapeutics & Translation, Protein Binders, Chemical Biology & Modalities
-```
-
-## Quality, Pinned, Abstract, Tags
-
-- `quality`: currently blank or `high`. Mark `high` only for landmark, high-impact, or especially relevant papers.
-- `pined`: leave blank by default. Use `true` only for selected important papers; `awepep/config.py` sets `max_pined = 30`.
-- `abstract`: optional. If included, keep it concise and safe for inline HTML inside the README details block.
-- `tags`: slash-separated canonical tags, for example `Diffusion/Cyclic/MD`.
-- Choose tags from `awepep.config.tag_groups`, grouped as `method`, `domain`, `resource`, and `person`.
-- Add a new tag to `tag_groups` before using it; add common misspellings or legacy values to `tag_aliases`.
-- Tags matching `awepep.config.tag_links` render as links in generated README output.
-- `awe-check` warns on unknown or alias tags without failing; resolve these warnings before release.
-- Prefer existing tag vocabulary unless a new method or domain tag is clearly useful.
-
-## Validation Checklist
-
-After edits:
-
-```bash
-pip install -e .
-awe-check
-python .codex/skills/curate-peptide-papers/scripts/audit_tags.py
-awe-pep
-git diff -- data/paper.csv README.md
-```
-
-If `awe-check` prints a traceback, fix the CSV or checker issue before regenerating release-ready output.
-
-## Automatic Paper-Read Curation
-
-When the user asks Codex to scan `paper-read`, use the scanner report to automatically add high-confidence entries to `data/paper-read.csv`. Add a candidate only when:
-
-- The DOI is not already in `data/paper.csv` or `data/paper-read.csv`.
-- The note is clearly peptide/deep-learning relevant.
-- The DOI or stable source URL is verified.
-- The section/subsection assignment is clear.
-
-Skip ambiguous papers and report the reason instead of forcing them into the CSV.
+Check DOI and normalized-title duplicates across both tables, including preprint/journal relationships. Review provider failures and truncated searches. Run `awe-check`, strict tag audit and tests, refresh missing snapshots, regenerate offline, and inspect output. Keep accepted, duplicate, outside-window, ambiguous and missing-evidence counts distinct in the final report.

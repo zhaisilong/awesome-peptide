@@ -1,5 +1,29 @@
 # Changelog
 
+## [1.4.0] - 2026-10-03
+
+### Added
+
+- Added on-demand paper discovery from paper-read, Crossref, PubMed and arXiv, with date windows, deduplication and explicit coverage/error reports.
+- Added tracked bibliographic snapshots, offline generation and explicit metadata refresh.
+- Added regression tests for APIs, dates, snapshots, classification, flags and rendering; CI runs offline on Python 3.9 and 3.12.
+- Merged PR #3 with two peptide property calculators after checking their links and standard-sequence calculations.
+
+### Changed
+
+- Expanded the taxonomy and tag vocabulary to cover experimental synthesis, mechanisms, delivery and biomaterials alongside computational research.
+- Migrated seven Chapter 0 papers into the canonical CSV list and corrected their bibliographic metadata; retained dataset/resource links.
+- Updated local Skills, agent guidance and contributor documentation for verification-driven, on-demand curation.
+- Removed duplicate paper lists, empty subsections and placeholder resources from Chapter 0.
+
+### Fixed
+
+- Fixed subsection ordering and generated heading anchors.
+- Preserved partial publication-date precision and excluded future publications from recent papers.
+- Fixed false pinned flags, title markup cleanup, abstract escaping and installed CLI argument parsing.
+- Fixed AMP substring false positives and reference-DOI duplicate suppression in note scans.
+- Used cursor-compatible Crossref sorting, paced requests and bounded transient retries.
+
 ## [1.3.1] - 2026-06-16
 
 ### Added

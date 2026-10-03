@@ -4,18 +4,22 @@ sections = {
         "Structure & Interaction",
         "Property & Activity",
         "Therapeutics & Applications",
+        "Synthesis & Chemical Modification",
+        "Delivery & Biomaterials",
+        "Biology & Mechanisms",
     ],
-    "Representation & Data": [
+    "Data, Representation & Analysis": [
         "Sequence & Language",
         "Structure & Graph",
         "Datasets & Benchmarks",
+        "Experimental Characterization",
     ],
-    "Property & Activity Prediction": [
+    "Property & Activity": [
         "Bioactivity & Function",
         "Permeability & Developability",
         "Interaction & Binding",
     ],
-    "Structure & Interaction Modeling": [
+    "Structure & Interaction": [
         "Peptide Conformation",
         "Peptide-Protein Complexes",
         "Docking & Simulation",
@@ -27,12 +31,31 @@ sections = {
         "Reinforcement Learning",
         "Classical & Fragment-Based",
     ],
+    "Synthesis & Chemical Modification": [
+        "Solid-Phase & Solution Synthesis",
+        "Ligation & Cyclization",
+        "Noncanonical & Conjugated Peptides",
+        "Biosynthesis & Biocatalysis",
+    ],
+    "Biology & Mechanisms": [
+        "Signaling & Regulation",
+        "Membrane & Immune Interactions",
+        "Natural Peptides & Biosynthesis",
+    ],
+    "Delivery & Biomaterials": [
+        "Delivery & Formulation",
+        "Self-Assembly & Hydrogels",
+        "Materials & Biosensing",
+    ],
     "Applications & Tools": [
         "Software & Webservers",
         "Screening & Discovery",
         "Therapeutics & Translation",
         "Protein Binders",
         "Chemical Biology & Modalities",
+        "Anti-Infective & Immune",
+        "Oncology",
+        "Metabolic & Neurological",
     ],
 }
 
@@ -53,6 +76,16 @@ tag_groups = {
         "Pipeline",
         "PLM",
         "RL",
+        "Benchmark",
+        "Biosynthesis",
+        "Cryo-EM",
+        "Cyclization",
+        "Ligation",
+        "MS",
+        "NMR",
+        "Phage Display",
+        "Screening",
+        "SPPS",
     ],
     "domain": [
         "AMPs",
@@ -65,6 +98,25 @@ tag_groups = {
         "mRNA",
         "PROTAC",
         "RaPID",
+        "Binding",
+        "Bicyclic",
+        "Bioconjugation",
+        "Conotoxin",
+        "CPPs",
+        "Delivery",
+        "Hydrogel",
+        "Immunology",
+        "Metabolism",
+        "Neuroscience",
+        "Noncanonical",
+        "Oncology",
+        "PDCs",
+        "Plant Peptides",
+        "Permeability",
+        "Proteomics",
+        "RiPPs",
+        "Self-Assembly",
+        "Stability",
     ],
     "resource": [
         "AstraZeneca",
@@ -102,6 +154,9 @@ tag_aliases = {
     "AMP": "AMPs",
     "clogP": "cLogP",
     "Pipline": "Pipeline",
+    "CPP": "CPPs",
+    "PDC": "PDCs",
+    "non-canonical": "Noncanonical",
 }
 
 authors = {

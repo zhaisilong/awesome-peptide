@@ -1,6 +1,6 @@
 ---
 name: maintain-awepep-tooling
-description: Maintain the awesome-peptide Python tooling and generated README workflow. Use when Codex needs to fix or update awepep package code, Liquid templates, validation checks, pyproject.toml metadata, console scripts, dependency issues, README generation behavior, CI, or documentation for running awe-pep and awe-check.
+description: Maintain awesome-peptide discovery, metadata snapshots, offline README generation, validation, packaging and CI. Use for awepep Python code, Liquid templates, taxonomy migrations, console scripts and workflow documentation.
 ---
 
 # Maintain Awepep Tooling
@@ -21,18 +21,20 @@ rg "awe-pep|awe-check|awepep|awecheck|python-liquid|Template|README" .
 
 3. Install dependencies if validation imports fail:
 ```bash
-pip install -e .
+python -m pip install -e ".[dev]"
 ```
 
 4. Run focused checks after changes:
 ```bash
 awe-check
+python .codex/skills/curate-peptide-papers/scripts/audit_tags.py --strict
+python -m unittest discover -s tests -v
 python - <<'PY'
 from awepep.paper import PaperList
-md = PaperList("data/paper.csv").get_md(write=False)
+md = PaperList("data/paper.csv", offline=True).get_md(write=False)
 print(len(md), md.splitlines()[0])
 PY
-awe-pep
+awe-pep --offline --as-of 2026-10-03
 git diff -- README.md
 ```
 
@@ -41,7 +43,7 @@ git diff -- README.md
 For package, generator, or validation changes:
 
 1. Identify whether the task affects generation, validation, packaging, documentation, or all of them.
-2. Read the current implementation before editing. Important files are `awepep/paper.py`, `awepep/template.py`, `awepep/check.py`, `awepep/config.py`, `awepep/main.py`, `pyproject.toml`, `CONTRIBUTING.md`, `README.md`, `DATABASE.md`, and `.github/workflows/ci.yml`.
+2. Read the affected implementation before editing. Generation lives in `paper.py` and `template.py`; API discovery in `discovery.py` and `crossref.py`; snapshots in `metadata.py`; schema/tag checks in `check.py`, `config.py` and `tags.py`.
 3. Preserve the CSV schema and generated Markdown shape unless the user asks for a migration.
 4. If changing templates or generation order, regenerate `README.md` and inspect the diff for unintended content loss.
 5. If changing validation logic, test both passing data and at least one failing condition when practical.
@@ -53,6 +55,9 @@ For package, generator, or validation changes:
 - `README.md` contains a top note about update frequency and MolAstra links; keep it in `awepep/template.py` so regeneration preserves it.
 - License metadata should stay aligned with the GPLv3 `LICENSE` file.
 - `awepep.check.main` should raise validation errors so CI fails on invalid data.
+- Verify installed CLI entrypoints actually parse new flags, not just module invocations.
+- Keep discovery non-mutating. Report API errors and truncation; use bounded retries and no scheduled paper-adding workflow.
+- Test offline generation with the network disabled by mocks, snapshot misses, refresh fallback, partial/future dates, false flags, subsection order and heading anchors.
 
 ## Guardrails
 

@@ -10,6 +10,10 @@ Use this reference before changing package code, packaging metadata, validation 
 - `awepep/template.py`: Liquid templates and README footer/citation text.
 - `awepep/check.py`: validation and statistics.
 - `awepep/config.py`: taxonomy, linked tags, pinned/recent settings.
+- `awepep/discovery.py`: multi-provider discovery, deduplication and coverage reports.
+- `awepep/crossref.py`: shared paced requests and bibliographic parsing.
+- `awepep/metadata.py`: versioned snapshots, refresh and offline modes.
+- `tests/test_workflow.py`: isolated API, cache, validation and rendering regressions.
 - `CONTRIBUTING.md`: contributor setup commands.
 - `README.md`: generated output, but may also reveal generator drift.
 - `DATABASE.md`: manually maintained content inserted into README.
@@ -42,6 +46,9 @@ Run content validation:
 
 ```bash
 awe-check
+python .codex/skills/curate-peptide-papers/scripts/audit_tags.py --strict
+python -m unittest discover -s tests -v
+python -m build
 ```
 
 Run no-write generation smoke test:
@@ -49,7 +56,7 @@ Run no-write generation smoke test:
 ```bash
 python - <<'PY'
 from awepep.paper import PaperList
-md = PaperList("data/paper.csv").get_md(write=False)
+md = PaperList("data/paper.csv", offline=True).get_md(write=False)
 print(len(md), md.splitlines()[0])
 PY
 ```
@@ -57,7 +64,7 @@ PY
 Regenerate README when generator or template behavior changes:
 
 ```bash
-awe-pep
+awe-pep --offline --as-of 2026-10-03
 git diff -- README.md
 ```
 
@@ -67,3 +74,5 @@ If console scripts are unavailable, use:
 python -m awepep.check
 python -m awepep.main
 ```
+
+Use explicit `--refresh-metadata` only when updating online bibliographic snapshots. Commit snapshots with their source CSVs. Preserve primary-source date corrections on refresh. Test both installed CLI flags and module behavior. CI must not require live metadata APIs, and discovery must never append rows automatically.

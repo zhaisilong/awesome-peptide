@@ -1,0 +1,313 @@
+{
+  "version": 1,
+  "works": {
+    "10.1002/advs.202506332": {
+      "metadata": {
+        "abstract": "In the post‐antibiotic era, antimicrobial peptides (AMPs) are considered ideal drug candidates because of their lower likelihood of inducing resistance. Computational models provide an efficient way to design novel AMPs. However, current optimization and generation approaches are tailored for specific application scenarios, which hinders the ease of use. To address this challenge, a novel AMP design model named AMPainter is proposed. Based on deep reinforcement learning, AMPainter integrates optimization and generation tasks in a unified framework. AMPainter is applied to three types of peptides, including known AMPs, signal peptides (SPs), and random sequences. AMPainter outperforms ten related models in enhancing the activity of known AMPs on the predicted antimicrobial potency and diversity. Several AMPs demonstrate a 128‐fold decrease in their actual minimal inhibitory concentrations (MICs). AMPainter evolves effective AMPs from membrane‐active SPs with an experimental success rate of 80%. In terms of generation, de novo designed AMP from an inactive random sequence achieves an average MIC of 2.88 µM against four bacteria. In vitro MICs of peptides along the virtual evolutionary path match the predicted scores. Therefore, AMPainter can significantly improve the antimicrobial potency of various peptides, expand the AMP sequence space, and discover novel antimicrobial agents.",
+        "authors": "Ruihan Dong, Qiushi Cao and Chen Song",
+        "publications": "[Advanced Science](https://doi.org/10.1002/advs.202506332)",
+        "publish_date": "2025-9-12",
+        "title": "Painting Peptides With Antimicrobial Potency Through Deep Reinforcement Learning"
+      },
+      "retrieved_at": "2026-10-03T10:48:01+00:00",
+      "source": "https://api.crossref.org/works/10.1002/advs.202506332"
+    },
+    "10.1016/j.celbio.2025.100183": {
+      "metadata": {
+        "abstract": "",
+        "authors": "Marcelo D.T. Torres, Leo Tianlai Chen, Fangping Wan, Pranam Chatterjee and Cesar de la Fuente-Nunez",
+        "publications": "[Cell Biomaterials](https://doi.org/10.1016/j.celbio.2025.100183)",
+        "publish_date": "2025-10",
+        "title": "Generative latent diffusion language modeling yields anti-infective synthetic peptides"
+      },
+      "retrieved_at": "2026-10-03T10:48:09+00:00",
+      "source": "https://api.crossref.org/works/10.1016/j.celbio.2025.100183"
+    },
+    "10.1021/acs.accounts.0c00594": {
+      "metadata": {
+        "abstract": "",
+        "authors": "Paulina Szymczak, Wojciech Zarzecki, Jiejing Wang, Yiqian Duan, Jun Wang, Luis Pedro Coelho, Cesar de la Fuente-Nunez and Ewa Szczurek",
+        "publications": "[Acc. Chem. Res.](https://doi.org/10.1021/acs.accounts.0c00594)",
+        "publish_date": "2025-6-3",
+        "title": "AI-Driven Antimicrobial Peptide Discovery: Mining and Generation"
+      },
+      "retrieved_at": "2026-10-03T10:48:05+00:00",
+      "source": "https://api.crossref.org/works/10.1021/acs.accounts.0c00594"
+    },
+    "10.1021/acs.biochem.6c00138": {
+      "metadata": {
+        "abstract": "",
+        "authors": "Lauren Hong, Sophia Vincoff and Pranam Chatterjee",
+        "publications": "[Biochemistry](https://doi.org/10.1021/acs.biochem.6c00138)",
+        "publish_date": "2026-4-10",
+        "title": "AI-Designed Peptides as Tools for Biochemistry"
+      },
+      "retrieved_at": "2026-10-03T10:48:08+00:00",
+      "source": "https://api.crossref.org/works/10.1021/acs.biochem.6c00138"
+    },
+    "10.1021/acs.chemrev.5c00994": {
+      "metadata": {
+        "abstract": "",
+        "authors": "Tzong-Hsien Lee, Patrick Charchar, Marc-Antoine Sani, Dang-Huy Le, Tu C. Le, Irene Yarovsky, Frances Separovic and Marie-Isabel Aguilar",
+        "publications": "[Chem. Rev.](https://doi.org/10.1021/acs.chemrev.5c00994)",
+        "publish_date": "2026-5-21",
+        "title": "Structure, Interactions, and Assembly of Membrane-Active Antimicrobial Polypeptides"
+      },
+      "retrieved_at": "2026-10-03T10:48:02+00:00",
+      "source": "https://api.crossref.org/works/10.1021/acs.chemrev.5c00994"
+    },
+    "10.1021/acs.jcim.5c01030": {
+      "metadata": {
+        "abstract": "",
+        "authors": "Eric W. Bell, Benjamin P. Brown and Jens Meiler",
+        "publications": "[J. Chem. Inf. Model.](https://doi.org/10.1021/acs.jcim.5c01030)",
+        "publish_date": "2025-8-11",
+        "title": "FakeRotLib: Expedient Noncanonical Amino Acid Parametrization in Rosetta"
+      },
+      "retrieved_at": "2026-10-03T10:48:22+00:00",
+      "source": "https://api.crossref.org/works/10.1021/acs.jcim.5c01030"
+    },
+    "10.1021/acs.jmedchem.5c00007": {
+      "metadata": {
+        "abstract": "",
+        "authors": "Jiahui Ma, Xuedan Wang, Yonghua Hu, Jianping Ma, Yaping Ma, Hao Chen and Zhijian Han",
+        "publications": "[J. Med. Chem.](https://doi.org/10.1021/acs.jmedchem.5c00007)",
+        "publish_date": "2025-4-23",
+        "title": "Recent Advances in Augmenting the Therapeutic Efficacy of Peptide–Drug Conjugates"
+      },
+      "retrieved_at": "2026-10-03T10:48:11+00:00",
+      "source": "https://api.crossref.org/works/10.1021/acs.jmedchem.5c00007"
+    },
+    "10.1021/acs.jmedchem.5c00307": {
+      "metadata": {
+        "abstract": "The lipopolysaccharide (LPS) transport (Lpt) system in Gram-negative bacteria maintains the integrity of the asymmetric bacterial outer membrane (OM). LPS biogenesis systems are essential in most Gram-negative bacteria, with LptDE responsible for the delivery of LPS to the outer leaflet of the OM. As an externally accessible, essential protein, LptDE offers a promising target for inhibitor development without the need for cellular penetration. However, there are no direct inhibitors of E. coli LptDE, and drug discovery is made challenging since it is a membrane target without a conventional active site. Here, the bicycle phage display platform was used in combination with cryogenic-electron microscopy (cryo-EM) and surface plasmon resonance to identify and map bicyclic peptide binders to Shigella flexneri LptDE (SfLptDE). Four distinct epitopes with unique bicycle molecule binding motifs were identified across the SfLptD β-barrel. This method represents a streamlined workflow for the identification and prioritization of hit molecules against LptDE.",
+        "authors": "Shenaz Allyjaun, Emily Dunbar, Steven W. Hardwick, Sarah Newell, Finn Holding, Catherine E Rowland, Megan A. St. Denis, Simone Pellegrino, Gustavo Arruda Bezerra, Nikolaos Bournakas, Dimitri Y. Chirgadze, Lee Cooper, Giulia Paris, Nick Lewis, Peter Brown, Michael J. Skynner, Michael J Dawson, Paul Beswick, Julia Hubbard, Bert van den Berg and Hector Newman",
+        "publications": "[Journal of Medicinal Chemistry](https://doi.org/10.1021/acs.jmedchem.5c00307)",
+        "publish_date": "2025-10-6",
+        "title": "High-Throughput Identification and Characterization of LptDE-Binding Bicycle Peptides Using Phage Display and Cryo-EM"
+      },
+      "retrieved_at": "2026-10-03T10:48:17+00:00",
+      "source": "https://api.crossref.org/works/10.1021/acs.jmedchem.5c00307"
+    },
+    "10.1021/acs.jmedchem.5c00789": {
+      "metadata": {
+        "abstract": "Cyclic peptides are promising therapeutic agents for challenging targets, especially protein–protein interactions. However, computationally designing cyclic peptide binders remains challenging. Here, we present CYC_BUILDER, a reinforcement learning-based framework that assembles peptide fragments and performs efficient cyclization via head-to-tail amide or disulfide bonds, which uses a Monte Carlo Tree Search to guide fragment selection, peptide growth, and structure refinement. We show that CYC_BUILDER was able to successfully regenerate native binding sequences and poses for known cyclic peptide–protein complexes. We have applied CYC_BUILDER to generate cyclic peptide binders for TNFα and found that the design results outperformed those from AfCycDesign and Anchor Extension in binding energy, structural diversity, and efficiency. We experimentally tested the activity of nine designed peptides, and four of them demonstrated potent binding and cellular activity. CYC_BUILDER offers a powerful tool for cyclic peptide discovery with broad applications in therapeutics and synthetic biology.",
+        "authors": "Fanhao Wang, Tiantian Zhang, Jintao Zhu, Xiaoling Zhang, Changsheng Zhang and Luhua Lai",
+        "publications": "[Journal of Medicinal Chemistry](https://doi.org/10.1021/acs.jmedchem.5c00789)",
+        "publish_date": "2025-8-18",
+        "title": "Reinforcement Learning-Based Target-Specific De Novo Design of Cyclic Peptide Binders"
+      },
+      "retrieved_at": "2026-10-03T10:48:07+00:00",
+      "source": "https://api.crossref.org/works/10.1021/acs.jmedchem.5c00789"
+    },
+    "10.1021/acs.jmedchem.5c01500": {
+      "metadata": {
+        "abstract": "Antibody–drug conjugates (ADCs) represent a promising class of cancer therapeutics. This innovative molecular design perfectly integrates the targeting and extended half-life of antibodies with the cytotoxicity of small molecules, enabling the selective delivery of payloads to cancer cells. The linker molecule is crucial to the efficacy of an ADC. Although ADC linkers can be cleavable or noncleavable, most approved ADCs utilize cleavable peptide linkers. These linkers, cleaved by enzymes such as cathepsin, plasmin, or legumain, balance the stability of ADCs in the circulatory system with selective release of the cytotoxic payload in tumors. Linker chemistry has thus become a highly important and integral part of the ADC development. In this perspective, we elucidate the role of peptide linkers in the ADC development, highlight advancements in peptide linkers, and provide insights on future directions for ADC linker designs.",
+        "authors": "Lu Yang, Jiahui Ma, Ben Liu, Yangbing Li, Yaping Ma, Hao Chen and Zhijian Han",
+        "publications": "[Journal of Medicinal Chemistry](https://doi.org/10.1021/acs.jmedchem.5c01500)",
+        "publish_date": "2025-9-2",
+        "title": "Recent Advances in Peptide Linkers of Antibody–Drug Conjugates"
+      },
+      "retrieved_at": "2026-10-03T10:48:21+00:00",
+      "source": "https://api.crossref.org/works/10.1021/acs.jmedchem.5c01500"
+    },
+    "10.1021/jacs.3c03886": {
+      "metadata": {
+        "abstract": "",
+        "authors": "Mikimasa Tanada, Minoru Tamiya, Atsushi Matsuo, Aya Chiyoda, Koji Takano, Toshiya Ito, Machiko Irie, Tomoya Kotake, Ryuuichi Takeyama, Hatsuo Kawada, Ryuji Hayashi, Shiho Ishikawa, Kenichi Nomura, Noriyuki Furuichi, Yuya Morita, Mirai Kage, Satoshi Hashimoto, Keiji Nii, Hitoshi Sase, Kazuhiro Ohara, Atsushi Ohta, Shino Kuramoto, Yoshikazu Nishimura, Hitoshi Iikura and Takuya Shiraishi",
+        "publications": "[J. Am. Chem. Soc.](https://doi.org/10.1021/jacs.3c03886)",
+        "publish_date": "2023-7-18",
+        "title": "Development of Orally Bioavailable Peptides Targeting an Intracellular Protein: From a Hit to a Clinical KRAS Inhibitor"
+      },
+      "retrieved_at": "2026-10-03T10:48:20+00:00",
+      "source": "https://api.crossref.org/works/10.1021/jacs.3c03886"
+    },
+    "10.1021/jacs.3c07145": {
+      "metadata": {
+        "abstract": "",
+        "authors": "Atsushi Ohta, Mikimasa Tanada, Shojiro Shinohara, Yuya Morita, Kazuhiko Nakano, Yusuke Yamagishi, Ryusuke Takano, Shiori Kariyuki, Takeo Iida, Atsushi Matsuo, Kazuhisa Ozeki, Takashi Emura, Yuuji Sakurai, Koji Takano, Atsuko Higashida, Miki Kojima, Terushige Muraoka, Ryuuichi Takeyama, Tatsuya Kato, Kaori Kimura, Kotaro Ogawa, Kazuhiro Ohara, Shota Tanaka, Yasufumi Kikuchi, Nozomi Hisada, Ryuji Hayashi, Yoshikazu Nishimura, Kenichi Nomura, Tatsuhiko Tachibana, Machiko Irie, Hatsuo Kawada, Takuya Torizawa, Naoaki Murao, Tomoya Kotake, Masahiko Tanaka, Shiho Ishikawa, Taiji Miyake, Minoru Tamiya, Masako Arai, Aya Chiyoda, Sho Akai, Hitoshi Sase, Shino Kuramoto, Toshiya Ito, Takuya Shiraishi, Tetsuo Kojima and Hitoshi Iikura",
+        "publications": "[J. Am. Chem. Soc.](https://doi.org/10.1021/jacs.3c07145)",
+        "publish_date": "2023-10-24",
+        "title": "Validation of a New Methodology to Create Oral Drugs beyond the Rule of 5 for Intracellular Tough Targets"
+      },
+      "retrieved_at": "2026-10-03T10:48:05+00:00",
+      "source": "https://api.crossref.org/works/10.1021/jacs.3c07145"
+    },
+    "10.1021/jacs.5c16902": {
+      "metadata": {
+        "abstract": "",
+        "authors": "Feng Wan, Chengrui Hu, Pei Xie, Xingxing Yang, Xin He, Yourong Pan, Zuozhou Ning and Chengxi Li",
+        "publications": "[J. Am. Chem. Soc.](https://doi.org/10.1021/jacs.5c16902)",
+        "publish_date": "2025-12-22",
+        "title": "Automated Rapid Synthesis of High-Purity Head-to-Tail Cyclic Peptides via a Diaminonicotinic Acid Scaffold"
+      },
+      "retrieved_at": "2026-10-03T10:48:11+00:00",
+      "source": "https://api.crossref.org/works/10.1021/jacs.5c16902"
+    },
+    "10.1038/s41467-023-41427-y": {
+      "metadata": {
+        "abstract": "Peptide-based therapeutics have gained attention as promising therapeutic modalities, however, their prevalent drawback is poor circulation half-life in vivo. In this paper, we report the selection of albumin-binding macrocyclic peptides from genetically encoded libraries of peptides modified by perfluoroaryl-cysteine S N Ar chemistry, with decafluoro-diphenylsulfone ( DFS ). Testing of the binding of the selected peptides to albumin identified SICRFFC as the lead sequence. We replaced DFS with isosteric pentafluorophenyl sulfide ( PFS ) and the PFS -SICRFFCGG exhibited K D = 4–6 µM towards human serum albumin. When injected in mice, the concentration of the PFS -SICRFFCGG in plasma was indistinguishable from the reference peptide, SA-21. More importantly, a conjugate of PFS -SICRFFCGG and peptide apelin-17 analogue (N 3 -PEG 6 -NMe17A2) showed retention in circulation similar to SA-21; in contrast, apelin-17 analogue was cleared from the circulation after 2 min. The PFS -SICRFFC is the smallest known peptide macrocycle with a significant affinity for human albumin and substantial in vivo circulation half-life. It is a productive starting point for future development of compact macrocycles with extended half-life in vivo.",
+        "authors": "Jeffrey Y. K. Wong, Arunika I. Ekanayake, Serhii Kharchenko, Steven E. Kirberger, Ryan Qiu, Payam Kelich, Susmita Sarkar, Jiaqian Li, Kleinberg X. Fernandez, Edgar R. Alvizo-Paez, Jiayuan Miao, Shiva Kalhor-Monfared, J. Dwyer John, Hongsuk Kang, Hwanho Choi, John M. Nuss, John C. Vederas, Yu-Shan Lin, Matthew S. Macauley, Lela Vukovic, William C. K. Pomerantz and Ratmir Derda",
+        "publications": "[Nat Commun](https://doi.org/10.1038/s41467-023-41427-y)",
+        "publish_date": "2023-9-13",
+        "title": "Genetically encoded discovery of perfluoroaryl macrocycles that bind to albumin and exhibit extended circulation in vivo"
+      },
+      "retrieved_at": "2026-10-03T10:48:18+00:00",
+      "source": "https://api.crossref.org/works/10.1038/s41467-023-41427-y"
+    },
+    "10.1038/s41467-025-64378-y": {
+      "metadata": {
+        "abstract": "",
+        "authors": "Han Gao, Feifei Guan, Boyu Luo, Dongdong Zhang, Wei Liu, Yuying Shen, Lingxi Fan, Guoshun Xu, Yuan Wang, Tao Tu, Ningfeng Wu, Bin Yao, Huiying Luo, Yue Teng, Jian Tian and Huoqing Huang",
+        "publications": "[Nat Commun](https://doi.org/10.1038/s41467-025-64378-y)",
+        "publish_date": "2025-10-15",
+        "title": "DLFea4AMPGen de novo design of antimicrobial peptides by integrating features learned from deep learning models"
+      },
+      "retrieved_at": "2026-10-03T10:48:06+00:00",
+      "source": "https://api.crossref.org/works/10.1038/s41467-025-64378-y"
+    },
+    "10.1038/s41467-025-66030-1": {
+      "metadata": {
+        "abstract": "",
+        "authors": "Marie-Edith Nepveu-Traversy, Malihe Hassanzadeh, Laurent Bruneau-Cossette, Élie Besserer-Offroy, Rebecca Brouillette, Sandra Morissette, Hassan Traboulsi, Karyn Kirby, Alexandre Murza, Jean-Michel Longpré, Billy Breton, Fernand-Pierre Gendron, Simon Gaudreau, Pierre-Luc Boudreault and Philippe Sarret",
+        "publications": "[Nat Commun](https://doi.org/10.1038/s41467-025-66030-1)",
+        "publish_date": "2025-12-12",
+        "title": "Structure-based design of macrocyclic peptides to generate functional antibodies against G protein-coupled receptors"
+      },
+      "retrieved_at": "2026-10-03T10:48:10+00:00",
+      "source": "https://api.crossref.org/works/10.1038/s41467-025-66030-1"
+    },
+    "10.1038/s41551-025-01507-4": {
+      "metadata": {
+        "abstract": "",
+        "authors": "Xiangzhe Kong, Rui Jiao, Haowei Lin, Ruihan Guo, Wenbing Huang, Wei-Ying Ma, Zihua Wang, Yang Liu and Jianzhu Ma",
+        "publications": "[Nat. Biomed. Eng](https://doi.org/10.1038/s41551-025-01507-4)",
+        "publish_date": "2025-10-1",
+        "title": "Peptide design through binding interface mimicry with PepMimic"
+      },
+      "retrieved_at": "2026-10-03T10:48:10+00:00",
+      "source": "https://api.crossref.org/works/10.1038/s41551-025-01507-4"
+    },
+    "10.1038/s41557-026-02090-0": {
+      "metadata": {
+        "abstract": "Peptide aggregation is a long-standing challenge in chemical peptide synthesis, limiting its efficiency and reliability. Although data-driven methods have enhanced our understanding of many sequence-based phenomena, no comprehensive approach addresses so-called non-random difficult couplings (generally linked to aggregation) during solid-phase peptide synthesis. Here we leverage existing peptide synthesis datasets, supplemented with further experimental data, to build a predictive model that deciphers the role of individual amino acids in triggering aggregation. We first identified and experimentally validated composition-dependent aggregation as a stronger predictor than sequence-based patterns. This insight enabled the development of a composition vector representation, allowing insights into the aggregation propensities of individual amino acids. Applying an ensemble of trained models, we predicted the aggregation properties of peptides and recommended the optimized use of aggregation-reducing tools. By elucidating each individual amino acid’s influence, this method holds the potential to accelerate synthesis optimization through existing data, offering a robust framework for understanding and controlling peptide aggregation.",
+        "authors": "Bálint Tamás, Marvin Alberts, Teodoro Laino and Nina Hartrampf",
+        "publications": "[Nat. Chem.](https://doi.org/10.1038/s41557-026-02090-0)",
+        "publish_date": "2026-3-20",
+        "title": "Amino acid composition drives aggregation during peptide synthesis"
+      },
+      "retrieved_at": "2026-10-03T10:48:21+00:00",
+      "source": "https://api.crossref.org/works/10.1038/s41557-026-02090-0"
+    },
+    "10.1038/s41564-025-02061-0": {
+      "metadata": {
+        "abstract": "Antimicrobial resistance is one of the greatest threats facing humanity, making the need for new antibiotics more critical than ever. While most antibiotics originate from bacteria and fungi, archaea offer a largely untapped reservoir for antibiotic discovery. In this study, we leveraged deep learning to systematically explore the archaeome, uncovering promising candidates for combating antimicrobial resistance. By mining 233 archaeal proteomes, we identified 12,623 molecules with potential antimicrobial activity. These peptide compounds, termed archaeasins, have unique compositional features that differentiate them from traditional antimicrobial peptides, including a distinct amino acid profile. We synthesized 80 archaeasins, 93% of which showed antimicrobial activity in vitro against Acinetobacter baumannii , Escherichia coli , Klebsiella pneumoniae , Pseudomonas aeruginosa , Staphylococcus aureus and Enterococcus spp. Notably, in vivo validation identified archaeasin-73 as a lead candidate, significantly reducing A. baumannii loads in mouse infection models, with effectiveness comparable to that of established antibiotics such as polymyxin B. Our findings highlight the potential of archaea as a resource for developing next-generation antibiotics.",
+        "authors": "Marcelo D. T. Torres, Fangping Wan and Cesar de la Fuente-Nunez",
+        "publications": "[Nat Microbiol](https://doi.org/10.1038/s41564-025-02061-0)",
+        "publish_date": "2025-8-12",
+        "title": "Deep learning reveals antibiotics in the archaeal proteome"
+      },
+      "retrieved_at": "2026-10-03T10:48:18+00:00",
+      "source": "https://api.crossref.org/works/10.1038/s41564-025-02061-0"
+    },
+    "10.1038/s42004-023-01029-7": {
+      "metadata": {
+        "abstract": "The computational design of peptide binders towards a specific protein interface can aid diagnostic and therapeutic efforts. Here, we design peptide binders by combining the known structural space searched with Foldseek, the protein design method ESM-IF1, and AlphaFold2 (AF) in a joint framework. Foldseek generates backbone seeds for a modified version of ESM-IF1 adapted to protein complexes. The resulting sequences are evaluated with AF using an MSA representation for the receptor structure and a single sequence for the binder. We show that AF can accurately evaluate protein binders and that our bind score can select these (ROC AUC = 0.96 for the heterodimeric case). We find that designs created from seeds with more contacts per residue are more successful and tend to be short. There is a relationship between the sequence recovery in interface positions and the plDDT of the designs, where designs with ≥80% recovery have an average plDDT of 84 compared to 55 at 0%. Designed sequences have 60% higher median plDDT values towards intended receptors than non-intended ones. Successful binders (predicted interface RMSD ≤ 2 Å) are designed towards 185 (6.5%) heteromeric and 42 (3.6%) homomeric protein interfaces with ESM-IF1 compared with 18 (1.5%) using ProteinMPNN from 100 samples.",
+        "authors": "Patrick Bryant and Arne Elofsson",
+        "publications": "[Commun Chem](https://doi.org/10.1038/s42004-023-01029-7)",
+        "publish_date": "2023-10-25",
+        "title": "Peptide binder design with inverse folding and protein structure prediction"
+      },
+      "retrieved_at": "2026-10-03T10:48:22+00:00",
+      "source": "https://api.crossref.org/works/10.1038/s42004-023-01029-7"
+    },
+    "10.1038/s42256-025-01136-1": {
+      "metadata": {
+        "abstract": "",
+        "authors": "Huanyu Tao, Xiaoyu Wang and Sheng-You Huang",
+        "publications": "[Nat Mach Intell](https://doi.org/10.1038/s42256-025-01136-1)",
+        "publish_date": "2025-10-23",
+        "title": "An interaction-derived graph learning framework for scoring protein–peptide complexes"
+      },
+      "retrieved_at": "2026-10-03T10:48:19+00:00",
+      "source": "https://api.crossref.org/works/10.1038/s42256-025-01136-1"
+    },
+    "10.1038/s42256-026-01236-6": {
+      "metadata": {
+        "abstract": "",
+        "authors": "Fei He, Xianyu Wang and Dong Xu",
+        "publications": "[Nat Mach Intell](https://doi.org/10.1038/s42256-026-01236-6)",
+        "publish_date": "2026-5-6",
+        "title": "Reusability report: Meta-learning for antigen-specific T cell receptor binder identification"
+      },
+      "retrieved_at": "2026-10-03T10:48:16+00:00",
+      "source": "https://api.crossref.org/works/10.1038/s42256-026-01236-6"
+    },
+    "10.1039/d1sc00165e": {
+      "metadata": {
+        "abstract": "This review summarizes the influence of inserting constraints on biophysical, conformational, structural and cellular behaviour for peptides targeting α-helix mediated protein–protein interactions.",
+        "authors": "Hongshuang Wang, Robert S. Dawber, Peiyu Zhang, Martin Walko, Andrew J. Wilson and Xiaohui Wang",
+        "publications": "[Chem. Sci.](https://doi.org/10.1039/d1sc00165e)",
+        "publish_date": "2021",
+        "title": "Peptide-based inhibitors of protein–protein interactions: biophysical, structural and cellular consequences of introducing a constraint"
+      },
+      "retrieved_at": "2026-10-03T10:48:04+00:00",
+      "source": "https://api.crossref.org/works/10.1039/d1sc00165e"
+    },
+    "10.1039/d6cc00583g": {
+      "metadata": {
+        "abstract": "We review the evolution of peptide–protein docking methods from traditional physics-based approaches to modern AlphaFold-inspired and diffusion-based frameworks. Their impact, remaining limitations, and open challenges are discussed.",
+        "authors": "Kai Ling, Shu Li, Zicong Zhang, Woong-Hee Shin and Daisuke Kihara",
+        "publications": "[Chem. Commun.](https://doi.org/10.1039/d6cc00583g)",
+        "publish_date": "2026",
+        "title": "Peptide–protein docking: from physics-based models to generative intelligence"
+      },
+      "retrieved_at": "2026-10-03T10:48:03+00:00",
+      "source": "https://api.crossref.org/works/10.1039/d6cc00583g"
+    },
+    "10.1093/bib/bbae714": {
+      "metadata": {
+        "abstract": "The unique cyclic structure of cyclic peptides grants them remarkable stability and bioactivity, making them powerful candidates for treating various diseases. However, the lack of standardized tools for cyclic peptide data has hindered their potential in today’s artificial intelligence–driven efficient drug design landscape. To bridge this gap, here we introduce a Python package named cyclicpeptide specifically for cyclic peptide drug design. This package provides standardized tools such as Structure2Sequence, Sequence2Structure, and format transformation to process, convert, and standardize cyclic peptide structure and sequence data. Additionally, it includes GraphAlignment for cyclic peptide–specific alignment and search and PropertyAnalysis to enhance the understanding of their drug-like properties and potential applications. This comprehensive suite of tools aims to streamline the integration of cyclic peptides into modern drug discovery pipelines, accelerating the development of cyclic peptide–based therapeutics.",
+        "authors": "Liu Yang, Suqi Cao, Lei Liu, Ruixin Zhu and Dingfeng Wu",
+        "publications": "[Briefings in Bioinformatics](https://doi.org/10.1093/bib/bbae714)",
+        "publish_date": "2025-1-9",
+        "title": "cyclicpeptide : a Python package for cyclic peptide drug design"
+      },
+      "retrieved_at": "2026-10-03T10:48:03+00:00",
+      "source": "https://api.crossref.org/works/10.1093/bib/bbae714"
+    },
+    "10.1093/nar/gkag455": {
+      "metadata": {
+        "abstract": "In recent years, the development of peptide drugs has seen significant growth. These molecules often go beyond simple linear chains composed of the standard 20 amino acids. Peptide drugs frequently incorporate non-standard amino acids, non-amino components, and can exhibit mono- or multicyclic structures, branching, and other complex topologies. Consequently, there is a growing need for accessible tools that allow researchers to easily generate and modify 1D, 2D, and 3D representations of these complex peptides, serving as a starting point for further optimization. PEP-EDIT was created to meet this need. It offers a user-friendly, interactive web interface for generating complex peptide representations from 1D BILN (Boehringer Ingelheim Line Notation) sequences, using a customizable monomer library. Building on the pyPept library, PEP-EDIT enhances its functionality with options such as pH-dependent protonation and simplified specification of conformational constraints. The platform leverages interactive 2D and 3D visualizations to guide peptide design, offers intuitive management of monomers and 3D models, and includes collaborative and interactive visualization tools. PEP-EDIT is available at https://pep-edit.rpbs.univ-paris-diderot.fr. This website is free and open to all users and there is no login requirement.",
+        "authors": "Nicolas Chevrollier, Alexis Dougha, Celine Ye, Dirk Stratmann, Gautier Moroy, Julien Rey, Samuel Murail and Pierre Tufféry",
+        "publications": "[Nucleic Acids Research](https://doi.org/10.1093/nar/gkag455)",
+        "publish_date": "2026-5-14",
+        "title": "PEP-EDIT: a web server for the 3D generation and interactive editing of complex peptides"
+      },
+      "retrieved_at": "2026-10-03T10:48:19+00:00",
+      "source": "https://api.crossref.org/works/10.1093/nar/gkag455"
+    },
+    "10.48550/arxiv.2412.17780": {
+      "metadata": {
+        "abstract": "We present PepTune, a multi-objective discrete diffusion model for simultaneous generation and optimization of therapeutic peptide SMILES. Built on the Masked Discrete Language Model (MDLM) framework, PepTune ensures valid peptide structures with a novel bond-dependent masking schedule and invalid loss function. To guide the diffusion process, we introduce Monte Carlo Tree Guidance (MCTG), an inference-time multi-objective guidance algorithm that balances exploration and exploitation to iteratively refine Pareto-optimal sequences. MCTG integrates classifier-based rewards with search-tree expansion, overcoming gradient estimation challenges and data sparsity. Using PepTune, we generate diverse, chemically-modified peptides simultaneously optimized for multiple therapeutic properties, including target binding affinity, membrane permeability, solubility, hemolysis, and non-fouling for various disease-relevant targets. In total, our results demonstrate that MCTG for masked discrete diffusion is a powerful and modular approach for multi-objective sequence design in discrete state spaces.",
+        "authors": "Sophia Tang, Yinuo Zhang and Pranam Chatterjee",
+        "publications": "[arXiv](https://doi.org/10.48550/arxiv.2412.17780)",
+        "publish_date": "2024-12-23",
+        "title": "PepTune: De Novo Generation of Therapeutic Peptides with Multi-Objective-Guided Discrete Diffusion"
+      },
+      "retrieved_at": "2026-10-03T10:48:13+00:00",
+      "source": "https://arxiv.org/abs/2412.17780"
+    },
+    "10.48550/arxiv.2508.14765": {
+      "metadata": {
+        "abstract": "Designing therapeutic peptides with tailored properties is hindered by the vastness of sequence space, limited experimental data, and poor interpretability of current generative models. To address these challenges, we introduce PepThink-R1, a generative framework that integrates large language models (LLMs) with chain-of-thought (CoT) supervised fine-tuning and reinforcement learning (RL). Unlike prior approaches, PepThink-R1 explicitly reasons about monomer-level modifications during sequence generation, enabling interpretable design choices while optimizing for multiple pharmacological properties. Guided by a tailored reward function balancing chemical validity and property improvements, the model autonomously explores diverse sequence variants. We demonstrate that PepThink-R1 generates cyclic peptides with significantly enhanced lipophilicity, stability, and exposure, outperforming existing general LLMs (e.g., GPT-5) and domain-specific baseline in both optimization success and interpretability. To our knowledge, this is the first LLM-based peptide design framework that combines explicit reasoning with RL-driven property control, marking a step toward reliable and transparent peptide optimization for therapeutic discovery.",
+        "authors": "Ruheng Wang, Hang Zhang, Trieu Nguyen, Shasha Feng, Hao-Wei Pang, Xiang Yu, Li Xiao and Peter Zhiping Zhang",
+        "publications": "[arXiv](https://doi.org/10.48550/arxiv.2508.14765)",
+        "publish_date": "2025-8-20",
+        "title": "PepThink-R1: LLM for Interpretable Cyclic Peptide Optimization with CoT SFT and Reinforcement Learning"
+      },
+      "retrieved_at": "2026-10-03T10:48:16+00:00",
+      "source": "https://arxiv.org/abs/2508.14765"
+    }
+  }
+}

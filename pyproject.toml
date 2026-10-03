@@ -4,8 +4,8 @@ build-backend = "setuptools.build_meta"
 
 [project]
 name = "awesome-peptide"
-version = "1.3.1"
-description = "List of papers about peptide research using deep learning"
+version = "1.4.0"
+description = "Curated peptide research: design, synthesis, biology, delivery and applications"
 readme = "README.md"
 requires-python = ">=3.9"
 license = "GPL-3.0-only"
@@ -41,8 +41,9 @@ Repository = "https://github.com/zhaisilong/awesome-peptide"
 Issues = "https://github.com/zhaisilong/awesome-peptide/issues"
 
 [project.scripts]
-awe-pep = "awepep.main:main"
+awe-pep = "awepep.main:cli"
 awe-check = "awepep.check:main"
+awe-discover = "awepep.discovery:main"
 
 [tool.setuptools.packages.find]
 include = ["awepep*"]

@@ -7,7 +7,8 @@ import pandas as pd
 from fire import Fire
 from tqdm.auto import tqdm
 
-from awepep import config, crossref, tags as tag_utils
+from awepep import config, crossref, tags as tag_utils, utils
+from awepep.paper import PAPER_COLUMNS
 
 tqdm.pandas()
 
@@ -86,7 +87,7 @@ def update_statistics(row, quality_counter, tags_counter):
     quality_counter[row["quality"]] += 1
     if row["tags"]:
         tags_counter.update(tag_utils.canonicalize_many(row.get("tags", "")))
-    return row["pined"] != False
+    return utils.truthy(row["pined"])
 
 
 # 打印统计信息
@@ -100,12 +101,24 @@ def pretty_print_statistics(quality_counter, pined_count, tags_counter):
 
 
 def load_csv(csv_path: Path) -> pd.DataFrame:
-    df = pd.read_csv(csv_path)
+    df = pd.read_csv(csv_path, dtype=str)
     return df.astype("object").where(pd.notna(df), False)
+
+
+def check_editorial_fields(row):
+    if row["quality"] not in (False, "high"):
+        raise ValueError(f"Invalid quality: {row['quality']}")
+    if str(row["pined"]).lower() not in ("false", "true"):
+        raise ValueError(f"Invalid pined flag: {row['pined']}")
 
 
 def validate_main_csv(csv_path: Path, doi_pool: set) -> pd.DataFrame:
     df = load_csv(csv_path)
+    if list(df.columns) != PAPER_COLUMNS:
+        raise ValueError(
+            f"{csv_path} schema mismatch; expected columns: {PAPER_COLUMNS}"
+        )
+    df.apply(check_editorial_fields, axis=1)
 
     required_fields = [
         "title",
@@ -117,6 +130,7 @@ def validate_main_csv(csv_path: Path, doi_pool: set) -> pd.DataFrame:
     ]
     df.progress_apply(lambda row: check_required_fields(row, required_fields), axis=1)
     print(f"{csv_path} required fields check passed")
+    df["publish_date"].apply(utils.date_bounds)
 
     df.progress_apply(check_section, axis=1)
     print(f"{csv_path} section check passed")
@@ -149,6 +163,7 @@ def validate_paper_read_csv(csv_path: Path, doi_pool: set) -> pd.DataFrame:
 
     df = load_csv(csv_path)
     check_paper_read_schema(df, csv_path)
+    df.apply(check_editorial_fields, axis=1)
     required_fields = ["doi", "sec", "subsec"]
     df.progress_apply(lambda row: check_required_fields(row, required_fields), axis=1)
     print(f"{csv_path} required fields check passed")
@@ -181,7 +196,7 @@ def main(csv: str = "data/paper.csv", paper_read_csv: str = "data/paper-read.csv
     )
 
     if pined_count > config.max_pined:
-        print(stats_df[stats_df["pined"] == True])
+        print(stats_df[stats_df["pined"].apply(utils.truthy)])
         raise ValueError(f"Too many pinned papers. Maximum allowed: {config.max_pined}")
 
     pretty_print_statistics(quality_counter, pined_count, tags_counter)

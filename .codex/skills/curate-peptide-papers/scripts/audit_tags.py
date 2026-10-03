@@ -32,6 +32,11 @@ SUGGESTION_RULES = [
     ("MD", ("molecular dynamics", "simulation", "simulations")),
     ("PLM", ("protein language model", "language model-based")),
     ("RL", ("reinforcement learning",)),
+    ("Noncanonical", ("noncanonical", "non-canonical")),
+    ("PDCs", ("peptide-drug conjugate", "peptide–drug conjugate")),
+    ("CPPs", ("cell penetrating peptide", "cell-penetrating peptide")),
+    ("Self-Assembly", ("self-assembly", "self-assembling", "self-assembled")),
+    ("Hydrogel", ("hydrogel",)),
 ]
 
 
@@ -93,6 +98,9 @@ def main() -> int:
     parser.add_argument(
         "--paper-read-csv", type=Path, default=ROOT / "data/paper-read.csv"
     )
+    parser.add_argument(
+        "--strict", action="store_true", help="Fail on vocabulary warnings"
+    )
     args = parser.parse_args()
 
     total_warnings = 0
@@ -108,7 +116,7 @@ def main() -> int:
         f"\nsummary: warnings={total_warnings}, empty_tag_rows={total_empty}, "
         f"suggestions={total_suggestions}"
     )
-    return 0
+    return 1 if args.strict and total_warnings else 0
 
 
 if __name__ == "__main__":
