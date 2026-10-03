@@ -296,6 +296,9 @@ Jianan Li, Keisuke Yanagisawa, Masatake Sugita, Takuya Fujie, Masahito Ohue & Yu
    4. [RDKit](https://www.rdkit.org)
 3. Interaction
    1. [Protein-Ligand Interaction Profiler, PLIP](https://plip-tool.biotec.tu-dresden.de/plip-web/plip/index)
+4. Property Calculators
+   1. [Peptide Molecular Weight Calculator](https://peptidecalculatorpro.org/peptide-molecular-weight-calculator/): average MW, monoisotopic mass, formula and m/z from a sequence, with acetyl, amide and disulfide options
+   2. [Peptide Net Charge Calculator](https://peptidecalculatorpro.org/peptide-net-charge-calculator/): net charge at any pH, isoelectric point (pI) and GRAVY from a sequence (EMBOSS pKa values), with N- and C-terminal modification options
 
 ## 1. Reviews
 
