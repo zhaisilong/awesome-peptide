@@ -4,6 +4,7 @@
 
 ### Added
 
+- Curated 33 papers published from 2026-06-16 through 2026-10-03, including VITAL from updated paper-read notes; the list now contains 119 records including seven migrated papers.
 - Added on-demand paper discovery from paper-read, Crossref, PubMed and arXiv, with date windows, deduplication and explicit coverage/error reports.
 - Added tracked bibliographic snapshots, offline generation and explicit metadata refresh.
 - Added regression tests for APIs, dates, snapshots, classification, flags and rendering; CI runs offline on Python 3.9 and 3.12.
@@ -22,6 +23,8 @@
 - Preserved partial publication-date precision and excluded future publications from recent papers.
 - Fixed false pinned flags, title markup cleanup, abstract escaping and installed CLI argument parsing.
 - Fixed AMP substring false positives and reference-DOI duplicate suppression in note scans.
+- Avoided suggesting molecular-dynamics tags for generic simulation methods.
+- Corrected five historical publication dates; reclassified PepDoRA as representation learning and AMP-Designer as sequence-based design, and removed PepDoRA's unrelated PepFlow code link.
 - Used cursor-compatible Crossref sorting, paced requests and bounded transient retries.
 
 ## [1.3.1] - 2026-06-16

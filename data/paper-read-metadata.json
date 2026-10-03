@@ -243,6 +243,17 @@
       "retrieved_at": "2026-10-03T10:48:16+00:00",
       "source": "https://api.crossref.org/works/10.1038/s42256-026-01236-6"
     },
+    "10.1038/s42256-026-01291-z": {
+      "metadata": {
+        "abstract": "",
+        "authors": "Wei-Hao Chen, Qi-Wen Wang, Zhi-Yi Li, Song-Yang Li, Chen Lin and Zhi-Liang Ji",
+        "publications": "[Nat Mach Intell](https://doi.org/10.1038/s42256-026-01291-z)",
+        "publish_date": "2026-8-19",
+        "title": "Quantitative and interface-aware prediction of peptide–protein interactions by VITAL"
+      },
+      "retrieved_at": "2026-10-03T11:13:57+00:00",
+      "source": "https://api.crossref.org/works/10.1038/s42256-026-01291-z"
+    },
     "10.1039/d1sc00165e": {
       "metadata": {
         "abstract": "This review summarizes the influence of inserting constraints on biophysical, conformational, structural and cellular behaviour for peptides targeting α-helix mediated protein–protein interactions.",

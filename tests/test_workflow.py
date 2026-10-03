@@ -5,6 +5,7 @@ from io import StringIO
 import json
 from pathlib import Path
 import re
+import runpy
 import tempfile
 import sys
 import unittest
@@ -151,6 +152,24 @@ class DatesAndMetadataTests(unittest.TestCase):
 
 
 class DiscoveryTests(unittest.TestCase):
+    def test_tag_audit_does_not_equate_all_simulation_with_md(self):
+        audit = runpy.run_path(
+            str(
+                Path(__file__).resolve().parents[1]
+                / ".codex/skills/curate-peptide-papers/scripts/audit_tags.py"
+            )
+        )
+        self.assertNotIn(
+            "MD",
+            audit["suggestions"]({"title": "Peptide flexibility simulation"}, set()),
+        )
+        self.assertIn(
+            "MD",
+            audit["suggestions"](
+                {"title": "Peptide molecular dynamics simulations"}, set()
+            ),
+        )
+
     def test_amp_word_boundaries(self):
         self.assertFalse(
             discovery.keyword_hits(

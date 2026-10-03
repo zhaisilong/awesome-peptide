@@ -29,7 +29,7 @@ SUGGESTION_RULES = [
     ("Docking", ("docking",)),
     ("Flow", ("flow matching",)),
     ("Graph", ("graph",)),
-    ("MD", ("molecular dynamics", "simulation", "simulations")),
+    ("MD", ("molecular dynamics", "md simulation")),
     ("PLM", ("protein language model", "language model-based")),
     ("RL", ("reinforcement learning",)),
     ("Noncanonical", ("noncanonical", "non-canonical")),

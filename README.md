@@ -22,6 +22,298 @@ Updates are curated on demand with help from Codex agents.
 
 📅 _Papers from the last six months, updated on 2026-10-03:_
 
+**A proximity-driven and regioselective peptide bicyclization (PReP-Bicyc) approach for phage display libraries**<br>
+Guoqing Jin, Yifan Shi, Shihui Fan, Lai Hoang Son Le, Wenyue Cao, Thuzar Hla Shwe, Zihan Anna Zhang, Demonta D. Coleman, Satyanarayana Nyalata, Joshua Trae Hampton and Wenshe Ray Liu<br>
+[**2026**-10-3] >> [Nat Commun](https://doi.org/10.1038/s41467-026-77740-5) • Cyclization/Bicyclic/Phage Display
+
+<details>
+<summary>🔎 Abstract</summary>
+<p>PReP-Bicyc enables mild, phage-compatible, regioselective peptide bicyclization and screening of PD-1-binding ligands. Published as an early peer-reviewed article.</p>
+</details>
+
+**Self-Assembling Peptide-Adjuvant Conjugate (SaPAC) Platform for Precision Cancer Immunotherapy**<br>
+Yang-Fan Wu, Jing-Chu Hu, Ye-Fan Hu, Wen-Jun Li, Li Rong, Ren-Hao Li, Yuan Yao, Lehan Hu, Xiao-Lei Wang, Bao-Zhong Zhang, Yicheng Lu, Shing-Fung Chow, Canhui Su, Thomas Yau, Clive Yik-Sham Chung, Jian-Dong Huang<br>
+[**2026**-10-2] >> [Adv Sci (Weinh)](https://doi.org/10.1002/advs.77632) • [PubMed](https://pubmed.ncbi.nlm.nih.gov/42827008/) • Bioconjugation/Self-Assembly/Immunology/Oncology
+
+<details>
+<summary>🔎 Abstract</summary>
+<p>The SaPAC peptide-adjuvant conjugate platform forms nanoparticles that enhance antigen presentation and antitumor immune responses in mouse cancer models.</p>
+</details>
+
+**Computationally Guided Engineering of Short Peptides for Targeted RNA-Loaded pBAE Nanoparticles**<br>
+Vladimir Stamenković, Mislav Brajković, Coral Garcia-Fernandez, Salvador Borrós, Xevi Biarnés, Cristina Fornaguera<br>
+[**2026**-10-2] >> [ACS Biomater Sci Eng](https://doi.org/10.1021/acsbiomaterials.6c00945) • [PubMed](https://pubmed.ncbi.nlm.nih.gov/42826497/) • Delivery/Bioconjugation/mRNA
+
+<details>
+<summary>🔎 Abstract</summary>
+<p>Computationally selected short targeting peptides are conjugated to RNA-loaded polymeric nanoparticles; peptide orientation and sequence are evaluated for transfection in a human monocytic cell model.</p>
+</details>
+
+**Signaling by a tyrosine-sulfated peptide balances growth and osmotic stress response in rice**<br>
+Yejin Shim, Ellen Y Rim, Jin C-Y Liao, Myeong-Je Cho, George Austin, Patrick W Carlos, Sameer S Kulkarni, Richard J Payne, Maria Florencia Ercoli, Pamela C Ronald<br>
+[**2026**-10-1] >> [Proc Natl Acad Sci U S A](https://doi.org/10.1073/pnas.2622107123) • [PubMed](https://pubmed.ncbi.nlm.nih.gov/42821350/) • Plant Peptides
+
+<details>
+<summary>🔎 Abstract</summary>
+<p>Genetic and transcriptomic experiments identify rice OsPSY8 sulfated-peptide signaling as a regulator of the balance between root growth and osmotic-stress adaptation.</p>
+</details>
+
+**Multi-Scale Temporal Flows for Peptide Trajectory Generation**<br>
+Xichen Sun, Wentao Wei, Xiaoxi Zhang, Yuedong Yang, Jiahua Rao<br>
+[**2026**-10-01] >> [arXiv](https://doi.org/10.48550/arxiv.2610.01086) • Flow/MD/Cyclic
+
+<details>
+<summary>🔎 Abstract</summary>
+<p>Preprint: PepTIDE models peptide trajectories using multi-scale temporal sampling and physical-time embeddings, evaluating distribution agreement, structural validity and inter-state transitions.</p>
+</details>
+
+**Silver(I)-mediated amide-to-ester transformation on unprotected peptides for protein chemical synthesis and engineering**<br>
+Zhenquan Sun, Wai Yin Yau, Huajie Kang, Haiyan Zhou, Xin Liu, Zhibo Han, Hongxiang Wu, Xuechen Li<br>
+[**2026**-9-30] >> [Sci Adv](https://doi.org/10.1126/sciadv.aej5227) • [PubMed](https://pubmed.ncbi.nlm.nih.gov/42814821/) • Ligation
+
+<details>
+<summary>🔎 Abstract</summary>
+<p>Chemoselective silver-mediated backbone activation converts unprotected peptide amides to salicylaldehyde esters for protein synthesis, demonstrated with mirror-image histones.</p>
+</details>
+
+**Positive modulation of glucagon-like peptide 1 (GLP-1) receptor by endogenous haemorphins with implications in glucose metabolism and diabetes**<br>
+Farheen Badrealam Khan, Rwdah Mohamed Alameri, Yasir S Raouf, Damien Maurel, Naiem Ahmad Wani, Anatoliy Shmygol, Irfa Anwar, Heng B See, Elizabeth K M Johnstone, Elodie Dupuis, Eric Trinquet, Kevin D G Pfleger, Emilia Oueis, Mohammed Akli Ayoub<br>
+[**2026**-9-29] >> [Br J Pharmacol](https://doi.org/10.1111/bph.70677) • [PubMed](https://pubmed.ncbi.nlm.nih.gov/42811773/) • Binding/Metabolism
+
+<details>
+<summary>🔎 Abstract</summary>
+<p>Endogenous LVV-haemorphin 7 modulates GLP-1 receptor signaling in cellular models, with functional assays and computational binding analysis supporting a peptide-dependent mechanism.</p>
+</details>
+
+**NMR-Guided Fragment Screening Identifies Privileged Noncanonical Amino Acids for mRNA Display**<br>
+Abdul J Castillo, Clark A Jones, Alba C Dutra, Chelsea A Makovsky, Sandeep Lohan, Bipasana Shakya, Sara H Walters, Brian Fuglestad, Matthew C T Hartman<br>
+[**2026**-9-28] >> [Chembiochem](https://doi.org/10.1002/cbic.70540) • [PubMed](https://pubmed.ncbi.nlm.nih.gov/42775911/) • NMR/Screening/Noncanonical/mRNA
+
+<details>
+<summary>🔎 Abstract</summary>
+<p>NMR-guided fragment screening identifies noncanonical tryptophan monomers for mRNA display and tests their translation compatibility and improved MDM2-binding enrichment.</p>
+</details>
+
+**Mirror-Score: Calibrated, Inference-only Scoring Exposes the Limits of Sequence-compatibility Ranking in D-peptide Design**<br>
+Jiada Li<br>
+[**2026**-09-28] >> [arXiv](https://doi.org/10.48550/arxiv.2609.36057) • [GitHub](https://github.com/Jiadalee/Mirror-Score) • Binding/Benchmark/Noncanonical
+
+<details>
+<summary>🔎 Abstract</summary>
+<p>Preprint: Mirror-Score evaluates inference-only ranking of D-peptide/L-protein complexes and demonstrates the limited affinity validity and cross-family transfer of sequence-compatibility scores.</p>
+</details>
+
+**Antimicrobial peptide databases: A detailed comparison and complementary features**<br>
+Erfan Zamani, Mohammadhossein Ghazizadeh-Ahsaei, Yasaman Mahmoodi, Faramarz Mehrnejad<br>
+[**2026**-9-25] >> [Peptides](https://doi.org/10.1016/j.peptides.2026.171523) • [PubMed](https://pubmed.ncbi.nlm.nih.gov/42790680/) • AMPs/Benchmark
+
+<details>
+<summary>🔎 Abstract</summary>
+<p>Compares APD, CAMP, DBAASP, dbAMP and DRAMP for annotation, activity evidence, usability and computational workflows, identifying complementary strengths and interoperability needs.</p>
+</details>
+
+**Peptide-mediated CRISPR delivery: From dish to bloodstream**<br>
+Alzbeta Ressnerova, Ross C Wilson<br>
+[**2026**-9-24] >> [Curr Opin Chem Biol](https://doi.org/10.1016/j.cbpa.2026.102763) • [PubMed](https://pubmed.ncbi.nlm.nih.gov/42785144/) • Delivery/CPPs
+
+<details>
+<summary>🔎 Abstract</summary>
+<p>Reviews peptide-mediated CRISPR delivery from cell culture to local and systemic in vivo applications, including clearance, endosomal escape and formulation barriers.</p>
+</details>
+
+**GyroNovo: Error-Guided Fragment Imputation with Mass-Aware Attention for De Novo Peptide Sequencing**<br>
+Abdellah El Mekki, Laks V. S. Lakshmanan, Muhammad Abdul-Mageed<br>
+[**2026**-09-24] >> [arXiv](https://doi.org/10.48550/arxiv.2609.30542) • MS/AI/Proteomics
+
+<details>
+<summary>🔎 Abstract</summary>
+<p>Preprint: GyroNovo combines decoder-error-guided fragment imputation with mass-aware attention for de novo peptide sequencing from tandem mass spectra.</p>
+</details>
+
+**Generative AI designs functional thiolation domains for reprogramming non-ribosomal peptide synthetases**<br>
+Emre F Bülbül, Seounggun Bang, Kevin George, Gabriele Bianchi, Prateek Raj, Seonyong Chung, Vincent Pauline, Ramon Hochstrasser, Hannah A Minas, Walid A M Elgaher, Andreas M Kany, Anna K H Hirsch, Steven Schmitt, Dirk W Heinz, Olga V Kalinina, Dietrich Klakow, Kenan A J Bozhüyük<br>
+[**2026**-9-22] >> [Nat Commun](https://doi.org/10.1038/s41467-026-77963-6) • [PubMed](https://pubmed.ncbi.nlm.nih.gov/42773138/) • AI/Biosynthesis/ESM/[ProteinMPNN](https://www.science.org/doi/10.1126/science.add2187)
+
+<details>
+<summary>🔎 Abstract</summary>
+<p>Generative models design thiolation domains that remain functional in engineered non-ribosomal peptide synthetase assembly lines, supported by in vivo production assays.</p>
+</details>
+
+**Integrated abundance analysis and artificial intelligence-assisted screening reveal novel antihypertensive milk-derived tripeptides**<br>
+Chiao-Che Chen, Yun-Jhu Hou, Hsin-Yi Lo, Mei-Li Stevens, Chien-Yun Hsiang, Tin-Yun Ho<br>
+[**2026**-9-22] >> [Food Chem](https://doi.org/10.1016/j.foodchem.2026.151275) • [PubMed](https://pubmed.ncbi.nlm.nih.gov/42785031/) • AI/Screening/Metabolism
+
+<details>
+<summary>🔎 Abstract</summary>
+<p>An integrated computational-experimental workflow prioritizes milk-derived tripeptides and evaluates antihypertensive activity in spontaneously hypertensive rats.</p>
+</details>
+
+**The future of peptide ADMET prediction: Leveraging AI to unlock new possibilities**<br>
+Qianhui Liu, Xiaorong Tan, Feifan Xie, Defang Ouyang, Wenbin Zeng, Jie Dong<br>
+[**2026**-9-21] >> [Drug Discov Today](https://doi.org/10.1016/j.drudis.2026.104809) • [PubMed](https://pubmed.ncbi.nlm.nih.gov/42767599/) • AI/Permeability/Stability
+
+<details>
+<summary>🔎 Abstract</summary>
+<p>Reviews peptide-specific ADMET prediction, highlighting modified-peptide representations, data scarcity and transferability limits rather than assuming small-molecule predictors generalize.</p>
+</details>
+
+**SaltyMeta: a curated benchmark and protein language model-informed web tool for salty peptide prediction**<br>
+Wanchao Chen, Wen Li, Yanan He, Yan Yang<br>
+[**2026**-09-15] >> [arXiv](https://doi.org/10.48550/arxiv.2609.16809) • Benchmark/PLM/ESM
+
+<details>
+<summary>🔎 Abstract</summary>
+<p>Preprint: SaltyMeta curates short salty-peptide evidence, similarity-controlled splits and protein-language-model screening, with modest held-out performance and explicit sensory-validation limitations.</p>
+</details>
+
+**Macrocyclization of native peptides through (thio)urea crosslinking of two amines**<br>
+Jinyao Liu, Peiru Chen, Meilin Tang, Qiuyu Chen, Yixin Liao, Yu Liu, Shafi Ullah, Jinwu Zhao, Yubo Long, Gong Chen, Wenfang Xiong<br>
+[**2026**-9-2] >> [Nat Commun](https://doi.org/10.1038/s41467-026-77301-w) • [PubMed](https://pubmed.ncbi.nlm.nih.gov/42823430/) • Cyclization/Cyclic/Permeability
+
+<details>
+<summary>🔎 Abstract</summary>
+<p>Site-selective amine crosslinking generates native-peptide macrocycles with urea or thiourea bridges, with binding, activity and developability evaluation.</p>
+</details>
+
+**A self-assembled peptide forms α-helical nanopores for ultrasensitive biomarker profiling**<br>
+Varsha Shaji, Rajeev Jain, Neethu Puthumadathil, Kalyanashis Jana, Vedasmiritha T S, Ulrich Kleinekathöfer, Krishnananda Chattopadhyay, Kozhinjampara R Mahendran<br>
+[**2026**-8-28] >> [Nat Nanotechnol](https://doi.org/10.1038/s41565-026-02265-3) • [PubMed](https://pubmed.ncbi.nlm.nih.gov/42665653/) • Self-Assembly/Noncanonical
+
+<details>
+<summary>🔎 Abstract</summary>
+<p>Peptide-based alpha-helical nanopores with engineered diameters enable single-molecule biomarker sensing and distinguish heterogeneous protein assemblies.</p>
+</details>
+
+**PathoMIC: A Benchmark for Cross-Species Antimicrobial Peptide Activity Prediction**<br>
+Yeqing Lu, Xiaoyan Zhao, Fuli Feng<br>
+[**2026**-08-26] >> [arXiv](https://doi.org/10.48550/arxiv.2608.26228) • Benchmark/AMPs
+
+<details>
+<summary>🔎 Abstract</summary>
+<p>Preprint: PathoMIC standardizes quantitative AMP activity measurements across pathogen species and evaluates few-shot and zero-shot transfer using pathogen descriptions and taxonomy.</p>
+</details>
+
+**Quantitative and interface-aware prediction of peptide–protein interactions by VITAL**<br>
+Wei-Hao Chen, Qi-Wen Wang, Zhi-Yi Li, Song-Yang Li, Chen Lin and Zhi-Liang Ji<br>
+[**2026**-8-19] >> [Nat Mach Intell](https://doi.org/10.1038/s42256-026-01291-z) • high • [GitHub](https://github.com/BADDxmu/VITAL) • [paper-read](https://paper.molastra.org/journal/2026/202609/VITAL/) • PLM/Graph/Binding/ESM
+
+**Computational design of antimicrobial peptide nanopores**<br>
+Rahul Deb, Marcelo D. T. Torres, Ivo Kabelka, Jan Přibyl, Kateřina Dvořáková Bendová, Edo Vreeker, Markéta Koběrská, Gabriela Balíková Novotná, Miloš Petřík, Giovanni Maglia, Cesar de la Fuente-Nunez and Robert Vácha<br>
+[**2026**-8-3] >> [Nat Chem Biol](https://doi.org/10.1038/s41589-026-02269-z) • high • [Data and scripts](https://doi.org/10.5281/zenodo.20171151) • MD/AMPs/Self-Assembly
+
+<details>
+<summary>🔎 Abstract</summary>
+<p>Molecular-dynamics-guided design produces membrane-spanning antimicrobial peptide nanopores, with experimental mechanism studies and efficacy in mouse infection models.</p>
+</details>
+
+**AMPBench-MT: A Homology-Controlled Benchmark for Antimicrobial Peptide Potency, Spectrum, and Safety Prediction**<br>
+Ziheng Zhou, Huiyu Luo, Xiaohu Zhu, Nan Wang, Xuebiao Qin, Chaoyan Zhang, Jun Yan<br>
+[**2026**-07-28] >> [arXiv](https://doi.org/10.48550/arxiv.2607.25518) • [Hugging Face](https://huggingface.co/datasets/ZihengZhou06/AMPBench-MT) • Benchmark/AMPs
+
+<details>
+<summary>🔎 Abstract</summary>
+<p>Preprint: a homology-controlled benchmark connects AMP recognition with assay-derived potency, spectrum and safety endpoints, emphasizing provenance and endpoint-specific evaluation.</p>
+</details>
+
+**An agent-guided peptide hydrogel bio-stabilizer clamps pericellular viscoelastic drift**<br>
+Xiao Wei, Liqiang Zhang, Zhuo Chang, Fan Ding, Ziyan Qu, Jianghao Chen, Guangkui Xu, Wangxiao He, Wenjia Liu<br>
+[**2026**-7-27] >> [Nat Commun](https://doi.org/10.1038/s41467-026-76070-w) • [PubMed](https://pubmed.ncbi.nlm.nih.gov/42649183/) • Pipeline/Hydrogel
+
+<details>
+<summary>🔎 Abstract</summary>
+<p>A rule-based agent workflow designs ViscoClamp peptide hydrogels to stabilize glycation-driven pericellular mechanics and support bone repair in animal models.</p>
+</details>
+
+**Ferricyanide-mediated direct ligation of peptide hydrazides in neutral water**<br>
+Dongyang Han, Xianglai Zhu, Guiyu Deng, Wei He, Tianyi Zhang, Huasong Ai, Guo-Chao Chu and Lei Liu<br>
+[**2026**-7-24] >> [Nat. Synth](https://doi.org/10.1038/s44160-026-01121-5) • Ligation
+
+<details>
+<summary>🔎 Abstract</summary>
+<p>A ferricyanide-mediated route directly ligates peptide hydrazides under neutral aqueous conditions.</p>
+</details>
+
+**EnsembleEGNN: Set-Based Graph Learning for Thermodynamic Ensembles of Cyclic Peptides**<br>
+Aaron L. Feller, Kris Deibler, Maxim Secor<br>
+[**2026**-07-23] >> [arXiv](https://doi.org/10.48550/arxiv.2607.21561) • Graph/Cyclic/Permeability
+
+<details>
+<summary>🔎 Abstract</summary>
+<p>Preprint: EnsembleEGNN encodes conformational ensembles with equivariant graph layers and set attention, improving cyclic peptide permeability prediction under random and chemical holdout splits.</p>
+</details>
+
+**Structural and functional basis of antinociceptive action of χ-conotoxin AoIA at the noradrenaline transporter**<br>
+Oliver J. V. Belleza, Heng Zhang, Helmut Schmidhammer, Tye I. Gonzalez, Cosmin I. Ciotu, Nataša Tomašević, Carlo Martin M. Ocampo, Jomari C. Fernando, Johannes Koehbach, Paula Schwarz, Mounaf Al Makhlouf, Gabor Tajti, Simon Hasinger, Nina Kastner, Orcun Avsar, Bernhard Retzl, Kathrin Jäntsch, Yi Jiang, Roland Hellinger, Michael J. M. Fischer, K. Johan Rosengren, Christian W. Gruber, Aaron Joseph L. Villaraza, Thomas Stockner, Mariana Spetea, H. Eric Xu and Harald H. Sitte<br>
+[**2026**-7-21] >> [Nat Struct Mol Biol](https://doi.org/10.1038/s41594-026-01838-z) • Conotoxin/Cryo-EM/NMR/Neuroscience
+
+<details>
+<summary>🔎 Abstract</summary>
+<p>Pharmacological and structural studies characterize conotoxin AoIA inhibition of the noradrenaline transporter and antinociceptive activity in a mouse inflammatory-pain model.</p>
+</details>
+
+**PeptiVerse: A unified platform for therapeutic peptide property prediction**<br>
+Yinuo Zhang, Sophia Tang, Tong Chen, Elizabeth Mahood, Sophia Vincoff, Pranam Chatterjee<br>
+[**2026**-7-16] >> [Nat Commun](https://doi.org/10.1038/s41467-026-74167-w) • high • [PubMed](https://pubmed.ncbi.nlm.nih.gov/42463657/) • PLM/ESM/Noncanonical/Permeability
+
+<details>
+<summary>🔎 Abstract</summary>
+<p>PeptiVerse supports therapeutic peptide property evaluation from amino acid sequences or chemically modified peptide SMILES using pretrained representations and task-specific predictors.</p>
+</details>
+
+**Bridging stimulus-responsive and dissipative peptide assemblies to build complex interactive biomaterials**<br>
+Maximilian Schuler, Ayan Chatterjee, David Y W Ng, Tanja Weil<br>
+[**2026**-7-15] >> [Nat Rev Chem](https://doi.org/10.1038/s41570-026-00846-3) • [PubMed](https://pubmed.ncbi.nlm.nih.gov/42458029/) • Self-Assembly
+
+<details>
+<summary>🔎 Abstract</summary>
+<p>Reviews stimulus-responsive and chemically fuelled peptide assemblies, and strategies for integrating dynamic assembly with biological environments.</p>
+</details>
+
+**Vilya-1: An all-atom foundation model for macrocycle structure prediction and design**<br>
+Vilya Research:, Pascal Sturmfels, Milad Salem, Naozumi Hiranuma, Stephen Rettie, Xiaoliang Pan, Benjamin D. Sellers, Adam P. Moyer, Patrick J. Salveson, Ivan Anishchanka<br>
+[**2026**-07-10] >> [arXiv](https://doi.org/10.48550/arxiv.2607.09998) • AI/Full-Atom/Cyclic/Noncanonical
+
+<details>
+<summary>🔎 Abstract</summary>
+<p>Preprint: Vilya-1 models macrocycle conformations and developability using all-atom representations across canonical and noncanonical chemistries, with additional design applications.</p>
+</details>
+
+**HFGuidedDesign: de novo design of cyclic peptide binders via structure-guided discrete diffusion**<br>
+Haomeng Hu, Renjie Zhu, Ning Zhu, Chengyun Zhang, Tianfeng Shang, Chongyang Li, Jingjing Guo, Xudong Wang, Hongliang Duan<br>
+[**2026**-6-30] >> [Chem Sci](https://doi.org/10.1039/d6sc02631a) • [PubMed](https://pubmed.ncbi.nlm.nih.gov/42441251/) • Diffusion/Cyclic/[AF](https://deepmind.google/technologies/alphafold/)/[Hongliang Duan](https://www.mpu.edu.mo/esca/en/duanhongliang.php)
+
+<details>
+<summary>🔎 Abstract</summary>
+<p>Combines discrete sequence diffusion with HighFold structural guidance for target-specific cyclic peptide binder design.</p>
+</details>
+
+**Pepti-drift: Scalable Safe-Active Peptide Generation Without Inference-Time Guidance**<br>
+Takashi Fujiwara, Hikaru Shindo, Kaushalya Madhawa, Jun Jin Choong, Shuan Chen, Yuna Oikawa, Yiming Zhang, Gyubok Lee, Keisuke Ozawa<br>
+[**2026**-06-26] >> [arXiv](https://doi.org/10.48550/arxiv.2606.27824) • AI/Benchmark
+
+<details>
+<summary>🔎 Abstract</summary>
+<p>Preprint: Pepti-drift performs one-step latent refinement for predicted binding and safety objectives, while BindSafe-PepBench controls output-length confounding in evaluation.</p>
+</details>
+
+**Scalable Peptide Design via Memory-Efficient Equivariant Transformer**<br>
+Rui Jiao, Xiangzhe Kong, Yinjun Jia, Yijia Zhang, Ziyi Yang, Yang Liu, Jianzhu Ma<br>
+[**2026**-06-23] >> [arXiv](https://doi.org/10.48550/arxiv.2606.25006) • Diffusion/Full-Atom
+
+<details>
+<summary>🔎 Abstract</summary>
+<p>Preprint: a memory-efficient equivariant transformer supports scalable full-atom peptide generation within a variational-autoencoder and latent-diffusion pipeline.</p>
+</details>
+
+**CABS-flex standalone 3: an open command-line platform for protein flexibility simulation, peptide structure modeling, and protein-peptide docking**<br>
+Chandran Nithin, Karol Wroblewski, Piotr Szukalo, Ayomide Fasemire, Aleksander Kuriata, Mateusz Kurcinski, Andrzej Kolinski, Sebastian Kmiecik<br>
+[**2026**-06-23] >> [arXiv](https://doi.org/10.48550/arxiv.2606.24487) • [GitHub](https://github.com/LCBio/CABSflex_standalone) • Docking/AI/Cyclic
+
+<details>
+<summary>🔎 Abstract</summary>
+<p>Preprint: CABS-flex standalone 3 integrates coarse-grained flexibility simulation, peptide structure modeling, flexible docking and all-atom reconstruction in a Python command-line package.</p>
+</details>
+
 **Structure, Interactions, and Assembly of Membrane-Active Antimicrobial Polypeptides**<br>
 Tzong-Hsien Lee, Patrick Charchar, Marc-Antoine Sani, Dang-Huy Le, Tu C. Le, Irene Yarovsky, Frances Separovic and Marie-Isabel Aguilar<br>
 [**2026**-5-21] >> [Chem. Rev.](https://doi.org/10.1021/acs.chemrev.5c00994) • high • [paper-read](https://paper.molastra.org/reviews/2026/amp_chemical_reviews_A/) • AMPs
@@ -45,6 +337,28 @@ Lauren Hong, Sophia Vincoff and Pranam Chatterjee<br>
 
 📌 _Papers pinned:_
 
+**Quantitative and interface-aware prediction of peptide–protein interactions by VITAL**<br>
+Wei-Hao Chen, Qi-Wen Wang, Zhi-Yi Li, Song-Yang Li, Chen Lin and Zhi-Liang Ji<br>
+[**2026**-8-19] >> [Nat Mach Intell](https://doi.org/10.1038/s42256-026-01291-z) • high • [GitHub](https://github.com/BADDxmu/VITAL) • [paper-read](https://paper.molastra.org/journal/2026/202609/VITAL/) • PLM/Graph/Binding/ESM
+
+**Computational design of antimicrobial peptide nanopores**<br>
+Rahul Deb, Marcelo D. T. Torres, Ivo Kabelka, Jan Přibyl, Kateřina Dvořáková Bendová, Edo Vreeker, Markéta Koběrská, Gabriela Balíková Novotná, Miloš Petřík, Giovanni Maglia, Cesar de la Fuente-Nunez and Robert Vácha<br>
+[**2026**-8-3] >> [Nat Chem Biol](https://doi.org/10.1038/s41589-026-02269-z) • high • [Data and scripts](https://doi.org/10.5281/zenodo.20171151) • MD/AMPs/Self-Assembly
+
+<details>
+<summary>🔎 Abstract</summary>
+<p>Molecular-dynamics-guided design produces membrane-spanning antimicrobial peptide nanopores, with experimental mechanism studies and efficacy in mouse infection models.</p>
+</details>
+
+**PeptiVerse: A unified platform for therapeutic peptide property prediction**<br>
+Yinuo Zhang, Sophia Tang, Tong Chen, Elizabeth Mahood, Sophia Vincoff, Pranam Chatterjee<br>
+[**2026**-7-16] >> [Nat Commun](https://doi.org/10.1038/s41467-026-74167-w) • high • [PubMed](https://pubmed.ncbi.nlm.nih.gov/42463657/) • PLM/ESM/Noncanonical/Permeability
+
+<details>
+<summary>🔎 Abstract</summary>
+<p>PeptiVerse supports therapeutic peptide property evaluation from amino acid sequences or chemically modified peptide SMILES using pretrained representations and task-specific predictors.</p>
+</details>
+
 **BindCraft: one-shot design of functional protein binders**<br>
 Martin Pacesa, Lennart Nickel, ..., Sergey Ovchinnikov, Bruno E. Correia<br>
 [**2025**-8-27] >> [Nature](https://doi.org/10.1038/s41586-025-09429-6) • high • [GitHub](https://github.com/martinpacesa/BindCraft) • [公众号](https://mp.weixin.qq.com/s/U4akBYhlFbOhHfJl2R2blg) / [paper-read](https://paper.molastra.org/journal/2025/202508/bindcraft/)
@@ -54,9 +368,13 @@ Martin Pacesa, Lennart Nickel, ..., Sergey Ovchinnikov, Bruno E. Correia<br>
 <p>BindCraft is an open-source, automated pipeline for &lt;em&gt;de novo&lt;/em&gt; protein binder design, achieving experimental success rates of 10-100%. Using deep learning models like AlphaFold2, BindCraft generates high-affinity binders without the need for high-throughput screening or prior knowledge of binding sites. It has been successfully applied to challenging targets, including cell-surface receptors, allergens, and CRISPR-Cas9. In one example, the binders reduced IgE binding to birch allergens in patient samples, showcasing its potential in therapeutics, diagnostics, and biotechnology.</p>
 </details>
 
+**Discovery of antimicrobial peptides with notable antibacterial potency by an LLM-based foundation model**<br>
+Jike Wang, Jianwen Feng, Yu Kang, Peichen Pan, Jingxuan Ge, Yan Wang, Mingyang Wang<br>
+[**2025**-3-7] >> [Science Advances](https://doi.org/10.1126/sciadv.ads8932) • high • [GitHub](https://github.com/jkwang93/AMP-designer) • [公众号](https://mp.weixin.qq.com/s/BWuRo2A3ehLlhi2Eq2-Qhw) • AMPs/[Tingjun Hou](https://scholar.google.com/citations?hl=en&user=vHW2kqUAAAAJ)/GPT/[Chang-Yu Hsieh](https://scholar.google.com/citations?user=K-AjhSgAAAAJ)
+
 **PepINVENT: Generative peptide design beyond the natural amino acids**<br>
 Gökçe Geylan, Jon Paul Janet, Alessandro Tibo, Jiazhen He, Atanas Patronov, Mikhail Kabeshov, Florian David, Werngard Czechtizky, Ola Engkvist, Leonardo De Maria<br>
-[**2025**-1-1] >> [Chem. Sci.](https://doi.org/10.1039/d4sc07642g) • [GitHub](https://github.com/MolecularAI/PepINVENT/) • [paper-read](https://paper.molastra.org/journal/2025/202509/pepinvent/) • RL/[Molecular AI](https://github.com/molecularai)/AstraZeneca/Noncanonical
+[**2025**] >> [Chem. Sci.](https://doi.org/10.1039/d4sc07642g) • [GitHub](https://github.com/MolecularAI/PepINVENT/) • [paper-read](https://paper.molastra.org/journal/2025/202509/pepinvent/) • RL/[Molecular AI](https://github.com/molecularai)/AstraZeneca/Noncanonical
 
 **Hotspot-Driven Peptide Design via Multi-Fragment Autoregressive Extension**<br>
 Jiahan Li, Tong Chen, Shitong Luo, Chaoran Cheng, Jiaqi Guan, Ruihan Guo, Sheng Wang, Ge Liu, Jian Peng, Jianzhu Ma<br>
@@ -65,10 +383,6 @@ Jiahan Li, Tong Chen, Shitong Luo, Chaoran Cheng, Jiaqi Guan, Ruihan Guo, Sheng 
 **Accurate de Novo Design of High-Affinity Protein Binding Macrocycles Using Deep Learning**<br>
 Stephen Rettie, ..., Gaurav Bhardwaj<br>
 [**2024**-11-18] >> [bioRxiv](https://doi.org/10.1101/2024.11.18.622547) • high • [RFdiffusion](https://github.com/RosettaCommons/RFdiffusion)/[David Baker](https://scholar.google.com/citations?hl=en&user=UKqIqRsAAAAJ)/[Gaurav Bhardwaj](https://scholar.google.com/citations?user=AJSn9j0AAAAJ)/Cyclic
-
-**Discovery of antimicrobial peptides with notable antibacterial potency by an LLM-based foundation model**<br>
-Jike Wang, Jianwen Feng, Yu Kang, Peichen Pan, Jingxuan Ge, Yan Wang, Mingyang Wang<br>
-[**2024**-10-10] >> [Science Advances](https://doi.org/10.1126/sciadv.ads8932) • high • [GitHub](https://github.com/jkwang93/AMP-designer) • [公众号](https://mp.weixin.qq.com/s/BWuRo2A3ehLlhi2Eq2-Qhw) • AMPs/[Tingjun Hou](https://scholar.google.com/citations?hl=en&user=vHW2kqUAAAAJ)/Diffusion/[Chang-Yu Hsieh](https://scholar.google.com/citations?user=K-AjhSgAAAAJ)
 
 **Target-Specific De Novo Peptide Binder Design with DiffPepBuilder**<br>
 Fanhao Wang, Yuzhe Wang, Laiyi Feng, Changsheng Zhang, and Luhua Lai<br>
@@ -153,11 +467,14 @@ Rasha Jwad, Daniel Weissberger, and Luke Hunter<br>
   <br><a href='#11-design--generation'>Design & Generation</a> •
   <a href='#12-structure--interaction'>Structure & Interaction</a> •
   <a href='#13-property--activity'>Property & Activity</a> •
-  <a href='#14-therapeutics--applications'>Therapeutics & Applications</a>
+  <a href='#14-therapeutics--applications'>Therapeutics & Applications</a> •
+  <a href='#15-delivery--biomaterials'>Delivery & Biomaterials</a>
   <br>
   <strong><a href='#2-data-representation--analysis'>2) Data, Representation & Analysis</a></strong>
-  <br><a href='#21-structure--graph'>Structure & Graph</a> •
-  <a href='#22-datasets--benchmarks'>Datasets & Benchmarks</a>
+  <br><a href='#21-sequence--language'>Sequence & Language</a> •
+  <a href='#22-structure--graph'>Structure & Graph</a> •
+  <a href='#23-datasets--benchmarks'>Datasets & Benchmarks</a> •
+  <a href='#24-experimental-characterization'>Experimental Characterization</a>
   <br>
   <strong><a href='#3-property--activity'>3) Property & Activity</a></strong>
   <br><a href='#31-bioactivity--function'>Bioactivity & Function</a> •
@@ -179,18 +496,24 @@ Rasha Jwad, Daniel Weissberger, and Luke Hunter<br>
   <strong><a href='#6-synthesis--chemical-modification'>6) Synthesis & Chemical Modification</a></strong>
   <br><a href='#61-solid-phase--solution-synthesis'>Solid-Phase & Solution Synthesis</a> •
   <a href='#62-ligation--cyclization'>Ligation & Cyclization</a> •
-  <a href='#63-noncanonical--conjugated-peptides'>Noncanonical & Conjugated Peptides</a>
+  <a href='#63-noncanonical--conjugated-peptides'>Noncanonical & Conjugated Peptides</a> •
+  <a href='#64-biosynthesis--biocatalysis'>Biosynthesis & Biocatalysis</a>
   <br>
   <strong><a href='#7-biology--mechanisms'>7) Biology & Mechanisms</a></strong>
+  <br><a href='#71-signaling--regulation'>Signaling & Regulation</a>
   <br>
   <strong><a href='#8-delivery--biomaterials'>8) Delivery & Biomaterials</a></strong>
+  <br><a href='#81-delivery--formulation'>Delivery & Formulation</a> •
+  <a href='#82-self-assembly--hydrogels'>Self-Assembly & Hydrogels</a> •
+  <a href='#83-materials--biosensing'>Materials & Biosensing</a>
   <br>
   <strong><a href='#9-applications--tools'>9) Applications & Tools</a></strong>
   <br><a href='#91-software--webservers'>Software & Webservers</a> •
   <a href='#92-screening--discovery'>Screening & Discovery</a> •
   <a href='#93-therapeutics--translation'>Therapeutics & Translation</a> •
   <a href='#94-protein-binders'>Protein Binders</a> •
-  <a href='#95-chemical-biology--modalities'>Chemical Biology & Modalities</a>
+  <a href='#95-chemical-biology--modalities'>Chemical Biology & Modalities</a> •
+  <a href='#96-oncology'>Oncology</a>
   <br>
 </p>
 
@@ -308,6 +631,24 @@ Rasha Jwad, Daniel Weissberger, and Luke Hunter<br>
 
 ### 1.3 Property & Activity
 
+**Antimicrobial peptide databases: A detailed comparison and complementary features**<br>
+Erfan Zamani, Mohammadhossein Ghazizadeh-Ahsaei, Yasaman Mahmoodi, Faramarz Mehrnejad<br>
+[**2026**-9-25] >> [Peptides](https://doi.org/10.1016/j.peptides.2026.171523) • [PubMed](https://pubmed.ncbi.nlm.nih.gov/42790680/) • AMPs/Benchmark
+
+<details>
+<summary>🔎 Abstract</summary>
+<p>Compares APD, CAMP, DBAASP, dbAMP and DRAMP for annotation, activity evidence, usability and computational workflows, identifying complementary strengths and interoperability needs.</p>
+</details>
+
+**The future of peptide ADMET prediction: Leveraging AI to unlock new possibilities**<br>
+Qianhui Liu, Xiaorong Tan, Feifan Xie, Defang Ouyang, Wenbin Zeng, Jie Dong<br>
+[**2026**-9-21] >> [Drug Discov Today](https://doi.org/10.1016/j.drudis.2026.104809) • [PubMed](https://pubmed.ncbi.nlm.nih.gov/42767599/) • AI/Permeability/Stability
+
+<details>
+<summary>🔎 Abstract</summary>
+<p>Reviews peptide-specific ADMET prediction, highlighting modified-peptide representations, data scarcity and transferability limits rather than assuming small-molecule predictors generalize.</p>
+</details>
+
 **Structure, Interactions, and Assembly of Membrane-Active Antimicrobial Polypeptides**<br>
 Tzong-Hsien Lee, Patrick Charchar, Marc-Antoine Sani, Dang-Huy Le, Tu C. Le, Irene Yarovsky, Frances Separovic and Marie-Isabel Aguilar<br>
 [**2026**-5-21] >> [Chem. Rev.](https://doi.org/10.1021/acs.chemrev.5c00994) • high • [paper-read](https://paper.molastra.org/reviews/2026/amp_chemical_reviews_A/) • AMPs
@@ -345,16 +686,80 @@ Vasso Apostolopoulos, Joanna Bojarska, ...<br>
 [**2021**-1-15] >> [Molecules](https://doi.org/10.3390/molecules26020430)
 
 
+### 1.5 Delivery & Biomaterials
+
+**Peptide-mediated CRISPR delivery: From dish to bloodstream**<br>
+Alzbeta Ressnerova, Ross C Wilson<br>
+[**2026**-9-24] >> [Curr Opin Chem Biol](https://doi.org/10.1016/j.cbpa.2026.102763) • [PubMed](https://pubmed.ncbi.nlm.nih.gov/42785144/) • Delivery/CPPs
+
+<details>
+<summary>🔎 Abstract</summary>
+<p>Reviews peptide-mediated CRISPR delivery from cell culture to local and systemic in vivo applications, including clearance, endosomal escape and formulation barriers.</p>
+</details>
+
+**Bridging stimulus-responsive and dissipative peptide assemblies to build complex interactive biomaterials**<br>
+Maximilian Schuler, Ayan Chatterjee, David Y W Ng, Tanja Weil<br>
+[**2026**-7-15] >> [Nat Rev Chem](https://doi.org/10.1038/s41570-026-00846-3) • [PubMed](https://pubmed.ncbi.nlm.nih.gov/42458029/) • Self-Assembly
+
+<details>
+<summary>🔎 Abstract</summary>
+<p>Reviews stimulus-responsive and chemically fuelled peptide assemblies, and strategies for integrating dynamic assembly with biological environments.</p>
+</details>
+
+
 ## 2. Data, Representation & Analysis
 
-### 2.1 Structure & Graph
+### 2.1 Sequence & Language
+
+**PepDoRA: A Unified Peptide Language Model via Weight-Decomposed Low-Rank Adaptation**<br>
+Leyao Wang, Rishab Pulugurta, Pranay Vure, Yinuo Zhang, Aastha Pal, and Pranam Chatterjee<br>
+[**2024**-10-28] >> [arXiv](https://doi.org/10.48550/arXiv.2410.20667) • [Pranam Chatterjee](https://scholar.google.co.uk/citations?user=XExgv9YAAAAJ)/MLM/Noncanonical
+
+
+### 2.2 Structure & Graph
+
+**EnsembleEGNN: Set-Based Graph Learning for Thermodynamic Ensembles of Cyclic Peptides**<br>
+Aaron L. Feller, Kris Deibler, Maxim Secor<br>
+[**2026**-07-23] >> [arXiv](https://doi.org/10.48550/arxiv.2607.21561) • Graph/Cyclic/Permeability
+
+<details>
+<summary>🔎 Abstract</summary>
+<p>Preprint: EnsembleEGNN encodes conformational ensembles with equivariant graph layers and set attention, improving cyclic peptide permeability prediction under random and chemical holdout splits.</p>
+</details>
 
 **Propedia v2.3: A novel  representation approach for the  peptide-protein interaction  database using graph-based  structural signatures**<br>
 Pedro Martins, Diego Mariano, Frederico Chaves Carvalho, Luana Luiza Bastos, Lucas Moraes, Vivian Paixão and Raquel Cardoso de Melo-Minardi<br>
 [**2023**-2-16] >> [Front. Bioinform.](https://doi.org/10.3389/fbinf.2023.1103103) • [SI](https://www.frontiersin.org/journals/bioinformatics/articles/10.3389/fbinf.2023.1103103/full#SM1) • [propedia](https://github.com/LBS-UFMG/propedia) • Graph
 
 
-### 2.2 Datasets & Benchmarks
+### 2.3 Datasets & Benchmarks
+
+**SaltyMeta: a curated benchmark and protein language model-informed web tool for salty peptide prediction**<br>
+Wanchao Chen, Wen Li, Yanan He, Yan Yang<br>
+[**2026**-09-15] >> [arXiv](https://doi.org/10.48550/arxiv.2609.16809) • Benchmark/PLM/ESM
+
+<details>
+<summary>🔎 Abstract</summary>
+<p>Preprint: SaltyMeta curates short salty-peptide evidence, similarity-controlled splits and protein-language-model screening, with modest held-out performance and explicit sensory-validation limitations.</p>
+</details>
+
+**PathoMIC: A Benchmark for Cross-Species Antimicrobial Peptide Activity Prediction**<br>
+Yeqing Lu, Xiaoyan Zhao, Fuli Feng<br>
+[**2026**-08-26] >> [arXiv](https://doi.org/10.48550/arxiv.2608.26228) • Benchmark/AMPs
+
+<details>
+<summary>🔎 Abstract</summary>
+<p>Preprint: PathoMIC standardizes quantitative AMP activity measurements across pathogen species and evaluates few-shot and zero-shot transfer using pathogen descriptions and taxonomy.</p>
+</details>
+
+**AMPBench-MT: A Homology-Controlled Benchmark for Antimicrobial Peptide Potency, Spectrum, and Safety Prediction**<br>
+Ziheng Zhou, Huiyu Luo, Xiaohu Zhu, Nan Wang, Xuebiao Qin, Chaoyan Zhang, Jun Yan<br>
+[**2026**-07-28] >> [arXiv](https://doi.org/10.48550/arxiv.2607.25518) • [Hugging Face](https://huggingface.co/datasets/ZihengZhou06/AMPBench-MT) • Benchmark/AMPs
+
+<details>
+<summary>🔎 Abstract</summary>
+<p>Preprint: a homology-controlled benchmark connects AMP recognition with assay-derived potency, spectrum and safety endpoints, emphasizing provenance and endpoint-specific evaluation.</p>
+</details>
 
 **Advancements in Nanobody Epitope Prediction: A Comparative Study of AlphaFold2Multimer vs AlphaFold3**<br>
 Floriane Eshak and Anne Goupil-Lamy<br>
@@ -383,6 +788,18 @@ Gaoqi Weng, Junbo Gao, Zhe Wang, Ercheng Wang, Xueping Hu, Xiaojun Yao, Dongshen
 **Highly Flexible Ligand Docking: Benchmarking of the DockThor Program on the LEADS-PEP Protein–Peptide Data Set**<br>
 Karina B. Santos, Isabella A. Guedes, Ana L. M. Karl and Laurent E. Dardenne<br>
 [**2020**-1-10] >> [J. Chem. Inf. Model.](https://doi.org/10.1021/acs.jcim.9b00905) • [DockThor](https://www.dockthor.lncc.br) • Docking/Benchmark
+
+
+### 2.4 Experimental Characterization
+
+**GyroNovo: Error-Guided Fragment Imputation with Mass-Aware Attention for De Novo Peptide Sequencing**<br>
+Abdellah El Mekki, Laks V. S. Lakshmanan, Muhammad Abdul-Mageed<br>
+[**2026**-09-24] >> [arXiv](https://doi.org/10.48550/arxiv.2609.30542) • MS/AI/Proteomics
+
+<details>
+<summary>🔎 Abstract</summary>
+<p>Preprint: GyroNovo combines decoder-error-guided fragment imputation with mass-aware attention for de novo peptide sequencing from tandem mass spectra.</p>
+</details>
 
 
 ## 3. Property & Activity
@@ -424,6 +841,19 @@ Jianan Li, Keisuke Yanagisawa, and Yutaka Akiyama<br>
 
 ### 3.3 Interaction & Binding
 
+**Mirror-Score: Calibrated, Inference-only Scoring Exposes the Limits of Sequence-compatibility Ranking in D-peptide Design**<br>
+Jiada Li<br>
+[**2026**-09-28] >> [arXiv](https://doi.org/10.48550/arxiv.2609.36057) • [GitHub](https://github.com/Jiadalee/Mirror-Score) • Binding/Benchmark/Noncanonical
+
+<details>
+<summary>🔎 Abstract</summary>
+<p>Preprint: Mirror-Score evaluates inference-only ranking of D-peptide/L-protein complexes and demonstrates the limited affinity validity and cross-family transfer of sequence-compatibility scores.</p>
+</details>
+
+**Quantitative and interface-aware prediction of peptide–protein interactions by VITAL**<br>
+Wei-Hao Chen, Qi-Wen Wang, Zhi-Yi Li, Song-Yang Li, Chen Lin and Zhi-Liang Ji<br>
+[**2026**-8-19] >> [Nat Mach Intell](https://doi.org/10.1038/s42256-026-01291-z) • high • [GitHub](https://github.com/BADDxmu/VITAL) • [paper-read](https://paper.molastra.org/journal/2026/202609/VITAL/) • PLM/Graph/Binding/ESM
+
 **Reusability report: Meta-learning for antigen-specific T cell receptor binder identification**<br>
 Fei He, Xianyu Wang and Dong Xu<br>
 [**2026**-5-6] >> [Nat Mach Intell](https://doi.org/10.1038/s42256-026-01236-6) • [GitHub](https://github.com/coffee19850519/PanPep_Reusability) • [paper-read](https://paper.molastra.org/journal/2026/202605/PanPep/)
@@ -437,6 +867,15 @@ Huanyu Tao, Xiaoyu Wang and Sheng-You Huang<br>
 
 ### 4.1 Peptide Conformation
 
+**Vilya-1: An all-atom foundation model for macrocycle structure prediction and design**<br>
+Vilya Research:, Pascal Sturmfels, Milad Salem, Naozumi Hiranuma, Stephen Rettie, Xiaoliang Pan, Benjamin D. Sellers, Adam P. Moyer, Patrick J. Salveson, Ivan Anishchanka<br>
+[**2026**-07-10] >> [arXiv](https://doi.org/10.48550/arxiv.2607.09998) • AI/Full-Atom/Cyclic/Noncanonical
+
+<details>
+<summary>🔎 Abstract</summary>
+<p>Preprint: Vilya-1 models macrocycle conformations and developability using all-atom representations across canonical and noncanonical chemistries, with additional design applications.</p>
+</details>
+
 **Predicting 3D Structures of Lasso Peptides**<br>
 Xingyu Ouyang, Xinchun Ran, Han Xu, Yi-Lei Zhao, A. James Link, Zhongyue Yang<br>
 [**2024**-10-14] >> [ChemRxiv](https://doi.org/10.26434/chemrxiv-2024-q3rn0-v2) • [LassoPred](https://github.com/ChemBioHTP/LassoPred)/[Web](https://lassopred.accre.vanderbilt.edu/) • Lasso/[AF](https://deepmind.google/technologies/alphafold/)/ESM/MD
@@ -448,7 +887,7 @@ Xingyu Ouyang, Xinchun Ran, Han Xu, Yi-Lei Zhao, A. James Link, Zhongyue Yang<br
 
 **Structure prediction of linear and cyclic peptides using  CABS-flex**<br>
 Aleksandra Badaczewska-Dawid, Karol Wróblewski, Mateusz Kurcinski & Sebastian Kmiecik<br>
-[**2023**-11-28] >> [BIB](https://doi.org/10.1093/bib/bbae003) • MD/Cyclic
+[**2024**-2-1] >> [BIB](https://doi.org/10.1093/bib/bbae003) • Cyclic
 
 
 ### 4.2 Peptide-Protein Complexes
@@ -459,7 +898,7 @@ Jingxuan Ge, Dejun Jiang, ..., Chang-Yu Hsieh, Tingjun Hou<br>
 
 **HighFold: accurately predicting structures of cyclic  peptides and complexes with head-to-tail and disulfide  bridge constraints**<br>
 Chenhao Zhang, Chengyun Zhang, Tianfeng Shang, Ning Zhu, Xinyi Wu, Hongliang Duan<br>
-[**2024**-3-18] >> [BIB](https://doi.org/10.1093/bib/bbae215) • [HighFold](https://github.com/hongliangduan/HighFold) • [Hongliang Duan](https://www.mpu.edu.mo/esca/en/duanhongliang.php)/Cyclic/[AF](https://deepmind.google/technologies/alphafold/)
+[**2024**-5-5] >> [BIB](https://doi.org/10.1093/bib/bbae215) • [HighFold](https://github.com/hongliangduan/HighFold) • [Hongliang Duan](https://www.mpu.edu.mo/esca/en/duanhongliang.php)/Cyclic/[AF](https://deepmind.google/technologies/alphafold/)
 
 **Ranking Peptide Binders by Affinity with AlphaFold**<br>
 Liwei Chang and Alberto Perez<br>
@@ -471,6 +910,15 @@ Tomer Tsaban, Julia K. Varga, Orly Avraham, Ziv Ben-Aharon, Alisa Khramushin &  
 
 
 ### 4.3 Docking & Simulation
+
+**Multi-Scale Temporal Flows for Peptide Trajectory Generation**<br>
+Xichen Sun, Wentao Wei, Xiaoxi Zhang, Yuedong Yang, Jiahua Rao<br>
+[**2026**-10-01] >> [arXiv](https://doi.org/10.48550/arxiv.2610.01086) • Flow/MD/Cyclic
+
+<details>
+<summary>🔎 Abstract</summary>
+<p>Preprint: PepTIDE models peptide trajectories using multi-scale temporal sampling and physical-time embeddings, evaluating distribution agreement, structural validity and inter-state transitions.</p>
+</details>
 
 **Direct conformational sampling from peptide energy landscapes through hypernetwork-conditioned diffusion**<br>
 Osama Abdin & Philip M. Kim<br>
@@ -485,13 +933,22 @@ Jovan Damjanovic, Jiayuan Miao, He Huang, Yu-Shan Lin<br>
 
 ### 5.1 Sequence-Based Design
 
+**Pepti-drift: Scalable Safe-Active Peptide Generation Without Inference-Time Guidance**<br>
+Takashi Fujiwara, Hikaru Shindo, Kaushalya Madhawa, Jun Jin Choong, Shuan Chen, Yuna Oikawa, Yiming Zhang, Gyubok Lee, Keisuke Ozawa<br>
+[**2026**-06-26] >> [arXiv](https://doi.org/10.48550/arxiv.2606.27824) • AI/Benchmark
+
+<details>
+<summary>🔎 Abstract</summary>
+<p>Preprint: Pepti-drift performs one-step latent refinement for predicted binding and safety objectives, while BindSafe-PepBench controls output-length confounding in evaluation.</p>
+</details>
+
 **DLFea4AMPGen de novo design of antimicrobial peptides by integrating features learned from deep learning models**<br>
 Han Gao, Feifei Guan, Boyu Luo, Dongdong Zhang, Wei Liu, Yuying Shen, Lingxi Fan, Guoshun Xu, Yuan Wang, Tao Tu, Ningfeng Wu, Bin Yao, Huiying Luo, Yue Teng, Jian Tian and Huoqing Huang<br>
 [**2025**-10-15] >> [Nat Commun](https://doi.org/10.1038/s41467-025-64378-y) • high • [GitHub](https://github.com/hgao12345/DLFea4AMPGen) • [paper-read](https://paper.molastra.org/journal/2025/202510/DLFea4AMPGen/) • AMPs
 
-**PepDoRA: A Unified Peptide Language Model via Weight-Decomposed Low-Rank Adaptation**<br>
-Leyao Wang, Rishab Pulugurta, Pranay Vure, Yinuo Zhang, Aastha Pal, and Pranam Chatterjee<br>
-[**2024**-10-28] >> [arXiv](https://doi.org/10.48550/arXiv.2410.20667) • [GitHub](https://github.com/Ced3-han/PepFlowww) • [Pranam Chatterjee](https://scholar.google.co.uk/citations?user=XExgv9YAAAAJ)/MLM
+**Discovery of antimicrobial peptides with notable antibacterial potency by an LLM-based foundation model**<br>
+Jike Wang, Jianwen Feng, Yu Kang, Peichen Pan, Jingxuan Ge, Yan Wang, Mingyang Wang<br>
+[**2025**-3-7] >> [Science Advances](https://doi.org/10.1126/sciadv.ads8932) • high • [GitHub](https://github.com/jkwang93/AMP-designer) • [公众号](https://mp.weixin.qq.com/s/BWuRo2A3ehLlhi2Eq2-Qhw) • AMPs/[Tingjun Hou](https://scholar.google.com/citations?hl=en&user=vHW2kqUAAAAJ)/GPT/[Chang-Yu Hsieh](https://scholar.google.com/citations?user=K-AjhSgAAAAJ)
 
 **Improving Inverse Folding for Peptide Design with Diversity-Regularized Direct Preference Optimization**<br>
 Ryan Park, Darren J. Hsu, C. Brian Roland, Chen Tessler, Maria Korshunova, Shie Mannor, Olivia Viessmann, Bruno Trentini<br>
@@ -499,6 +956,15 @@ Ryan Park, Darren J. Hsu, C. Brian Roland, Chen Tessler, Maria Korshunova, Shie 
 
 
 ### 5.2 Structure-Based Design
+
+**Computational design of antimicrobial peptide nanopores**<br>
+Rahul Deb, Marcelo D. T. Torres, Ivo Kabelka, Jan Přibyl, Kateřina Dvořáková Bendová, Edo Vreeker, Markéta Koběrská, Gabriela Balíková Novotná, Miloš Petřík, Giovanni Maglia, Cesar de la Fuente-Nunez and Robert Vácha<br>
+[**2026**-8-3] >> [Nat Chem Biol](https://doi.org/10.1038/s41589-026-02269-z) • high • [Data and scripts](https://doi.org/10.5281/zenodo.20171151) • MD/AMPs/Self-Assembly
+
+<details>
+<summary>🔎 Abstract</summary>
+<p>Molecular-dynamics-guided design produces membrane-spanning antimicrobial peptide nanopores, with experimental mechanism studies and efficacy in mouse infection models.</p>
+</details>
 
 **Structure-based design of macrocyclic peptides to generate functional antibodies against G protein-coupled receptors**<br>
 Marie-Edith Nepveu-Traversy, Malihe Hassanzadeh, Laurent Bruneau-Cossette, Élie Besserer-Offroy, Rebecca Brouillette, Sandra Morissette, Hassan Traboulsi, Karyn Kirby, Alexandre Murza, Jean-Michel Longpré, Billy Breton, Fernand-Pierre Gendron, Simon Gaudreau, Pierre-Luc Boudreault and Philippe Sarret<br>
@@ -550,6 +1016,24 @@ Kejia Wu, Hua Bai, ..., Emmanuel Derivery, Daniel Adriano Silva, David Baker<br>
 
 ### 5.3 Diffusion & Flow
 
+**HFGuidedDesign: de novo design of cyclic peptide binders via structure-guided discrete diffusion**<br>
+Haomeng Hu, Renjie Zhu, Ning Zhu, Chengyun Zhang, Tianfeng Shang, Chongyang Li, Jingjing Guo, Xudong Wang, Hongliang Duan<br>
+[**2026**-6-30] >> [Chem Sci](https://doi.org/10.1039/d6sc02631a) • [PubMed](https://pubmed.ncbi.nlm.nih.gov/42441251/) • Diffusion/Cyclic/[AF](https://deepmind.google/technologies/alphafold/)/[Hongliang Duan](https://www.mpu.edu.mo/esca/en/duanhongliang.php)
+
+<details>
+<summary>🔎 Abstract</summary>
+<p>Combines discrete sequence diffusion with HighFold structural guidance for target-specific cyclic peptide binder design.</p>
+</details>
+
+**Scalable Peptide Design via Memory-Efficient Equivariant Transformer**<br>
+Rui Jiao, Xiangzhe Kong, Yinjun Jia, Yijia Zhang, Ziyi Yang, Yang Liu, Jianzhu Ma<br>
+[**2026**-06-23] >> [arXiv](https://doi.org/10.48550/arxiv.2606.25006) • Diffusion/Full-Atom
+
+<details>
+<summary>🔎 Abstract</summary>
+<p>Preprint: a memory-efficient equivariant transformer supports scalable full-atom peptide generation within a variational-autoencoder and latent-diffusion pipeline.</p>
+</details>
+
 **Generative latent diffusion language modeling yields anti-infective synthetic peptides**<br>
 Marcelo D.T. Torres, Leo Tianlai Chen, Fangping Wan, Pranam Chatterjee and Cesar de la Fuente-Nunez<br>
 [**2025**-10] >> [Cell Biomaterials](https://doi.org/10.1016/j.celbio.2025.100183) • high • [GitHub](https://github.com/programmablebio/amp-diffusion) • [paper-read](https://paper.molastra.org/journal/2025/202510/AMP-Diffusion/) • AMPs/Diffusion
@@ -574,10 +1058,6 @@ Jiahan Li, Tong Chen, Shitong Luo, Chaoran Cheng, Jiaqi Guan, Ruihan Guo, Sheng 
 **Accurate de Novo Design of High-Affinity Protein Binding Macrocycles Using Deep Learning**<br>
 Stephen Rettie, ..., Gaurav Bhardwaj<br>
 [**2024**-11-18] >> [bioRxiv](https://doi.org/10.1101/2024.11.18.622547) • high • [RFdiffusion](https://github.com/RosettaCommons/RFdiffusion)/[David Baker](https://scholar.google.com/citations?hl=en&user=UKqIqRsAAAAJ)/[Gaurav Bhardwaj](https://scholar.google.com/citations?user=AJSn9j0AAAAJ)/Cyclic
-
-**Discovery of antimicrobial peptides with notable antibacterial potency by an LLM-based foundation model**<br>
-Jike Wang, Jianwen Feng, Yu Kang, Peichen Pan, Jingxuan Ge, Yan Wang, Mingyang Wang<br>
-[**2024**-10-10] >> [Science Advances](https://doi.org/10.1126/sciadv.ads8932) • high • [GitHub](https://github.com/jkwang93/AMP-designer) • [公众号](https://mp.weixin.qq.com/s/BWuRo2A3ehLlhi2Eq2-Qhw) • AMPs/[Tingjun Hou](https://scholar.google.com/citations?hl=en&user=vHW2kqUAAAAJ)/Diffusion/[Chang-Yu Hsieh](https://scholar.google.com/citations?user=K-AjhSgAAAAJ)
 
 **Target-Specific De Novo Peptide Binder Design with DiffPepBuilder**<br>
 Fanhao Wang, Yuzhe Wang, Laiyi Feng, Changsheng Zhang, and Luhua Lai<br>
@@ -632,7 +1112,7 @@ Fanhao Wang, Tiantian Zhang, Jintao Zhu, Xiaoling Zhang, Changsheng Zhang and Lu
 
 **PepINVENT: Generative peptide design beyond the natural amino acids**<br>
 Gökçe Geylan, Jon Paul Janet, Alessandro Tibo, Jiazhen He, Atanas Patronov, Mikhail Kabeshov, Florian David, Werngard Czechtizky, Ola Engkvist, Leonardo De Maria<br>
-[**2025**-1-1] >> [Chem. Sci.](https://doi.org/10.1039/d4sc07642g) • [GitHub](https://github.com/MolecularAI/PepINVENT/) • [paper-read](https://paper.molastra.org/journal/2025/202509/pepinvent/) • RL/[Molecular AI](https://github.com/molecularai)/AstraZeneca/Noncanonical
+[**2025**] >> [Chem. Sci.](https://doi.org/10.1039/d4sc07642g) • [GitHub](https://github.com/MolecularAI/PepINVENT/) • [paper-read](https://paper.molastra.org/journal/2025/202509/pepinvent/) • RL/[Molecular AI](https://github.com/molecularai)/AstraZeneca/Noncanonical
 
 **Reinforcement learning-driven exploration of peptide space: accelerating generation of drug-like peptides**<br>
 Qian Wang, Xiaotong Hu, Zhiqiang Wei, Hao Lu , Hao Liu<br>
@@ -670,6 +1150,42 @@ Bálint Tamás, Marvin Alberts, Teodoro Laino and Nina Hartrampf<br>
 
 ### 6.2 Ligation & Cyclization
 
+**A proximity-driven and regioselective peptide bicyclization (PReP-Bicyc) approach for phage display libraries**<br>
+Guoqing Jin, Yifan Shi, Shihui Fan, Lai Hoang Son Le, Wenyue Cao, Thuzar Hla Shwe, Zihan Anna Zhang, Demonta D. Coleman, Satyanarayana Nyalata, Joshua Trae Hampton and Wenshe Ray Liu<br>
+[**2026**-10-3] >> [Nat Commun](https://doi.org/10.1038/s41467-026-77740-5) • Cyclization/Bicyclic/Phage Display
+
+<details>
+<summary>🔎 Abstract</summary>
+<p>PReP-Bicyc enables mild, phage-compatible, regioselective peptide bicyclization and screening of PD-1-binding ligands. Published as an early peer-reviewed article.</p>
+</details>
+
+**Silver(I)-mediated amide-to-ester transformation on unprotected peptides for protein chemical synthesis and engineering**<br>
+Zhenquan Sun, Wai Yin Yau, Huajie Kang, Haiyan Zhou, Xin Liu, Zhibo Han, Hongxiang Wu, Xuechen Li<br>
+[**2026**-9-30] >> [Sci Adv](https://doi.org/10.1126/sciadv.aej5227) • [PubMed](https://pubmed.ncbi.nlm.nih.gov/42814821/) • Ligation
+
+<details>
+<summary>🔎 Abstract</summary>
+<p>Chemoselective silver-mediated backbone activation converts unprotected peptide amides to salicylaldehyde esters for protein synthesis, demonstrated with mirror-image histones.</p>
+</details>
+
+**Macrocyclization of native peptides through (thio)urea crosslinking of two amines**<br>
+Jinyao Liu, Peiru Chen, Meilin Tang, Qiuyu Chen, Yixin Liao, Yu Liu, Shafi Ullah, Jinwu Zhao, Yubo Long, Gong Chen, Wenfang Xiong<br>
+[**2026**-9-2] >> [Nat Commun](https://doi.org/10.1038/s41467-026-77301-w) • [PubMed](https://pubmed.ncbi.nlm.nih.gov/42823430/) • Cyclization/Cyclic/Permeability
+
+<details>
+<summary>🔎 Abstract</summary>
+<p>Site-selective amine crosslinking generates native-peptide macrocycles with urea or thiourea bridges, with binding, activity and developability evaluation.</p>
+</details>
+
+**Ferricyanide-mediated direct ligation of peptide hydrazides in neutral water**<br>
+Dongyang Han, Xianglai Zhu, Guiyu Deng, Wei He, Tianyi Zhang, Huasong Ai, Guo-Chao Chu and Lei Liu<br>
+[**2026**-7-24] >> [Nat. Synth](https://doi.org/10.1038/s44160-026-01121-5) • Ligation
+
+<details>
+<summary>🔎 Abstract</summary>
+<p>A ferricyanide-mediated route directly ligates peptide hydrazides under neutral aqueous conditions.</p>
+</details>
+
 **Automated Rapid Synthesis of High-Purity Head-to-Tail Cyclic Peptides via a Diaminonicotinic Acid Scaffold**<br>
 Feng Wan, Chengrui Hu, Pei Xie, Xingxing Yang, Xin He, Yourong Pan, Zuozhou Ning and Chengxi Li<br>
 [**2025**-12-22] >> [J. Am. Chem. Soc.](https://doi.org/10.1021/jacs.5c16902) • [paper-read](https://paper.molastra.org/journal/2025/202512/CycloBot/) • Cyclic/Cyclization/SPPS
@@ -687,13 +1203,109 @@ Jeffrey Y. K. Wong, Arunika I. Ekanayake, Serhii Kharchenko, Steven E. Kirberger
 </details>
 
 
+### 6.4 Biosynthesis & Biocatalysis
+
+**Generative AI designs functional thiolation domains for reprogramming non-ribosomal peptide synthetases**<br>
+Emre F Bülbül, Seounggun Bang, Kevin George, Gabriele Bianchi, Prateek Raj, Seonyong Chung, Vincent Pauline, Ramon Hochstrasser, Hannah A Minas, Walid A M Elgaher, Andreas M Kany, Anna K H Hirsch, Steven Schmitt, Dirk W Heinz, Olga V Kalinina, Dietrich Klakow, Kenan A J Bozhüyük<br>
+[**2026**-9-22] >> [Nat Commun](https://doi.org/10.1038/s41467-026-77963-6) • [PubMed](https://pubmed.ncbi.nlm.nih.gov/42773138/) • AI/Biosynthesis/ESM/[ProteinMPNN](https://www.science.org/doi/10.1126/science.add2187)
+
+<details>
+<summary>🔎 Abstract</summary>
+<p>Generative models design thiolation domains that remain functional in engineered non-ribosomal peptide synthetase assembly lines, supported by in vivo production assays.</p>
+</details>
+
+
 ## 7. Biology & Mechanisms
 
+### 7.1 Signaling & Regulation
+
+**Signaling by a tyrosine-sulfated peptide balances growth and osmotic stress response in rice**<br>
+Yejin Shim, Ellen Y Rim, Jin C-Y Liao, Myeong-Je Cho, George Austin, Patrick W Carlos, Sameer S Kulkarni, Richard J Payne, Maria Florencia Ercoli, Pamela C Ronald<br>
+[**2026**-10-1] >> [Proc Natl Acad Sci U S A](https://doi.org/10.1073/pnas.2622107123) • [PubMed](https://pubmed.ncbi.nlm.nih.gov/42821350/) • Plant Peptides
+
+<details>
+<summary>🔎 Abstract</summary>
+<p>Genetic and transcriptomic experiments identify rice OsPSY8 sulfated-peptide signaling as a regulator of the balance between root growth and osmotic-stress adaptation.</p>
+</details>
+
+**Positive modulation of glucagon-like peptide 1 (GLP-1) receptor by endogenous haemorphins with implications in glucose metabolism and diabetes**<br>
+Farheen Badrealam Khan, Rwdah Mohamed Alameri, Yasir S Raouf, Damien Maurel, Naiem Ahmad Wani, Anatoliy Shmygol, Irfa Anwar, Heng B See, Elizabeth K M Johnstone, Elodie Dupuis, Eric Trinquet, Kevin D G Pfleger, Emilia Oueis, Mohammed Akli Ayoub<br>
+[**2026**-9-29] >> [Br J Pharmacol](https://doi.org/10.1111/bph.70677) • [PubMed](https://pubmed.ncbi.nlm.nih.gov/42811773/) • Binding/Metabolism
+
+<details>
+<summary>🔎 Abstract</summary>
+<p>Endogenous LVV-haemorphin 7 modulates GLP-1 receptor signaling in cellular models, with functional assays and computational binding analysis supporting a peptide-dependent mechanism.</p>
+</details>
+
+**Structural and functional basis of antinociceptive action of χ-conotoxin AoIA at the noradrenaline transporter**<br>
+Oliver J. V. Belleza, Heng Zhang, Helmut Schmidhammer, Tye I. Gonzalez, Cosmin I. Ciotu, Nataša Tomašević, Carlo Martin M. Ocampo, Jomari C. Fernando, Johannes Koehbach, Paula Schwarz, Mounaf Al Makhlouf, Gabor Tajti, Simon Hasinger, Nina Kastner, Orcun Avsar, Bernhard Retzl, Kathrin Jäntsch, Yi Jiang, Roland Hellinger, Michael J. M. Fischer, K. Johan Rosengren, Christian W. Gruber, Aaron Joseph L. Villaraza, Thomas Stockner, Mariana Spetea, H. Eric Xu and Harald H. Sitte<br>
+[**2026**-7-21] >> [Nat Struct Mol Biol](https://doi.org/10.1038/s41594-026-01838-z) • Conotoxin/Cryo-EM/NMR/Neuroscience
+
+<details>
+<summary>🔎 Abstract</summary>
+<p>Pharmacological and structural studies characterize conotoxin AoIA inhibition of the noradrenaline transporter and antinociceptive activity in a mouse inflammatory-pain model.</p>
+</details>
+
+
 ## 8. Delivery & Biomaterials
+
+### 8.1 Delivery & Formulation
+
+**Computationally Guided Engineering of Short Peptides for Targeted RNA-Loaded pBAE Nanoparticles**<br>
+Vladimir Stamenković, Mislav Brajković, Coral Garcia-Fernandez, Salvador Borrós, Xevi Biarnés, Cristina Fornaguera<br>
+[**2026**-10-2] >> [ACS Biomater Sci Eng](https://doi.org/10.1021/acsbiomaterials.6c00945) • [PubMed](https://pubmed.ncbi.nlm.nih.gov/42826497/) • Delivery/Bioconjugation/mRNA
+
+<details>
+<summary>🔎 Abstract</summary>
+<p>Computationally selected short targeting peptides are conjugated to RNA-loaded polymeric nanoparticles; peptide orientation and sequence are evaluated for transfection in a human monocytic cell model.</p>
+</details>
+
+
+### 8.2 Self-Assembly & Hydrogels
+
+**An agent-guided peptide hydrogel bio-stabilizer clamps pericellular viscoelastic drift**<br>
+Xiao Wei, Liqiang Zhang, Zhuo Chang, Fan Ding, Ziyan Qu, Jianghao Chen, Guangkui Xu, Wangxiao He, Wenjia Liu<br>
+[**2026**-7-27] >> [Nat Commun](https://doi.org/10.1038/s41467-026-76070-w) • [PubMed](https://pubmed.ncbi.nlm.nih.gov/42649183/) • Pipeline/Hydrogel
+
+<details>
+<summary>🔎 Abstract</summary>
+<p>A rule-based agent workflow designs ViscoClamp peptide hydrogels to stabilize glycation-driven pericellular mechanics and support bone repair in animal models.</p>
+</details>
+
+
+### 8.3 Materials & Biosensing
+
+**A self-assembled peptide forms α-helical nanopores for ultrasensitive biomarker profiling**<br>
+Varsha Shaji, Rajeev Jain, Neethu Puthumadathil, Kalyanashis Jana, Vedasmiritha T S, Ulrich Kleinekathöfer, Krishnananda Chattopadhyay, Kozhinjampara R Mahendran<br>
+[**2026**-8-28] >> [Nat Nanotechnol](https://doi.org/10.1038/s41565-026-02265-3) • [PubMed](https://pubmed.ncbi.nlm.nih.gov/42665653/) • Self-Assembly/Noncanonical
+
+<details>
+<summary>🔎 Abstract</summary>
+<p>Peptide-based alpha-helical nanopores with engineered diameters enable single-molecule biomarker sensing and distinguish heterogeneous protein assemblies.</p>
+</details>
+
 
 ## 9. Applications & Tools
 
 ### 9.1 Software & Webservers
+
+**PeptiVerse: A unified platform for therapeutic peptide property prediction**<br>
+Yinuo Zhang, Sophia Tang, Tong Chen, Elizabeth Mahood, Sophia Vincoff, Pranam Chatterjee<br>
+[**2026**-7-16] >> [Nat Commun](https://doi.org/10.1038/s41467-026-74167-w) • high • [PubMed](https://pubmed.ncbi.nlm.nih.gov/42463657/) • PLM/ESM/Noncanonical/Permeability
+
+<details>
+<summary>🔎 Abstract</summary>
+<p>PeptiVerse supports therapeutic peptide property evaluation from amino acid sequences or chemically modified peptide SMILES using pretrained representations and task-specific predictors.</p>
+</details>
+
+**CABS-flex standalone 3: an open command-line platform for protein flexibility simulation, peptide structure modeling, and protein-peptide docking**<br>
+Chandran Nithin, Karol Wroblewski, Piotr Szukalo, Ayomide Fasemire, Aleksander Kuriata, Mateusz Kurcinski, Andrzej Kolinski, Sebastian Kmiecik<br>
+[**2026**-06-23] >> [arXiv](https://doi.org/10.48550/arxiv.2606.24487) • [GitHub](https://github.com/LCBio/CABSflex_standalone) • Docking/AI/Cyclic
+
+<details>
+<summary>🔎 Abstract</summary>
+<p>Preprint: CABS-flex standalone 3 integrates coarse-grained flexibility simulation, peptide structure modeling, flexible docking and all-atom reconstruction in a Python command-line package.</p>
+</details>
 
 **PEP-EDIT: a web server for the 3D generation and interactive editing of complex peptides**<br>
 Nicolas Chevrollier, Alexis Dougha, Celine Ye, Dirk Stratmann, Gautier Moroy, Julien Rey, Samuel Murail and Pierre Tufféry<br>
@@ -719,6 +1331,24 @@ Liu Yang, Suqi Cao, Lei Liu, Ruixin Zhu and Dingfeng Wu<br>
 
 
 ### 9.2 Screening & Discovery
+
+**NMR-Guided Fragment Screening Identifies Privileged Noncanonical Amino Acids for mRNA Display**<br>
+Abdul J Castillo, Clark A Jones, Alba C Dutra, Chelsea A Makovsky, Sandeep Lohan, Bipasana Shakya, Sara H Walters, Brian Fuglestad, Matthew C T Hartman<br>
+[**2026**-9-28] >> [Chembiochem](https://doi.org/10.1002/cbic.70540) • [PubMed](https://pubmed.ncbi.nlm.nih.gov/42775911/) • NMR/Screening/Noncanonical/mRNA
+
+<details>
+<summary>🔎 Abstract</summary>
+<p>NMR-guided fragment screening identifies noncanonical tryptophan monomers for mRNA display and tests their translation compatibility and improved MDM2-binding enrichment.</p>
+</details>
+
+**Integrated abundance analysis and artificial intelligence-assisted screening reveal novel antihypertensive milk-derived tripeptides**<br>
+Chiao-Che Chen, Yun-Jhu Hou, Hsin-Yi Lo, Mei-Li Stevens, Chien-Yun Hsiang, Tin-Yun Ho<br>
+[**2026**-9-22] >> [Food Chem](https://doi.org/10.1016/j.foodchem.2026.151275) • [PubMed](https://pubmed.ncbi.nlm.nih.gov/42785031/) • AI/Screening/Metabolism
+
+<details>
+<summary>🔎 Abstract</summary>
+<p>An integrated computational-experimental workflow prioritizes milk-derived tripeptides and evaluates antihypertensive activity in spontaneously hypertensive rats.</p>
+</details>
 
 **High-Throughput Identification and Characterization of LptDE-Binding Bicycle Peptides Using Phage Display and Cryo-EM**<br>
 Shenaz Allyjaun, Emily Dunbar, Steven W. Hardwick, Sarah Newell, Finn Holding, Catherine E Rowland, Megan A. St. Denis, Simone Pellegrino, Gustavo Arruda Bezerra, Nikolaos Bournakas, Dimitri Y. Chirgadze, Lee Cooper, Giulia Paris, Nick Lewis, Peter Brown, Michael J. Skynner, Michael J Dawson, Paul Beswick, Julia Hubbard, Bert van den Berg and Hector Newman<br>
@@ -763,13 +1393,25 @@ Martin Pacesa, Lennart Nickel, ..., Sergey Ovchinnikov, Bruno E. Correia<br>
 
 ### 9.5 Chemical Biology & Modalities
 
+**A Top-Down Design Approach for Generating a Peptide PROTAC Drug Targeting Androgen Receptor for Androgenetic Alopecia Therapy**<br>
+Bohan Ma, Donghua Liu, Zhe Wang, Dize Zhang, Yanlin Jian, et. al.<br>
+[**2024**-6-5] >> [JMC](https://doi.org/10.1021/acs.jmedchem.4c00828) • [公众号](https://mp.weixin.qq.com/s/xeJWFVcV5LkIlVJ1Zxf5Eg) • PROTAC
+
 **The RaPID Platform for the Discovery of Pseudo-Natural Macrocyclic Peptides**<br>
 Yuki Goto & Hiroaki Suga<br>
 [**2021**-9-10] >> [Acc. Chem. Res.](https://doi.org/10.1021/acs.accounts.1c00391) • RaPID/Cyclic/[Hiroaki Suga](https://www.chem.s.u-tokyo.ac.jp/users/bioorg/English/member/Suga.html)/mRNA
 
-**A Top-Down Design Approach for Generating a Peptide PROTAC Drug Targeting Androgen Receptor for Androgenetic Alopecia Therapy**<br>
-Bohan Ma, Donghua Liu, Zhe Wang, Dize Zhang, Yanlin Jian, et. al.<br>
-[**2021**-6-5] >> [JMC](https://doi.org/10.1021/acs.jmedchem.4c00828) • [公众号](https://mp.weixin.qq.com/s/xeJWFVcV5LkIlVJ1Zxf5Eg) • PROTAC
+
+### 9.6 Oncology
+
+**Self-Assembling Peptide-Adjuvant Conjugate (SaPAC) Platform for Precision Cancer Immunotherapy**<br>
+Yang-Fan Wu, Jing-Chu Hu, Ye-Fan Hu, Wen-Jun Li, Li Rong, Ren-Hao Li, Yuan Yao, Lehan Hu, Xiao-Lei Wang, Bao-Zhong Zhang, Yicheng Lu, Shing-Fung Chow, Canhui Su, Thomas Yau, Clive Yik-Sham Chung, Jian-Dong Huang<br>
+[**2026**-10-2] >> [Adv Sci (Weinh)](https://doi.org/10.1002/advs.77632) • [PubMed](https://pubmed.ncbi.nlm.nih.gov/42827008/) • Bioconjugation/Self-Assembly/Immunology/Oncology
+
+<details>
+<summary>🔎 Abstract</summary>
+<p>The SaPAC peptide-adjuvant conjugate platform forms nanoparticles that enhance antigen presentation and antitumor immune responses in mouse cancer models.</p>
+</details>
 
 
 ## Contribution
