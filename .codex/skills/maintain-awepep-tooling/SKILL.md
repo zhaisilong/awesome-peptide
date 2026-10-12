@@ -44,7 +44,7 @@ For package, generator, or validation changes:
 
 1. Identify whether the task affects generation, validation, packaging, documentation, or all of them.
 2. Read the affected implementation before editing. Generation lives in `paper.py` and `template.py`; API discovery in `discovery.py` and `crossref.py`; snapshots in `metadata.py`; schema/tag checks in `check.py`, `config.py` and `tags.py`.
-3. Preserve the CSV schema and generated Markdown shape unless the user asks for a migration.
+3. Preserve active CSV schemas and generated Markdown shape unless the user asks for a migration. Keep archived records separate from generation and active statistics.
 4. If changing templates or generation order, regenerate `README.md` and inspect the diff for unintended content loss.
 5. If changing validation logic, test both passing data and at least one failing condition when practical.
 6. Keep unrelated paper metadata changes out of tooling fixes.
@@ -56,7 +56,9 @@ For package, generator, or validation changes:
 - License metadata should stay aligned with the GPLv3 `LICENSE` file.
 - `awepep.check.main` should raise validation errors so CI fails on invalid data.
 - Verify installed CLI entrypoints actually parse new flags, not just module invocations.
-- Keep discovery non-mutating. Report API errors and truncation; use bounded retries and no scheduled paper-adding workflow.
+- Keep discovery non-mutating and paper-read-only by default. External discovery is explicit and AIDD-focused; the curation skill caps independent accepted additions at three per run. Paper-read ingestion must not reject older publication dates.
+- Active publication identities are formal DOIs or official stable HTTPS URLs; preserve identifying query parameters. Reject ordinary preprint citations in active data, but allow and validate them in the archive. Do not add URL keys or bibliographic fields to the minimal DOI table/snapshot format.
+- Report API errors and truncation; use bounded retries and no scheduled paper-adding workflow.
 - Test offline generation with the network disabled by mocks, snapshot misses, refresh fallback, partial/future dates, false flags, subsection order and heading anchors.
 
 ## Guardrails

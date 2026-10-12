@@ -5,6 +5,7 @@ Use this reference before editing `README.md`, `awepep/template.py`, or `awepep/
 ## Source Of Truth
 
 - Paper entries come from `data/paper.csv` and minimal `data/paper-read.csv` rows enriched by the tracked metadata snapshot.
+- `data/paper-archive.csv` is linked from the header, never rendered into active paper sections or recent/pinned lists.
 - Chapter 0 content comes from `DATABASE.md`.
 - Header, table of contents, paper formatting, cover image, contribution text, related links, and citations come from `awepep/template.py`.
 - Generation orchestration comes from `awepep/paper.py`.
@@ -40,6 +41,8 @@ Check for:
 - Markdown escaping or CSV quoting mistakes rendered into the README.
 - Section/subsection order that differs from config, including mixed publication dates.
 - Future publications incorrectly appearing in the recent section.
+- Archived preprints leaking into active lists or formal publications still pointing at a preprint citation.
+- Broken local asset links after directory moves; shared images/PDFs live in `assets/`.
 - Partial dates converted into invented January 1 dates or actual false pinned flags treated as true.
 - Chapter 0 papers duplicated outside the canonical CSV list.
 

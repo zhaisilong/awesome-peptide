@@ -3,13 +3,13 @@ from liquid import Template
 header = Template("""# Awesome Peptide
 
 ⚠️ Note: My PhD research keeps me very busy, so this repository may not be updated frequently. For the latest domain-specific updates, please follow our WeChat Official Account (公众号) [MolAstra](https://mp.weixin.qq.com/s/PI_3E2NzZWBGy95hpFmhHQ) and Our [Paper Reading Project](https://paper.molastra.org).
-Updates are curated on demand with help from Codex agents.
+Updates are curated on demand with help from Codex agents, primarily from our owner-maintained [paper-read library](https://paper.molastra.org).
 
 🔬 **Curated peptide research across design, computation, synthesis, biology, delivery, biomaterials, and therapeutic applications.**
 
 [![Awesome](https://awesome.re/badge.svg)](https://awesome.re) [![stars](https://badgen.net/github/stars/zhaisilong/awesome-peptide)](https://github.com/zhaisilong/awesome-peptide/stargazers)
 
-🤖 With help from Codex agents, paper discovery, metadata verification, classification, and validation are partially automated. Papers are curated from paper-read, Crossref, PubMed, arXiv, and primary sources; committed metadata snapshots make README generation reproducible offline.
+🤖 With help from Codex agents, note scanning, metadata verification, classification, and validation are partially automated. Paper-read is our primary source across computational and experimental peptide research; independent discovery adds at most three papers per run, primarily in AI-assisted drug discovery. We collect verified journal and conference publications and credible institutional technical reports, not ordinary preprints. Crossref, PubMed, and official publication sources support verification; tracked metadata snapshots make README generation reproducible offline.
 
 🔗 Link directly to <a href="#contents">Contents</a>, <a href="#citations">Citations</a>
 
@@ -19,7 +19,7 @@ Updates are curated on demand with help from Codex agents.
 2. Easy Navigation: Internal links for quick jumps between sections and papers.
 3. Expert Insights: Links to expert reviews and analysis.
 4. Tag System: Quickly catch the paper features
-5. CSV Downloads: [curated papers](data/paper.csv) and [paper-read papers](data/paper-read.csv).
+5. CSV Downloads: [curated papers](data/paper.csv), [paper-read papers](data/paper-read.csv), and the [historical preprint archive](data/paper-archive.csv).
 6. Automation: Use [Liquid](https://liquid.readthedocs.io/en/latest/) templates to generate Markdown from `CSV`, making it easy to build your own paper repository. >>> [[Details](CONTRIBUTING.md)]
 """)
 
@@ -89,7 +89,7 @@ fig = Template("""---
 
 <p align="center">
   <a href="https://doi.org/10.1038/s41586-023-05909-9">
-  <img src="cover.png" alt="deep learning for peptides">
+  <img src="assets/cover.png" alt="deep learning for peptides">
   </a>
 </p>
 """)

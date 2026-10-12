@@ -2,13 +2,15 @@
 
 ## Evidence And Scope
 
-Include experimental and computational peptide research; skip incidental mentions in generic protein/drug-discovery papers. Use notes as discovery leads, then verify against DOI/publisher pages, Crossref, PubMed, arXiv or official project sources. The shared `awepep.discovery` module searches multiple providers, paces requests, retries transient failures twice and reports failures/truncation.
+Use the owner's paper-read library first, accepting relevant experimental and computational peptide research after bibliographic verification. Independently discovered supplements are AIDD-focused, at most three accepted papers per run across all providers; exceptional purely experimental work needs a stated significance rationale. Skip incidental mentions in generic protein/drug-discovery papers. Verify using official publisher/proceedings/institutional sources and Crossref/PubMed. API enrichment is verification, not an independent-discovery addition.
 
-A precise publication window requires a verified day. Preserve partial dates in the source table when that is all the evidence supports; registration, acceptance and note dates are not publication dates. Preprints use the initial submission date and an explicit arXiv venue. Do not imply peer review.
+Require formal journal/conference publication or a credible institutional technical report. Ordinary arXiv/bioRxiv preprints are not eligible; archive existing unresolved preprints after checking for a formal version. An official preprint mirror is not proof of formal publication or a technical-report designation.
+
+A precise external publication window requires a verified day. Paper-read ingestion has no lower publication-date cutoff and accepts verified partial dates. Preserve date precision; registration, acceptance and note dates are not publication dates.
 
 ## CSV Rules
 
-Schemas and field order live in `awepep.paper.PAPER_COLUMNS` and `PAPER_READ_COLUMNS`, also documented in CONTRIBUTING. Main entries require title, section, subsection, authors, Markdown DOI publication link and date. Optional unknown fields stay blank. Paper-read entries require DOI and the agent-selected section/subsection; source/title/resource links are optional.
+Schemas and field order live in `awepep.paper.PAPER_COLUMNS`, `PAPER_READ_COLUMNS` and `ARCHIVE_COLUMNS`, also documented in CONTRIBUTING. Main entries require title, section, subsection, authors, Markdown formal DOI or official stable HTTPS publication link and date. A DOI-less conference/report needs primary evidence for its venue, authors/institution and publication date. Store it in the main table, retaining its note source in `blogs` when applicable. Optional unknown fields stay blank. Minimal paper-read entries require a formal DOI and the agent-selected section/subsection.
 
 Use `[Journal](https://doi.org/10.xxxx/example)` and short Markdown labels for code/dataset/blog links. A resource must be explicitly provided by an author or primary source, not inferred from a similarly named repository. The row draft helper prints a schema-correct main CSV row without writing:
 `python .codex/skills/curate-peptide-papers/scripts/draft_paper_row.py --help`.
@@ -39,4 +41,4 @@ Use concise factual abstract summaries. Distinguish predicted efficacy from expe
 
 ## Acceptance Checklist
 
-Check DOI and normalized-title duplicates across both tables, including preprint/journal relationships. Review provider failures and truncated searches. Run `awe-check`, strict tag audit and tests, refresh missing snapshots, regenerate offline, and inspect output. Keep accepted, duplicate, outside-window, ambiguous and missing-evidence counts distinct in the final report.
+Check normalized DOI/official URL and title duplicates across active tables and preprint/formal relationships with the archive. Review provider failures and truncated searches. Run `awe-check`, strict tag audit and tests, refresh missing snapshots, regenerate offline, and inspect output. Report paper-read additions, independent supplements, version upgrades, archives and unresolved cases separately with their primary evidence.

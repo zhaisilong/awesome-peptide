@@ -16,7 +16,8 @@ import xml.etree.ElementTree as ET
 from awepep import check, config, crossref, discovery, utils
 from awepep.metadata import MetadataStore
 from awepep.main import cli
-from awepep.paper import PAPER_COLUMNS, PAPER_READ_COLUMNS, PaperList
+from awepep.paper import ARCHIVE_COLUMNS, PAPER_COLUMNS, PAPER_READ_COLUMNS, PaperList
+from awepep.publications import normalize_url, publication_keys
 
 
 def metadata(title="A peptide study", published="2026-7-15"):
@@ -152,6 +153,192 @@ class DatesAndMetadataTests(unittest.TestCase):
 
 
 class DiscoveryTests(unittest.TestCase):
+    def test_formal_upgrade_preserves_preprint_identity_for_deduplication(self):
+        with tempfile.TemporaryDirectory() as directory:
+            root = Path(directory)
+            (root / "note.md").write_text(
+                "# Peptide design\nhttps://arxiv.org/abs/2501.12345\n", encoding="utf-8"
+            )
+            main = root / "paper.csv"
+            main.write_text(
+                "title,publications,blogs\nPeptide design,[ICML](https://proceedings.mlr.press/v267/formal.html),[Preprint](https://doi.org/10.48550/arxiv.2501.12345)\n",
+                encoding="utf-8",
+            )
+            self.assertTrue(
+                discovery.note_candidates(root, [main])[0]["already_in_awesome"]
+            )
+
+    def test_archived_preprint_with_new_official_url_can_be_reviewed(self):
+        with tempfile.TemporaryDirectory() as directory:
+            root = Path(directory)
+            note = root / "paper.md"
+            note.write_text(
+                "# Peptide design\nhttps://arxiv.org/abs/2501.12345\nhttps://proceedings.mlr.press/v267/formal.html\n",
+                encoding="utf-8",
+            )
+            archive = root / "archive.csv"
+            archive.write_text(
+                "doi,title\n10.48550/arxiv.2501.12345,Peptide design\n",
+                encoding="utf-8",
+            )
+            item = discovery.note_candidates(root, [], archive_path=archive)[0]
+            self.assertFalse(item["archived_preprint"])
+            self.assertTrue(item["has_formal_identifier"])
+            self.assertEqual(
+                item["publication_url"],
+                "https://proceedings.mlr.press/v267/formal.html",
+            )
+            report = discovery.discover(
+                None, "2026-10-12", ["paper-read"], 10, root, [], archive_path=archive
+            )
+            self.assertEqual(
+                report["candidates"][0]["status"], "needs_formal_publication"
+            )
+
+    def test_note_paths_with_spaces_or_repo_sources_deduplicate(self):
+        with tempfile.TemporaryDirectory() as directory:
+            root = Path(directory)
+            (root / "note.md").write_text(
+                '---\n{"permalink":"/AI Peptides/"}\n---\n# Peptide design\nhttps://doi.org/10.1234/new\n',
+                encoding="utf-8",
+            )
+            source = root / "papers.csv"
+            source.write_text(
+                "doi,title,source\n10.1234/formal,Formal peptide study,/AI Peptides/\n",
+                encoding="utf-8",
+            )
+            item = discovery.note_candidates(root, [source])[0]
+            self.assertTrue(item["already_in_awesome"])
+            self.assertEqual(
+                item["source_urls"], ["https://paper.molastra.org/AI%20Peptides/"]
+            )
+            self.assertEqual(
+                PaperList.source_to_blog("src/site/notes/AI Peptides.md"),
+                "[paper-read](https://github.com/zhaisilong/paper-read/blob/main/src/site/notes/AI%20Peptides.md)",
+            )
+
+    def test_paper_read_keeps_old_partial_dates_and_uses_no_external_discovery(self):
+        with tempfile.TemporaryDirectory() as directory:
+            root = Path(directory)
+            (root / "old.md").write_text(
+                "# An old peptide study\nhttps://doi.org/10.1234/old\n",
+                encoding="utf-8",
+            )
+            with (
+                patch.object(
+                    crossref,
+                    "metadata_for_doi",
+                    return_value=metadata(published="2020-7"),
+                ),
+                patch.object(
+                    discovery,
+                    "crossref_candidates",
+                    side_effect=AssertionError("external discovery forbidden"),
+                ),
+                patch.object(
+                    discovery,
+                    "pubmed_candidates",
+                    side_effect=AssertionError("external discovery forbidden"),
+                ),
+            ):
+                report = discovery.discover(
+                    "2026-06-16", "2026-10-12", ["paper-read"], 10, root, []
+                )
+            self.assertEqual(report["candidates"][0]["status"], "candidate")
+            self.assertEqual(report["candidates"][0]["publish_date"], "2020-7")
+            self.assertEqual(
+                [status["source"] for status in report["source_status"]], ["paper-read"]
+            )
+
+    def test_discovery_cli_defaults_and_explicit_external_window(self):
+        with tempfile.TemporaryDirectory() as directory:
+            report = {
+                "since": None,
+                "until": "2026-10-12",
+                "source_status": [],
+                "candidates": [],
+            }
+            with (
+                patch.object(sys, "argv", ["awe-discover", "--notes-root", directory]),
+                patch.object(discovery, "discover", return_value=report) as discover,
+                patch.object(discovery, "write_report"),
+                redirect_stdout(StringIO()),
+            ):
+                discovery.main()
+            self.assertIsNone(discover.call_args.args[0])
+            self.assertEqual(discover.call_args.args[2], ["paper-read"])
+        for sources in (["arxiv"], ["crossref"], ["pubmed"]):
+            with self.assertRaises(ValueError):
+                discovery.discover(None, "2026-10-12", sources, 10, Path("missing"), [])
+
+    def test_archived_preprints_skip_enrichment_but_formal_versions_remain_eligible(
+        self,
+    ):
+        with tempfile.TemporaryDirectory() as directory:
+            root = Path(directory)
+            notes = root / "notes"
+            notes.mkdir()
+            note = notes / "preprint.md"
+            note.write_text(
+                "# Peptide design\nhttps://arxiv.org/abs/2501.12345\n", encoding="utf-8"
+            )
+            archived = root / "paper-archive.csv"
+            archived.write_text(
+                "publications,title\n[arXiv](https://doi.org/10.48550/arxiv.2501.12345),Peptide design\n",
+                encoding="utf-8",
+            )
+            with patch.object(
+                crossref,
+                "metadata_for_doi",
+                side_effect=AssertionError("preprint lookup forbidden"),
+            ):
+                report = discovery.discover(
+                    None,
+                    "2026-10-12",
+                    ["paper-read"],
+                    10,
+                    notes,
+                    [],
+                    archive_path=archived,
+                )
+                self.assertEqual(report["candidates"], [])
+                self.assertEqual(report["source_status"][0]["archived_preprints"], 1)
+                item = {"doi": "10.48550/arxiv.2501.12345", "title": "Peptide design"}
+                self.assertIs(discovery.enrich_note(item), item)
+            note.write_text(
+                "# Peptide design\nhttps://doi.org/10.1234/formal\nhttps://arxiv.org/abs/2501.12345\n",
+                encoding="utf-8",
+            )
+            with patch.object(crossref, "metadata_for_doi", return_value=metadata()):
+                report = discovery.discover(
+                    None,
+                    "2026-10-12",
+                    ["paper-read"],
+                    10,
+                    notes,
+                    [],
+                    archive_path=archived,
+                )
+            self.assertEqual(report["candidates"][0]["status"], "candidate")
+
+    def test_official_url_note_is_deduplicated_after_preprint_upgrade(self):
+        with tempfile.TemporaryDirectory() as directory:
+            root = Path(directory)
+            (root / "new.md").write_text(
+                '---\n{"permalink":"/peptide/"}\n---\n# Peptide design\nhttps://arxiv.org/abs/2501.12345\n',
+                encoding="utf-8",
+            )
+            main = root / "papers.csv"
+            main.write_text(
+                "publications,blogs,title\n[ICML](https://proceedings.mlr.press/v267/study.html),[paper-read](https://paper.molastra.org/peptide/),Peptide design\n",
+                encoding="utf-8",
+            )
+            self.assertTrue(
+                discovery.note_candidates(root, [main])[0]["already_in_awesome"]
+            )
+            keys, _ = discovery.existing_entries([main])
+            self.assertIn("https://proceedings.mlr.press/v267/study.html", keys)
+
     def test_tag_audit_does_not_equate_all_simulation_with_md(self):
         audit = runpy.run_path(
             str(
@@ -304,6 +491,131 @@ class DiscoveryTests(unittest.TestCase):
 
 
 class GenerationTests(unittest.TestCase):
+    def test_required_fields_reject_normalized_csv_blanks(self):
+        for value in (False, "", "   "):
+            with self.subTest(value=value), self.assertRaises(ValueError):
+                check.check_required_fields(
+                    {"archive_reason": value}, ["archive_reason"]
+                )
+
+    def test_official_urls_and_preprint_policy(self):
+        self.assertEqual(
+            publication_keys(
+                "[ICLR](https://OpenReview.net/forum?id=paper#discussion)"
+            ),
+            ["https://openreview.net/forum?id=paper"],
+        )
+        self.assertNotEqual(
+            normalize_url("https://openreview.net/forum?id=one"),
+            normalize_url("https://openreview.net/forum?id=two"),
+        )
+        self.assertEqual(
+            publication_keys("[Journal](https://doi.org/10.1234/NEW)"), ["10.1234/new"]
+        )
+        for value in (
+            "[ICML](http://proceedings.mlr.press/paper.html)",
+            "[Report](https://example.org:bad/report)",
+            "[Report](https://user:password@example.org/report)",
+            "[Report](https://example.org/not a url)",
+            "https://example.org/no-markdown",
+            "[arXiv](https://doi.org/10.48550/arxiv.2501.12345)",
+            "[bioRxiv](https://doi.org/10.1101/2025.01.01.123456)",
+            "[Report](https://www.biorxiv.org/content/paper)",
+        ):
+            with self.subTest(value=value), self.assertRaises(ValueError):
+                publication_keys(value)
+        self.assertEqual(
+            publication_keys(
+                "[arXiv](https://doi.org/10.48550/arxiv.2501.12345)",
+                allow_preprints=True,
+            ),
+            ["10.48550/arxiv.2501.12345"],
+        )
+
+    def test_archive_validation_and_exclusion_from_rendering_and_stats(self):
+        with tempfile.TemporaryDirectory() as directory:
+            root = Path(directory)
+            row = {
+                **dict.fromkeys(PAPER_COLUMNS, ""),
+                **metadata(),
+                "sec": "Peptide Design & Generation",
+                "subsec": "Sequence-Based Design",
+            }
+            main = root / "paper.csv"
+            archive = root / "paper-archive.csv"
+            with main.open("w", newline="", encoding="utf-8") as handle:
+                writer = csv.DictWriter(handle, fieldnames=PAPER_COLUMNS)
+                writer.writeheader()
+                writer.writerow(row)
+            archived = {
+                **row,
+                "title": "Archived peptide preprint",
+                "pined": "true",
+                "publications": "[arXiv](https://doi.org/10.48550/arxiv.2501.12345)",
+                "archived_at": "2026-10-12",
+                "archive_reason": "No verified formal version",
+            }
+            with archive.open("w", newline="", encoding="utf-8") as handle:
+                writer = csv.DictWriter(handle, fieldnames=ARCHIVE_COLUMNS)
+                writer.writeheader()
+                writer.writerow(archived)
+            with redirect_stdout(StringIO()) as output:
+                check.main(str(main), str(root / "missing.csv"))
+            self.assertIn("Pinned count (non-False): 0", output.getvalue())
+            self.assertIn("1 archived records", output.getvalue())
+            with patch.object(PaperList, "load_data_part", return_value=""):
+                md = PaperList(
+                    str(main), str(root / "missing.csv"), offline=True
+                ).get_md(write=False, as_of="2026-10-12")
+            self.assertNotIn("Archived peptide preprint", md)
+            self.assertIn("data/paper-archive.csv", md)
+            with self.assertRaises(ValueError), redirect_stdout(StringIO()):
+                check.validate_main_csv(archive, set())
+            self.assertEqual(
+                archive.read_text(encoding="utf-8").count("Archived peptide preprint"),
+                1,
+            )
+
+    def test_row_draft_preserves_partial_dates_and_supports_reports(self):
+        draft = runpy.run_path(
+            str(
+                Path(__file__).resolve().parents[1]
+                / ".codex/skills/curate-peptide-papers/scripts/draft_paper_row.py"
+            )
+        )
+        self.assertEqual(draft["validate_date"]("2025-07"), "2025-7")
+        self.assertEqual(draft["validate_date"]("2025"), "2025")
+        with self.assertRaises(ValueError):
+            draft["validate_date"]("2025-2-29")
+        with (
+            patch.object(
+                sys,
+                "argv",
+                [
+                    "draft",
+                    "--title",
+                    "Peptide report",
+                    "--authors",
+                    "Research Institute",
+                    "--venue",
+                    "Technical Report",
+                    "--publication-url",
+                    "https://example.org/report",
+                    "--sec",
+                    "Peptide Design & Generation",
+                    "--subsec",
+                    "Sequence-Based Design",
+                    "--publish-date",
+                    "2025",
+                ],
+            ),
+            redirect_stdout(StringIO()) as output,
+        ):
+            self.assertEqual(draft["main"](), 0)
+        self.assertIn(
+            "[Technical Report](https://example.org/report)", output.getvalue()
+        )
+
     def test_console_entrypoint_parses_generation_flags(self):
         with (
             patch("awepep.main.PaperList") as papers,

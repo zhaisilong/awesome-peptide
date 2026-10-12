@@ -1,5 +1,26 @@
 # Changelog
 
+## [Unreleased]
+
+## [1.5.0] - 2026-10-12
+
+### Changed
+
+- Prioritize the owner-maintained paper-read library, including historical peptide publications; limit independent AIDD-focused supplements to at most three accepted papers per run.
+- Default discovery to paper-read only, require explicit dated Crossref/PubMed discovery, and remove the arXiv discovery provider while retaining historical metadata lookup.
+- Verify and update 17 historical preprint citations to journal, conference/workshop, or institutional technical-report versions; label workshops explicitly and preserve original preprint/source links.
+- Archive nine records without verified formal publication in `data/paper-archive.csv`, retaining their metadata and excluding them from active generation and statistics.
+- Supplement paper-read curation with LassoESM (2025) and the MHC antigen-presentation review (2011); the active list contains 112 papers, with nine additional archived records.
+- Consolidate the cover image and linked reference PDF under `assets/`, remove the unused agent configuration example, and keep both local Skills tracked with the project.
+- Set package version and bibliographic request User-Agent to `1.5.0`.
+
+### Fixed
+
+- Accept official stable HTTPS publication links for DOI-less formal papers, preserving identifying query parameters and checking normalized DOI/URL duplicates.
+- Stop recent publication windows from excluding older paper-read publications, and prevent archived preprints from blocking verified formal upgrades.
+- Reject ordinary preprint publication links in active data; validate archive schemas, reasons, dates and canonical tags separately.
+- Encode spaces and non-ASCII paths in paper-read source links, and reject missing required metadata fields after CSV blank normalization.
+
 ## [1.4.0] - 2026-10-03
 
 ### Added

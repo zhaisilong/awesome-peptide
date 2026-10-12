@@ -1,4 +1,4 @@
 interface:
   display_name: "Peptide Paper Curator"
-  short_description: "Discover and curate broad peptide research"
-  default_prompt: "Use $curate-peptide-papers to discover peptide research on demand, verify primary sources, classify accepted papers and validate offline README generation."
+  short_description: "Curate paper-read first, verify formal publications"
+  default_prompt: "Use $curate-peptide-papers to prioritize updated paper-read notes, verify formal publication, classify and tag accepted papers, archive unpublished preprints, and validate offline generation. Keep independent AIDD-focused supplements to at most three accepted papers per run."

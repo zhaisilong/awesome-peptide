@@ -12,6 +12,7 @@ Use this reference before changing package code, packaging metadata, validation 
 - `awepep/config.py`: taxonomy, linked tags, pinned/recent settings.
 - `awepep/discovery.py`: multi-provider discovery, deduplication and coverage reports.
 - `awepep/crossref.py`: shared paced requests and bibliographic parsing.
+- `awepep/publications.py`: DOI/official URL identities and preprint checks shared by validation and discovery.
 - `awepep/metadata.py`: versioned snapshots, refresh and offline modes.
 - `tests/test_workflow.py`: isolated API, cache, validation and rendering regressions.
 - `CONTRIBUTING.md`: contributor setup commands.
@@ -24,7 +25,9 @@ Use this reference before changing package code, packaging metadata, validation 
 - Generated header drift is easy to reintroduce; keep the README top note in `awepep/template.py`.
 - Keep package license metadata aligned with the GPLv3 `LICENSE` file.
 - Keep validation errors uncaught in `awepep.check.main` so CI receives a nonzero exit code.
-- The checker requires every `publications` field to contain a DOI-like Markdown link.
+- The checker requires a Markdown formal DOI or stable HTTPS publication link. Official venue/report status is an editorial primary-source check, not something a URL format test can establish.
+- Validate `data/paper-archive.csv` separately; archive dates/reasons are mandatory and archives do not affect active statistics or pinned limits.
+- Default discovery uses paper-read only, without a lower publication-date cutoff. Explicit Crossref/PubMed discovery requires `--since`; no arXiv discovery source remains. Archived preprint identifiers must not permanently blacklist their later formal versions.
 
 ## Change Guidelines
 

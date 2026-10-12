@@ -15,9 +15,17 @@ from awepep.discovery import KEYWORDS, enrich_note, keyword_hits, note_candidate
 
 
 def scan(
-    notes_root, csv_paths, keywords=KEYWORDS, enrich_crossref=False, crossref_timeout=20
+    notes_root,
+    csv_paths,
+    keywords=KEYWORDS,
+    enrich_crossref=False,
+    crossref_timeout=20,
+    *,
+    archive_path=None,
 ):
-    candidates = note_candidates(notes_root, csv_paths, keywords)
+    candidates = note_candidates(
+        notes_root, csv_paths, keywords, archive_path=archive_path
+    )
     if enrich_crossref:
         candidates = [enrich_note(item, crossref_timeout) for item in candidates]
     return candidates
@@ -31,6 +39,9 @@ def main():
     parser.add_argument("--csv", type=Path, default=ROOT / "data/paper.csv")
     parser.add_argument(
         "--paper-read-csv", type=Path, default=ROOT / "data/paper-read.csv"
+    )
+    parser.add_argument(
+        "--archive-csv", type=Path, default=ROOT / "data/paper-archive.csv"
     )
     parser.add_argument(
         "--output-json",
@@ -52,12 +63,17 @@ def main():
         )
     if args.limit < 0:
         parser.error("limit cannot be negative")
-    candidates = scan(args.notes_root, [args.csv, args.paper_read_csv])
+    candidates = scan(
+        args.notes_root, [args.csv, args.paper_read_csv], archive_path=args.archive_csv
+    )
     candidates = [
         item
         for item in candidates
         if item["score"] >= args.min_score
-        and (args.include_duplicates or not item["already_in_awesome"])
+        and (
+            args.include_duplicates
+            or not (item["already_in_awesome"] or item["archived_preprint"])
+        )
     ]
     total = len(candidates)
     if args.limit:
@@ -82,6 +98,8 @@ def main():
                 f"- Primary DOI: {item['primary_doi'] or '(missing)'}",
                 f"- Publication date: {item.get('publish_date') or '(unknown)'}",
                 f"- Already in awesome: {item['already_in_awesome']}",
+                f"- Archived preprint: {item['archived_preprint']}",
+                f"- Publication URL: {item['publication_url'] or '(needs verification)'}",
                 f"- Referenced known DOIs: {', '.join(item['duplicate_dois']) or '(none)'}",
                 f"- Source: {item['source_urls'][0]}",
                 f"- Metadata error: {item['crossref_error'] or '(none)'}",

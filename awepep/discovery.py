@@ -12,18 +12,20 @@ import xml.etree.ElementTree as ET
 from urllib.parse import unquote, urlencode
 
 from awepep import crossref, utils
+from awepep.publications import (
+    LINK_RE,
+    is_preprint_doi,
+    is_preprint_url,
+    normalize_url,
+    note_url,
+    publication_keys,
+)
 
 TOPICS = {
-    "design": "peptide design",
-    "property": "peptide bioactivity",
-    "structure": "peptide structure",
-    "synthesis": "peptide synthesis",
-    "biology": "peptide signaling",
-    "delivery": "peptide delivery",
-    "biomaterials": "peptide self assembly",
-    "therapeutics": "peptide therapeutics",
-    "screening": "peptide discovery",
-    "data": "peptide database benchmark",
+    "design": "peptide machine learning design",
+    "property": "peptide activity prediction",
+    "structure": "peptide structure prediction",
+    "data": "peptide computational benchmark",
 }
 KEYWORDS = [
     "peptide",
@@ -64,9 +66,37 @@ def existing_entries(paths):
                 dois.update(
                     identifiers(row.get("doi", "") + " " + row.get("publications", ""))
                 )
+                for related in re.findall(
+                    r"\[Preprint\]\((https?://\S+?)\)",
+                    row.get("blogs", ""),
+                    re.IGNORECASE,
+                ):
+                    dois.update(identifiers(related))
+                if row.get("publications"):
+                    dois.update(
+                        publication_keys(row["publications"], allow_preprints=True)
+                    )
                 if row.get("title"):
                     titles.add(title_key(row["title"]))
     return dois, titles
+
+
+def existing_note_sources(paths):
+    sources = set()
+    for path in paths:
+        if not Path(path).exists():
+            continue
+        with Path(path).open(encoding="utf-8", newline="") as handle:
+            for row in csv.DictReader(handle):
+                urls = LINK_RE.findall(row.get("blogs", ""))
+                if row.get("source"):
+                    urls.append(note_url(row["source"]))
+                sources.update(
+                    normalize_url(note_url(url))
+                    for url in urls
+                    if url.startswith("https://")
+                )
+    return sources
 
 
 def title_key(value):
@@ -89,8 +119,10 @@ def keyword_hits(text, keywords=KEYWORDS):
     return result
 
 
-def note_candidates(notes_root, csv_paths, keywords=KEYWORDS):
+def note_candidates(notes_root, csv_paths, keywords=KEYWORDS, *, archive_path=None):
     existing, _ = existing_entries(csv_paths)
+    note_sources = existing_note_sources(csv_paths)
+    archived, _ = existing_entries([archive_path] if archive_path else [])
     candidates = []
     for path in sorted(Path(notes_root).rglob("*.md")):
         if path.name.lower() == "readme.md":
@@ -136,10 +168,39 @@ def note_candidates(notes_root, csv_paths, keywords=KEYWORDS):
             else "https://github.com/zhaisilong/paper-read/blob/main/src/site/notes/"
             + relative.as_posix()
         )
+        source_url = note_url(source_url)
+        publication_urls = list(
+            dict.fromkeys(
+                note_url(url.rstrip(".,;:"))
+                for url in URL_RE.findall(introduction)
+                if url.startswith("https://")
+                and not any(
+                    host in url
+                    for host in (
+                        "github.com/",
+                        "gitlab.com/",
+                        "huggingface.co/",
+                        "zenodo.org/",
+                        "figshare.com/",
+                        "paper.molastra.org/",
+                    )
+                )
+                and not re.search(
+                    r"\.(png|jpg|jpeg|gif|svg)(?:\?|$)", url, re.IGNORECASE
+                )
+            )
+        )
+        formal_urls = [url for url in publication_urls if not is_preprint_url(url)]
+        primary_url = next(iter(formal_urls or publication_urls), "")
+        has_formal_identifier = bool(formal_urls) or any(
+            not is_preprint_doi(doi) for doi in dois
+        )
+        archived_preprint = primary in archived and not has_formal_identifier
         candidates.append(
             {
                 "doi": primary,
                 "primary_doi": primary,
+                "publication_url": primary_url,
                 "dois": dois,
                 "title": title,
                 "note_title": title,
@@ -154,7 +215,13 @@ def note_candidates(notes_root, csv_paths, keywords=KEYWORDS):
                 "score": sum(hits.values())
                 + 5 * sum(keyword_hits(title, keywords).values()),
                 "duplicate_dois": sorted(set(dois) & existing),
-                "already_in_awesome": primary in existing,
+                "already_in_awesome": (
+                    primary in existing
+                    or normalize_url(source_url) in note_sources
+                    or (bool(primary_url) and normalize_url(primary_url) in existing)
+                ),
+                "archived_preprint": archived_preprint,
+                "has_formal_identifier": has_formal_identifier,
                 "code_links": [
                     url
                     for url in urls
@@ -186,6 +253,7 @@ def note_candidates(notes_root, csv_paths, keywords=KEYWORDS):
         candidates,
         key=lambda item: (
             item["already_in_awesome"],
+            item["archived_preprint"],
             -int(item["note_month"].replace("-", "") or 0),
             -item["score"],
             item["note_path"],
@@ -194,7 +262,8 @@ def note_candidates(notes_root, csv_paths, keywords=KEYWORDS):
 
 
 def enrich_note(item, timeout=20):
-    if not item["doi"]:
+    # Preprints need a curator to identify a formal version, not an arXiv API scan.
+    if not item["doi"] or is_preprint_doi(item["doi"]):
         return item
     try:
         metadata = crossref.metadata_for_doi(item["doi"], timeout)
@@ -414,91 +483,36 @@ def pubmed_candidates(since, until, limit, statuses):
             )
 
 
-def arxiv_candidates(since, until, limit, statuses):
-    query = f'(all:peptide OR all:peptides) AND submittedDate:[{since.replace("-", "")}0000 TO {until.replace("-", "")}2359]'
-    ns = {
-        "atom": "http://www.w3.org/2005/Atom",
-        "arxiv": "http://arxiv.org/schemas/atom",
-        "os": "http://a9.com/-/spec/opensearch/1.1/",
-    }
-    count, total = 0, 0
-    try:
-        while count < limit:
-            params = {
-                "search_query": query,
-                "start": count,
-                "max_results": min(100, limit - count),
-                "sortBy": "submittedDate",
-                "sortOrder": "descending",
-            }
-            root = ET.fromstring(
-                crossref.request_bytes(
-                    crossref.ARXIV_API + "?" + urlencode(params),
-                    accept="application/atom+xml",
-                )
-            )
-            total = int(root.findtext("os:totalResults", "0", ns))
-            entries = root.findall("atom:entry", ns)
-            if not entries:
-                break
-            for entry in entries:
-                url = entry.findtext("atom:id", "", ns)
-                arxiv_id = re.sub(r"v\d+$", "", url.rsplit("/", 1)[-1])
-                if not re.fullmatch(r"\d{4}\.\d{4,5}", arxiv_id):
-                    raise ValueError(f"Unexpected arXiv ID: {url}")
-                doi = "10.48550/arxiv." + arxiv_id
-                journal_doi = entry.findtext("arxiv:doi", "", ns)
-                yield {
-                    "doi": doi,
-                    "title": crossref.clean_text(entry.findtext("atom:title", "", ns)),
-                    "authors": ", ".join(
-                        node.findtext("atom:name", "", ns)
-                        for node in entry.findall("atom:author", ns)
-                    ),
-                    "publish_date": entry.findtext("atom:published", "", ns).split("T")[
-                        0
-                    ],
-                    "abstract": crossref.clean_abstract(
-                        entry.findtext("atom:summary", "", ns)
-                    ),
-                    "publications": f"[arXiv](https://doi.org/{doi})",
-                    "source": "arxiv",
-                    "source_urls": [f"https://arxiv.org/abs/{arxiv_id}"],
-                    "related_dois": (
-                        [crossref.normalize_doi(journal_doi)] if journal_doi else []
-                    ),
-                }
-            count += len(entries)
-        statuses.append(
-            {
-                "source": "arxiv",
-                "query": query,
-                "matched": total,
-                "retrieved": count,
-                "truncated": total > count,
-            }
-        )
-    except (RuntimeError, ValueError, ET.ParseError) as exc:
-        statuses.append(
-            {"source": "arxiv", "query": query, "retrieved": count, "error": str(exc)}
-        )
-
-
-def candidate_status(item, since, until, known_dois, known_titles):
+def candidate_status(item, since, until, known_dois, known_titles, archived_dois=None):
     doi = item.get("doi", "")
-    if not doi:
-        return "missing_doi"
     if doi in known_dois or set(item.get("related_dois", [])) & known_dois:
         return "duplicate"
+    url = item.get("publication_url", "")
+    if url and normalize_url(url) in known_dois:
+        return "duplicate"
+    if item.get("archived_preprint") or (
+        doi
+        and doi in (archived_dois or set())
+        and not item.get("has_formal_identifier")
+    ):
+        return "archived_preprint"
+    if is_preprint_doi(doi) or (url and is_preprint_url(url)):
+        return "needs_formal_publication"
+    if not doi:
+        return "needs_publication_verification"
     if item.get("metadata_error") or item.get("crossref_error"):
         return "metadata_error"
     if not item.get("publish_date"):
         return "needs_date_verification"
     lower, upper = utils.date_bounds(item["publish_date"])
-    if upper < since or lower > until:
-        return "out_of_window"
-    if lower != upper:
-        return "needs_date_verification"
+    from_notes = item.get("source") == "paper-read" or "paper-read" in item.get(
+        "sources", []
+    )
+    if not from_notes and since is not None:
+        if upper < since or lower > until:
+            return "out_of_window"
+        if lower != upper:
+            return "needs_date_verification"
     if title_key(item["title"]) in known_titles:
         return "possible_duplicate"
     return "candidate"
@@ -507,7 +521,7 @@ def candidate_status(item, since, until, known_dois, known_titles):
 def merge_candidates(items):
     merged = {}
     for item in items:
-        key = item.get("doi") or title_key(item["title"])
+        key = item.get("doi") or item.get("publication_url") or title_key(item["title"])
         if key not in merged:
             merged[key] = item.copy()
             merged[key]["sources"] = [item["source"]]
@@ -534,26 +548,44 @@ def merge_candidates(items):
     return list(merged.values())
 
 
-def discover(since, until, sources, limit, notes_root, csv_paths):
+def discover(since, until, sources, limit, notes_root, csv_paths, *, archive_path=None):
+    if set(sources) - {"paper-read", "crossref", "pubmed"}:
+        raise ValueError(
+            "Supported sources: paper-read, crossref, pubmed; preprint discovery is disabled"
+        )
+    if limit <= 0:
+        raise ValueError("limit must be positive")
+    if any(source != "paper-read" for source in sources) and not since:
+        raise ValueError("External discovery requires --since")
+    start = date.fromisoformat(since) if since else None
+    end = date.fromisoformat(until) if until else date.today()
+    if start and start > end:
+        raise ValueError("since must not be after until")
+    until = end.isoformat()
     known_dois, known_titles = existing_entries(csv_paths)
+    archived_dois, _ = existing_entries([archive_path] if archive_path else [])
     items, statuses = [], []
     if "paper-read" in sources:
-        notes = note_candidates(notes_root, csv_paths)
-        selected = [item for item in notes if not item["already_in_awesome"]][:limit]
+        notes = note_candidates(notes_root, csv_paths, archive_path=archive_path)
+        eligible = [
+            item
+            for item in notes
+            if not item["already_in_awesome"] and not item["archived_preprint"]
+        ]
+        selected = eligible[:limit]
         items.extend(enrich_note(item) for item in selected)
         statuses.append(
             {
                 "source": "paper-read",
                 "matched": len(notes),
                 "retrieved": len(selected),
-                "truncated": sum(not item["already_in_awesome"] for item in notes)
-                > len(selected),
+                "archived_preprints": sum(item["archived_preprint"] for item in notes),
+                "truncated": len(eligible) > len(selected),
             }
         )
     for name, provider in (
         ("crossref", crossref_candidates),
         ("pubmed", pubmed_candidates),
-        ("arxiv", arxiv_candidates),
     ):
         if name in sources:
             items.extend(provider(since, until, limit, statuses))
@@ -561,10 +593,11 @@ def discover(since, until, sources, limit, notes_root, csv_paths):
     for item in candidates:
         item["status"] = candidate_status(
             item,
-            date.fromisoformat(since),
-            date.fromisoformat(until),
+            start,
+            end,
             known_dois,
             known_titles,
+            archived_dois,
         )
     candidates.sort(
         key=lambda item: (
@@ -595,7 +628,7 @@ def write_report(report, output_dir):
     lines = [
         "# Peptide Paper Candidates",
         "",
-        f"Window: {report['since']} to {report['until']}",
+        f"External publication window: {report['since'] or '(not requested)'} to {report['until']}; paper-read has no lower date cutoff.",
         "",
         "## Source Coverage",
         "",
@@ -611,6 +644,7 @@ def write_report(report, output_dir):
                 f"### {item['title']}",
                 "",
                 f"- DOI: {item.get('doi') or '(missing)'}",
+                f"- Publication URL: {item.get('publication_url') or '(needs verification)'}",
                 f"- Date: {item.get('publish_date') or '(unknown)'}",
                 f"- Status: {item['status']}",
                 f"- Sources: {', '.join(item['source_urls'])}",
@@ -623,9 +657,15 @@ def write_report(report, output_dir):
 
 def main():
     parser = argparse.ArgumentParser(description=__doc__)
-    parser.add_argument("--since", required=True, help="Inclusive ISO publication date")
+    parser.add_argument(
+        "--since",
+        help="Inclusive ISO publication date; required for external discovery only",
+    )
     parser.add_argument("--until", default=date.today().isoformat())
-    parser.add_argument("--sources", default="paper-read,crossref,pubmed,arxiv")
+    parser.add_argument("--sources", default="paper-read")
+    parser.add_argument(
+        "--archive-csv", type=Path, default=Path("data/paper-archive.csv")
+    )
     parser.add_argument(
         "--limit", type=int, default=200, help="Maximum records per source query"
     )
@@ -636,23 +676,25 @@ def main():
         "--notes-root", type=Path, default=Path("vendor/paper-read/src/site/notes")
     )
     args = parser.parse_args()
-    sources = args.sources.split(",")
-    if args.limit <= 0 or date.fromisoformat(args.since) > date.fromisoformat(
-        args.until
-    ):
-        parser.error("limit must be positive and since must not be after until")
-    if set(sources) - {"paper-read", "crossref", "pubmed", "arxiv"}:
-        parser.error("Unknown source")
+    sources = [source.strip() for source in args.sources.split(",")]
+    if set(sources) - {"paper-read", "crossref", "pubmed"}:
+        parser.error(
+            "Supported sources: paper-read, crossref, pubmed; preprint discovery is disabled"
+        )
     if "paper-read" in sources and not args.notes_root.is_dir():
         parser.error("paper-read notes missing; initialize the submodule first")
-    report = discover(
-        args.since,
-        args.until,
-        sources,
-        args.limit,
-        args.notes_root,
-        ["data/paper.csv", "data/paper-read.csv"],
-    )
+    try:
+        report = discover(
+            args.since,
+            args.until,
+            sources,
+            args.limit,
+            args.notes_root,
+            ["data/paper.csv", "data/paper-read.csv"],
+            archive_path=args.archive_csv,
+        )
+    except ValueError as exc:
+        parser.error(str(exc))
     write_report(report, args.output_dir)
     print(f"candidates={len(report['candidates'])}; reports={args.output_dir}")
     errors = [status for status in report["source_status"] if status.get("error")]

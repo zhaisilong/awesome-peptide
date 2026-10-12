@@ -144,6 +144,17 @@
       "retrieved_at": "2026-10-03T10:48:11+00:00",
       "source": "https://api.crossref.org/works/10.1021/jacs.5c16902"
     },
+    "10.1038/nri3084": {
+      "metadata": {
+        "abstract": "A review of MHC class I and class II antigen processing and peptide presentation, integrating established biology with a systems-level perspective.",
+        "authors": "Jacques Neefjes, Marlieke L. M. Jongsma, Petra Paul and Oddmund Bakke",
+        "publications": "[Nat Rev Immunol](https://doi.org/10.1038/nri3084)",
+        "publish_date": "2011-11-11",
+        "title": "Towards a systems understanding of MHC class I and MHC class II antigen presentation"
+      },
+      "retrieved_at": "2026-10-12T03:40:05+00:00",
+      "source": "https://api.crossref.org/works/10.1038/nri3084"
+    },
     "10.1038/s41467-023-41427-y": {
       "metadata": {
         "abstract": "Peptide-based therapeutics have gained attention as promising therapeutic modalities, however, their prevalent drawback is poor circulation half-life in vivo. In this paper, we report the selection of albumin-binding macrocyclic peptides from genetically encoded libraries of peptides modified by perfluoroaryl-cysteine S N Ar chemistry, with decafluoro-diphenylsulfone ( DFS ). Testing of the binding of the selected peptides to albumin identified SICRFFC as the lead sequence. We replaced DFS with isosteric pentafluorophenyl sulfide ( PFS ) and the PFS -SICRFFCGG exhibited K D = 4–6 µM towards human serum albumin. When injected in mice, the concentration of the PFS -SICRFFCGG in plasma was indistinguishable from the reference peptide, SA-21. More importantly, a conjugate of PFS -SICRFFCGG and peptide apelin-17 analogue (N 3 -PEG 6 -NMe17A2) showed retention in circulation similar to SA-21; in contrast, apelin-17 analogue was cleared from the circulation after 2 min. The PFS -SICRFFC is the smallest known peptide macrocycle with a significant affinity for human albumin and substantial in vivo circulation half-life. It is a productive starting point for future development of compact macrocycles with extended half-life in vivo.",
@@ -154,6 +165,17 @@
       },
       "retrieved_at": "2026-10-03T10:48:18+00:00",
       "source": "https://api.crossref.org/works/10.1038/s41467-023-41427-y"
+    },
+    "10.1038/s41467-025-63412-3": {
+      "metadata": {
+        "abstract": "A domain-adapted language model improves property prediction for lasso peptides and provides representations for peptide-specific prediction tasks.",
+        "authors": "Xuenan Mi, Susanna E. Barrett, Douglas A. Mitchell and Diwakar Shukla",
+        "publications": "[Nat Commun](https://doi.org/10.1038/s41467-025-63412-3)",
+        "publish_date": "2025-9-29",
+        "title": "LassoESM a tailored language model for enhanced lasso peptide property prediction"
+      },
+      "retrieved_at": "2026-10-12T03:40:04+00:00",
+      "source": "https://api.crossref.org/works/10.1038/s41467-025-63412-3"
     },
     "10.1038/s41467-025-64378-y": {
       "metadata": {

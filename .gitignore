@@ -11,6 +11,7 @@ env/
 venv/
 ENV/
 VENV/
+.venv/
 env.bak/
 venv.bak/
 
@@ -49,6 +50,7 @@ coverage.xml
 *.cover
 .hypothesis/
 pytest_cache/
+.pytest_cache/
 cover/
 
 # Jupyter Notebook checkpoints
@@ -81,8 +83,6 @@ dmypy.json
 *~
 .history/
 
-# Peer
-papers_for_protein_design_using_DL/
+# Local discovery reports
 tmp/
 out/
-awepep-agent.toml

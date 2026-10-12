@@ -99,6 +99,9 @@ def main() -> int:
         "--paper-read-csv", type=Path, default=ROOT / "data/paper-read.csv"
     )
     parser.add_argument(
+        "--archive-csv", type=Path, default=ROOT / "data/paper-archive.csv"
+    )
+    parser.add_argument(
         "--strict", action="store_true", help="Fail on vocabulary warnings"
     )
     args = parser.parse_args()
@@ -106,7 +109,7 @@ def main() -> int:
     total_warnings = 0
     total_empty = 0
     total_suggestions = 0
-    for path in [args.paper_csv, args.paper_read_csv]:
+    for path in [args.paper_csv, args.paper_read_csv, args.archive_csv]:
         warnings, empty, suggestions_ = audit_csv(path)
         total_warnings += warnings
         total_empty += empty

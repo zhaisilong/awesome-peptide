@@ -10,10 +10,13 @@ from __future__ import annotations
 import argparse
 import ast
 import csv
-import re
 import sys
 from pathlib import Path
 from typing import Dict, List, Optional
+
+sys.path.insert(0, str(Path(__file__).resolve().parents[4]))
+from awepep import crossref, utils
+from awepep.publications import normalize_url, publication_keys
 
 COLUMNS = [
     "title",
@@ -57,20 +60,12 @@ def markdown_link(label: Optional[str], url: Optional[str], field_name: str) -> 
 
 
 def normalize_doi(doi: str) -> str:
-    doi = doi.strip()
-    doi = re.sub(r"^https?://(?:dx\.)?doi\.org/", "", doi, flags=re.IGNORECASE)
-    if not re.match(r"^10\.\d{3,9}/\S+$", doi, flags=re.IGNORECASE):
-        raise ValueError(f"Invalid DOI: {doi}")
-    return doi
+    return crossref.normalize_doi(doi)
 
 
 def validate_date(value: str) -> str:
-    if not re.match(r"^\d{4}-\d{1,2}-\d{1,2}$", value):
-        raise ValueError("publish date must use YYYY-M-D or YYYY-MM-DD")
-    year, month, day = (int(part) for part in value.split("-"))
-    if not (1 <= month <= 12 and 1 <= day <= 31):
-        raise ValueError(f"Invalid publish date: {value}")
-    return f"{year}-{month}-{day}"
+    utils.date_bounds(value)
+    return "-".join(str(int(part)) for part in value.split("-"))
 
 
 def parse_args() -> argparse.Namespace:
@@ -84,9 +79,15 @@ def parse_args() -> argparse.Namespace:
     parser.add_argument("--subsec", required=True)
     parser.add_argument("--authors", required=True)
     parser.add_argument(
-        "--venue", required=True, help="publication label, for example JCIM or arXiv"
+        "--venue",
+        required=True,
+        help="formal publication label, for example JCIM or ICML",
     )
-    parser.add_argument("--doi", required=True)
+    identity = parser.add_mutually_exclusive_group(required=True)
+    identity.add_argument("--doi")
+    identity.add_argument(
+        "--publication-url", help="Official stable HTTPS link when no DOI exists"
+    )
     parser.add_argument("--publish-date", required=True)
     parser.add_argument("--code-label")
     parser.add_argument("--code-url")
@@ -117,8 +118,13 @@ def main() -> int:
             f"Invalid subsection {args.subsec!r} for {args.sec!r}. Valid subsections: {valid}"
         )
 
-    doi = normalize_doi(args.doi)
-    publication = f"[{args.venue}](https://doi.org/{doi})"
+    url = (
+        "https://doi.org/" + normalize_doi(args.doi)
+        if args.doi
+        else normalize_url(args.publication_url)
+    )
+    publication = f"[{args.venue}]({url})"
+    publication_keys(publication)
 
     row = {
         "title": args.title,

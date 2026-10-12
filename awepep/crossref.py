@@ -14,7 +14,7 @@ from urllib.request import Request, urlopen
 CROSSREF_WORKS_API = "https://api.crossref.org/works/"
 ARXIV_API = "https://export.arxiv.org/api/query"
 DOI_RE = re.compile(r"^10\.\d{3,9}/\S+$", re.IGNORECASE)
-USER_AGENT = "awesome-peptide/1.4.0 (mailto:zhaisilong@outlook.com)"
+USER_AGENT = "awesome-peptide/1.5.0 (mailto:zhaisilong@outlook.com)"
 _LAST_REQUEST = {}
 
 

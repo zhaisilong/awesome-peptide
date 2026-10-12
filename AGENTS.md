@@ -7,8 +7,9 @@ Use the repo-local skills in `.codex/skills` for recurring work:
 
 ## Source Of Truth
 
-- Edit `data/paper.csv` for manually curated paper entries.
-- Edit `data/paper-read.csv` for paper-read sourced entries. Keep it minimal; bibliographic metadata is recorded in `data/paper-read-metadata.json` from Crossref or arXiv.
+- Edit `data/paper.csv` for full paper entries, including DOI-less formal paper-read papers with their note link in `blogs`.
+- Edit `data/paper-read.csv` for formal DOI-backed paper-read entries. Keep it minimal; bibliographic metadata is recorded in `data/paper-read-metadata.json` from Crossref. Historical arXiv snapshots are provenance, not new intake.
+- Edit `data/paper-archive.csv` for historical preprints without a verified formal version; preserve fields/source and record `archived_at`/`archive_reason`. Archives never enter active generation or statistics. Check for formal upgrades before archiving.
 - Keep metadata snapshots tracked with their source and retrieval time. Refresh explicitly; use offline generation for review and CI.
 - Use canonical tags from `awepep.config.tag_groups`. Add new tags to the vocabulary before using them, and treat tag audit warnings as curation debt.
 - Edit `DATABASE.md` for Chapter 0 resource tables and guides. Store benchmark/dataset papers in CSV, not a second manual paper list.
@@ -18,23 +19,27 @@ Use the repo-local skills in `.codex/skills` for recurring work:
 
 ## Paper-Read Curation
 
-Use `$curate-peptide-papers` when pulling latest paper notes from `vendor/paper-read`.
+Use `$curate-peptide-papers` when pulling latest paper notes from `vendor/paper-read`. This owner-maintained library is the primary source; substantive peptide work is eligible regardless of AI involvement, subject to formal-publication verification.
 
 ```bash
 git submodule update --init --recursive
+git -C vendor/paper-read rev-parse HEAD
 git submodule update --remote vendor/paper-read
-python .codex/skills/curate-peptide-papers/scripts/scan_paper_read_candidates.py --limit 200 --enrich-crossref
+git -C vendor/paper-read rev-parse HEAD
+awe-discover --limit 200
 ```
 
-Use the scanner report to curate verified peptide papers into `data/paper-read.csv`; experimental and computational work are both in scope. Choose `sec/subsec` by primary contribution from `awepep.config.sections`; APIs only supply bibliographic fields. Use code/data links only when the note or primary source explicitly associates them with the paper.
+Compare the old/new commits and prioritize new/modified notes, including formal-version updates to accepted/archived work. Scan historical omissions too; insert older papers by actual publication date, not note date or a recent-window cutoff. Choose `sec/subsec` by primary contribution from config. APIs supply bibliographic fields, not editorial decisions. Use code/data links only when explicitly associated with the paper.
 
 ## On-Demand Discovery
 
+Independent discovery is a small supplement after paper-read: target 2-3 accepted papers, maximum 3 per run across all providers, no quota filling. Prefer AIDD; exceptional purely experimental work needs a significance rationale. Paper-read additions, historical upgrades and metadata verification are outside that quota.
+
 ```bash
-awe-discover --since 2026-06-16 --until 2026-10-03 --limit 200
+awe-discover --sources crossref,pubmed --since YYYY-MM-DD --until YYYY-MM-DD --limit 10
 ```
 
-Replace the example window with the requested dates. Review Markdown/JSON reports, provider errors and truncation before curating. The command does not modify CSVs. Verify primary identifiers, title duplicates and preprint/journal relationships. Preserve partial publication dates; registration or note dates are not publication evidence. No scheduled paper-adding Actions are needed.
+External discovery requires explicit sources and dates; `--limit` caps candidates per query, not accepted additions. Default discovery uses only paper-read. Review reports, errors and truncation. The command does not modify CSVs. Require formal journals/conferences or credible institutional technical reports; ordinary arXiv/bioRxiv preprints are not new additions. Prefer formal DOI citations, otherwise official stable HTTPS URLs with publication evidence. Preserve partial dates; registration, acceptance and note dates are not publication dates. No scheduled paper-adding Actions are needed.
 
 ## Required Checks
 

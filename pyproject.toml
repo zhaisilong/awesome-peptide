@@ -4,7 +4,7 @@ build-backend = "setuptools.build_meta"
 
 [project]
 name = "awesome-peptide"
-version = "1.4.0"
+version = "1.5.0"
 description = "Curated peptide research: design, synthesis, biology, delivery and applications"
 readme = "README.md"
 requires-python = ">=3.9"

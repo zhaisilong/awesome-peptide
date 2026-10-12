@@ -6,6 +6,7 @@ import pandas as pd
 
 from awepep import config, crossref, tags as tag_utils, template, utils
 from awepep.metadata import MetadataStore
+from awepep.publications import note_url, publication_keys
 
 PAPER_COLUMNS = [
     "title",
@@ -34,8 +35,7 @@ PAPER_READ_COLUMNS = [
     "pined",
     "tags",
 ]
-PAPER_READ_BASE_URL = "https://paper.molastra.org"
-DOI_IN_PUBLICATION_RE = re.compile(r"10\.\d{3,9}/[-._;()/:A-Z0-9]+", re.IGNORECASE)
+ARCHIVE_COLUMNS = PAPER_COLUMNS + ["archived_at", "archive_reason"]
 
 
 class PaperList:
@@ -79,26 +79,16 @@ class PaperList:
     def source_to_blog(source: str) -> str:
         if not source:
             return ""
-        if source.startswith(("http://", "https://")):
-            url = source
-        elif source.startswith("vendor/paper-read/"):
-            repo_path = source.replace("vendor/paper-read/", "", 1)
-            url = f"https://github.com/zhaisilong/paper-read/blob/main/{repo_path}"
-        elif source.startswith("src/site/notes/"):
-            url = f"https://github.com/zhaisilong/paper-read/blob/main/{source}"
-        else:
-            url = f"{PAPER_READ_BASE_URL}/{source.lstrip('/')}"
-        return f"[paper-read]({url})"
+        return f"[paper-read]({note_url(source)})"
 
     @staticmethod
     def dois_from_publications(publications):
-        dois = set()
+        keys = set()
         for publication in publications:
             if pd.isna(publication) or not publication:
                 continue
-            for doi in DOI_IN_PUBLICATION_RE.findall(str(publication)):
-                dois.add(crossref.normalize_doi(doi))
-        return dois
+            keys.update(publication_keys(publication))
+        return keys
 
     def load_paper_read(self, df_paper, paper_read_path: Path):
         if not paper_read_path.exists():
@@ -119,6 +109,7 @@ class PaperList:
 
             try:
                 metadata = self.metadata.get(doi)
+                publication_keys(metadata["publications"])
             except Exception as exc:
                 title = self.row_value(source_row, "title") or doi
                 raise RuntimeError(

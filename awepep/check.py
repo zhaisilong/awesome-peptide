@@ -1,4 +1,5 @@
 from collections import Counter
+from datetime import date
 from pathlib import Path
 import pprint
 import re
@@ -8,22 +9,10 @@ from fire import Fire
 from tqdm.auto import tqdm
 
 from awepep import config, crossref, tags as tag_utils, utils
-from awepep.paper import PAPER_COLUMNS
+from awepep.paper import ARCHIVE_COLUMNS, PAPER_COLUMNS, PAPER_READ_COLUMNS
+from awepep.publications import is_preprint_doi, publication_keys
 
 tqdm.pandas()
-
-PAPER_READ_COLUMNS = [
-    "doi",
-    "title",
-    "source",
-    "sec",
-    "subsec",
-    "code",
-    "dataset",
-    "quality",
-    "pined",
-    "tags",
-]
 
 
 # 检查章节是否有效
@@ -58,7 +47,9 @@ def check_duplicate(dois, doi_pool):
 # 检查必填字段
 def check_required_fields(row, required_fields):
     missing_fields = [
-        field for field in required_fields if pd.isna(row[field]) or row[field] == ""
+        field
+        for field in required_fields
+        if row[field] is False or pd.isna(row[field]) or not str(row[field]).strip()
     ]
     if missing_fields:
         raise ValueError(f"Missing required fields: {missing_fields} in row: {row}")
@@ -112,12 +103,11 @@ def check_editorial_fields(row):
         raise ValueError(f"Invalid pined flag: {row['pined']}")
 
 
-def validate_main_csv(csv_path: Path, doi_pool: set) -> pd.DataFrame:
+def validate_main_csv(csv_path: Path, doi_pool: set, *, archive=False) -> pd.DataFrame:
     df = load_csv(csv_path)
-    if list(df.columns) != PAPER_COLUMNS:
-        raise ValueError(
-            f"{csv_path} schema mismatch; expected columns: {PAPER_COLUMNS}"
-        )
+    columns = ARCHIVE_COLUMNS if archive else PAPER_COLUMNS
+    if list(df.columns) != columns:
+        raise ValueError(f"{csv_path} schema mismatch; expected columns: {columns}")
     df.apply(check_editorial_fields, axis=1)
 
     required_fields = [
@@ -128,9 +118,13 @@ def validate_main_csv(csv_path: Path, doi_pool: set) -> pd.DataFrame:
         "publications",
         "publish_date",
     ]
+    if archive:
+        required_fields += ["archived_at", "archive_reason"]
     df.progress_apply(lambda row: check_required_fields(row, required_fields), axis=1)
     print(f"{csv_path} required fields check passed")
     df["publish_date"].apply(utils.date_bounds)
+    if archive:
+        df["archived_at"].apply(date.fromisoformat)
 
     df.progress_apply(check_section, axis=1)
     print(f"{csv_path} section check passed")
@@ -138,7 +132,9 @@ def validate_main_csv(csv_path: Path, doi_pool: set) -> pd.DataFrame:
     print_tag_warnings(df, csv_path)
 
     # 提取 DOI 并检查重复
-    df["dois"] = df["publications"].apply(extract_dois)
+    df["dois"] = df["publications"].apply(
+        lambda value: publication_keys(value, allow_preprints=archive)
+    )
     df["dois"].progress_apply(lambda dois: check_duplicate(dois, doi_pool))
     print(f"{csv_path} duplicate check passed")
     return df
@@ -174,16 +170,31 @@ def validate_paper_read_csv(csv_path: Path, doi_pool: set) -> pd.DataFrame:
     print_tag_warnings(df, csv_path)
 
     df["dois"] = df["doi"].apply(lambda doi: [crossref.normalize_doi(doi)])
+    for doi in df["doi"]:
+        if is_preprint_doi(doi):
+            raise ValueError(f"Preprint DOI belongs in the archive: {doi}")
     df["dois"].progress_apply(lambda dois: check_duplicate(dois, doi_pool))
     print(f"{csv_path} duplicate check passed")
     return df
 
 
 # 主流程
-def main(csv: str = "data/paper.csv", paper_read_csv: str = "data/paper-read.csv"):
+def main(
+    csv: str = "data/paper.csv",
+    paper_read_csv: str = "data/paper-read.csv",
+    archive_csv=None,
+):
     doi_pool = set()
     df = validate_main_csv(Path(csv), doi_pool)
     df_paper_read = validate_paper_read_csv(Path(paper_read_csv), doi_pool)
+    archive_path = (
+        Path(archive_csv) if archive_csv else Path(csv).with_name("paper-archive.csv")
+    )
+    if archive_path.exists():
+        archived = validate_main_csv(archive_path, set(), archive=True)
+        print(
+            f"{archive_path}: {len(archived)} archived records (excluded from statistics)"
+        )
 
     # 更新统计信息
     stats_df = pd.concat([df, df_paper_read], ignore_index=True, sort=False)
