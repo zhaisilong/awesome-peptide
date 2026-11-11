@@ -16,6 +16,7 @@ Benchmark papers are curated in [Data, Representation & Analysis](#2-data-repres
 | --- | --- | --- |
 | CycPeptMPDB | Experimentally measured cyclic peptide membrane permeability. | [CycPeptMPDB](http://cycpeptmpdb.com) |
 | State of Peptides 2026 | Open reference dataset of 156 peptide and peptide-adjacent compounds with regulatory status, category, route, half-life, molecular weight, CAS, and PubChem/DrugBank/Wikidata cross-references (CSV/JSON, CC BY 4.0). | [State of Peptides 2026](https://peptahub.com/state-of-peptides-2026) |
+| Peptide Pharmacokinetics Dataset | Open, sourced table of half-life (t½) and Tmax for 35 therapeutic and research peptides. Each value is linked to an FDA label, a PubMed record, or a DOI; gaps are left empty rather than estimated (CSV/JSON, CC BY 4.0, also on Zenodo). | [peptide-pharmacokinetics-dataset](https://github.com/klow-peptide/peptide-pharmacokinetics-dataset) |
 
 ### 0.3 Related Resources
 
@@ -36,3 +37,5 @@ Benchmark papers are curated in [Data, Representation & Analysis](#2-data-repres
 | Interaction analysis | [Protein-Ligand Interaction Profiler (PLIP)](https://plip-tool.biotec.tu-dresden.de/plip-web/plip/index) |
 | Molecular weight | [Peptide Molecular Weight Calculator](https://peptidecalculatorpro.org/peptide-molecular-weight-calculator/): average mass, monoisotopic mass, formula and m/z for standard amino acid sequences, with acetylation, amidation and disulfide options. |
 | Charge estimates | [Peptide Net Charge Calculator](https://peptidecalculatorpro.org/peptide-net-charge-calculator/): Henderson-Hasselbalch net charge over pH 0-14, estimated pI and GRAVY using EMBOSS pKa values, with terminal modification options. |
+| Reconstitution math | [Peptide Reconstitution Calculator](https://github.com/klow-peptide/peptide-reconstitution-calculator): dependency-free JavaScript library that converts vial amount, diluent volume and draw amount into concentration, volume and insulin-syringe units (U-100 or U-40); educational unit conversion only, MIT license. |
+| Citation checking | [PubMed Citation Verifier](https://github.com/klow-peptide/pubmed-citation-verifier): checks that each cited PMID belongs to the cited article by comparing the cited title with the PubMed title, and searches PubMed for a matching PMID when they do not match. |
