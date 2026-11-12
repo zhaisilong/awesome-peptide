@@ -16,6 +16,7 @@ Benchmark papers are curated in [Data, Representation & Analysis](#2-data-repres
 | --- | --- | --- |
 | CycPeptMPDB | Experimentally measured cyclic peptide membrane permeability. | [CycPeptMPDB](http://cycpeptmpdb.com) |
 | State of Peptides 2026 | Open reference dataset of 156 peptide and peptide-adjacent compounds with regulatory status, category, route, half-life, molecular weight, CAS, and PubChem/DrugBank/Wikidata cross-references (CSV/JSON, CC BY 4.0). | [State of Peptides 2026](https://peptahub.com/state-of-peptides-2026) |
+| Peptide Pharmacokinetics Dataset | Half-life (t½) and Tmax for 35 therapeutic and research peptides. Each value has a direct source link (DailyMed FDA label by setid, PubMed or PMC), the location in the source and the exact quoted sentence; a script checks that each quote is in the live source and that each number matches it. Gaps are left empty (CSV/JSON, CC BY 4.0, Zenodo DOI). | [peptide-pharmacokinetics-dataset](https://github.com/klow-peptide/peptide-pharmacokinetics-dataset) |
 
 ### 0.3 Related Resources
 
