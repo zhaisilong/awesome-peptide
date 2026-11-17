@@ -2,6 +2,12 @@
 
 ## [Unreleased]
 
+## [1.5.1] - 2026-11-17
+
+### Added
+
+- Link to the Awesome Peptide Company sister project from the generated README.
+
 ### Fixed
 
 - Pin the CI runner to Ubuntu 24.04 to retain Python 3.9 compatibility.
