@@ -11,6 +11,7 @@
 ### Fixed
 
 - Pin the CI runner to Ubuntu 24.04 to retain Python 3.9 compatibility.
+- Constrain python-liquid to the compatible 2.x API for README generation.
 
 ## [1.5.0] - 2026-10-12
 

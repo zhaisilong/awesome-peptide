@@ -22,7 +22,7 @@ classifiers = [
   "Operating System :: OS Independent",
 ]
 dependencies = [
-  "python-liquid",
+  "python-liquid>=2.2,<3",
   "pandas",
   "tqdm",
   "fire",
