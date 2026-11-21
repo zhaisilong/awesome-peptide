@@ -16,7 +16,7 @@ Benchmark papers are curated in [Data, Representation & Analysis](#2-data-repres
 | --- | --- | --- |
 | CycPeptMPDB | Experimentally measured cyclic peptide membrane permeability. | [CycPeptMPDB](http://cycpeptmpdb.com) |
 | State of Peptides 2026 | Open reference dataset of 156 peptide and peptide-adjacent compounds with regulatory status, category, route, half-life, molecular weight, CAS, and PubChem/DrugBank/Wikidata cross-references (CSV/JSON, CC BY 4.0). | [State of Peptides 2026](https://peptahub.com/state-of-peptides-2026) |
-| Klow Peptide open resources | Open page grouping a pharmacokinetics dataset of 35 therapeutic and research peptides (evidence levels A–D; values left empty when no published data was found; CSV/JSON, CC BY 4.0), an open-source reconstitution calculator, and a PubMed citation verifier. Limits: 15 of the 35 peptides have no data; citation results are an aid to manual review, not a replacement for it; the calculator converts units only and is not medical advice. | [Klow Peptide open data](https://klow-peptide.com/en/pages/open-data/) |
+| Klow Peptide open resources | Open page grouping a pharmacokinetics dataset of 35 therapeutic and research peptides (evidence levels A–D; values left empty when no published data was found; CSV/JSON, CC BY 4.0), an open-source reconstitution calculator, and a PubMed citation verifier. Limits: 14 of the 35 peptides have no data; citation results are an aid to manual review, not a replacement for it; the calculator converts units only and is not medical advice. | [Klow Peptide open data](https://klow-peptide.com/en/pages/open-data/) |
 
 ### 0.3 Related Resources
 
