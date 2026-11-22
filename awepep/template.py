@@ -118,6 +118,7 @@ contributing_and_see_also = Template(f"""
 
 ## See Also
 
+- [Awesome Peptide Company](https://github.com/zhaisilong/awesome-peptide-company) — an evidence-based directory of AI and peptide organizations.
 - [List of papers about Protein Design using Deep Learning](https://github.com/Peldom/papers_for_protein_design_using_DL)
 - [Machine learning for proteins](https://github.com/yangkky/Machine-learning-for-proteins)
 
