@@ -2,6 +2,10 @@
 
 ## [Unreleased]
 
+### Added
+
+- List Klow Peptide Open Data as a single entry under Related Resources (#7).
+
 ## [1.5.1] - 2026-11-17
 
 ### Added
